@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on metafunctor</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlgoTree: Comprehensive Tree Structure Algorithms in Python</title>
+      <link>http://localhost:1313/projects/algotree/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/algotree/</guid>
+      <description>Explore the AlgoTree package, a suite of utilities for working with tree-like data structures in Python using a generic API (duck typing).</description>
+    </item>
+    <item>
+      <title>ollama_data_tools: Tools for working with Ollama model data.</title>
+      <link>http://localhost:1313/projects/ollama-data-tools/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ollama-data-tools/</guid>
+      <description>Ollama Data Tools is a Python package and set of command line tools for working with Ollama model data, including searching, filtering, exporting,a and adapting for use with other inference engines like &lt;code&gt;llamacpp&lt;/code&gt;.</description>
+    </item>
+    <item>
+      <title>SLUUG: Demystifying Large Language Models (LLMs) on Linux: From Theory to Application</title>
+      <link>http://localhost:1313/projects/sluug-talk/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sluug-talk/</guid>
+      <description>Presented for the St. Louis Unix Users Group (SLUUG) on Large Language Models (LLMs) on Linux, titled &amp;lsquo;Demystifying Large Language Models (LLMs) on Linux: From Theory to Application&amp;rsquo;.</description>
+    </item>
+  </channel>
+</rss>

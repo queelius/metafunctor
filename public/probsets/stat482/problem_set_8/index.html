@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Regression Analysis - SIUe - STAT 482 - Probem Set 8 | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This problem set covers multicollinearity in regression analysis and the marginal and partial effects of predictor variables, among other topics.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell (lex@metafunctor.com)">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/probsets/stat482/problem_set_8/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/probsets/stat482/problem_set_8/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Regression Analysis - SIUe - STAT 482 - Probem Set 8">
+  <meta property="og:description" content="This problem set covers multicollinearity in regression analysis and the marginal and partial effects of predictor variables, among other topics.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="probsets">
+    <meta property="article:published_time" content="2021-08-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-08-01T00:00:00+00:00">
+    <meta property="article:tag" content="Statistics">
+
+  <meta itemprop="name" content="Regression Analysis - SIUe - STAT 482 - Probem Set 8">
+  <meta itemprop="description" content="This problem set covers multicollinearity in regression analysis and the marginal and partial effects of predictor variables, among other topics.">
+  <meta itemprop="datePublished" content="2021-08-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-08-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="700">
+  <meta itemprop="keywords" content="Statistics">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Regression Analysis - SIUe - STAT 482 - Probem Set 8">
+  <meta name="twitter:description" content="This problem set covers multicollinearity in regression analysis and the marginal and partial effects of predictor variables, among other topics.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        STAT 482 - Regression Analysis - SIUe - Fall 2022
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Regression Analysis - SIUe - STAT 482 - Probem Set 8</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell (<a href="mailto:lex@metafunctor.com">lex@metafunctor.com</a>)</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-08-01T00:00:00Z">August 1, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="problem-1">Problem 1</h1>
+<p>We are interested in modeling the relationship among the predictor variables for the body fat example. Specifically, we wish to model midarm circumference ($w$) as a function of triceps skinfold thickness ($x_1$) and thigh circumference ($x_2$). Refer to the data from Table 7.1. The data for $x_1$ is listed in the first column, $x_2$ is listed in the second column, and $w$ is listed in the third column. We are not interested in the body fat measurements, listed in the fourth column, for this problem.</p>
+<h2 id="part-a">Part (a)</h2>
+<blockquote>
+<p>Compute the correlation matrix for $w$, $x_1$, $x_2$.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># drop the last column of data (original response variable in the experiment)</span>
+</span></span><span style="display:flex;"><span>exp8_1.data <span style="color:#f92672">=</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#39;TABLE0701.csv&#39;</span>)[,<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>exp8_1.data.cor <span style="color:#f92672">=</span> <span style="color:#a6e22e">cor</span>(exp8_1.data)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(exp8_1.data.cor)
+</span></span></code></pre></div><pre tabindex="0"><code>##           triceps     thigh    midarm
+## triceps 1.0000000 0.9238425 0.4577772
+## thigh   0.9238425 1.0000000 0.0846675
+## midarm  0.4577772 0.0846675 1.0000000
+</code></pre><h2 id="part-b">Part (b)</h2>
+<blockquote>
+<p>Test for a marginal effect of $x_2$ on $w$ against a model which includes no other input variables. (Compute the test statistic and $p$-value.) Provide an interpretation of the result, stated in the context of the problem.</p>
+</blockquote>
+$$
+m_0 : w_i = \beta_0 + \epsilon_i
+$$$$
+m_2 : w_i = \beta_0 + \beta_1 x_{2 i} + \epsilon_i.
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(exp8_1.data) <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;x1&#34;</span>,<span style="color:#e6db74">&#34;x2&#34;</span>,<span style="color:#e6db74">&#34;w&#34;</span>)
+</span></span><span style="display:flex;"><span>m0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(w<span style="color:#f92672">~</span><span style="color:#ae81ff">1</span>,  data<span style="color:#f92672">=</span>exp8_1.data)
+</span></span><span style="display:flex;"><span>m2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(w<span style="color:#f92672">~</span>x2, data<span style="color:#f92672">=</span>exp8_1.data)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">anova</span>(m0,m2))
+</span></span></code></pre></div><pre tabindex="0"><code>## Analysis of Variance Table
+## 
+## Model 1: w ~ 1
+## Model 2: w ~ x2
+##   Res.Df    RSS Df Sum of Sq    F Pr(&gt;F)
+## 1     19 252.73                         
+## 2     18 250.92  1    1.8117 0.13 0.7227
+</code></pre><p>We see that $F_2 = .130$ with $p$-value $.723$.</p>
+<p>This is a very large $p$-value, and so $x_2$ (thigh) is not adding much
+explanatary power compared to the model $m_0$ with no explanatary inputs. In
+other words, $x_2$ provides very little predictive power of $w$ (midarm).</p>
+<h3 id="interpretation">Interpretation</h3>
+<p>The observed data is compatible with the reduced (no effects) model $m_0$. It is not necessary to add thigh measurement to the no effects model for predicting midarm measurment.</p>
+<h2 id="part-c">Part (c)</h2>
+<blockquote>
+<p>Test for a partial effect of $x_2$ on $w$ against a model which includes $x_1$. (Compute the test statistic and $p$-value.) Provide an interpretation of the result, stated in the context of the problem.</p>
+</blockquote>
+$$
+m_1 : w_i = \beta_0 + \beta_1 x_{i 1} + \epsilon_i
+$$$$
+m_{1 2} : w_i = \beta_0 + \beta_1 x_{i 1} + \beta_1 x_{2 i} + \epsilon_i.
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>m1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(w<span style="color:#f92672">~</span>x1, data<span style="color:#f92672">=</span>exp8_1.data)
+</span></span><span style="display:flex;"><span>m12 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lm</span>(w<span style="color:#f92672">~</span>x1<span style="color:#f92672">+</span>x2, data<span style="color:#f92672">=</span>exp8_1.data)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">anova</span>(m1,m12))
+</span></span></code></pre></div><pre tabindex="0"><code>## Analysis of Variance Table
+## 
+## Model 1: w ~ x1
+## Model 2: w ~ x1 + x2
+##   Res.Df     RSS Df Sum of Sq      F    Pr(&gt;F)    
+## 1     18 199.769                                  
+## 2     17   2.416  1    197.35 1388.6 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+</code></pre><h2 id="part-d">Part (d)</h2>
+<blockquote>
+<p>Fit the regression model for $w$ which includes both $x_1$ and $x_2$.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(m12)
+</span></span></code></pre></div><pre tabindex="0"><code>## 
+## Call:
+## lm(formula = w ~ x1 + x2, data = exp8_1.data)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.58200 -0.30625  0.02592  0.29526  0.56102 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 62.33083    1.23934   50.29   &lt;2e-16 ***
+## x1           1.88089    0.04498   41.82   &lt;2e-16 ***
+## x2          -1.60850    0.04316  -37.26   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.377 on 17 degrees of freedom
+## Multiple R-squared:  0.9904,	Adjusted R-squared:  0.9893 
+## F-statistic: 880.7 on 2 and 17 DF,  p-value: &lt; 2.2e-16
+</code></pre>$$
+\hat{w} = 62.331 + 1.881 x_1 - 1.608 x_2.
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(exp8_1.data<span style="color:#f92672">$</span>x1,exp8_1.data<span style="color:#f92672">$</span>x2)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5"></p>
+<h2 id="part-e">Part (e)</h2>
+<blockquote>
+<p>What feature of multidimensional modeling is illustrated in this problem?</p>
+</blockquote>
+<p>Answer: <strong>Multicollinearity</strong>.</p>
+<p>Specifically, observe that $x_1$ and $x_2$ are strongly positively correlated, $r_{1 2} = 0.924$, but $x_1$ and $x_2$ have, respectively, a positive and negative partial effect on $w$. The combination of these partial effects and the correlation of $x_1$ and $x_2$ cancels out their partial effects on $w$.</p>
+<p>If we look at the scatterplots of $x_1$ versus $w$ and $x_2$ vs $w$, they seem uncorrelated. However, the joint distribution of $x_1$ and $x_2$ are highly explanatory of $w$. Investigating relationships in higher dimensions requires higher level statistical methods, such as regression analysis, rather than two-dimensional methods and graphs.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/statistics/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Statistics</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

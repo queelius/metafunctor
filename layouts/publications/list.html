@@ -1,0 +1,77 @@
+{{ define "main" }}
+<section class="publications-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Loop over all publications -->
+    <ul style="list-style: none; padding-left: 0;">
+      {{ range .Pages }}
+      <li style="margin-bottom: 3rem; border-bottom: 1px solid #ddd; padding-bottom: 1.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        
+        <!-- Publication Title -->
+        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 0.75rem; color: #333;">
+          <a href="{{ .Permalink }}" style="text-decoration: none; color: #007acc; transition: color 0.3s ease;" onmouseover="this.style.color='#005f99';" onmouseout="this.style.color='#007acc';">
+            {{ .Title }}
+          </a>
+        </h2>
+        
+        <!-- Publication Date and Authors -->
+        <p style="color: #666; font-size: 1.1rem;">
+          <strong>Published on:</strong> {{ .Date.Format "January 2, 2006" }} <br>
+          {{ if .Params.authors }}
+          <strong>Authors:</strong>
+          <div style="margin-left: 1.5rem;">
+            {{ range .Params.authors }}
+              <span>
+                {{ .name }}
+                {{ if .email }}
+                (<a href="mailto:{{ .email }}" style="color: #007acc; text-decoration: none;" onmouseover="this.style.color='#005f99';" onmouseout="this.style.color='#007acc';">{{ .email }}</a>)
+                {{ end }}
+              </span><br>
+            {{ end }}
+          </div>
+          {{ end }}
+        </p>
+
+        <!-- Publication Abstract -->
+        {{ if .Params.abstract }}
+        <p style="color: #555; font-size: 1rem; line-height: 1.6;">
+          {{ .Params.abstract }}
+        </p>
+        {{ end }}
+        
+        <!-- Publication Links (ProQuest, GitHub, PDF) -->
+        {{ if .Params.links }}
+        <p style="margin-top: 1.5rem;">
+          <span style="display: flex; gap: 1rem;">
+            {{ range .Params.links }}
+            <a href="{{ .url }}" target="_blank" style="display: inline-block; padding: 0.5rem 1rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-size: 1rem; transition: background-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.backgroundColor='#005f99'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.backgroundColor='#007acc'; this.style.boxShadow='none';">
+              {{ .name }}
+            </a>
+            {{ end }}
+          </span>
+        </p>
+        {{ end }}
+
+        <!-- Tags -->
+        {{ if .Params.tags }}
+        <div style="margin-top: 1.5rem;">
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+            {{ range .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+              style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease, color 0.3s ease;"
+              onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+              onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+              #{{ . }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      
+      </li>
+      {{ end }}
+    </ul>
+    
+  </div>
+</section>
+{{ end }}

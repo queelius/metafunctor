@@ -1,0 +1,45 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+
+<section style="padding: 1rem 1.5rem;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+  <nav style="font-size: 0.875rem; color: #666666; margin-bottom: 1.5rem;">
+    <a href="{{ "/" | relLangURL }}" style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#007acc';" onmouseout="this.style.borderColor='transparent';">Home</a> / 
+  
+    {{ $sections := .Sections }}
+  
+    {{ if .Parent }}
+      <a href="{{ .Parent.Permalink }}" style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#007acc';" onmouseout="this.style.borderColor='transparent';">{{ .Parent.Title }}</a> / 
+    {{ end }}
+  </nav>
+  
+  <ul style="list-style: none; padding-left: 0;">
+    <!-- Loop over each class in the probsets folder -->
+    {{ range .Sections }}
+    <li style="padding-bottom: 1.5rem; margin-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+      <h2 style="font-size: 1.75rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem;">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none; color: #003366; border-bottom: 2px solid transparent; transition: border-color 0.2s;">
+          {{ .Title }}
+        </a>
+      </h2>
+      <div style="font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem;">
+        {{ .Summary }}
+      </div>
+
+      <!-- Loop over each problem set inside the class -->
+      <ul style="list-style: none; padding-left: 1rem;">
+        {{ range .Pages }}
+        <li style="padding-bottom: 0.5rem;">
+          <a href="{{ .RelPermalink }}" style="text-decoration: none; color: #0066cc; border-bottom: 1px solid transparent; transition: border-color 0.2s; font-size: 1.25rem;">
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+</section>
+  
+{{ end }}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Computational Statistics - SIUe - STAT 575 - Exam 1 | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This exam covers accept-reject algorithms, the EM algorithm, and the MLE of a truncated normal distribution.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell (lex@metafunctor.com)">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/probsets/stat575/stat575-exam1/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/probsets/stat575/stat575-exam1/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta property="og:description" content="This exam covers accept-reject algorithms, the EM algorithm, and the MLE of a truncated normal distribution.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="probsets">
+    <meta property="article:published_time" content="2021-07-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-07-10T00:00:00+00:00">
+
+  <meta itemprop="name" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta itemprop="description" content="This exam covers accept-reject algorithms, the EM algorithm, and the MLE of a truncated normal distribution.">
+  <meta itemprop="datePublished" content="2021-07-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-07-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1873">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta name="twitter:description" content="This exam covers accept-reject algorithms, the EM algorithm, and the MLE of a truncated normal distribution.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        STAT 575 - Computational Statistics - SIUe - Summer 2021
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Computational Statistics - SIUe - STAT 575 - Exam 1</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell (<a href="mailto:lex@metafunctor.com">lex@metafunctor.com</a>)</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-07-10T00:00:00Z">July 10, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="problem-1">Problem 1</h1>
+<h2 id="part-1-10-points">Part (1) (10 points)</h2>
+$$
+  f(x) ∝ e^{-x^2/2}I(x > 2).
+$$<p>
+Consider the proposed distribution $g(x) = 2 e^{−2(x−2)}I(x &gt; 2)$.</p>
+<h2 id="part-a">Part (a)</h2>
+<p>Sample from $g$ using inverse-transform method.</p>
+<h3 id="solution">Solution</h3>
+$$
+\begin{align*}
+  G(x) &= P(X \leq x)\\
+       &= P(2+S \leq x)\\
+       &= P(S \leq x-2)\\
+       &= F_S(x-2)\\
+       &= &= I(x > 2)(1 - \exp(-2(x-2))).
+\end{align*}
+$$<p>
+As a quick proof that $G$ is the cdf of $g$, note that $dG/dx = g$.</p>
+$$
+\begin{align*}
+  G(x) &= \int_{-\infty}^{x} g(s) ds\\
+       &= I(x > 2) \int_{2}^{x} 2 e^{−2(s−2)} ds\\
+       &= I(x > 2) e^4 \int_{2}^{x} 2 e^{−2 s} ds\\
+       &= -I(x > 2) e^4 \int_{2}^{x} (-2) e^{−2 s} ds\\
+       &= -I(x > 2) e^4 \left(e^{-2 s}|_2^x\right)\\
+       &= -I(x > 2) e^4 \left(e^{-2 x}-e^{-4}\right)\\
+       &= I(x > 2) (1 - e^4 e^{-2 x})\\
+       &= I(x > 2) (1 - e^{-2(x-2)}),
+\end{align*}
+$$$$
+\begin{align*}
+  u           &= G(x)\\
+  u           &= 1 - e^{-2(x-2)}\\
+  1-u         &= e^{-2(x-2)}\\
+  \log(1-u)   &= -2(x-2)\\
+  -\frac{1}{2}\log(1-u) &= x-2,
+\end{align*}
+$$$$
+  x = -\frac{1}{2}\log(1-u) + 2
+$$$$
+  X = -\frac{1}{2}\log(1-U) + 2
+$$<p>
+is a random variable whose density is $g$.</p>
+<h2 id="part-b">Part (b)</h2>
+<p>Use accept-reject algorithm to generate a sample of $10000$ from f. Choose a $c$ so that $f(y)/[c g(y)] ≤ 1$. Verify the generated sample via a plot of the true normalized density, and a histogram of the generated values.</p>
+<h3 id="solution-1">Solution</h3>
+$$
+  \frac{k(y)}{g(y)} \leq 1
+$$$$
+  y^* = \argmax_y k(y)/g(y)
+$$<p>
+and then let $c = k(y^<em>)/g(y^</em>)$.</p>
+$$
+  h(y) = k(y)/g(y) = \frac{e^{-y^2/2}}{2e^{-2(y-2)}}.
+$$$$
+  \log h(y) = \log \frac{e^{-y^2/2}}{2e^{-2(y-2)}} = -\frac{1}{2}y^2 + 2(y-2).
+$$$$
+\begin{align*}
+  c = h(2) &= \frac{k(2)}{g(2)}\\
+           &= \frac{1}{2e^2}.
+\end{align*}
+$$$$
+  u \leq \frac{k(y)}{g(y)} = e^{-(y-2)^2/2}.
+$$<p>Here is the code that implements our sampling method for $f$ using
+acceptance-rejection sampling:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># the proposed density we can easily sample from</span>
+</span></span><span style="display:flex;"><span>g <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(y)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">-2</span><span style="color:#f92672">*</span>(y<span style="color:#ae81ff">-2</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># inverse transform method for sampling from g</span>
+</span></span><span style="display:flex;"><span>rg <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">-0.5</span><span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span><span style="color:#a6e22e">runif</span>(n))<span style="color:#ae81ff">+2</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rf <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rg</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>      u <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span>(y<span style="color:#ae81ff">-2</span>)^2<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        data[i] <span style="color:#f92672">&lt;-</span> y
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  data
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>k <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(y)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span>y^2<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>f <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(y)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># normalizing constant</span>
+</span></span><span style="display:flex;"><span>  Z <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">17.5358</span>
+</span></span><span style="display:flex;"><span>  Z<span style="color:#f92672">*</span><span style="color:#a6e22e">k</span>(y)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To verify the sampling method, we drawn $n=10000$ samples from $f$ and plot its histogram along with a plot of its density function $f$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rf</span>(<span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span>ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">10</span>,by<span style="color:#f92672">=</span><span style="color:#ae81ff">.1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(data,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(x<span style="color:#f92672">=</span>ys,<span style="color:#a6e22e">f</span>(ys),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>) 
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+<p>The histogram seems compatible with the pdf $f$.</p>
+<h1 id="problem-2-5-points">Problem 2 (5 points)</h1>
+<p>Implement your accept-reject algorithm to get a sample of 10000 from $\mathrm{Gamma}(2.5, 1)$. Verify that your method works via a plot of the true normalized density, and a histogram of the generated values.</p>
+<h2 id="solution-2">Solution</h2>
+<p>This is not the approach you were looking for, but on the test I did
+poorly on this section.</p>
+<p>Be that as it may, here is essentially my answer on the test, except that the solution is so slow that I decreased $c$ so that, at the extreme tail of the distribution, $f(y) / c g(y) &gt; 1$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>alpha <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2.5</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(alpha)
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">&lt;-</span> a <span style="color:#f92672">/</span> alpha
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rgamma</span>(n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,shape<span style="color:#f92672">=</span>a,scale<span style="color:#f92672">=</span>b)
+</span></span><span style="display:flex;"><span>    u <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    P <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dgamma</span>(y,shape<span style="color:#f92672">=</span>alpha,scale<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">/</span> (c<span style="color:#f92672">*</span><span style="color:#a6e22e">dgamma</span>(y,shape<span style="color:#f92672">=</span>a,scale<span style="color:#f92672">=</span>b))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (u <span style="color:#f92672">&lt;</span> P)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      ys[i] <span style="color:#f92672">&lt;-</span> y
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(ys,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(x<span style="color:#f92672">=</span><span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">.01</span>,<span style="color:#ae81ff">10</span>,by<span style="color:#f92672">=</span><span style="color:#ae81ff">.05</span>),y<span style="color:#f92672">=</span><span style="color:#a6e22e">dgamma</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">.01</span>,<span style="color:#ae81ff">10</span>,by<span style="color:#f92672">=</span><span style="color:#ae81ff">.05</span>),shape<span style="color:#f92672">=</span>alpha,scale<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>),col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></p>
+<h1 id="problem-3-30-points">Problem 3 (30 points)</h1>
+<p>Considers $197$ animals randomly divided into four categories (four phenotypes) as follows:
+$X = (x1, x2, x3, x4)^T$ with cell probabilities $(1/2 + θ/4,(1 − θ)/4,(1 − θ)/4, θ/4)^T$. We observe $X = (125, 18, 20, 34)^T$.</p>
+<h2 id="part-a-1">Part (a)</h2>
+<p>Hand code your algorithm using Newton-Ralphson to find the maximum likelihood estimator of $θ$ directly from the observed likelihood. Compare your result with
+what you get using the built-in $\mathrm{optim}()$ function in R.</p>
+<h3 id="solution-3">Solution</h3>
+$$
+  \ell(\theta | \vec{x}) = x_1 \log\left(\frac{1}{2}+\frac{\theta}{4}\right) + x_2 \log\left(\frac{1-\theta}{4}\right) + x_3 \log\left(\frac{1-\theta}{4}\right) + x_4 \log\left(\frac{\theta}{4}\right).
+$$$$
+  \theta^{(t+1)} = \theta^{(t)} - \frac{d \ell / d \theta}{d^2 \ell / d \theta^2}
+$$$$
+  \frac{d \ell}{d \theta} = \frac{x_1}{\theta+2} + \frac{x_2}{\theta-1} + \frac{x_3}{\theta-1} + \frac{x_4}{\theta}
+$$$$
+  \frac{d^2 \ell}{d \theta^2} = -\frac{x_1}{(\theta+2)^2} - \frac{x_2}{(\theta-1)^2} - \frac{x_3}{(\theta-1)^2} - \frac{x_4}{\theta^2}.
+$$<p>Instead of taking the time to simplify this expression, we will just substitute these derivations into the updating equation in the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>l1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta,x)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  x[1]<span style="color:#f92672">/</span>(theta<span style="color:#ae81ff">+2</span>) <span style="color:#f92672">+</span> (x[2]<span style="color:#f92672">+</span>x[3])<span style="color:#f92672">/</span>(theta<span style="color:#ae81ff">-1</span>) <span style="color:#f92672">+</span> x[4]<span style="color:#f92672">/</span>theta
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>l2 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta,x)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>x[1]<span style="color:#f92672">/</span>(theta<span style="color:#ae81ff">+2</span>)^2 <span style="color:#f92672">-</span> (x[2]<span style="color:#f92672">+</span>x[3])<span style="color:#f92672">/</span>(theta<span style="color:#ae81ff">-1</span>)^2 <span style="color:#f92672">-</span> x[4]<span style="color:#f92672">/</span>theta^2
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>theta_mle <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x, start <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, eps <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e-6</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  i <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  theta0 <span style="color:#f92672">&lt;-</span> start
+</span></span><span style="display:flex;"><span>  theta1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    theta1 <span style="color:#f92672">&lt;-</span> theta0 <span style="color:#f92672">-</span> <span style="color:#a6e22e">l1</span>(theta0,x) <span style="color:#f92672">/</span> <span style="color:#a6e22e">l2</span>(theta0,x)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">abs</span>(theta1<span style="color:#f92672">-</span>theta0) <span style="color:#f92672">&lt;</span> eps) { <span style="color:#66d9ef">break</span> }
+</span></span><span style="display:flex;"><span>    theta0 <span style="color:#f92672">&lt;-</span> theta1
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">&lt;-</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(mle<span style="color:#f92672">=</span>theta1,iterations<span style="color:#f92672">=</span>i)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We invoke the updating equations on the given data to estimate $\theta$ with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># observed data</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">125</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">34</span>)
+</span></span><span style="display:flex;"><span>sol <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">theta_mle</span>(x<span style="color:#f92672">=</span>x, start<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, eps<span style="color:#f92672">=</span><span style="color:#ae81ff">1e-6</span>)
+</span></span><span style="display:flex;"><span>mle <span style="color:#f92672">&lt;-</span> sol<span style="color:#f92672">$</span>mle
+</span></span><span style="display:flex;"><span>mle_iterations <span style="color:#f92672">&lt;-</span> sol<span style="color:#f92672">$</span>iterations
+</span></span></code></pre></div><p>We see that the MLE converges to a solution around $0.6268215$ after $3$.
+We compare this result with the built-in procedure, $\rm{optim}$:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># the function to maximize, the log-likelihood function</span>
+</span></span><span style="display:flex;"><span>loglike <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  x[1]<span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0.5</span><span style="color:#f92672">+</span>theta<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>) <span style="color:#f92672">+</span> x[2]<span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0.25</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>theta)) <span style="color:#f92672">+</span> x[3]<span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0.25</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>theta)) <span style="color:#f92672">+</span> x[4]<span style="color:#f92672">*</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0.25</span><span style="color:#f92672">*</span>theta)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># since optim finds the value that minimizes the function, we provide it with</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the negative of the log-likelihood.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">optim</span>(<span style="color:#ae81ff">0.5</span>,<span style="color:#66d9ef">function</span>(theta) { <span style="color:#f92672">-</span><span style="color:#a6e22e">loglike</span>(theta) },lower<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>,upper<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>,method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;L-BFGS-B&#34;</span>)<span style="color:#f92672">$</span>par
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.626821
+</code></pre><p>The value $\mathrm{optim}$ found is approximately the same. It was fussy with explicitly providing upper and lower bounds. This warrants further investigation, but for another time.</p>
+<h2 id="part-b-1">Part (b)</h2>
+<p>Implement the E-M algorithm to find the the maximum likelihood estimator of $θ$ with the ``augmented&rsquo;&rsquo; data with missing information $Z = y_2$. Compare your result with part (a).</p>
+<h3 id="solution-4">Solution</h3>
+$$
+  \vec{y} = (y_1, y_2, y_3, y_4, y_5)^T
+$$<p>
+with cell probabilities $(1/2, θ/4,(1 − θ)/4,(1 − θ)/4, θ/4)^T$.</p>
+$$
+  f(\vec{y}|\theta) \propto \prod_{i=1}^{5} \pi_i(\theta)^{y_i}
+$$$$
+  \vec{\pi}(\theta) = (1/2, θ/4,(1 − θ)/4,(1 − θ)/4, θ/4)^T.
+$$$$
+  \log f(\vec{y} | \theta) = \sum_{i=1}^{5} y_i \log \pi_i(\theta)
+$$$$
+  \log f(\vec{y} | \theta) = k(\vec{y}) + y_2 \log(\theta) + y_3 \log(1-\theta) + y_4 \log(1-\theta) + y_5 \log \theta.
+$$<h3 id="e-step">E-step</h3>
+$$
+  Q(\theta|\theta^{(t)}) = E_{Z|\vec{x},\theta^{(t)}}(\log f(\vec{y}|\theta)),
+$$$$
+  Q(\theta|\theta^{(t)})= E_{Z|\vec{x},|\theta^{(t)}}\left(y_2 \log(\theta) + y_3 \log(1-\theta) + y_4 \log(1-\theta) + y_5 \log \theta\right)
+$$$$
+\begin{split}
+Q(\theta|\theta^{(t)})
+  = E_{Z|\vec{x},|\theta^{(t)}}(y_2) & \log(\theta) + E_{Z|\vec{x},|\theta^{(t)}}(y_3) \log(1-\theta) +\\
+    & E_{Z|\vec{x},|\theta^{(t)}}(y_4) \log(1-\theta) + E_{Z|\vec{x},|\theta^{(t)}}(y_5) \log \theta.
+\end{split}
+$$$$
+  E_{Z|\vec{x}}(y_3) = x_2.
+$$$$
+  Z | (\vec{x},\theta^{(t)}) \sim \rm{BIN}(x_1, \frac{\theta^{(t)}}{2+\theta^{(t)}}).
+$$$$
+  E_{Z|\vec{x},|\theta^{(t)}}(y_2) = \frac{x_1 \theta^{(t)}}{2+\theta^{(t)}}.
+$$$$
+  Q(\theta|\theta^{(t)}) = \frac{x_1 \theta^{(t)}}{2+\theta^{(t)}} \log(\theta) + x_2 \log(1-\theta) + x_3 \log(1-\theta) + x_4 \log \theta.
+$$<h3 id="m-step">M-step</h3>
+$$
+ \theta^{(t+1)} = \argmax_{\theta} Q(\theta|\theta^{(t)}),
+$$$$
+  \frac{d Q(\theta|\theta^{(t)})}{d \theta}\biggr|_{\theta = \theta^{(t+1)}} = 0.
+$$$$
+  \frac{d Q}{d \theta} = \frac{125 \theta^{(t)}}{2+\theta^{(t)}} - \frac{38}{1-\theta}
+    - \frac{34}{\theta} = 0
+$$$$
+  \theta^{(t+1)} = \frac{159 \theta^{(t)} + 68}{197 \theta^{(t)} + 144}.
+$$$$
+  \hat\theta_{\mathrm{EM}} = \lim_n \theta^{(t)}.
+$$<p>We implement the EM algorithm in the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>theta0 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">.5</span>
+</span></span><span style="display:flex;"><span>theta1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  theta1 <span style="color:#f92672">&lt;-</span> (<span style="color:#ae81ff">159</span><span style="color:#f92672">*</span>theta0 <span style="color:#f92672">+</span> <span style="color:#ae81ff">68</span>)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">197</span><span style="color:#f92672">*</span>theta0 <span style="color:#f92672">+</span> <span style="color:#ae81ff">144</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;theta[&#34;</span>,i,<span style="color:#e6db74">&#34;] = &#34;</span>, theta1,<span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">abs</span>(theta1<span style="color:#f92672">-</span>theta0) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e-6</span>) { <span style="color:#66d9ef">break</span> }
+</span></span><span style="display:flex;"><span>  theta0 <span style="color:#f92672">&lt;-</span> theta1
+</span></span><span style="display:flex;"><span>  i <span style="color:#f92672">&lt;-</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code>## theta[ 1 ] =  0.6082474 
+## theta[ 2 ] =  0.6243211 
+## theta[ 3 ] =  0.6264889 
+## theta[ 4 ] =  0.6267773 
+## theta[ 5 ] =  0.6268156 
+## theta[ 6 ] =  0.6268207 
+## theta[ 7 ] =  0.6268214
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(theta1)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.6268214
+</code></pre><p>We see the standard MLE $\hat\theta_{\rm{mle}}$ and $\hat\theta_{\rm{EM}}$ both obtain the same solution up to $6$ decimal places when using the
+same starting value and stopping condition. However, $\hat\theta_{\rm{EM}}$ required more iterations before convergence, which was expected given that the EM algorithm is of linear order while the MLE using Newton-raphson is of quadratic order. However, the EM algorithm does have the benefit of a less complex updating equation.</p>
+<h2 id="part-c">Part (c)</h2>
+<p>Find the standard error of the MLE using either a numerical calculation of the inverse of the
+observed fisher’s information, i.e $[−l”(ˆθ)]^{−1}$, or using Louis’ Method.</p>
+<h3 id="solution-5">Solution</h3>
+<p>We already have the second derivative of the log-likelihood, so we choose to use
+the observed Fisher information evaluated at $\theta = \theta_{\rm{mle}}$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>obs_fisher <span style="color:#f92672">&lt;-</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">l2</span>(mle,x)
+</span></span><span style="display:flex;"><span>var_mle <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> obs_fisher
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sqrt</span>(var_mle)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 0.05146735
+</code></pre><p>We see that an estimate of standard error of the MLE is $\mathrm{sd}(\hat{\theta}_{\rm{mle}}) = 0.0514673$.</p>
+<h1 id="problem-4-10-points-">Problem 4 (10 points )</h1>
+<p>Consider the density $f(x) ∝ 3e^{−0.5(x+2)^2} + 7e^{−0.5(x−2)^2}$ (problems 6, Homework 1).</p>
+<h2 id="part-a-2">Part (a)</h2>
+<p>Compute the exact normalizing constant, both in closed form using $\pi$ (pencil and paper), and also to 5 decimal places (by evaluating the exact version in R).</p>
+<h3 id="solution-6">Solution</h3>
+$$
+  f(x) \propto \ker(x)
+$$$$
+  \rm{ker}(x) = 3 e^{-0.5(x+2)^2} + 7 e^{-0.5(x-2)^2}
+$$$$
+  \int_{-\infty}^{\infty} \frac{1}{C} \ker(x) dx = 1.
+$$$$
+  C = \int_{-\infty}^{\infty} 3 e^{-0.5(x+2)^2} dx + \int_{-\infty}^{\infty} 7 e^{-0.5(x-2)^2} dx.
+$$$$
+  C = 3 \sqrt{2 \pi} \int_{-\infty}^{\infty} \frac{e^{-0.5(x+2)^2}}{\sqrt{2 \pi}} dx + 7 \sqrt{2 \pi} \int_{-\infty}^{\infty} \frac{e^{-0.5(x-2)^2}}{\sqrt{2 \pi}} dx
+$$$$
+  C = 3 \sqrt{2 \pi} \int_{-\infty}^{\infty} \phi(x+2) dx + 7 \sqrt{2 \pi} \int_{-\infty}^{\infty} \phi(x-2) dx.
+$$$$
+  C = 3 \sqrt{2 \pi} + 7 \sqrt{2 \pi} = 10 \sqrt{2 \pi}
+$$<p>
+is the normalizing constant, which is 25.06628 to $5$ decimal places.</p>
+<p>Using R&rsquo;s numerical integrator, we get the result:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>C <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">*</span><span style="color:#a6e22e">sqrt</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#66d9ef">pi</span>)
+</span></span><span style="display:flex;"><span>ker <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">-0.5</span><span style="color:#f92672">*</span>(x<span style="color:#ae81ff">+2</span>)^2) <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">-0.5</span><span style="color:#f92672">*</span>(x<span style="color:#ae81ff">-2</span>)^2) }
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">integrate</span>(ker,lower <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#66d9ef">Inf</span>, upper <span style="color:#f92672">=</span> <span style="color:#66d9ef">Inf</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(res)
+</span></span></code></pre></div><pre tabindex="0"><code>## 25.06628 with absolute error &lt; 4e-05
+</code></pre><h2 id="part-b-2">Part (b)</h2>
+<p>Approximate this integral with a Simpson’s rule to three decimal places.
+What is the effective range and number of subintervals required?</p>
+<h3 id="solution-7">Solution</h3>
+<p>Simpson&rsquo;s rule is implemented by the following R code.
+Note that we did not bother to optimize it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># simpson : numerical integrator applying simpson&#39;s rule to n subintervals</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># over the range (a,b).</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># arguments;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   f : the function to integrate</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   a : the lower-bound</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   b : the upper-bound. (a,b) together discrete the range.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   n : the number of subintervals to partition the range</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># we evenly partition the range into n subintervals of size (b-a)/n</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and apply simson&#39;s rule to each subinterval. then, we accumulate these</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># values and return the result.</span>
+</span></span><span style="display:flex;"><span>simpson <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(f, a, b, n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    h <span style="color:#f92672">&lt;-</span> (b<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>n
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">&lt;-</span> a
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      s <span style="color:#f92672">&lt;-</span> s <span style="color:#f92672">+</span> <span style="color:#a6e22e">f</span>(x) <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">f</span>(x<span style="color:#f92672">+</span>h) <span style="color:#f92672">+</span> <span style="color:#a6e22e">f</span>(x<span style="color:#ae81ff">+2</span><span style="color:#f92672">*</span>h)
+</span></span><span style="display:flex;"><span>      x <span style="color:#f92672">&lt;-</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>h
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    s<span style="color:#f92672">*</span>h<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To test effective range and subintervals, we decided to make a program that exhaustively searches for the minimum range and number of subintervals over a discrete set of points. In particular, we search for a range of the form $(-r,r)$ that is symmetric and an even $n$. It is not perfect, but it seems like a reasonable way to estimate these requirements.</p>
+<p>Here is the R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>R <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>N <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>found <span style="color:#f92672">&lt;-</span> F
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (r <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (n <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">simpson</span>(ker,<span style="color:#f92672">-</span>r<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>,r<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>n)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">abs</span>(res <span style="color:#f92672">-</span> C) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.001</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      R <span style="color:#f92672">&lt;-</span> r<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>      N <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>n
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;r = +-&#34;</span>, R, <span style="color:#e6db74">&#34;, n = &#34;</span>, N, <span style="color:#e6db74">&#34;, C = &#34;</span>, res, <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>      found <span style="color:#f92672">&lt;-</span> T
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (found) { <span style="color:#66d9ef">break</span> }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code>## r = +- 5.9 , n =  16 , C =  25.06603
+</code></pre><p>The minimum range $(-r,r)$, $r &gt; 0$, when divided into $n$ subintervals,
+that is the same as the true value $10 \sqrt{2\pi}$ to $3$ decimal places
+is given by $r = 5.9$ and $n = 16$.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

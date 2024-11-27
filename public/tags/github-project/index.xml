@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub Project on metafunctor</title>
+    <link>http://localhost:1313/tags/github-project/</link>
+    <description>Recent content in GitHub Project on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 09:29:11 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/github-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bernoulli_data_type</title>
+      <link>http://localhost:1313/ghprojects/bernoulli_data_type/</link>
+      <pubDate>Mon, 14 Jan 2019 09:29:11 +0000</pubDate>
+      <guid>http://localhost:1313/ghprojects/bernoulli_data_type/</guid>
+      <description>&lt;h1 id=&#34;bernoulli_data_type&#34;&gt;bernoulli_data_type&lt;/h1&gt;&#xA;&lt;p&gt;Bernoulli data type&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/bernoulli_data_type&#34;&gt;GitHub Link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages Used&lt;/strong&gt;: Mathematica, TeX, Jupyter Notebook, C++, HTML, JavaScript, CSS, Gnuplot, Shell, Makefile, R&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://queelius.github.io/bernoulli_data_type/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This is a repo that I will use to develop my Bernoulli data type concept, which is a general framework for understanding and constructing&#xA;a lot of interesting new data types and compuational trade-offs. It can also be used as a foundation for constructing oblivious programs&#xA;as a composition of oblivious data types / obvious functions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

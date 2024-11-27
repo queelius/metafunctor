@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/publications/cs-thesis/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/publications/cs-thesis/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="publications">
+    <meta property="article:published_time" content="2015-05-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2015-05-01T00:00:00+00:00">
+    <meta property="article:tag" content="Encrypted Search">
+    <meta property="article:tag" content="Secure Index">
+    <meta property="article:tag" content="Information Retrieval">
+    <meta property="article:tag" content="Confidentiality">
+    <meta property="article:tag" content="Thesis">
+    <meta property="article:tag" content="Siue">
+
+  <meta itemprop="name" content="Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents">
+  <meta itemprop="datePublished" content="2015-05-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2015-05-01T00:00:00+00:00">
+  <meta itemprop="keywords" content="Encrypted Search,Secure Index,Information Retrieval,Confidentiality,Thesis,Siue">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="publication" style="padding: 2rem; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+      
+      <header style="border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents</h1>
+        <h2 style="color: #888; font-size: 1.5rem;"></h2>
+        <p style="color: #888; font-size: 1rem;">Published on May 1, 2015</p>
+          
+          <div style="color: #888; font-size: 1rem;">Authors:</div>
+          <div style="margin-left: 1.5rem; color: #888; font-size: 1rem; margin-top: 1rem;">
+            
+              <span>
+                Alex Towell
+                
+                (<a href="mailto:lex@metafunctor.com" style="color: #007acc; text-decoration: none;" onmouseover="this.style.color='#005f99';" onmouseout="this.style.color='#007acc';">lex@metafunctor.com</a>)
+                
+              </span><br>
+            
+          </div>
+          
+
+      </header>
+
+
+      
+      
+      <section style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; font-weight: 600; color: #007acc;">Abstract</h2>
+        <p style="color: #555; font-size: 1.1rem; line-height: 1.6;">Encrypted Search, a technique for securely searching documents on untrusted systems. The author designs and compares several secure index types to determine their performance in terms of time complexity, space complexity, and retrieval accuracy. The study also examines the risk to confidentiality posed by storing frequency and proximity information and suggests ways to mitigate the risk. Additionally, the author investigates the impact of false positives and secure index poisoning on performance and confidentiality. Finally, the thesis explores techniques to protect against adversaries with access to encrypted query histories, such as query obfuscation.</p>
+      </section>
+      
+
+      
+      
+      <section style="margin-bottom: 1.5rem;">
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          
+          <a href="https://www.proquest.com/docview/1733690805/DACA46AB482C4266PQ/1" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-size: 1rem; transition: background-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.backgroundColor='#005f99'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.backgroundColor='#007acc'; this.style.boxShadow='none';">
+            ProQuest
+          </a>
+          
+          <a href="https://www.github.com/queelius/encrypted_search" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-size: 1rem; transition: background-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.backgroundColor='#005f99'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.backgroundColor='#007acc'; this.style.boxShadow='none';">
+            GitHub
+          </a>
+          
+          <a href="/uploads/alex_towell_cs_thesis_proquest.pdf" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-size: 1rem; transition: background-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.backgroundColor='#005f99'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.backgroundColor='#007acc'; this.style.boxShadow='none';">
+            PDF
+          </a>
+          
+        </div>
+      </section>
+      
+
+      
+      
+      <div style="margin-top: 1.5rem;">
+        
+        <a href="/tags/encrypted-search"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #Encrypted search
+        </a>
+        
+        <a href="/tags/secure-index"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #Secure index
+        </a>
+        
+        <a href="/tags/information-retrieval"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #Information retrieval
+        </a>
+        
+        <a href="/tags/confidentiality"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #Confidentiality
+        </a>
+        
+        <a href="/tags/thesis"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #Thesis
+        </a>
+        
+        <a href="/tags/siue"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #SIUe
+        </a>
+        
+      </div>
+      
+
+    </div>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

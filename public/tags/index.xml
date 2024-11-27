@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on metafunctor</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Aug 2024 12:12:03 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Mon, 26 Aug 2024 12:12:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>http://localhost:1313/tags/project/</link>
+      <pubDate>Mon, 26 Aug 2024 12:12:03 +0000</pubDate>
+      <guid>http://localhost:1313/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Celestial Mechanics</title>
+      <link>http://localhost:1313/tags/celestial-mechanics/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/celestial-mechanics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Science</title>
+      <link>http://localhost:1313/tags/computer-science/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpu</title>
+      <link>http://localhost:1313/tags/gpu/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multiplayer</title>
+      <link>http://localhost:1313/tags/multiplayer/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multiplayer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multiprocessor Synchronization</title>
+      <link>http://localhost:1313/tags/multiprocessor-synchronization/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multiprocessor-synchronization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N-Body Simulation</title>
+      <link>http://localhost:1313/tags/n-body-simulation/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/n-body-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Octree</title>
+      <link>http://localhost:1313/tags/octree/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/octree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physics</title>
+      <link>http://localhost:1313/tags/physics/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Potential Energy Function</title>
+      <link>http://localhost:1313/tags/potential-energy-function/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/potential-energy-function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sandbox Game</title>
+      <link>http://localhost:1313/tags/sandbox-game/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sandbox-game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Space Simulation</title>
+      <link>http://localhost:1313/tags/space-simulation/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/space-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Training</title>
+      <link>http://localhost:1313/tags/ai-training/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai-training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algebra</title>
+      <link>http://localhost:1313/tags/algebra/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/algebra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://localhost:1313/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calculus</title>
+      <link>http://localhost:1313/tags/calculus/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/calculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Generation</title>
+      <link>http://localhost:1313/tags/data-generation/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-generation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Explainable AI</title>
+      <link>http://localhost:1313/tags/explainable-ai/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/explainable-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLMs</title>
+      <link>http://localhost:1313/tags/llms/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/tags/mathematics/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reasoning</title>
+      <link>http://localhost:1313/tags/reasoning/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reasoning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synthetic Data</title>
+      <link>http://localhost:1313/tags/synthetic-data/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/synthetic-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithms</title>
+      <link>http://localhost:1313/tags/algorithms/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Management</title>
+      <link>http://localhost:1313/tags/data-management/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Manipulation</title>
+      <link>http://localhost:1313/tags/data-manipulation/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-manipulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FlatTree</title>
+      <link>http://localhost:1313/tags/flattree/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flattree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FlatTreeNode</title>
+      <link>http://localhost:1313/tags/flattreenode/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flattreenode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JMESPath</title>
+      <link>http://localhost:1313/tags/jmespath/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jmespath/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Model Querying</title>
+      <link>http://localhost:1313/tags/model-querying/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/model-querying/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ollama Models</title>
+      <link>http://localhost:1313/tags/ollama-models/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ollama-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy Node</title>
+      <link>http://localhost:1313/tags/proxy-node/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/proxy-node/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regex Filters</title>
+      <link>http://localhost:1313/tags/regex-filters/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/regex-filters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Development</title>
+      <link>http://localhost:1313/tags/software-development/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/software-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tree Structures</title>
+      <link>http://localhost:1313/tags/tree-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tree-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TreeNode</title>
+      <link>http://localhost:1313/tags/treenode/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/treenode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bootstrap Method</title>
+      <link>http://localhost:1313/tags/bootstrap-method/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bootstrap-method/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Generating-Process</title>
+      <link>http://localhost:1313/tags/data-generating-process/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-generating-process/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inductive Bias</title>
+      <link>http://localhost:1313/tags/inductive-bias/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inductive-bias/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infini-Gram Model</title>
+      <link>http://localhost:1313/tags/infini-gram-model/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/infini-gram-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Large Language Models</title>
+      <link>http://localhost:1313/tags/large-language-models/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/large-language-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Likelihood-Models</title>
+      <link>http://localhost:1313/tags/likelihood-models/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/likelihood-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maximum-Likelihood-Estimation</title>
+      <link>http://localhost:1313/tags/maximum-likelihood-estimation/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maximum-likelihood-estimation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N-Gram Models</title>
+      <link>http://localhost:1313/tags/n-gram-models/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/n-gram-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Out-of-Distribution Generalization</title>
+      <link>http://localhost:1313/tags/out-of-distribution-generalization/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/out-of-distribution-generalization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistics</title>
+      <link>http://localhost:1313/tags/statistics/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autoregressive Models</title>
+      <link>http://localhost:1313/tags/autoregressive-models/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/autoregressive-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Instrumental Goals</title>
+      <link>http://localhost:1313/tags/instrumental-goals/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/instrumental-goals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latent Codes</title>
+      <link>http://localhost:1313/tags/latent-codes/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latent-codes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latent Space</title>
+      <link>http://localhost:1313/tags/latent-space/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latent-space/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>http://localhost:1313/tags/reinforcement-learning/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colab</title>
+      <link>http://localhost:1313/tags/colab/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/colab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elastic Search</title>
+      <link>http://localhost:1313/tags/elastic-search/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/elastic-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elasticsearch</title>
+      <link>http://localhost:1313/tags/elasticsearch/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N-Gram Model</title>
+      <link>http://localhost:1313/tags/n-gram-model/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/n-gram-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Natural Language Search</title>
+      <link>http://localhost:1313/tags/natural-language-search/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/natural-language-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Presentation</title>
+      <link>http://localhost:1313/tags/presentation/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/presentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sluug</title>
+      <link>http://localhost:1313/tags/sluug/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sluug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorthmic Data</title>
+      <link>http://localhost:1313/tags/algorthmic-data/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/algorthmic-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Domain-Specific Language</title>
+      <link>http://localhost:1313/tags/domain-specific-language/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/domain-specific-language/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fine-Tuning</title>
+      <link>http://localhost:1313/tags/fine-tuning/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fine-tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foundation Models</title>
+      <link>http://localhost:1313/tags/foundation-models/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/foundation-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Information Retrieval</title>
+      <link>http://localhost:1313/tags/information-retrieval/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/information-retrieval/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Json</title>
+      <link>http://localhost:1313/tags/json/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/json/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Likelihood-Contributions-Model</title>
+      <link>http://localhost:1313/tags/likelihood-contributions-model/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/likelihood-contributions-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markov Models</title>
+      <link>http://localhost:1313/tags/markov-models/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/markov-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>http://localhost:1313/tags/r/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solomonoff Induction</title>
+      <link>http://localhost:1313/tags/solomonoff-induction/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/solomonoff-induction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bootstrap</title>
+      <link>http://localhost:1313/tags/bootstrap/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Likelihood Model</title>
+      <link>http://localhost:1313/tags/likelihood-model/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/likelihood-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masked Failure Data</title>
+      <link>http://localhost:1313/tags/masked-failure-data/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/masked-failure-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MLE</title>
+      <link>http://localhost:1313/tags/mle/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/tags/publications/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/publications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reliability</title>
+      <link>http://localhost:1313/tags/reliability/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reliability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/tags/research/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Right-Censoring</title>
+      <link>http://localhost:1313/tags/right-censoring/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/right-censoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Series Systems</title>
+      <link>http://localhost:1313/tags/series-systems/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/series-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Siue</title>
+      <link>http://localhost:1313/tags/siue/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/siue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Survival Analysis</title>
+      <link>http://localhost:1313/tags/survival-analysis/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/survival-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>University</title>
+      <link>http://localhost:1313/tags/university/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/university/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weibull Distribution</title>
+      <link>http://localhost:1313/tags/weibull-distribution/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/weibull-distribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cognitive Science</title>
+      <link>http://localhost:1313/tags/cognitive-science/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cognitive-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regularization</title>
+      <link>http://localhost:1313/tags/regularization/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/regularization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Algorithm</title>
+      <link>http://localhost:1313/tags/bernoulli-algorithm/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Boolean</title>
+      <link>http://localhost:1313/tags/bernoulli-boolean/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-boolean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Data-Type</title>
+      <link>http://localhost:1313/tags/bernoulli-data-type/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-data-type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Map</title>
+      <link>http://localhost:1313/tags/bernoulli-map/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Model</title>
+      <link>http://localhost:1313/tags/bernoulli-model/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli-Set</title>
+      <link>http://localhost:1313/tags/bernoulli-set/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bernoulli-set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bloom-Filter</title>
+      <link>http://localhost:1313/tags/bloom-filter/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bloom-filter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probabilistic-Data-Structures</title>
+      <link>http://localhost:1313/tags/probabilistic-data-structures/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/probabilistic-data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fisher-Information Matrix</title>
+      <link>http://localhost:1313/tags/fisher-information-matrix/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fisher-information-matrix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R-Package</title>
+      <link>http://localhost:1313/tags/r-package/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/r-package/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatic-Differentiation</title>
+      <link>http://localhost:1313/tags/automatic-differentiation/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automatic-differentiation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backpropagation</title>
+      <link>http://localhost:1313/tags/backpropagation/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/backpropagation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computational-Graph</title>
+      <link>http://localhost:1313/tags/computational-graph/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/computational-graph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Science</title>
+      <link>http://localhost:1313/tags/data-science/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inference</title>
+      <link>http://localhost:1313/tags/inference/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>http://localhost:1313/tags/optimization/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multivariate Distributions</title>
+      <link>http://localhost:1313/tags/multivariate-distributions/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multivariate-distributions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multivariate Empirical Distribution</title>
+      <link>http://localhost:1313/tags/multivariate-empirical-distribution/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multivariate-empirical-distribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multivariate Normal Distribution</title>
+      <link>http://localhost:1313/tags/multivariate-normal-distribution/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multivariate-normal-distribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probability-Theory</title>
+      <link>http://localhost:1313/tags/probability-theory/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/probability-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Failure-Rate</title>
+      <link>http://localhost:1313/tags/failure-rate/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/failure-rate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hazard</title>
+      <link>http://localhost:1313/tags/hazard/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hazard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latent-Data</title>
+      <link>http://localhost:1313/tags/latent-data/</link>
+      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latent-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masked-Data</title>
+      <link>http://localhost:1313/tags/masked-data/</link>
+      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/masked-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amdhal&#39;s Law</title>
+      <link>http://localhost:1313/tags/amdhals-law/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/amdhals-law/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel Programming</title>
+      <link>http://localhost:1313/tags/parallel-programming/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/parallel-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bifunctor</title>
+      <link>http://localhost:1313/tags/bifunctor/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bifunctor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computation</title>
+      <link>http://localhost:1313/tags/computation/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/computation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Homomorphism</title>
+      <link>http://localhost:1313/tags/homomorphism/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/homomorphism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Mining</title>
+      <link>http://localhost:1313/tags/data-mining/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-mining/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EM Algorithm</title>
+      <link>http://localhost:1313/tags/em-algorithm/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/em-algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monte Carlo Simulation</title>
+      <link>http://localhost:1313/tags/monte-carlo-simulation/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/monte-carlo-simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mutex</title>
+      <link>http://localhost:1313/tags/mutex/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mutex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistical Inference</title>
+      <link>http://localhost:1313/tags/statistical-inference/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statistical-inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symbolic</title>
+      <link>http://localhost:1313/tags/symbolic/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/symbolic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time Series</title>
+      <link>http://localhost:1313/tags/time-series/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/time-series/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computational-Statistics</title>
+      <link>http://localhost:1313/tags/computational-statistics/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/computational-statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Course</title>
+      <link>http://localhost:1313/tags/course/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/course/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coursework</title>
+      <link>http://localhost:1313/tags/coursework/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/coursework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Numerical-Methods</title>
+      <link>http://localhost:1313/tags/numerical-methods/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/numerical-methods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regression-Analysis</title>
+      <link>http://localhost:1313/tags/regression-analysis/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/regression-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simulation</title>
+      <link>http://localhost:1313/tags/simulation/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/simulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistical-Computing</title>
+      <link>http://localhost:1313/tags/statistical-computing/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/statistical-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Project</title>
+      <link>http://localhost:1313/tags/github-project/</link>
+      <pubDate>Mon, 14 Jan 2019 09:29:11 +0000</pubDate>
+      <guid>http://localhost:1313/tags/github-project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Confidentiality</title>
+      <link>http://localhost:1313/tags/confidentiality/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/confidentiality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encrypted Search</title>
+      <link>http://localhost:1313/tags/encrypted-search/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/encrypted-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frequency Attack</title>
+      <link>http://localhost:1313/tags/frequency-attack/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/frequency-attack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moving Average</title>
+      <link>http://localhost:1313/tags/moving-average/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/moving-average/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secure Index</title>
+      <link>http://localhost:1313/tags/secure-index/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/secure-index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thesis</title>
+      <link>http://localhost:1313/tags/thesis/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/thesis/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

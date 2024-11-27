@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Likelihood-Models on metafunctor</title>
+    <link>http://localhost:1313/tags/likelihood-models/</link>
+    <description>Recent content in Likelihood-Models on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/likelihood-models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Master&#39;s project: Reliability Estimation in Series Systems</title>
+      <link>http://localhost:1313/posts/masters-stats-siue-proj/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/masters-stats-siue-proj/</guid>
+      <description>I presented my master&amp;rsquo;s project in October 2023. It was titled &amp;lsquo;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>Autoregressive Models: Inductive Biases and Projections</title>
+      <link>http://localhost:1313/projects/ngram-proj/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ngram-proj/</guid>
+      <description>This paper explores inductive biases and projection functions to enhance out-of-distribution generalization in autoregressive models. With the theory in place, we aim to implement these ideas in Python and develop tests and evaluations to validate our approach.</description>
+    </item>
+    <item>
+      <title>likelihood.model R package</title>
+      <link>http://localhost:1313/projects/likelihood-model/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/likelihood-model/</guid>
+      <description>An API for constructing and working with likelihood models; works well with &lt;code&gt;algebraic.mle&lt;/code&gt; R package</description>
+    </item>
+    <item>
+      <title>likelihood.model.series.md R package</title>
+      <link>http://localhost:1313/projects/likelihood-model-series-md/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/likelihood-model-series-md/</guid>
+      <description>An R package for constructing likelihood models for series systems with masked component cause of failure and other censoring mechanisms.</description>
+    </item>
+    <item>
+      <title>algebraic.mle R package</title>
+      <link>http://localhost:1313/projects/algebraic.mle/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/algebraic.mle/</guid>
+      <description>An API for algebraic maximum likelihood fitting</description>
+    </item>
+    <item>
+      <title>femtograd R package</title>
+      <link>http://localhost:1313/projects/femtograd/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/femtograd/</guid>
+      <description>An R package for backpropagation through a computational graph</description>
+    </item>
+    <item>
+      <title>Reliability Estimation in Series Systems</title>
+      <link>http://localhost:1313/projects/reliability-estimation-in-series-systems/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/reliability-estimation-in-series-systems/</guid>
+      <description>A simulation study is used to assess the sensitivity of the MLE to various parameters like sample size, masking probability, and other so on, using components with Weibull lifetimes arranged in series.</description>
+    </item>
+    <item>
+      <title>algebraic.dist R package</title>
+      <link>http://localhost:1313/projects/algebraic-dist/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/algebraic-dist/</guid>
+      <description>An API for an algebra over distributions</description>
+    </item>
+  </channel>
+</rss>

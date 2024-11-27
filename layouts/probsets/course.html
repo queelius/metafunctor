@@ -1,0 +1,60 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+
+<section style="padding: 1rem 1.5rem;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <!-- Breadcrumb navigation -->
+    <nav style="font-size: 0.875rem; color: #666666; margin-bottom: 1.5rem;">
+      <a href="{{ " /" | relLangURL }}"
+        style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;"
+        onmouseover="this.style.borderColor='#007acc';" onmouseout="this.style.borderColor='transparent';">Home</a> /
+
+      {{ $sections := .Sections }}
+
+      {{ if .Parent }}
+      <a href="{{ .Parent.Permalink }}"
+        style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;"
+        onmouseover="this.style.borderColor='#007acc';" onmouseout="this.style.borderColor='transparent';">{{
+        .Parent.Title }}</a> /
+      {{ end }}
+    </nav>
+
+
+    <!-- Problem Sets / Sub-pages -->
+    <h2 style="font-size: 1.75rem; font-weight: 700; margin-top: 2rem; color: #007acc;">Problem Sets</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      {{ range .Pages }}
+      <li style="padding-bottom: 1.5rem;">
+        <a href="{{ .RelPermalink }}"
+          style="
+            font-size: 1.25rem;
+            text-decoration: none; color: #007acc; font-weight: 600; border-bottom: 1px solid transparent; transition: all 0.3s ease;"
+          onmouseover="this.style.borderColor='#007acc'; this.style.color='#005bb5';"
+          onmouseout="this.style.borderColor='transparent'; this.style.color='#007acc';">
+          {{ .Title }}
+        </a>
+        <p style="font-size: 1rem; margin-top: 0.5rem; color: #666666;">{{ .Summary }}</p>
+      </li>
+      {{ end }}
+    </ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0;">
+      {{ if .Params.tags }}
+      <div style="margin-top: 1.5rem;">
+        <div>
+          {{ range .Params.tags }}
+          <a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}"
+            style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+            onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+            {{ . }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </footer>
+  </div>
+</section>
+
+{{ end }}

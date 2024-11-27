@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <article class="publication" style="padding: 2rem; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+      <!-- Title and Date -->
+      <header style="border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">{{ .Title }}</h1>
+        <h2 style="color: #888; font-size: 1.5rem;">{{ .Params.SubTitle }}</h2>
+        <p style="color: #888; font-size: 1rem;">Published on {{ .Date.Format "January 2, 2006" }}</p>
+          {{ if .Params.authors }}
+          <div style="color: #888; font-size: 1rem;">Authors:</div>
+          <div style="margin-left: 1.5rem; color: #888; font-size: 1rem; margin-top: 1rem;">
+            {{ range .Params.authors }}
+              <span>
+                {{ .name }}
+                {{ if .email }}
+                (<a href="mailto:{{ .email }}" style="color: #007acc; text-decoration: none;" onmouseover="this.style.color='#005f99';" onmouseout="this.style.color='#007acc';">{{ .email }}</a>)
+                {{ end }}
+              </span><br>
+            {{ end }}
+          </div>
+          {{ end }}
+
+      </header>
+
+
+      <!-- Abstract -->
+      {{ if .Params.abstract }}
+      <section style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; font-weight: 600; color: #007acc;">Abstract</h2>
+        <p style="color: #555; font-size: 1.1rem; line-height: 1.6;">{{ .Params.abstract }}</p>
+      </section>
+      {{ end }}
+
+      <!-- Links (ProQuest, GitHub, PDF) -->
+      {{ if .Params.links }}
+      <section style="margin-bottom: 1.5rem;">
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          {{ range .Params.links }}
+          <a href="{{ .url }}" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-size: 1rem; transition: background-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.backgroundColor='#005f99'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.15)';" onmouseout="this.style.backgroundColor='#007acc'; this.style.boxShadow='none';">
+            {{ .name }}
+          </a>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Tags -->
+      {{ if .Params.tags }}
+      <div style="margin-top: 1.5rem;">
+        {{ range .Params.tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+        style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; margin-right: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;"
+        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#ffffff';"
+        onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.color='#007acc';">
+        #{{ . }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </article>
+{{ end }}

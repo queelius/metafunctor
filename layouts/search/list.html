@@ -1,0 +1,111 @@
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+      {{ .Content }}
+    </section>
+
+    <!-- Custom styles for search -->
+    <style>
+      .search-container {
+        margin-top: 2em;
+        text-align: center;
+      }
+      .search-input {
+        padding: 10px;
+        width: 60%;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+      }
+      .search-input:focus {
+        border-color: #007BFF;
+        outline: none;
+      }
+      .search-results {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 2em;
+      }
+      .search-results li {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .search-results li:hover {
+        background-color: #f1f1f1;
+      }
+      .search-results a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #007BFF;
+      }
+      .search-results a:hover {
+        text-decoration: underline;
+      }
+      .search-results .meta {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+      }
+      .search-results .date {
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+
+    <section class="search-container">
+      <h2>Search</h2>
+      <input type="text" id="search-box" placeholder="Search..." class="search-input" onkeyup="search()" />
+      <ul id="results" class="search-results"></ul>
+    </section>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script>
+      let idx;
+      let documents = [];  // Store JSON data
+
+      // Fetch the JSON index and initialize Lunr.js
+      fetch('/index.json')
+        .then(response => response.json())
+        .then(data => {
+          documents = data;  // Store the documents
+          idx = lunr(function () {
+            this.ref('link');
+            this.field('title');
+            this.field('content');
+            this.field('section');
+
+            data.forEach(function (doc) {
+              this.add(doc);
+            }, this);
+          });
+        });
+
+      // Function to handle search
+      function search() {
+        const query = document.getElementById('search-box').value;
+        const results = idx.search(query);
+
+        const resultsContainer = document.getElementById('results');
+        resultsContainer.innerHTML = '';  // Clear previous results
+
+        results.forEach(result => {
+          const doc = documents.find(d => d.link === result.ref);
+
+          const item = document.createElement('li');
+          item.innerHTML = `
+            <a href="${doc.link}">${doc.title}</a>
+            <div class="meta">Section: ${doc.section}</div>
+            <div class="date">${new Date(doc.date).toDateString()}</div>
+          `;
+          resultsContainer.appendChild(item);
+        });
+      }
+    </script>
+  </article>
+{{ end }}

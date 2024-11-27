@@ -1,0 +1,10 @@
+---
+title: "Home"
+description: "Welcome to my website"
+---
+
+## Blog Posts
+{{< post "posts" >}}
+
+## Projects
+{{< pages "projects" >}}

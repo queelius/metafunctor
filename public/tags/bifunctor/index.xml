@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bifunctor on metafunctor</title>
+    <link>http://localhost:1313/tags/bifunctor/</link>
+    <description>Recent content in Bifunctor on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bifunctor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homomorphic computational extensions</title>
+      <link>http://localhost:1313/projects/homomorphic_computational_extensions/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/homomorphic_computational_extensions/</guid>
+      <description>Class of homomorphic monads that &lt;em&gt;extend&lt;/em&gt; algebraic data types in some well-defined way for faciliating faster or more accurate calculations, such as the logarithm trick.</description>
+    </item>
+  </channel>
+</rss>

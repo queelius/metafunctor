@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>bernoulli_data_type | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Bernoulli data type">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/ghprojects/bernoulli_data_type/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/ghprojects/bernoulli_data_type/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="bernoulli_data_type">
+  <meta property="og:description" content="Bernoulli data type">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ghprojects">
+    <meta property="article:published_time" content="2019-01-14T09:29:11+00:00">
+    <meta property="article:modified_time" content="2019-01-14T09:29:11+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+    <meta property="article:tag" content="GitHub Project">
+
+  <meta itemprop="name" content="bernoulli_data_type">
+  <meta itemprop="description" content="Bernoulli data type">
+  <meta itemprop="datePublished" content="2019-01-14T09:29:11+00:00">
+  <meta itemprop="dateModified" content="2019-01-14T09:29:11+00:00">
+  <meta itemprop="wordCount" content="533">
+  <meta itemprop="keywords" content="GitHub,Project,GitHub Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="bernoulli_data_type">
+  <meta name="twitter:description" content="Bernoulli data type">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">bernoulli_data_type</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | January 14, 2019 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/bernoulli_data_type" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="https://queelius.github.io/bernoulli_data_type/" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub Pages
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=bernoulli_data_type&url=http%3a%2f%2flocalhost%3a1313%2fghprojects%2fbernoulli_data_type%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fghprojects%2fbernoulli_data_type%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fghprojects%2fbernoulli_data_type%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <h1 id="bernoulli_data_type">bernoulli_data_type</h1>
+<p>Bernoulli data type</p>
+<p><a href="https://github.com/queelius/bernoulli_data_type">GitHub Link</a></p>
+<p><strong>Stars</strong>: 2 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages Used</strong>: Mathematica, TeX, Jupyter Notebook, C++, HTML, JavaScript, CSS, Gnuplot, Shell, Makefile, R</p>
+<p><a href="https://queelius.github.io/bernoulli_data_type/">GitHub Pages</a></p>
+<h2 id="readme">README</h2>
+<p>This is a repo that I will use to develop my Bernoulli data type concept, which is a general framework for understanding and constructing
+a lot of interesting new data types and compuational trade-offs. It can also be used as a foundation for constructing oblivious programs
+as a composition of oblivious data types / obvious functions.</p>
+<p>I doubt any of it will compile &ndash; I actually hadn&rsquo;t looked at this in years, while I battled sickness and cancer, but now that I&rsquo;m feeling
+better, I&rsquo;m revisting some old projects. Look at my repo for other things I&rsquo;m working on, and <a href="https://metafunctor.com">https://metafunctor.com</a> for my personal web site.</p>
+<p>Here are some markdown files in the repo. I&rsquo;ve throw it all into Doxygen, but I haven&rsquo;t had time to make it work properly yet.
+Here are the files:</p>
+<ul>
+<li><a href="BERNOULLI_MAP.md">Bernoulli Map</a> for info on the most generic type, which can be used to in theory model any computable function.
+We also show how even traditional algorithms, like the Miller-Rabin primality test, can be understood in th framework of the Bernoulli model.
+<ul>
+<li><a href="bernoulli_data_type.pdf">The random approximate values over algebraic types</a>
+<ul>
+<li>I&rsquo;m not sure if this is correct. The markdown files I have should be more up
+to date and more correct, so stick with this for grokking the concept. This PDF
+is more for historical purposes, and to show how I was thinking about it at the time.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="BERNOULLI_BOOL.md">Bernoulli Bool</a> for an example of the simplest Bernoulli type, useful for understanding.</li>
+<li><a href="BERNOULLI_SET.md">Bernoulli Set</a> for information on the most common kind of Bernoulli data type. The Bloom filtr is a special case.
+Here are some PDF files related to this:
+<ul>
+<li><a href="bernoulli.set.pdf">Bernoulli sets: a model for modeling sets with random errors</a> and corresponding random binary classification measures.
+<ul>
+<li>A lot of the material in this section is obsolete, but there is still a lot of good information here.</li>
+</ul>
+</li>
+<li><a href="bernoulli_sets_higher_order.pdf">An algebra of random approximate sets</a> with derivations of higher-order random approximate sets induced by set-theoretic operations on random approximate sets with corresponding random binary classification measures.
+<ul>
+<li>Again, a lot of obsolete content. Much of this comes prior to my generalization of the result for
+Bernoulli types, and before I had a proper appreciation for the correct definition. However, as a separate
+result, if we ignore some of the details, it has a lot of interesting information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="CODEC.md">Codec</a> for more information codecs. I will eventually use this to describe how to automatically generate any Bernoulli map,
+including Cipher maps (Oblivious data type). The idea will be to use the universal Bernoulli map constructor</li>
+<li><a href="REGULAR_TYPE_CONCEPT.md">Regular Type</a> for more information about regular types, and how the Bernoulli model fails this basic requirement
+in many ways. It&rsquo;s not intended as a criticism, because in some ways it&rsquo;s desirable (say in the oblivious type use-case), only to
+explain why some predicates like equality are not necessarily accurate (equality itself return a Bernoulli Boolean).</li>
+</ul>
+<p>See the <a href="docs/html/index.html">API Documentation</a> for more details, but there isn&rsquo;t much there yet. I&rsquo;ll be working
+on the code + doxygen comments soon.</p>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+            <a href="/tags/github-project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub Project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Numerical-Methods on metafunctor</title>
+    <link>http://localhost:1313/tags/numerical-methods/</link>
+    <description>Recent content in Numerical-Methods on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/numerical-methods/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STAT 575 - Computational Statistics - SIUe - Summer 2021</title>
+      <link>http://localhost:1313/probsets/stat575/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/probsets/stat575/</guid>
+      <description>Problem sets and solutions for STAT 575 - Computational Statistics at SIUe.</description>
+    </item>
+  </channel>
+</rss>

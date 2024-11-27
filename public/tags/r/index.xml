@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on metafunctor</title>
+    <link>http://localhost:1313/tags/r/</link>
+    <description>Recent content in R on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Master&#39;s project: Reliability Estimation in Series Systems</title>
+      <link>http://localhost:1313/posts/masters-stats-siue-proj/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/masters-stats-siue-proj/</guid>
+      <description>I presented my master&amp;rsquo;s project in October 2023. It was titled &amp;lsquo;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>likelihood.model R package</title>
+      <link>http://localhost:1313/projects/likelihood-model/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/likelihood-model/</guid>
+      <description>An API for constructing and working with likelihood models; works well with &lt;code&gt;algebraic.mle&lt;/code&gt; R package</description>
+    </item>
+    <item>
+      <title>likelihood.model.series.md R package</title>
+      <link>http://localhost:1313/projects/likelihood-model-series-md/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/likelihood-model-series-md/</guid>
+      <description>An R package for constructing likelihood models for series systems with masked component cause of failure and other censoring mechanisms.</description>
+    </item>
+    <item>
+      <title>algebraic.mle R package</title>
+      <link>http://localhost:1313/projects/algebraic.mle/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/algebraic.mle/</guid>
+      <description>An API for algebraic maximum likelihood fitting</description>
+    </item>
+    <item>
+      <title>femtograd R package</title>
+      <link>http://localhost:1313/projects/femtograd/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/femtograd/</guid>
+      <description>An R package for backpropagation through a computational graph</description>
+    </item>
+    <item>
+      <title>wei.series.md.c1.c2.c3</title>
+      <link>http://localhost:1313/projects/wei-series-md-c1-c2-c3/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wei-series-md-c1-c2-c3/</guid>
+      <description>R package in narrow support of my master&amp;rsquo;s project in reliability estimation for series systems from masked failure data like the component cause of failure being unknown or the failure being censored.</description>
+    </item>
+    <item>
+      <title>algebraic.dist R package</title>
+      <link>http://localhost:1313/projects/algebraic-dist/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/algebraic-dist/</guid>
+      <description>An API for an algebra over distributions</description>
+    </item>
+    <item>
+      <title>R Package: Dynamic failure rate (DFR) distributions</title>
+      <link>http://localhost:1313/projects/dfr-dist/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dfr-dist/</guid>
+      <description>An API for constructing and working with dynamic failure rates.</description>
+    </item>
+    <item>
+      <title>R package: md.tools</title>
+      <link>http://localhost:1313/projects/md.tools/</link>
+      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/md.tools/</guid>
+      <description>An API for constructing and working with likelihood models; works well with &lt;code&gt;algebraic.mle&lt;/code&gt; R package</description>
+    </item>
+    <item>
+      <title>Computational Statistics - SIUe - STAT 575 - Problem Set 2</title>
+      <link>http://localhost:1313/probsets/stat575/stat575-problem-set-2/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/probsets/stat575/stat575-problem-set-2/</guid>
+      <description>This problem set covers the E-M algorithm for right-censored normal data with known variance.</description>
+    </item>
+    <item>
+      <title>SIUe - Computational Statistics (STAT 575) - Problem Set 4</title>
+      <link>http://localhost:1313/probsets/stat575/problem_set_4/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/probsets/stat575/problem_set_4/</guid>
+      <description>This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.</description>
+    </item>
+  </channel>
+</rss>

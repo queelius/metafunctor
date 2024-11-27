@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>SIUe - Computational Statistics (STAT 575) - Problem Set 4 | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/probsets/stat575/problem_set_4/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/probsets/stat575/problem_set_4/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="SIUe - Computational Statistics (STAT 575) - Problem Set 4">
+  <meta property="og:description" content="This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="probsets">
+    <meta property="article:published_time" content="2021-10-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-10-30T00:00:00+00:00">
+    <meta property="article:tag" content="Statistics">
+    <meta property="article:tag" content="R">
+    <meta property="article:tag" content="Computation">
+    <meta property="article:tag" content="Statistical Inference">
+    <meta property="article:tag" content="Monte Carlo Simulation">
+
+  <meta itemprop="name" content="SIUe - Computational Statistics (STAT 575) - Problem Set 4">
+  <meta itemprop="description" content="This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.">
+  <meta itemprop="datePublished" content="2021-10-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-10-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2908">
+  <meta itemprop="keywords" content="Statistics,R,Computation,Statistical Inference,Monte Carlo Simulation">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SIUe - Computational Statistics (STAT 575) - Problem Set 4">
+  <meta name="twitter:description" content="This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        STAT 575 - Computational Statistics - SIUe - Summer 2021
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">SIUe - Computational Statistics (STAT 575) - Problem Set 4</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-10-30T00:00:00Z">October 30, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="problem-1">Problem 1</h1>
+<p>Use Metropolis Hasting algorithm to generate $Y \sim \mathrm{Gamma}(\alpha, 1)$, where $\alpha &gt; 1$. Note $\alpha$ need not to be an integer. Consider the proposal distribution $g$, which is the density of $\mathrm{GAM}(a,b)$, where $a=\lfloor \alpha \rfloor$ and $b = a/\alpha$.</p>
+<hr>
+<h2 id="part-a">Part (a)</h2>
+<p>Implement your accept-reject algorithm and Metropolis-hastings algorithms to get a sample of $10000$ from $Y \sim \mathrm{Gamma}(\alpha=2.5,1)$.</p>
+<hr>
+<h3 id="acceptance-rejection-sampler">Acceptance-rejection sampler</h3>
+<p>We implement the density and sampler functions, respectively $\mathrm{dgamma1}$
+and $\mathrm{rgamma1}$.</p>
+$$
+  f_X(x) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}.
+$$$$
+  Z = \sum_{i=1}^{a} X_i \sim \mathrm{Gamma}(a,b)
+$$<p>
+where $X_i \sim \mathrm{Exponential}(b)$.</p>
+$$
+  c = \max_y \left\{\frac{f_Y(y)}{f_Z(y)}\right\},
+$$<p>
+but in general $c$ must only satisfy $f_Y(y) / c f_Z(y) \leq 1$.</p>
+$$
+  \frac{d}{dy}\log h(y)\Bigr|_{y = y^*} = 0,
+$$$$
+  c = h(y^*) = (\alpha/e)^{\alpha-\lfloor \alpha \rfloor}.
+$$<p>
+Observe that if $\alpha$ is an integer, then $c = 1$ and $h(y) = 1$, in which
+case the target distribution and the candidate distribution are identical.</p>
+<p>We implement the acceptance-rejection algorithm with the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># The density function for random variates in the family</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GAM(shape=alpha,rate=1)</span>
+</span></span><span style="display:flex;"><span>dgamma1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x, alpha) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dgamma</span>(x, shape <span style="color:#f92672">=</span> alpha, rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># An acceptance-rejection sampling procedure for random variates in the family</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GAM(shape=alpha,rate=1)</span>
+</span></span><span style="display:flex;"><span>accept.reject.rgamma1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, alpha) {
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(alpha)
+</span></span><span style="display:flex;"><span>    rate <span style="color:#f92672">&lt;-</span> a<span style="color:#f92672">/</span>alpha
+</span></span><span style="display:flex;"><span>    q <span style="color:#f92672">&lt;-</span> (alpha<span style="color:#f92672">/</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">1</span>))<span style="color:#a6e22e">^</span>(a <span style="color:#f92672">-</span> alpha)
+</span></span><span style="display:flex;"><span>    ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> n)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">repeat</span> {
+</span></span><span style="display:flex;"><span>            y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">rexp</span>(a, rate))  <span style="color:#75715e"># draw candidate</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;=</span> q <span style="color:#f92672">*</span> y<span style="color:#a6e22e">^</span>(alpha <span style="color:#f92672">-</span> a) <span style="color:#f92672">*</span> <span style="color:#a6e22e">exp</span>(y <span style="color:#f92672">*</span> a<span style="color:#f92672">/</span>alpha <span style="color:#f92672">-</span> y)) {
+</span></span><span style="display:flex;"><span>                ys[i] <span style="color:#f92672">&lt;-</span> y
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    ys
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We sample from $\mathrm{Gamma}(2.5,1)$ with the the acceptance-rejection method
+with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>alpha <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2.5</span>
+</span></span><span style="display:flex;"><span>m <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>accept.reject.samp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">accept.reject.rgamma1</span>(m, alpha)
+</span></span></code></pre></div><h3 id="metropolis-hastings-algorithm">Metropolis-Hastings algorithm</h3>
+<p>Here is our implementation of the Metropolis-Hastings algorithm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># A sampling procedure for random variates in the family</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GAM(shape=alpha,rate=1) using Metropolis-Hastings algorithm</span>
+</span></span><span style="display:flex;"><span>metro.hast.rgamma1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, alpha, burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    a <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(alpha)
+</span></span><span style="display:flex;"><span>    rate <span style="color:#f92672">&lt;-</span> a<span style="color:#f92672">/</span>alpha
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># density for random variates in the family GAM(shape=alpha,rate=1)</span>
+</span></span><span style="display:flex;"><span>    f <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dgamma</span>(x, shape <span style="color:#f92672">=</span> alpha, rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    g <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dgamma</span>(x, shape <span style="color:#f92672">=</span> a, rate <span style="color:#f92672">=</span> rate)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> m)
+</span></span><span style="display:flex;"><span>    ys[1] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">rexp</span>(a, rate))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>m) {
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">rexp</span>(a, rate))  <span style="color:#75715e"># draw from g</span>
+</span></span><span style="display:flex;"><span>        u <span style="color:#f92672">&lt;-</span> ys[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        R <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f</span>(v) <span style="color:#f92672">*</span> <span style="color:#a6e22e">g</span>(u)<span style="color:#f92672">/</span>(<span style="color:#a6e22e">f</span>(u) <span style="color:#f92672">*</span> <span style="color:#a6e22e">g</span>(v))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;=</span> R) {
+</span></span><span style="display:flex;"><span>            ys[i] <span style="color:#f92672">&lt;-</span> v
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            ys[i] <span style="color:#f92672">&lt;-</span> u
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    ys<span style="color:#a6e22e">[</span>(burn <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span>m]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We sample from the Metro-Hastings algorithm with the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>metro.hast.samp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">metro.hast.rgamma1</span>(m, alpha)
+</span></span></code></pre></div><hr>
+<h2 id="part-b">Part (b)</h2>
+<p>Check on mixing and convergence using plots. Run multiple chain and compute the
+Gelman-Rubin statistics. You may pick any reasonable burn-in.</p>
+<hr>
+<p>We plot the histograms with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(accept.reject.samp, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;acceptance-rejection&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">15</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), <span style="color:#a6e22e">dgamma1</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">15</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), alpha), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>,
+</span></span><span style="display:flex;"><span>    lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(metro.hast.samp, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;metropolis-hastings&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">15</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), <span style="color:#a6e22e">dgamma1</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">15</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), alpha), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>,
+</span></span><span style="display:flex;"><span>    lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6"></p>
+<p>Both samplers seem to be compatible with the density.</p>
+<p>We plot the \emph{sample path} of the Metropolis-Hastings and acceptance-rejection
+samplers with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(metro.hast.samp, pch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;·&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Y&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;metropolis-hastings&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(accept.reject.samp, pch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;·&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Y&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;acceptance-rejection&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7"></p>
+<p>Both of these look good, as neither remain at or near the same value for
+many iterations. They also both quickly move away from their initial values.</p>
+<p>We plot the ACFs with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(metro.hast.samp)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(accept.reject.samp)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8"></p>
+<p>Both samplers seem to have very little autocorrelation.
+If an uncorrelated sample is extremely important, to be
+safe, taking every other sample point would probably be sufficient.</p>
+<p>We implement the Gelman-Rubin statistic with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># samps: should be an L x J matrix, where L is the length of the samples and J</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># is the number of samples (independent chains).</span>
+</span></span><span style="display:flex;"><span>gelman.rubin <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(samps) {
+</span></span><span style="display:flex;"><span>    L <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">nrow</span>(samps)
+</span></span><span style="display:flex;"><span>    J <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ncol</span>(samps)
+</span></span><span style="display:flex;"><span>    x.bar <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">apply</span>(samps, <span style="color:#ae81ff">2</span>, mean)
+</span></span><span style="display:flex;"><span>    B <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">var</span>(x.bar) <span style="color:#f92672">*</span> L
+</span></span><span style="display:flex;"><span>    W <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(<span style="color:#a6e22e">apply</span>(samps, <span style="color:#ae81ff">2</span>, var))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ((L <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">/</span>L <span style="color:#f92672">*</span> W <span style="color:#f92672">+</span> B<span style="color:#f92672">/</span>L)<span style="color:#f92672">/</span>W
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next, we compute Gelman-Rubin statistics on the computed independence chains.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>chains <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>samps <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow <span style="color:#f92672">=</span> m, ncol <span style="color:#f92672">=</span> chains)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>chains) {
+</span></span><span style="display:flex;"><span>    samps[, i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">metro.hast.rgamma1</span>(m, alpha, burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gelman.rubin.stat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gelman.rubin</span>(samps)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(gelman.rubin.stat)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 1.000007
+</code></pre>$$
+  R = 1.0000065.
+$$$$
+  \sqrt{R} = 1.0000033,
+$$<p>
+and thus are satisfied with our burn-in choice and chain length.</p>
+<hr>
+<h2 id="part-c">Part (c)</h2>
+<p>Estimate $E(Y^2)$ using the generated chain. Compare with the estimate you get with acceptance-rejection sampling (Exam 1).</p>
+<hr>
+$$
+  E(Y^2) = \frac{\Gamma(2+\alpha)}{\Gamma(\alpha)} = \frac{\Gamma(4.5)}{\Gamma(2.5)} = 8.75.
+$$<p>We estimate $E(Y^2)$ using the acceptance-rejection and Metropolis-Hastings
+by taking the square of each element in the samples they generated and then taking
+the mean:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>tab <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rownames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;acceptance-rejection&#34;</span>, <span style="color:#e6db74">&#34;metropolis-hastings&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colnames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;mean&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[1] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">mean</span>(accept.reject.samp^2))
+</span></span><span style="display:flex;"><span>tab[2] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">mean</span>(metro.hast.samp^2))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span><span style="color:#a6e22e">kable</span>(<span style="color:#a6e22e">data.frame</span>(tab))
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: right">mean</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">acceptance-rejection</td>
+          <td style="text-align: right">8.879713</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">metropolis-hastings</td>
+          <td style="text-align: right">8.747732</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Both are quite close to the true value of $8.75$.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="problem-2-problem-71">Problem 2 (Problem 7.1)</h1>
+<p>Rework the textbook example. Consider the mixture normal $\delta N(7,0.5^2) + (1-\delta) N(10,0.5^2)$.</p>
+<hr>
+<h2 id="part-a-1">Part (a)</h2>
+<p>Simulate $200$ realizations from the mixture distribution with $\delta = 0.7$.
+Draw a histogram of these data.</p>
+<hr>
+<p>We implement the density and sampler for the mixture distribution with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dmix <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x, delta) {
+</span></span><span style="display:flex;"><span>    delta <span style="color:#f92672">*</span> <span style="color:#a6e22e">dnorm</span>(x, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">+</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> delta) <span style="color:#f92672">*</span> <span style="color:#a6e22e">dnorm</span>(x, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rmix <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, delta) {
+</span></span><span style="display:flex;"><span>    xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> n)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+</span></span><span style="display:flex;"><span>        xs[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;</span> delta, <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">0.5</span>), <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0.5</span>))
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    xs
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We generate a sample and plot its histogram with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>delta <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.7</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rmix</span>(n, delta)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(data, freq <span style="color:#f92672">=</span> F)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13"></p>
+<hr>
+<h2 id="part-b-1">Part (b)</h2>
+<p>Now assume $\delta$ is unknown. Implement independence chain MCMC procedure to
+simulate from the posterior distribution of $\delta$, using your data from
+part (a).</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>lmix <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Vectorize</span>(<span style="color:#66d9ef">function</span>(delta, xs) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (delta <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> delta <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    p <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (x <span style="color:#66d9ef">in</span> xs) {
+</span></span><span style="display:flex;"><span>        p <span style="color:#f92672">&lt;-</span> p <span style="color:#f92672">*</span> <span style="color:#a6e22e">dmix</span>(x, delta)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    p
+</span></span><span style="display:flex;"><span>}, <span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>logmix <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Vectorize</span>(<span style="color:#66d9ef">function</span>(delta, xs) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (delta <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> delta <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>(<span style="color:#f92672">-</span><span style="color:#66d9ef">Inf</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    logp <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (x <span style="color:#66d9ef">in</span> xs) {
+</span></span><span style="display:flex;"><span>        logp <span style="color:#f92672">&lt;-</span> logp <span style="color:#f92672">+</span> <span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">dmix</span>(x, delta))
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    logp
+</span></span><span style="display:flex;"><span>}, <span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span></code></pre></div>$$
+  p(\delta|\vec{x}) \propto p(\delta) \mathrm{lmix}(\delta|\vec{x}).
+$$$$
+  R = \frac{f(\delta^{*}) g(\delta^{(t)})}{f(\delta^{(t)})g(\delta^{*})} = \frac{p(\delta^{*}|\vec{x}) p(\delta^{(t)})}{p(\delta^{(t)}|\vec{x}) p(\delta^{*})}
+$$$$
+  R = \frac{p(\delta^{*}) \mathrm{lmix}(\delta^{*}|\vec{x}) p(\delta^{(t)})}{p(\delta^{(t)}) \mathrm{lmix}(\delta^{(t)}|\vec{x}) p(\delta^{*})} = \frac{\mathrm{lmix}(\delta^{*}|\vec{x})}{\mathrm{lmix}(\delta^{(t)}|\vec{x})}.
+$$<h3 id="numerical-imprecision">Numerical imprecision</h3>
+<p>Suppose we have a data type $T$ that models real numbers.
+Since computers are physical, $T$ can only represent a finite set of numbers.</p>
+$$
+  \mathrm{lmix} \colon \mathbb{R} \times 2^{\mathbb{R}} \mapsto \mathbb{R},
+$$$$
+  \mathrm{lmix} \colon T \times 2^T \mapsto T,
+$$<p>
+then if the true value of the likelihood function applied to a sufficiently
+large sample is some value $p \in (0,\epsilon)$ where $\epsilon$ is the smallest
+representable positive number of type $T$, the best we can do is round $p$
+to $0$ or $\epsilon$.
+As a consequence, the likelihood function evaluates to $0$ on any sufficiently
+large sample size.</p>
+$$
+  \mathrm{logmix} \colon T \times 2^T \mapsto T
+$$<p>
+then, for instance, $\log_2 \epsilon = -K$ where $-K$ is very likely to be at
+least approximately representatable by $T$, and much smaller values as well.
+We cannot map many of these log-likelihoods back to a likelihood, but as long
+as we only need to work with log-likelihoods, this is not a problem.</p>
+<p>With the above in mind, we replace the likelihood function with the
+log-likelihood function to significantly increase the space of samples we can
+work with.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>delta.estimator.ic <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, data, delta0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>), burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    deltas <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> m)
+</span></span><span style="display:flex;"><span>    deltas[1] <span style="color:#f92672">&lt;-</span> delta0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>m) {
+</span></span><span style="display:flex;"><span>        delta <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># draw candidate from prior</span>
+</span></span><span style="display:flex;"><span>        delta.old <span style="color:#f92672">&lt;-</span> deltas[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        log.R <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">logmix</span>(delta, data) <span style="color:#f92672">-</span> <span style="color:#a6e22e">logmix</span>(delta.old, data)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">&lt;=</span> log.R) {
+</span></span><span style="display:flex;"><span>            deltas[i] <span style="color:#f92672">&lt;-</span> delta
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            deltas[i] <span style="color:#f92672">&lt;-</span> delta.old
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    deltas<span style="color:#a6e22e">[</span>(burn <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span>m]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="part-c-1">Part (c)</h2>
+<p>Implement a random walk chain with $\delta^* = \delta^{(t)} + \epsilon_t$ with
+$\epsilon \sim \mathrm{Uniform}(-1,1)$.</p>
+<hr>
+$$
+  \epsilon_{t+1} \sim f(\delta^* - \delta^{(t)})
+$$<p>
+where $f$ is the density of $\mathrm{Uniform}(-1,1)$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>delta.estimator.rw <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, data, delta0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>), burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    deltas <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> m)
+</span></span><span style="display:flex;"><span>    deltas[1] <span style="color:#f92672">&lt;-</span> delta0
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>m) {
+</span></span><span style="display:flex;"><span>        delta.old <span style="color:#f92672">&lt;-</span> deltas[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        delta <span style="color:#f92672">&lt;-</span> delta.old <span style="color:#f92672">+</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">-1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        log.R <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">logmix</span>(delta, data) <span style="color:#f92672">-</span> <span style="color:#a6e22e">logmix</span>(delta.old, data)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">&lt;=</span> log.R) {
+</span></span><span style="display:flex;"><span>            deltas[i] <span style="color:#f92672">&lt;-</span> delta
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            deltas[i] <span style="color:#f92672">&lt;-</span> delta.old
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    deltas<span style="color:#a6e22e">[</span>(burn <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span>m]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="part-d">Part (d)</h2>
+<p>Reparameterize the problem letting $U = \log\left(\delta/(1-\delta)\right)$ and $U^* = u(t) + \epsilon_t$. Implement a random walk chain with $U$ as in Equation (7.8) page 208.</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>logit <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(delta) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">log</span>(delta<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> delta))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>logit.inv <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(u) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">exp</span>(u)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">exp</span>(u))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>logit.inv.J <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(u) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">exp</span>(u)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">exp</span>(u))^2
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>delta.estimator.u.rw <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, data, delta0 <span style="color:#f92672">=</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>), burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    u <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> m)
+</span></span><span style="display:flex;"><span>    u[1] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">logit</span>(delta0)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>m) {
+</span></span><span style="display:flex;"><span>        u.old <span style="color:#f92672">&lt;-</span> u[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        u.star <span style="color:#f92672">&lt;-</span> u.old <span style="color:#f92672">+</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">-1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        R <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lmix</span>(<span style="color:#a6e22e">logit.inv</span>(u.star), data) <span style="color:#f92672">*</span> <span style="color:#a6e22e">logit.inv.J</span>(u.star)<span style="color:#f92672">/</span>(<span style="color:#a6e22e">lmix</span>(<span style="color:#a6e22e">logit.inv</span>(u.old),
+</span></span><span style="display:flex;"><span>            data) <span style="color:#f92672">*</span> <span style="color:#a6e22e">logit.inv.J</span>(u.old))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;=</span> R) {
+</span></span><span style="display:flex;"><span>            u[i] <span style="color:#f92672">&lt;-</span> u.star
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            u[i] <span style="color:#f92672">&lt;-</span> u.old
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">logit.inv</span>(u<span style="color:#a6e22e">[</span>(burn <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span>m])
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="part-e">Part (e)</h2>
+<p>Compare the estimates and convergence behavior of three algorithms.</p>
+<hr>
+<p>We do not do a burn-in, since we are interested in seeing how quickly the three methods converge. We only plot chains of length $1000$.</p>
+<p>We generate the data sets with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>chain <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>burn <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>deltas.ic <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">delta.estimator.ic</span>(chain, data, burn <span style="color:#f92672">=</span> burn)
+</span></span><span style="display:flex;"><span>deltas.rw <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">delta.estimator.rw</span>(chain, data, burn <span style="color:#f92672">=</span> burn)
+</span></span><span style="display:flex;"><span>deltas.u.rw <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">delta.estimator.u.rw</span>(chain, data, burn <span style="color:#f92672">=</span> burn)
+</span></span><span style="display:flex;"><span>tab <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rownames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;independence chain&#34;</span>, <span style="color:#e6db74">&#34;random walk&#34;</span>, <span style="color:#e6db74">&#34;reparameterized random walk&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colnames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;mu&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[1, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(deltas.ic)
+</span></span><span style="display:flex;"><span>tab[2, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(deltas.rw)
+</span></span><span style="display:flex;"><span>tab[3, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(deltas.u.rw)
+</span></span><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span><span style="color:#a6e22e">kable</span>(<span style="color:#a6e22e">data.frame</span>(tab))
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: right">$\mu$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">independence chain</td>
+          <td style="text-align: right">0.6886690</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">random walk</td>
+          <td style="text-align: right">0.6935625</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">reparameterized random walk</td>
+          <td style="text-align: right">0.6854366</td>
+      </tr>
+  </tbody>
+</table>
+<p>As the table of estimations shows, all three methods provide a good estimate of $\delta$. Next, we consider their convergence and mixing behavior.</p>
+<p>We plot the histograms with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(deltas.ic, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;independence chain&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(deltas.rw, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;random walk&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(deltas.u.rw, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reparameterized random walk&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-19-1.png" alt="plot of chunk unnamed-chunk-19"></p>
+<p>The reparameterized random walk metropolis has a histogram that is most compatible with normality, i.e., characteristic bell curve with a mode at $\delta = 0.7$.
+That said, all three histograms arguably satisfy normality with approximately the same mean at $\delta = 0.7$.</p>
+<p>We plot the sample paths with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(deltas.ic, pch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;·&#34;</span>, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;l&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;delta&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;independence chain&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(deltas.rw, pch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;·&#34;</span>, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;l&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;delta&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;random walk&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(deltas.u.rw, pch <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;·&#34;</span>, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;l&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;t&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;delta&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reparameterized random walk&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-20-1.png" alt="plot of chunk unnamed-chunk-20"></p>
+<p>We see that the random walk demonstrates relatively poor mixing. It has a high rejection rate (stays at the same level for long periods of time), causing it to explore the support of the likelihood slowly.</p>
+<p>The sample path of the indepedence chain also can be said to demonstrate poor mixing.</p>
+<p>The reparameterized random walk exihibits good mixing, vigorously jiggling around the true value.</p>
+<p>We plot the ACFs with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(deltas.ic, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;independence chain&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(deltas.rw, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;random walk&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(deltas.u.rw, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reparameterized random walk&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-21-1.png" alt="plot of chunk unnamed-chunk-21"></p>
+<p>They all decay quickly, but in order of increasing
+autocorrelation: the reparameterized random walk, the independence chain, and the random walk.</p>
+<p>In particular, the reparameterized random walk shows autocorrelation that decays quite rapidly with respect to lag time.</p>
+<h1 id="problem-3">Problem 3</h1>
+<p>Consider an i.i.d. sample $X_1,\ldots,X_n$ from $N(\mu,\sigma^2)$. Consider the Bayesian analysis to estimate $\mu$ and $\tau = (\sigma^2)^{-1}$. We put prior $\mu \sim N(m,p^{-1})$ and $\tau \sim \mathrm{Gamma}(a,b)$.</p>
+<hr>
+<h2 id="part-a-2">Part (a)</h2>
+<p>Write out the posterior distribution of $(\mu,\tau)|\vec{x}$. You may ignore the normalizing constant.</p>
+<hr>
+$$
+  \pi(\mu,\tau|\vec{x}) = f(\vec{x}|\tau,\mu)f(\tau)f(\mu) / Z
+$$$$
+  \pi(\mu,\tau|\vec{x}) \propto L(\tau,\mu|\vec{x})f(\tau)f(\mu).
+$$$$
+  L(\mu,\tau|\vec{x}) = \prod_{i=1}^{n} \frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left\{-\frac{1}{2 \sigma^2}(x_i-\mu)^2\right\}
+$$$$
+  L(\mu,\tau|\vec{x}) = \left(2 \pi \sigma^2\right)^{-n/2} \exp\left\{-\frac{1}{2\sigma^2}\sum_{i=1}^{n}(x_i-\mu)^2\right\}.
+$$$$
+  L(\mu,\tau|\vec{x}) \propto \tau^{n/2} \exp\left\{-\frac{\tau}{2}\sum_{i=1}^{n}(x_i-\mu)^2\right\}.
+$$$$
+  \pi(\mu,\tau|\vec{x}) \propto \tau^{n/2+a-1} \exp\left\{-\frac{\tau}{2}\sum_{i=1}^{n}(x_i-\mu)^2-\frac{p}{2}(\mu - m)^2 - b \tau\right\}.
+$$<hr>
+<h2 id="part-b-2">Part (b)</h2>
+<h2 id="heading">Show the posterior conditional distribution of $\mu|(\tau,\vec{x})$ is
+$$
+  N\left(\frac{n \tau \bar{x} + p m}{ n \tau + p}, \frac{1}{n \tau + p}\right)
+$$
+and the posterior conditional distribution of $\tau|(\mu,\vec{x})$ is
+$$
+  \mathrm{GAM}\!\left(a+n/2,b+n/2[s^2+(u -\bar{x})^2]\right).
+$$</h2>
+<h3 id="distribution-of-mutauvecx">Distribution of $\mu|(\tau,\vec{x})$</h3>
+$$
+  \pi(\mu | \tau,\vec{x}) = \frac{\pi(\mu,\tau|\vec{x})}{\pi(\tau|\vec{x})}
+$$$$
+  \pi(\tau|\vec{x}) = \int_{-\infty}^{\infty} \pi(\mu,\tau|\vec{x}) d\mu.
+$$$$
+  \pi(\mu | \tau,\vec{x}) \propto \pi(\mu,\tau|\vec{x}).
+$$$$
+  \pi(\mu | \tau,\vec{x}) \propto \exp\left\{-\frac{\tau}{2}\sum_{i=1}^{n}(x_i-\mu)^2\right\} \exp\left(-\frac{p}{2}(\mu - m)^2\right).
+$$$$
+  \pi(\mu | \tau,\vec{x}) = \exp\left\{-\frac{1}{2 k_1}\left(\mu - k_2\right)^2\right\}
+$$<p>
+with a mean $k_2$ and variance $k_1$.</p>
+$$
+\begin{align*}
+  \pi(\mu | \tau,\vec{x})
+    &\propto \exp\left\{-\frac{\tau}{2}\left[\sum x_i^2 - 2 \mu \sum x_i + n \mu^2\right] - \frac{p}{2}\left[\mu^2 - 2\mu m + m^2\right]\right\}\\
+    &\propto \exp\left\{-\frac{1}{2}\left[- 2 n \tau \bar{x}\mu + n \tau \mu^2 + p \mu^2 - 2 p m \mu\right]\right\}\\
+    &\propto \exp\left\{-\frac{1}{2}\left[(n \tau + p)\mu^2 - (2 p m + 2 n \tau \bar{x})\mu\right]\right\}\\
+    &\propto \exp\left\{-\frac{n \tau + p}{2}\left[\mu^2 - \frac{2(p m + n \tau \bar{x})}{n \tau + p}\mu\right]\right\}.
+\end{align*}
+$$$$
+\begin{align*}
+  \pi(\mu | \tau,\vec{x})
+    &\propto \exp\left\{-\frac{n \tau + p}{2}\left[\mu - \frac{p m + n \tau \bar{x}}{n \tau + p}\right]^2 - \left[\frac{p m + n \tau \bar{x}}{n \tau + p}\right]^2\right\}\\
+    &\propto \exp\left\{-\frac{n \tau + p}{2}\left[\mu - \frac{p m + n \tau \bar{x}}{n \tau + p}\right]^2\right\}.
+\end{align*}
+$$$$
+  \frac{p m + n \tau \bar{x}}{n \tau + p}
+$$$$
+  \frac{1}{n\tau + p}.
+$$<h3 id="distribution-of-taumuvecx">Distribution of $\tau|(\mu,\vec{x})$</h3>
+$$
+  \pi(\tau | \mu,\vec{x}) = \frac{\pi(\mu,\tau|\vec{x})}{\pi(\mu|\vec{x})}
+$$$$
+  \pi(\mu|\vec{x}) = \int_{-\infty}^{\infty} \pi(\mu,\tau|\vec{x}) d\tau.
+$$$$
+  \pi(\tau | \mu,\vec{x}) \propto \pi(\mu,\tau|\vec{x}).
+$$$$
+  \pi(\tau | \mu,\vec{x}) \propto \tau^{n/2+a-1} \exp\left\{-\frac{\tau}{2}\sum_{i=1}^{n}(x_i-\mu)^2 - b \tau \right\}.
+$$$$
+  \tau^{\alpha-1}\exp(-\beta \tau).
+$$<p>
+So, we rewrite the above as
+\begin{align}
+\pi(\tau | \mu,\vec{x})
+&amp;\propto \tau^{n/2+a-1} \exp\left{-\frac{\tau}{2}\sum(x_i-\mu)^2 - b \tau \right}\
+&amp;\propto \tau^{n/2+a-1} \exp\left{-\left(\frac{1}{2}\sum(x_i-\mu)^2 + b\right) \tau \right}.
+\end{align}
+Thus, we see that $\alpha = n/2+a$ and $\beta = b + \frac{1}{2}\sum(x_i-\mu)^2$.
+The $\beta$ is not in the form requested, so we continue, focusing strictly on $\beta$.</p>
+<p>We may rewrite $\sum(x_i-\mu)^2$ as</p>
+$$
+\begin{align*}
+  \sum(x_i-\mu)^2 &= \sum(x_i- \bar{x} + \bar{x} - \mu)^2\\
+                  &= \sum(x_i- \bar{x})^2 + \sum(\bar{x} - \mu)^2 - 2 \sum(x_i - \bar{x})(\bar{x} - \mu)\\
+                  &= \sum(x_i- \bar{x})^2 + n(\bar{x} - \mu)^2 - 2 \left(\sum x_i  - n \bar{x}\right)(\bar{x} - \mu).
+\end{align*}
+$$$$
+  \sum(x_i-\mu)^2 = \sum(x_i- \bar{x})^2 + n(\bar{x} - \mu)^2.
+$$$$
+  \sum(x_i-\mu)^2 = n(s^2 + (\mu-\bar{x})^2),
+$$$$
+  \mathrm{Gamma}\!\left(n/2+a,b + n(s^2 + (\mu-\bar{x})^2)/2\right).
+$$<hr>
+<h2 id="part-c-2">Part (c)</h2>
+<p>First, generate some ``observed&rsquo;&rsquo; sample data using $x = rnorm(200,mu=5,sigma=2)$. Hand-code Gibbs Sampler algorithm to sample $(\mu,\tau)$ from the posterior using $x$. You make take prior parameters $a = 0.0001; b = 0.0001; p = 0.0001; m = 0$. Use the estimated posterior mean and compare your estimates with the true parameters $\mu = 5$ and $\tau = 0.25$.</p>
+<hr>
+<p>We generate the sample with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">200</span>, mean <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, sd <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>We implement the Gibbs sampling with the function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>mu.tau.gibbs <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, x, burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>, theta0 <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>, p <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e-04</span>, m <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e-04</span>,
+</span></span><span style="display:flex;"><span>    b <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e-04</span>) {
+</span></span><span style="display:flex;"><span>    x.mu <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(x)
+</span></span><span style="display:flex;"><span>    x.s2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">var</span>(x)
+</span></span><span style="display:flex;"><span>    x.n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">length</span>(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    rmu <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(tau) {
+</span></span><span style="display:flex;"><span>        mean <span style="color:#f92672">&lt;-</span> (x.n <span style="color:#f92672">*</span> tau <span style="color:#f92672">*</span> x.mu <span style="color:#f92672">+</span> p <span style="color:#f92672">*</span> m)<span style="color:#f92672">/</span>(x.n <span style="color:#f92672">*</span> tau <span style="color:#f92672">+</span> p)
+</span></span><span style="display:flex;"><span>        var <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(x.n <span style="color:#f92672">*</span> tau <span style="color:#f92672">+</span> p)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">1</span>, mean <span style="color:#f92672">=</span> mean, sd <span style="color:#f92672">=</span> <span style="color:#a6e22e">sqrt</span>(var))
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    rtau <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(mu) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rgamma</span>(<span style="color:#ae81ff">1</span>, shape <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> x.n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, rate <span style="color:#f92672">=</span> b <span style="color:#f92672">+</span> x.n <span style="color:#f92672">*</span> (x.s2 <span style="color:#f92672">+</span> (mu <span style="color:#f92672">-</span> x.mu)^2)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    prior <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">1</span>, m, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>p), <span style="color:#a6e22e">rgamma</span>(<span style="color:#ae81ff">1</span>, a, b))
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    N <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    thetas <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow <span style="color:#f92672">=</span> N, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">is.null</span>(theta0)) {
+</span></span><span style="display:flex;"><span>        thetas[1, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">prior</span>()
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        thetas[1, ] <span style="color:#f92672">&lt;-</span> theta0
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(N <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)) {
+</span></span><span style="display:flex;"><span>        tau.new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rtau</span>(thetas[i, <span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>        mu.new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rmu</span>(tau.new)
+</span></span><span style="display:flex;"><span>        thetas[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(mu.new, tau.new)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    thetas <span style="color:#f92672">&lt;-</span> thetas<span style="color:#a6e22e">[</span>(burn <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span>N, ]
+</span></span><span style="display:flex;"><span>    mu.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(thetas[, <span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    tau.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(thetas[, <span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>    sigma.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>tau.est)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">list</span>(theta.dist <span style="color:#f92672">=</span> thetas, mu.est <span style="color:#f92672">=</span> mu.est, tau.est <span style="color:#f92672">=</span> tau.est, sigma.est <span style="color:#f92672">=</span> sigma.est)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We use the Gibbs sampler to estimate $(\mu,\tau)$ with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># set up hyper-parameters</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1e-04</span>
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1e-04</span>
+</span></span><span style="display:flex;"><span>m <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1e-04</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mu.tau.gibbs</span>(<span style="color:#ae81ff">1e+05</span>, x, burn <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000</span>, p <span style="color:#f92672">=</span> p, a <span style="color:#f92672">=</span> a, m <span style="color:#f92672">=</span> m, b <span style="color:#f92672">=</span> b)
+</span></span><span style="display:flex;"><span>mu.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">as.numeric</span>(res<span style="color:#f92672">$</span>mu.est), digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>tau.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">as.numeric</span>(res<span style="color:#f92672">$</span>tau.est), digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>var.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>tau.est, digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">c</span>(mu.est, tau.est)
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 5.0791 0.2236
+</code></pre><p>We estimate $(\mu,\tau)$ to be $(5.0791, 0.2236)&rsquo;$.
+Therefore, we estimate that the data is being sampled from the normal
+distribution
+\begin{equation}
+X_i \sim N(\mu=5.0791,\sigma^2=4.4723).
+\end{equation}</p>
+<h2 id="additional-analysis">Additional analysis</h2>
+<p>Out of curiosity, we decided to plot the marginals of the sample superimposed
+with their respective conditional densities with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x.mu <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(x)
+</span></span><span style="display:flex;"><span>x.n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">length</span>(x)
+</span></span><span style="display:flex;"><span>x.s2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">var</span>(x)
+</span></span><span style="display:flex;"><span>mu.dist <span style="color:#f92672">&lt;-</span> res<span style="color:#f92672">$</span>theta.dist[, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>tau.dist <span style="color:#f92672">&lt;-</span> res<span style="color:#f92672">$</span>theta.dist[, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(mu.dist, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;marginal of mu&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mu&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), <span style="color:#a6e22e">dnorm</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), mean <span style="color:#f92672">=</span> (x.n <span style="color:#f92672">*</span> tau.est <span style="color:#f92672">*</span> x.mu)<span style="color:#f92672">/</span>(x.n <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>    tau.est <span style="color:#f92672">+</span> p), sd <span style="color:#f92672">=</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>(x.n <span style="color:#f92672">*</span> tau.est <span style="color:#f92672">+</span> p))))
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-25-1.png" alt="plot of chunk unnamed-chunk-25"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(tau.dist, freq <span style="color:#f92672">=</span> F, breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;marginal of tau&#34;</span>, xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tau&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">0.4</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), <span style="color:#a6e22e">dgamma</span>(<span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">0.4</span>, by <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>), shape <span style="color:#f92672">=</span> a <span style="color:#f92672">+</span> x.n<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>    rate <span style="color:#f92672">=</span> b <span style="color:#f92672">+</span> x.n <span style="color:#f92672">*</span> (x.s2 <span style="color:#f92672">+</span> (mu.est <span style="color:#f92672">-</span> x.mu)^2)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-25-2.png" alt="plot of chunk unnamed-chunk-25"></p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/statistics/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Statistics</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/r/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">R</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/computation/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Computation</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/statistical-inference/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Statistical Inference</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/monte-carlo-simulation/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Monte Carlo Simulation</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/probsets/stat575/stat575-problem-set-2/">Computational Statistics - SIUe - STAT 575 - Problem Set 2</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/2012-02-04-sax/cs584_sax_review/">Review: A Symbolic Representation of Time Series, with Implications for Streaming Algorithms</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/probsets/stat482/problem_set_8/">Regression Analysis - SIUe - STAT 482 - Probem Set 8</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

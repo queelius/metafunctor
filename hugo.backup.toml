@@ -1,0 +1,80 @@
+baseURL = 'https://metafunctor.com/'
+languageCode = 'en-us'
+title = 'metafunctor'
+theme = 'ananke'
+
+SectionPagesMenu = "main"
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  math = true
+  author = "Alex Towell"
+  email = "lex@metafunctor.com"
+
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/queelius"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/queelius"
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/alexander-towell-487015151/"
+
+[[params.ananke_socials]]
+name = "rss"
+url = "/index.xml"
+
+[[params.ananke_socials]]
+name = "✉️"
+url = "mailto:lex@metafunctor.com"
+  
+[[params.ananke_socials]]
+name = "keybase"
+url = "https://keybase.io/queelius"
+
+[[params.ananke_socials]]
+name = "youtube"
+url = "https://www.youtube.com/@queelius"
+
+[[params.ananke_socials]]
+name = "💬"
+url = 'https://discord.com/channels/904142927389929492/'
+
+[[params.ananke_socials]]
+name = "📚"
+url = 'https://scholar.google.com/citations?view_op=list_works&hl=en&user=E9mnFzQAAAAJ'
+
+[[params.ananke_socials]]
+name = '🆔'
+url = 'https://orcid.org/my-orcid?orcid=0000-0001-6443-9897'
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-E08ZXTFTTY'
+  [services.disqus]
+    shortname = 'metafunctor-com'
+
+
+[outputs]
+  home = ["HTML", "JSON"]

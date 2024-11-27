@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Computational Statistics - SIUe - STAT 575 - Exam 1 | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This exam covers numerical integration, Monte Carlo simulation, acceptance-rejection sampling, importance sampling, and the Metropolis-Hastings algorithm.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell (lex@metafunctor.com)">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/probsets/stat575/stat575-exam2/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/probsets/stat575/stat575-exam2/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta property="og:description" content="This exam covers numerical integration, Monte Carlo simulation, acceptance-rejection sampling, importance sampling, and the Metropolis-Hastings algorithm.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="probsets">
+    <meta property="article:published_time" content="2021-07-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-07-10T00:00:00+00:00">
+
+  <meta itemprop="name" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta itemprop="description" content="This exam covers numerical integration, Monte Carlo simulation, acceptance-rejection sampling, importance sampling, and the Metropolis-Hastings algorithm.">
+  <meta itemprop="datePublished" content="2021-07-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-07-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2522">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Computational Statistics - SIUe - STAT 575 - Exam 1">
+  <meta name="twitter:description" content="This exam covers numerical integration, Monte Carlo simulation, acceptance-rejection sampling, importance sampling, and the Metropolis-Hastings algorithm.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        STAT 575 - Computational Statistics - SIUe - Summer 2021
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Computational Statistics - SIUe - STAT 575 - Exam 1</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell (<a href="mailto:lex@metafunctor.com">lex@metafunctor.com</a>)</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-07-10T00:00:00Z">July 10, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="problem-1">Problem 1</h1>
+$$
+  q(x) = \frac{e^x}{e^{2x}+1}, x \in (-\infty,\infty).
+$$<h2 id="part-a">Part (a)</h2>
+<p>Find the Monte Carlo estimate of $\sigma^2$ using acceptance-rejection sampling. Take the candidate distribution as the double exponential, i.e., $g(x) = \exp(-|x|)$.</p>
+<h3 id="solution">Solution</h3>
+<p>We are interested in sampling $X$ from a kernel $q$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>q <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#a6e22e">exp</span>(x)<span style="color:#f92672">/</span>(<span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>x)<span style="color:#ae81ff">+1</span>) }
+</span></span></code></pre></div><p>Suppose $Y$ is the double exponential random variable with the kernel $g$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>g <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">abs</span>(x)) }
+</span></span></code></pre></div><p>Since the double exponential is symmetric about its mean $0$, we can simply sample $W \sim \mathrm{EXP}(\lambda=1)$ and let $Y = -W$ with probability $0.5$ and $Y = W$ with probability $0.5$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>ry <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">numeric</span>(n)
+</span></span><span style="display:flex;"><span>  ws <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rexp</span>(n<span style="color:#f92672">=</span>n,rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>  us <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) { ys[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ifelse</span>(us[i] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.5</span>,<span style="color:#f92672">-</span>ws[i],ws[i]) }
+</span></span><span style="display:flex;"><span>  ys
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>$$
+\begin{align*}
+  c &= \max_x \left\{\frac{q(x)}{g(x)}\right\}\\
+    &= \max_x \left\{\frac{e^{x+|x|}}{e^{2x}+1}\right\}.
+\end{align*}
+$$<p>
+We forgo a formal proof and point out that the denominator is always larger than the numerator, i.e., $q(x)/g(x) &lt; 1$. However, as $x$ goes to $\pm \infty$, $q(x)/g(x)$ goes to $1$ and thus $c = 1$. We implement the acceptance-rejection sampler for $X$ with kernel $q$ with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>rx <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">numeric</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ry</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">q</span>(y)<span style="color:#f92672">/</span><span style="color:#a6e22e">g</span>(y))
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        xs[i] <span style="color:#f92672">&lt;-</span> y
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  xs
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We estimate $E(X^2)$ by taking the square of a sample:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx</span>(<span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mean</span>(x^2))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 2.43841
+</code></pre><h2 id="part-b">Part (b)</h2>
+<p>Find the normalizing constant of the pdf by integrating $q(x)$ over the support. Then derive the CDF of $X$.</p>
+<h3 id="solution-1">Solution</h3>
+$$
+  \frac{1}{Z} \int_{-\infty}^{\infty} q(x) dx = 1.
+$$$$
+  Z = 2 \int_{1}^{\infty} \frac{1}{1+u^2} du.
+$$$$
+  Z = 2 (\mathrm{arctan}(\infty) - \mathrm{arctan}(1))
+$$$$
+  Z = 2 (2\pi/4 - \pi/4) = 2(\pi/4) = \pi/2.
+$$<p>We verify with a numerical integrator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>right_riemann_sum <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(f, a, b, n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  h <span style="color:#f92672">&lt;-</span> (b<span style="color:#f92672">-</span>a)<span style="color:#f92672">/</span>n
+</span></span><span style="display:flex;"><span>  h<span style="color:#f92672">*</span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">f</span>(a <span style="color:#f92672">+</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)<span style="color:#f92672">*</span>h))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When we apply the numerical integrator to the kernel $q$ and subtract $\pi/2$ we obtain a result that is approximately $0$, confirming our earlier calculation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">right_riemann_sum</span>(q,<span style="color:#ae81ff">-10</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">1000</span>) <span style="color:#f92672">-</span> <span style="color:#66d9ef">pi</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] -9.080289e-05
+</code></pre>$$
+  f(x) = \frac{2}{\pi} \frac{e^x}{e^{2x}+1}.
+$$$$
+  F(x) = \int_{-\infty}^{x} f(s) ds = \frac{2}{\pi} (\mathrm{arctan}(e^x) - \mathrm{arctan}(0))
+$$$$
+  F(x) = \frac{2}{\pi} \mathrm{arctan}(e^x).
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>pdf <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#66d9ef">pi</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">q</span>(x) }
+</span></span><span style="display:flex;"><span>cdf <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#66d9ef">pi</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">arctan</span>(<span style="color:#a6e22e">exp</span>(x)) }
+</span></span></code></pre></div><h2 id="part-c">Part (c)</h2>
+<p>Generate a sample of $X$ using inverse transform method and find the Monte Carlo estimate of $\sigma^2$.</p>
+<h3 id="solution-2">Solution</h3>
+$$
+\begin{align*}
+  p                                 &= \frac{2}{\pi} \mathrm{arctan}(e^x)\\
+  \frac{\pi}{2} p                   &= \mathrm{arctan}(e^x)\\
+  \tan\left(\frac{\pi}{2} p\right)  &= e^x\\
+  x                                 &= \log\left(\tan\left(\frac{\pi}{2} p\right)\right).
+\end{align*}
+$$$$
+  X = \log\left(\tan\left(\frac{\pi}{2} U\right)\right)
+$$<p>
+where $U \sim \mathrm{UNIF}(0,1)$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>rx.transform <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  us <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tan</span>(<span style="color:#66d9ef">pi</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>us))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We estimate $\sigma^2$ with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rx.transform</span>(<span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mean</span>(x^2))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 2.508885
+</code></pre><h2 id="part-d">Part (d)</h2>
+<p>Repeat the estimation using importance sampling with standardized weights.</p>
+<h3 id="solution-3">Solution</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#&#39; importance sampling</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; estimates E{h(X)} by taking n sample points from g and then taking a</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; weighted mean using the standardized weights.</span>
+</span></span><span style="display:flex;"><span>rx.importance <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n,h)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  w <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(x) {
+</span></span><span style="display:flex;"><span>     out <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">q</span>(x)<span style="color:#f92672">/</span><span style="color:#a6e22e">g</span>(x)
+</span></span><span style="display:flex;"><span>     out<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(out)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ry</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">w</span>(ys)<span style="color:#f92672">*</span><span style="color:#a6e22e">h</span>(ys))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We apply the procedure to $h(x) = x^2$ to estimate $E(h(X))$:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">rx.importance</span>(<span style="color:#ae81ff">10000</span>,<span style="color:#66d9ef">function</span>(x) { x^2} ))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 2.437009
+</code></pre><h1 id="problem-2">Problem 2</h1>
+$$
+  f(x|\theta_1,\theta_2) \propto x^{-1.5} \exp\left\{-\theta_1 x - \frac{\theta_2}{x} + \psi(\theta_1,\theta_2)\right\}
+$$<p>
+where $\psi(\theta_1,\theta_2) = 2\sqrt{\theta_1\theta_2} + \log(2\theta_2)$.
+Estimate $E(X)$ using MCMC. You may take the proposal distribution as a
+$\mathrm{Gamma}(\sqrt{\theta_2/\theta_1},1)$.</p>
+<h2 id="solution-4">Solution</h2>
+<p>Here is our implementation of the Metropolis-Hastings algorithm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># A sampling procedure from the pdf f using Metropolis-Hastings algorithm</span>
+</span></span><span style="display:flex;"><span>rf <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, theta1, theta2, burn<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    g <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#a6e22e">dgamma</span>(x,shape<span style="color:#f92672">=</span><span style="color:#a6e22e">sqrt</span>(theta2<span style="color:#f92672">/</span>theta1),rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) }
+</span></span><span style="display:flex;"><span>    rg <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n) { <span style="color:#a6e22e">rgamma</span>(n,shape<span style="color:#f92672">=</span><span style="color:#a6e22e">sqrt</span>(theta2<span style="color:#f92672">/</span>theta1),rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) }
+</span></span><span style="display:flex;"><span>    ker <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { x<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">-1.5</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span>theta1<span style="color:#f92672">*</span>x<span style="color:#f92672">-</span>theta2<span style="color:#f92672">/</span>x) }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    m <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> burn
+</span></span><span style="display:flex;"><span>    xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length <span style="color:#f92672">=</span> m)
+</span></span><span style="display:flex;"><span>    xs[1] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rg</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>m) {
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rg</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        u <span style="color:#f92672">&lt;-</span> xs[i<span style="color:#ae81ff">-1</span>]
+</span></span><span style="display:flex;"><span>        R <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ker</span>(v) <span style="color:#f92672">*</span> <span style="color:#a6e22e">g</span>(u) <span style="color:#f92672">/</span> (<span style="color:#a6e22e">ker</span>(u) <span style="color:#f92672">*</span> <span style="color:#a6e22e">g</span>(v))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;=</span> R) { xs[i] <span style="color:#f92672">&lt;-</span> v }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> { xs[i] <span style="color:#f92672">&lt;-</span> u }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    xs<span style="color:#a6e22e">[</span>(burn<span style="color:#ae81ff">+1</span>)<span style="color:#f92672">:</span>m]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We apply the algorithm to $\theta_1 = 5$ and $\theta_2 = 3$:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">100000</span>
+</span></span><span style="display:flex;"><span>theta1 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>theta2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rf</span>(n,theta1,theta2,burn<span style="color:#f92672">=</span><span style="color:#ae81ff">20000</span>)
+</span></span></code></pre></div><p>Now, we estimate $E(X)$ with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mean</span>(xs))
+</span></span></code></pre></div><pre tabindex="0"><code>## [1] 1.28597
+</code></pre><p>We have deduced that the true mean is given by $\mu = \sqrt{\theta_2/\theta_1}$, and so we see the algorithm provides a reasonable estimation.</p>
+<p>We would like to plot the histogram with the density superimposed on top of it. So, we implement the density function with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>f.make <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta1,theta2)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  k <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { x<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">-1.5</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span>theta1<span style="color:#f92672">*</span>x <span style="color:#f92672">-</span> theta2<span style="color:#f92672">/</span>x) }
+</span></span><span style="display:flex;"><span>  Z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">right_riemann_sum</span>(k,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">10000</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span>(x) { <span style="color:#a6e22e">k</span>(x) <span style="color:#f92672">/</span> Z }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">f.make</span>(theta1,theta2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(xs,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>,freq<span style="color:#f92672">=</span>F)
+</span></span><span style="display:flex;"><span>ps <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>,by<span style="color:#f92672">=</span><span style="color:#ae81ff">.01</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(x<span style="color:#f92672">=</span>ps,y<span style="color:#f92672">=</span><span style="color:#a6e22e">f</span>(ps))
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17"></p>
+<h1 id="problem-3">Problem 3</h1>
+<p>Consider the data on coal-mining disasters from 1851 to 1962 (coal.txt data on blackboard). The rate of accidents per year appears to decrease around 1900, so we consider a change-point model for these data. Let $X_j$ be the number of accidents in year $j$. $X_j \sim \mathrm{Poisson}(λ_1)$, $j = 1, \ldots, θ$, and $X_j \sim \mathrm{Poisson}(λ_2)$, $j = θ + 1, \ldots, 112$. The change-point occurs after the $θ$-th year in the series. This model has parameters are $θ, λ_1, λ_2$. Below are three sets of priors for a Bayesian analysis of this model. Assume prior $λ_i \sim \mathrm{Gamma}(3, 1)$ for $i = 1, 2$, and assume $θ$ follows a discrete uniform distribution over ${1, \ldots, 111}$.</p>
+<h2 id="part-a-1">Part (a)</h2>
+<p>Derive the posterior distribution of $(θ, λ_1, λ_2)$.</p>
+<h3 id="solution-5">Solution</h3>
+$$
+  X_i \sim f(x_i | \lambda_1,\lambda_2,\theta)
+$$$$
+  f(x_i | \lambda_1,\lambda_2,\theta) =
+     \frac{\lambda_1^{x_i} e^{-\lambda_1}}{x_i!} I(i \leq \theta) +
+     \frac{\lambda_2^{x_i} e^{-\lambda_2}}{x_i!} I(i > \theta).
+$$$$
+  L(\lambda_1,\lambda_2,\theta|\vec{x}) =
+    \prod_{i=1}^{\theta} \frac{\lambda_1^{x_i} e^{-\lambda_1}}{x_i!}
+    \prod_{\theta+1}^{n} \frac{\lambda_2^{x_i} e^{-\lambda_2}}{x_i!}
+$$$$
+  L(\lambda_1,\lambda_2,\theta|\vec{x}) \propto
+    \lambda_1^{t(\theta)} e^{-\theta \lambda_1}
+    \lambda_2^{t(n)-t(\theta)} e^{-(n-\theta) \lambda_2}.
+$$<p>
+where $t(\theta) = \sum_{i=1}^{\theta} x_i$.</p>
+$$
+  f(\theta,\lambda_1,\lambda_2|\vec{x}) = f(\vec{x}|\theta,\lambda_1,\lambda_2)f(\theta,\lambda_1,\lambda_2)/f(\vec{x})
+$$$$
+  f(\theta,\lambda_1,\lambda_2|\vec{x}) \propto L(\theta,\lambda_1,\lambda_2|\vec{x})f(\theta)f(\lambda_1)f(\lambda_2).
+$$<p>
+where $f(\theta) \propto I(0 \leq \theta &lt; n)$ and $f(\lambda_j) \propto \lambda_j^2 \exp(-\lambda_j)$.</p>
+$$
+  f(\lambda_j) \propto \lambda_j^2 e^{-\lambda_j}.
+$$$$
+  f(\theta,\lambda_1,\lambda_2|\vec{x}) \propto
+    \lambda_1^{t(\theta)} e^{-\theta \lambda_1}
+    \lambda_2^{t(n)-t(\theta)} e^{-(n-\theta) \lambda_2} \lambda_1^2 e^{-\lambda_1} \lambda_2^2 e^{-\lambda_2}
+$$<p>
+where $t(\theta) = \sum_{i=1}^{\theta} x_i$, $1 \leq \theta &lt; n$, and $\lambda_1,\lambda_2 &gt; 0$.</p>
+<h2 id="part-b-1">Part (b)</h2>
+<p>Derive the conditional posterior distributions necessary to carry out Gibbs sampling for this change-point model.</p>
+<h3 id="solution-6">Solution</h3>
+$$
+  f(\lambda_1|\theta,\lambda_2,\vec{x}) \propto \lambda_1^{t(\theta) + 2} e^{-(\theta+1) \lambda_1},
+$$$$
+  \lambda_1 \sim \mathrm{GAM}(t(\theta)+1,\theta+1).
+$$$$
+  f(\lambda_2|\theta,\lambda_1,\vec{x}) \propto
+    \lambda_2^{t(n)-t(\theta)+2} e^{-(n-\theta+1) \lambda_2},
+$$$$
+  \lambda_2 \sim \mathrm{GAM}(t(n) - t(\theta) + 1,n-\theta+1).
+$$$$
+  f(\theta|\lambda_1,\lambda_2,\vec{x}) \propto
+    \lambda_1^{t(\theta)} e^{-\theta \lambda_1}
+    \lambda_2^{-t(\theta)} e^{\theta \lambda_2}.
+$$$$
+  f(\theta|\lambda_1,\lambda_2,\vec{x}) \propto
+    \left(\frac{\lambda_1}{\lambda_2}\right)^{t(\theta)} e^{(\lambda_2 - \lambda_1) \theta} I(\theta \in \{1,\ldots,n-1\}),
+$$<p>
+which is the kernel of a probability mass function parameterized by $\lambda_1$ and $\lambda_2$.</p>
+$$
+  \sum_{\theta=1}^{k-1} f(\theta|\cdot) < U \leq \sum_{\theta=1}^{k} f(\theta|\cdot).
+$$<h3 id="additional-analysis">Additional analysis</h3>
+<p>Note that $\theta$ has a prior that only assigns non-zero values to $\theta \in {1,\ldots,n-1}$
+where $n=112$ (there are $112$ data rows in the ``coal.txt&rsquo;&rsquo; data file). Thus,
+given a prior that assigns $0$ probability to the outcome $\theta=n$, the
+conditional posterior distribution for $\theta$ also assigns zero
+probability to $\theta=n$. Intuitively, it makes sense that no amount of
+evidence is sufficient to overcome a prior of zero probability.</p>
+<p>Furthermore, recall that $\theta$ is the change-point. If the change-point occurs at $\theta=n$, then in fact there was no change-point and $X_i \sim \mathrm{POI}(\lambda_1)$ for $i=1,\ldots,n$.
+In other words, assigning $\theta=n$ a prior probability of $0$ is equivalent to claiming there is a change point.</p>
+<p>We may generalize this so that if we are given prior information that
+$\theta \notin \mathbb{K}$, we may assign zero probability to that event
+in the prior, i.e., $\sum_{k \in \mathbb{K}} f_{\theta}(k) = 0$.
+Of course, we may assign a non-uniform prior over the support, as well.
+The posterior distribution $f_{\theta|\cdot}$ from a previous experiment
+is a likely candidate for such a prior.</p>
+<h2 id="part-c-1">Part (c)</h2>
+<p>Implement the Gibbs sampler. Use a suite of convergence diagnostics to evaluate the convergence and mixing of your sampler.</p>
+<h3 id="solution-7">Solution</h3>
+<p>We load the data with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.table</span>(<span style="color:#e6db74">&#34;coal.txt&#34;</span>,header<span style="color:#f92672">=</span>T)[,<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>N <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">length</span>(x)
+</span></span></code></pre></div><p>We implement the conditional samplers with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>t <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta) { <span style="color:#a6e22e">sum</span>(x[1<span style="color:#f92672">:</span>theta]) }
+</span></span><span style="display:flex;"><span>rlambda1 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n,theta) { <span style="color:#a6e22e">rgamma</span>(n,<span style="color:#a6e22e">t</span>(theta)<span style="color:#ae81ff">+1</span>,theta<span style="color:#ae81ff">+1</span>) }
+</span></span><span style="display:flex;"><span>rlambda2 <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n,theta) { <span style="color:#a6e22e">rgamma</span>(n,<span style="color:#a6e22e">t</span>(N)<span style="color:#f92672">-</span><span style="color:#a6e22e">t</span>(theta)<span style="color:#ae81ff">+1</span>,N<span style="color:#f92672">-</span>theta<span style="color:#ae81ff">+1</span>) }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ktheta <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Vectorize</span>(<span style="color:#66d9ef">function</span>(theta,lambda1,lambda2)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (theta <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> theta <span style="color:#f92672">&gt;=</span> N) { <span style="color:#66d9ef">return</span>(<span style="color:#ae81ff">0</span>) }  
+</span></span><span style="display:flex;"><span>  (lambda1<span style="color:#f92672">/</span>lambda2)<span style="color:#a6e22e">^t</span>(theta)<span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(theta<span style="color:#f92672">*</span>(lambda2<span style="color:#f92672">-</span>lambda1))
+</span></span><span style="display:flex;"><span>},<span style="color:#e6db74">&#34;theta&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ptheta <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta,lambda1,lambda2)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  Z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">ktheta</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(N<span style="color:#ae81ff">-1</span>),lambda1,lambda2))
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ktheta</span>(theta,lambda1,lambda2)<span style="color:#f92672">/</span>Z
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rtheta <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(n,lambda1,lambda2)
+</span></span><span style="display:flex;"><span>{ 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sample</span>(x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(N<span style="color:#ae81ff">-1</span>),n,replace<span style="color:#f92672">=</span>T,prob<span style="color:#f92672">=</span><span style="color:#a6e22e">ptheta</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(N<span style="color:#ae81ff">-1</span>),lambda1,lambda2)) 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rlambda1.prior <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>() { <span style="color:#a6e22e">rgamma</span>(<span style="color:#ae81ff">1</span>,shape<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) }
+</span></span><span style="display:flex;"><span>rlambda2.prior <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>() { <span style="color:#a6e22e">rgamma</span>(<span style="color:#ae81ff">1</span>,shape<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) }
+</span></span><span style="display:flex;"><span>rtheta.prior <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>() { <span style="color:#a6e22e">sample</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(N<span style="color:#ae81ff">-1</span>),<span style="color:#ae81ff">1</span>,replace<span style="color:#f92672">=</span>T) }
+</span></span></code></pre></div><p>We implement the Gibbs sampling with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>gibbs <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n,burn<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  nn <span style="color:#f92672">&lt;-</span> n<span style="color:#f92672">+</span>burn
+</span></span><span style="display:flex;"><span>  thetas <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span>nn,ncol<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>  thetas[1,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rtheta.prior</span>(),<span style="color:#a6e22e">rlambda1.prior</span>(),<span style="color:#a6e22e">rlambda2.prior</span>())
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>(nn<span style="color:#ae81ff">-1</span>))
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    theta.new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rtheta</span>(<span style="color:#ae81ff">1</span>,thetas[i,<span style="color:#ae81ff">2</span>],thetas[i,<span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>    lambda1.new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rlambda1</span>(<span style="color:#ae81ff">1</span>,theta.new)
+</span></span><span style="display:flex;"><span>    lambda2.new <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rlambda2</span>(<span style="color:#ae81ff">1</span>,theta.new)
+</span></span><span style="display:flex;"><span>    thetas[i<span style="color:#ae81ff">+1</span>,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(theta.new,lambda1.new,lambda2.new)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  thetas <span style="color:#f92672">&lt;-</span> thetas<span style="color:#a6e22e">[</span>(burn<span style="color:#ae81ff">+1</span>)<span style="color:#f92672">:</span>nn,]
+</span></span><span style="display:flex;"><span>  theta.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(thetas[,<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>  lambda1.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(thetas[,<span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>  lambda2.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mean</span>(thetas[,<span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(theta.dist<span style="color:#f92672">=</span>thetas,
+</span></span><span style="display:flex;"><span>       theta.est<span style="color:#f92672">=</span>theta.est,
+</span></span><span style="display:flex;"><span>       lambda1.est<span style="color:#f92672">=</span>lambda1.est,
+</span></span><span style="display:flex;"><span>       lambda2.est<span style="color:#f92672">=</span>lambda2.est)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">5000</span>
+</span></span><span style="display:flex;"><span>burn <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gibbs</span>(n,burn)
+</span></span><span style="display:flex;"><span>param.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(res<span style="color:#f92672">$</span>theta.est,res<span style="color:#f92672">$</span>lambda1.est,res<span style="color:#f92672">$</span>lambda2.est)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(param.est) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;theta&#34;</span>,<span style="color:#e6db74">&#34;lambda1&#34;</span>,<span style="color:#e6db74">&#34;lambda2&#34;</span>)
+</span></span><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span><span style="color:#a6e22e">kable</span>(<span style="color:#a6e22e">data.frame</span>(param.est))
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: right">param.est</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">theta</td>
+          <td style="text-align: right">40.0884000</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">lambda1</td>
+          <td style="text-align: right">3.0650183</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">lambda2</td>
+          <td style="text-align: right">0.9216624</td>
+      </tr>
+  </tbody>
+</table>
+<p>Now, we plot the marginals for the estimator.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">1</span>],freq<span style="color:#f92672">=</span>F,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;theta&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">2</span>],freq<span style="color:#f92672">=</span>F,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda1&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">3</span>],freq<span style="color:#f92672">=</span>F,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda2&#34;</span>,xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-22-1.png" alt="plot of chunk unnamed-chunk-22"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[1<span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">1</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;theta&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[1<span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">2</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;initial sample path&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda1&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[1<span style="color:#f92672">:</span><span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">3</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda2&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-22-2.png" alt="plot of chunk unnamed-chunk-22"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[2000<span style="color:#f92672">:</span><span style="color:#ae81ff">2100</span>,<span style="color:#ae81ff">1</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;theta&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[2000<span style="color:#f92672">:</span><span style="color:#ae81ff">2100</span>,<span style="color:#ae81ff">2</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;later sample path&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda1&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>theta.dist[2000<span style="color:#f92672">:</span><span style="color:#ae81ff">2100</span>,<span style="color:#ae81ff">3</span>],type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda2&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-22-3.png" alt="plot of chunk unnamed-chunk-22"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">1</span>],main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;theta&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">2</span>],main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda1&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">acf</span>(res<span style="color:#f92672">$</span>theta.dist[,<span style="color:#ae81ff">3</span>],main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lambda2&#34;</span>)
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-22-4.png" alt="plot of chunk unnamed-chunk-22"></p>
+<p>They all satisfy normality (approximately symmetric around the mean),
+converge quickly, exhibit low autocorrelation (ACF decays quickly),
+and show good support (they vigorously jiggle around the mean).</p>
+<h1 id="problem-4">Problem 4</h1>
+<p>Compare bootstrapped CIs for the population 90th percentile to the large sample estimate as in the notes for (a) $\mathrm{EXP}(1)$ data,
+(b) $N(0,1)$ data, (c) $U(0, 1)$ data, and (d) $\chi^2(1)$ data.
+For sample sizes of $n = 100$ and replicate $B = 500$.</p>
+<h2 id="solution-8">Solution</h2>
+$$
+  F_n(x) = \frac{1}{n} \sum_{i=1}^{n} I(x_i \leq x).
+$$$$
+  q = F^{-1}(p)
+$$<p>
+which may be estimated with $q_n = F^{-1}<em>n(p) = x</em>{[n p]}$.</p>
+<h2 id="delta-method">Delta method</h2>
+$$
+  q_n \sim \mathrm{AN}\left(q, \frac{p(1-p)}{n f^2(q)}\right).
+$$<p>Since the pdf $f$ is not known, we must estimate it with $f_n$ (note that we cannot simply take the derivative of $F_m$ since it is a step function). We use the built-in R function $\mathrm{density}$ to estimate $f$.</p>
+$$
+  \mathrm{Var}(q_n) = \frac{p(1-p)}{n f_n^2(q)}
+$$$$
+  q_n \pm z_{1-\alpha/2} \sqrt{\frac{p(1-p)}{n f_n^2(q_n)}}.
+$$<p>We implement the confidence interval estimator for $q_n$ with the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>q.ci.delta <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(samp,p,alpha,bw<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bcv&#34;</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">qnorm</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>alpha<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  q.est <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">quantile</span>(samp,p)
+</span></span><span style="display:flex;"><span>  f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">density</span>(samp,bw<span style="color:#f92672">=</span>bw,n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,from<span style="color:#f92672">=</span>q.est,to<span style="color:#f92672">=</span>q.est)<span style="color:#f92672">$</span>y
+</span></span><span style="display:flex;"><span>  se <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sqrt</span>(p<span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>p)<span style="color:#f92672">/</span>(n<span style="color:#f92672">*</span>f^2))
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(estimate<span style="color:#f92672">=</span>q.est,p<span style="color:#f92672">=</span>p,alpha<span style="color:#f92672">=</span>alpha,ci<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(q.est<span style="color:#f92672">-</span>z<span style="color:#f92672">*</span>se,q.est<span style="color:#f92672">+</span>z<span style="color:#f92672">*</span>se))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="bootstrap-method">Bootstrap method</h2>
+<p>Next, we consider the Bootstrap method. The statistic for the Bootstrap method, the $p$-th quantile, is given by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># p-quantile statistic that we provide as input to the</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># bootstrap function</span>
+</span></span><span style="display:flex;"><span>q.stat <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span>(x,indices)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    f <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">quantile</span>(x[indices],p)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">names</span>(f) <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>    f
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We implement the Bootstrap confidence interval estimator for $q_n$ with the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>q.ci.bs <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(samp,p,alpha,B)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">library</span>(boot)
+</span></span><span style="display:flex;"><span>  b <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">boot</span>(samp, <span style="color:#a6e22e">q.stat</span>(p), B)
+</span></span><span style="display:flex;"><span>  ci <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">boot.ci</span>(b,conf<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>alpha,type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;perc&#34;</span>)<span style="color:#f92672">$</span>percent
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(estimate<span style="color:#f92672">=</span><span style="color:#a6e22e">quantile</span>(samp,p),p<span style="color:#f92672">=</span>p,alpha<span style="color:#f92672">=</span>alpha,ci<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(ci[4],ci[5]))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>$$
+  q_n^{(1)},\ldots,q_n^{(B)}
+$$<p>
+and then pick the $p$-th percentile.</p>
+<h2 id="part-a-2">Part (a)</h2>
+<p>Compute coverage probabilities of the two intervals and average interval length. (You need to run the intervals for $M$ times.)</p>
+<h3 id="solution-9">Solution</h3>
+<p>To capture the data for each random variable, we encapsulate the process
+into a procedure that may be invoked for any function that models a
+random variable and whose first parameter denotes the sample size.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#&#39; Retrieve CI stats for the specified method and random variable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param q.star the true value for the p-th quantile</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param rv the random variable generator, of type n -&gt; R^n</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param n size of sample to generate</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param M number of trials</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param type &#34;bootstrap&#34; or &#34;delta&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @param B number of bootstrap replicates (only relevant if type == &#34;bootstrap&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39; @returns a vector of the relevant results</span>
+</span></span><span style="display:flex;"><span>ci.stats <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(q.star, rv, p, n, M<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bootstrap&#34;</span>, B<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  coverage.prop <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  avg.length <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>M)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    samp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rv</span>(n)
+</span></span><span style="display:flex;"><span>    res <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (type<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;bootstrap&#34;</span>) { res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">q.ci.bs</span>(samp,p,alpha,B) }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>                   { res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">q.ci.delta</span>(samp,p,alpha) }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    avg.length <span style="color:#f92672">&lt;-</span> avg.length <span style="color:#f92672">+</span> (res<span style="color:#f92672">$</span>ci[2] <span style="color:#f92672">-</span> res<span style="color:#f92672">$</span>ci[1])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (q.star <span style="color:#f92672">&gt;=</span> res<span style="color:#f92672">$</span>ci[1] <span style="color:#f92672">&amp;&amp;</span> q.star <span style="color:#f92672">&lt;=</span> res<span style="color:#f92672">$</span>ci[2]) {
+</span></span><span style="display:flex;"><span>      coverage.prop <span style="color:#f92672">&lt;-</span> coverage.prop <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  avg.length <span style="color:#f92672">&lt;-</span> avg.length <span style="color:#f92672">/</span> M
+</span></span><span style="display:flex;"><span>  coverage.prop <span style="color:#f92672">&lt;-</span> coverage.prop <span style="color:#f92672">/</span> M
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">c</span>(q.star,res<span style="color:#f92672">$</span>estimate,coverage.prop,avg.length)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now, we use $\mathrm{ci.stats}$ to generate and compute the data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>p <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.9</span> <span style="color:#75715e"># p-th quantile</span>
+</span></span><span style="display:flex;"><span>alpha <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.05</span> <span style="color:#75715e"># CI alpha level</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">100</span> <span style="color:#75715e"># sample size</span>
+</span></span><span style="display:flex;"><span>B <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">500</span> <span style="color:#75715e"># bootstrap replicates</span>
+</span></span><span style="display:flex;"><span>M <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">500</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># simulate and compute the data</span>
+</span></span><span style="display:flex;"><span>tab <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">matrix</span>(nrow<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>,ncol<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rownames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;exp(1): delta&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;exp(1): bootstrap&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;N(0,1): delta&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;N(0,1): bootstrap&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;U(0,1): delta&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;U(0,1): bootstrap&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;X^2(1): delta&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;X^2(1): bootstrap&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colnames</span>(tab) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;q.star&#34;</span>, <span style="color:#e6db74">&#34;q.est&#34;</span>, <span style="color:#e6db74">&#34;coverage&#34;</span>, <span style="color:#e6db74">&#34;average length&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[1,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qexp</span>(p),rexp,p,n,M,<span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[2,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qexp</span>(p),rexp,p,n,M,<span style="color:#e6db74">&#34;bootstrap&#34;</span>,B)
+</span></span><span style="display:flex;"><span>tab[3,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qnorm</span>(p),rnorm,p,n,M,<span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[4,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qnorm</span>(p),rnorm,p,n,M,<span style="color:#e6db74">&#34;bootstrap&#34;</span>,B)
+</span></span><span style="display:flex;"><span>tab[5,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qunif</span>(p),runif,p,n,M,<span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[6,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qunif</span>(p),runif,p,n,M,<span style="color:#e6db74">&#34;bootstrap&#34;</span>,B)
+</span></span><span style="display:flex;"><span>tab[7,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qchisq</span>(p,df<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>),<span style="color:#66d9ef">function</span>(n) { <span style="color:#a6e22e">rchisq</span>(n,df<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) },p,n,M,<span style="color:#e6db74">&#34;delta&#34;</span>)
+</span></span><span style="display:flex;"><span>tab[8,] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ci.stats</span>(<span style="color:#a6e22e">qchisq</span>(p,df<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>),<span style="color:#66d9ef">function</span>(n) { <span style="color:#a6e22e">rchisq</span>(n,df<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) },p,n,M,<span style="color:#e6db74">&#34;bootstrap&#34;</span>,B)
+</span></span></code></pre></div><h2 id="part-b-2">Part (b)</h2>
+<p>Summarizing your results in a table. Comment on your findings. Which is better?</p>
+<h3 id="solution-10">Solution</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>knitr<span style="color:#f92672">::</span><span style="color:#a6e22e">kable</span>(<span style="color:#a6e22e">data.frame</span>(tab))
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: right">q.star</th>
+          <th style="text-align: right">q.est</th>
+          <th style="text-align: right">coverage</th>
+          <th style="text-align: right">average.length</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">exp(1): delta</td>
+          <td style="text-align: right">2.302585</td>
+          <td style="text-align: right">2.3482875</td>
+          <td style="text-align: right">0.876</td>
+          <td style="text-align: right">1.0330318</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">exp(1): bootstrap</td>
+          <td style="text-align: right">2.302585</td>
+          <td style="text-align: right">1.8352320</td>
+          <td style="text-align: right">0.938</td>
+          <td style="text-align: right">1.1304459</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">N(0,1): delta</td>
+          <td style="text-align: right">1.281552</td>
+          <td style="text-align: right">1.3145702</td>
+          <td style="text-align: right">0.924</td>
+          <td style="text-align: right">0.6211391</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">N(0,1): bootstrap</td>
+          <td style="text-align: right">1.281552</td>
+          <td style="text-align: right">1.1113686</td>
+          <td style="text-align: right">0.944</td>
+          <td style="text-align: right">0.6633263</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">U(0,1): delta</td>
+          <td style="text-align: right">0.900000</td>
+          <td style="text-align: right">0.8950180</td>
+          <td style="text-align: right">0.970</td>
+          <td style="text-align: right">0.1482522</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">U(0,1): bootstrap</td>
+          <td style="text-align: right">0.900000</td>
+          <td style="text-align: right">0.8892106</td>
+          <td style="text-align: right">0.938</td>
+          <td style="text-align: right">0.1217511</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">X^2(1): delta</td>
+          <td style="text-align: right">2.705544</td>
+          <td style="text-align: right">2.7834884</td>
+          <td style="text-align: right">0.858</td>
+          <td style="text-align: right">1.5984722</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">X^2(1): bootstrap</td>
+          <td style="text-align: right">2.705544</td>
+          <td style="text-align: right">2.0984550</td>
+          <td style="text-align: right">0.944</td>
+          <td style="text-align: right">1.8483615</td>
+      </tr>
+  </tbody>
+</table>
+<p>Overall, the Bootstrap estimator of CI is more compatible with the
+claimed confidence interval.</p>
+$$
+  2 z_{1-\alpha/2} \sigma_q
+$$$$
+  \sigma_q = \sqrt{\frac{p(1-p)}{n f^2(q^*)}}.
+$$<h1 id="supplementary-material">Supplementary Material</h1>
+<h3 id="problem-1-supplementary-material-inverse-transform-method">Problem 1 supplementary material: inverse transform method</h3>
+<p>In problem 1, $Y$ is the double exponential random variable and we sampled from it by recognizing we can simply sample from the exponential and taking its negative with probability $0.5$.</p>
+$$
+  \frac{1}{Z} \int_{-\infty}^{\infty} g(x) dx = 1,
+$$$$
+  \int_{-\infty}^{0} e^{x} dx + \int_{0}^{\infty} e^{-x} dx = Z,
+$$$$
+  f_Y(y) = \frac{1}{2} \exp(-|x|).
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>g.density <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(y) { <span style="color:#ae81ff">0.5</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">abs</span>(y)) }
+</span></span></code></pre></div>$$
+  F_Y(y) = \frac{1}{2}\int_{-\infty}^{y} \exp(-|s|) ds.
+$$$$
+  F_Y(y) = \frac{1}{2} \int_{-\infty}^{y} \exp(s) ds = \frac{1}{2}\exp(y)
+$$$$
+  F_Y(y) = F_Y(0) + \frac{1}{2} \int_{0}^{y} \exp(-s) ds = \frac{1}{2} + \frac{1}{2}(1 - \exp(-y)),
+$$$$
+  F_Y(y) =
+  \begin{cases}
+    \frac{1}{2} \exp(y)                & y \leq 0\\
+    1 - \frac{1}{2} \exp(-y) & y > 0.
+  \end{cases}
+$$$$
+  p = \frac{1}{2} \exp(y).
+$$$$
+  p = 1 - \frac{1}{2} \exp(-y).
+$$$$
+  y = -\log(2-2p)
+$$$$
+  F^{-1}(p) =
+  \begin{cases}
+    \log(2p)        & p \in (0,0.5]\\
+    -\log(2-2p)     & p \in (0.5,1).
+  \end{cases}
+$$<p>
+Thus, to sample from $Y$, we observe $u$ from $U(0,1)$ and, if $u \leq 0.5$, we let $y = \log(2u)$ and otherwise let $y = -\log(2-2u)$.</p>
+<p>We implement this sampler with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>ry.itm <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">numeric</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    u <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (u <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0.5</span>) { ys[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>u) }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> { ys[i] <span style="color:#f92672">&lt;-</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2-2</span><span style="color:#f92672">*</span>u)}
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  ys
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="inverse-transform-method-for-sampling-from-random-variable-with-kernel-g">Inverse transform method for sampling from random variable with kernel $g$</h3>
+$$
+  \frac{1}{Z} \int_{-\infty}^{\infty} g(x) dx = 1,
+$$$$
+  \int_{-\infty}^{0} e^{x} dx + \int_{0}^{\infty} e^{-x} dx = Z,
+$$$$
+  f_Y(y) = \frac{1}{2} \exp(-|x|).
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>g.density <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">0.5</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span><span style="color:#a6e22e">abs</span>(x)) }
+</span></span></code></pre></div>$$
+  F_Y(y) = \frac{1}{2}\int_{-\infty}^{y} \exp(-|s|) ds.
+$$$$
+  F_Y(y) = \frac{1}{2} \int_{-\infty}^{y} \exp(s) ds = \frac{1}{2}\exp(y)
+$$$$
+  F_Y(y) = F_Y(0) + \frac{1}{2} \int_{0}^{y} \exp(-s) ds = \frac{1}{2} + \frac{1}{2}(1 - \exp(-y)),
+$$$$
+  F_Y(y) =
+  \begin{cases}
+    \frac{1}{2} \exp(y)                & y \leq 0\\
+    1 - \frac{1}{2} \exp(-y) & y > 0.
+  \end{cases}
+$$$$
+  p = \frac{1}{2} \exp(y).
+$$$$
+  p = 1 - \frac{1}{2} \exp(-y).
+$$$$
+  y = -\log(2-2p)
+$$$$
+  F^{-1}(p) =
+  \begin{cases}
+    \log(2p)        & p \in (0,0.5]\\
+    -\log(2-2p)     & p \in (0.5,1).
+  \end{cases}
+$$<p>
+Thus, to sample from $Y$, we observe $u$ from $U(0,1)$ and, if $u \leq 0.5$,
+we let $y = \log(2u)$ and otherwise let $y = -\log(2-2u)$.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>ry <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  ys <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">numeric</span>(n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    u <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (u <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0.5</span>) { ys[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>u) }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> { ys[i] <span style="color:#f92672">&lt;-</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">2-2</span><span style="color:#f92672">*</span>u)}
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  ys
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

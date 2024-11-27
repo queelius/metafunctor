@@ -1,0 +1,16 @@
+[
+    {{- $comma := false -}}
+    {{- range .Site.Pages -}}
+      {{- if not $comma -}}{{- $comma = true -}}{{else}},{{end -}}
+      {
+        "title": "{{ .Title | urlize }}",
+        "link": "{{ .Permalink }}",
+        "date": "{{ .Date }}",
+        "content": {{ .Plain | jsonify }},
+        "summary": {{ .Summary | jsonify }},
+        "tags": {{ .Params.tags | jsonify }},
+        "section": {{ .Section | jsonify }}
+      }
+    {{- end -}}
+  ]
+  

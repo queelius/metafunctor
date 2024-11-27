@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amdhal&#39;s Law on metafunctor</title>
+    <link>http://localhost:1313/tags/amdhals-law/</link>
+    <description>Recent content in Amdhal&#39;s Law on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Oct 2021 08:18:32 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/amdhals-law/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey: Accelerating Critical Section Execution with Asymmetric Multi-Core Architectures (2009)</title>
+      <link>http://localhost:1313/posts/2022-05-13-acs/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2022-05-13-acs/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;$$&#xA;  \operatorname{speedup}(N) = \frac{1}{1 - P + \frac{P}{N}},&#xA;$$&lt;p&gt;&#xA;where $\operatorname{speedup}$ is the total execution time of a&#xA;single-threaded version of a program divided by the total execution time&#xA;an $N$-threaded implementation of the same program.a&lt;/p&gt;&#xA;&lt;p&gt;Accordingly, the asymptotic speedup of a program as a function of $N$ is&#xA;determined by the $1-P$ term, i.e., $\operatorname{speedup}(N)$ goes to&#xA;$1/(1-P)$ as $N$ goes to infinity. Thus, even if 99% of the time the&#xA;program can be ran in parallel, the maximum possible&#xA;$\operatorname{speedup}$ is only $1/(1-0.99) = 100$. Thus, to achieve&#xA;scalable performance with increasing thread counts, the sequential&#xA;portion of code must be aggressively reduced no matter how &lt;em&gt;small&lt;/em&gt; it&#xA;is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

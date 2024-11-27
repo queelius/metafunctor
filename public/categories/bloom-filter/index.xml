@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bloom-Filter on metafunctor</title>
+    <link>http://localhost:1313/categories/bloom-filter/</link>
+    <description>Recent content in Bloom-Filter on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/bloom-filter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Bernoulli Model: A Probabilistic Framework for Data Structures and Types</title>
+      <link>http://localhost:1313/posts/bernoulli-boolean-model/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bernoulli-boolean-model/</guid>
+      <description>This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model&amp;rsquo;s utility in optimizing space and accuracy in data representation.</description>
+    </item>
+    <item>
+      <title>Rate-distorted perfect hash filter</title>
+      <link>http://localhost:1313/projects/rd-ph-filter/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/rd-ph-filter/</guid>
+      <description>A model of a second-order Bernoulli set with false positives and false negatives</description>
+    </item>
+  </channel>
+</rss>

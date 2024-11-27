@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>The Bernoulli Model: A Probabilistic Framework for Data Structures and Types | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model&rsquo;s utility in optimizing space and accuracy in data representation.">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "admin">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/bernoulli-boolean-model/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/bernoulli-boolean-model/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="The Bernoulli Model: A Probabilistic Framework for Data Structures and Types">
+  <meta property="og:description" content="This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model’s utility in optimizing space and accuracy in data representation.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-17T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/posts/bernoulli-boolean-model/featured.png">
+
+  <meta itemprop="name" content="The Bernoulli Model: A Probabilistic Framework for Data Structures and Types">
+  <meta itemprop="description" content="This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model’s utility in optimizing space and accuracy in data representation.">
+  <meta itemprop="datePublished" content="2023-06-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-06-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3406">
+  <meta itemprop="image" content="http://localhost:1313/posts/bernoulli-boolean-model/featured.png">
+  <meta itemprop="keywords" content="Boolean,Bernoulli,Probabilistic Data Structure,Bloom-Filter">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/bernoulli-boolean-model/featured.png">
+  <meta name="twitter:title" content="The Bernoulli Model: A Probabilistic Framework for Data Structures and Types">
+  <meta name="twitter:description" content="This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model’s utility in optimizing space and accuracy in data representation.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('/posts/bernoulli-boolean-model/featured.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">The Bernoulli Model: A Probabilistic Framework for Data Structures and Types</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        News
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">The Bernoulli Model: A Probabilistic Framework for Data Structures and Types</h1>
+      
+      <p class="tracked">
+        By <strong>admin</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-06-17T00:00:00Z">June 17, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="motivation">Motivation</h2>
+<p>The <a href="/project/bernoulli-model">Bernoulli Model</a> is a general framework for thinking about
+probabilistic data structures and types of a particular sort.
+A big reason for developing the Bernoulli Model formalism is so that we can use
+Bernoulli Models of data types to develop Oblivious Data Types. We will
+go into that in a separate document, but the basic idea is that Bernoulli
+approximations have a lot of desirable properties for developing
+oblivious data types, and the Bernoulli Model formalism allows us to reason about
+the correctness of the oblivious data types and to make them more space-efficient
+by trading accuracy for space while allowing for $\mathcal{O}(1)$ time complexity.</p>
+<p>The Bernoulli Model also provides a formalism for how to think about various
+probabilistic data structures, like the Bloom filter, Count-Min sketch, or my
+invention, the Bernoulli data type, which comprises an entire family of data
+structures that are all based on the Bernoulli Model, from sets (like the Bloom
+filter) to maps in a near-space optimal way, while allowing for more savings
+by trading accuracy for space in a controlled way.</p>
+<h2 id="introduction-bernoulli-boolean">Introduction: Bernoulli Boolean</h2>
+<p>The Boolean type, denoted by $\mathrm{bool}$, models the set of values
+given by $\{\mathrm{true},\mathrm{false}\}$, or more compactly $\{0,1\}$.
+This document entertains the replacement of $\mathrm{bool}$ with a
+type $B_{\mathrm{bool}}$, which represents a sort of <em>noisy</em> Boolean.
+In general, we can have a Bernoulli type for any type $T$, denoted by $B_T$.</p>
+<blockquote>
+<p>As special case, data structures like Bloom filters can be thought of as a
+Bernoulli type for the set indicator function, $1_A : X \mapsto {0,1}$,
+but more on that later.</p>
+</blockquote>
+<p>There are two types that have fewer values than the Boolean type, the absurd type, denoted by $\mathrm{void}$, which is the type with no values (and thus values of this type cannot be constructed) and the unit type, denoted by $()$, which has only a single value, also denoted by $()$. Since there is only a single value of the unit type, there is no uncertainty in the unit type.</p>
+<p>As degenerate cases, the Bernoulli Model of the absurd is just the absurd type,
+$B_{\mathrm{void}} \equiv \mathrm{void}$, and Bernoulli Model of the unit type is just the unit type, $B_{()} \equiv ()$.</p>
+<p>The Boolean type $\mathrm{bool}$ has two possible values, $\mathrm{true}$ and $\mathrm{false}$,
+and is thus the first type for which we can introduce uncertainty.</p>
+<p>Every Bernoulli Model also has an <em>order</em>, an integer greater than 1, which essentially describes the number of independent ways in which the process that generated the Bernoulli approximation can produce errors. We denote that a Bernoulli Model of type $T$ has order $k$ with $B_T^{(k)}$. For the absurd and unit types, the maximum order is $0$, and in general $T \equiv B_T^{(0)}$, i.e., if there are no ways to introduce errors, then that is equivalent to the type itself.</p>
+<p>Unless it is useful, we drop the order information and simply write $B_T$. In the Bernoulli Model, we may denote the latent value $x$ that is being approximated using the notation $B_T(x)$ and we say that it is latent if we do not know the value of $x$ and we are trying to approximate it using the Bernoulli Model approximation $B_T(x)$. In this case, the latent value $x$ is unobservable and we can think of $B_T(x)$ as a noisy measurement of $x$.</p>
+$$
+\Pr\\{ B_{\mathrm{bool}}(x) \neq x\\} = \varepsilon(x)
+$$<p>
+for each $x \in \{0,1\}$, where $0 &lt; \varepsilon(x) &lt; 1$ is the probability of an error. In most practical situations, $\varepsilon(x)$ is known or its expectation is known, and it can be pre-specified to balance factors like space complexity and accuracy.</p>
+<h2 id="binary-channels">Binary Channels</h2>
+<p>Let&rsquo;s begin by thinking about the Binary Symmetric Channel and the Binary
+Asymmetric Channel. The Bernoulli Boolean model can exhibit two distinct
+behaviors, represented as different &ldquo;channels&rdquo; through which Boolean values are
+transmitted:</p>
+<ol>
+<li>
+<p><strong>Binary Symmetric Channel (First-order Bernoulli Model)</strong>: The probability of an
+equality error is the same for $1$ and $0$. We denote this by the type
+$B_{\mathrm{bool}}^{(1)}$.</p>
+</li>
+<li>
+<p><strong>Binary Asymmetric Channel (Second-order Bernoulli Model)</strong>: The probability of
+an equality error differs for $1$ and $0$. We denote this by the type
+$B_{\mathrm{bool}}^{(2)}$.</p>
+</li>
+</ol>
+<h2 id="false-positives-and-negatives">False Positives and Negatives</h2>
+<p>Errors in the Bernoulli Boolean model can be understood in terms of
+<em>false negatives</em> and <em>false positives</em>:</p>
+<ol>
+<li>$B_{\mathrm{bool}}(0) = 1$ is a <em>false negative</em>.</li>
+<li>$B_{\mathrm{bool}}(1) = 0$ is a <em>false positive</em>.</li>
+</ol>
+<p>In the first-order model, the probability of a false negative equals the probability
+of a false positive. In the second-order model, these probabilities differ.
+In a specific but common version of the second-order Bernoulli Boolean model, false
+negatives occur with probability 0 and false positives occur with probability
+$0 &lt; \varepsilon &lt; 1$.</p>
+<h2 id="prediction">Prediction</h2>
+<p>$B_T(x)$ is <em>correlated</em> with the latent value $x$, and thus provides information about the latent value. For instance, it allows one to predict $x$ given $B_T(x)$ better than if no observations where given whatsoever, assuming we know the error rate $\varepsilon(x)$ is better than
+a random guess, e.g., in the case of $B_{\mathrm{bool}}$, $\varepsilon(x) &lt; 0.5$.
+If we have no prior information about the latent variable, the best (maximum likelihood) estimate of of its value is the observation $B_T(x)$.</p>
+$$
+\Pr\\{X = x \mid B_T(x) = x \\} \propto \Pr\\{B_T(x) = x \mid X = x\\} \Pr\\{X = x\\},
+$$<p>
+where $\Pr\{X = x\}$ is the prior probability that $X = x$ and $\Pr\{B_T(x) = x \mid X = x\}$ is the probability that $B_T(x) = x$ given that $X = x$ (the probability that the observation is correct). In the Bernoulli Boolean Model, for $X = 1$ this is the true positive rate $\tau$
+and for $X = 0$ this is the true negative rate $\nu$.</p>
+$$
+\Pr\\{x \mid B_{\mathrm{bool}}^{(1)}(x)\\} = \frac{\tau \Pr\\{X = x\\}}
+    {\tau \Pr\\{X = x\\} + (1-\tau) (1-\Pr\\{X = x\\})}.
+$$$$
+\Pr\\{x \mid B_{\mathrm{bool}}^{(1)}(x)\\} = \frac{\tau}{\tau + (1-\tau) (1/\Pr\\{X = x\\} - 1)}.
+$$<p>Assuming maximum ignorance (maximum entropy) about $x$ (i.e.,
+$\Pr\{X = 1\} = 0.5$), the following expression is obtained for the first-order
+Bernoulli Boolean Model, the above equation simplifies to $\Pr\{x \mid B_{\mathrm{bool}}^{(1)}(x)\} = \tau$.</p>
+$$
+\Bigl\\{ B_{1,\mathrm{bool}}^{(1)}(x), \ldots, B_{n,\mathrm{bool}}^{(1)}(x) \Bigr\\},
+$$<p>
+in which case the maximum likelihood estimate of $x$ is the majority vote, i.e., the value
+that occurs most frequently in the observations. As the number of independent sources
+of observations goes to infinity, the majority vote converges in probability to $x$.</p>
+<p>This is not a typical use-case for the Bernoulli Boolean model, since it will
+mostly be a analytical result of probabilistic data structures that may be framed
+in the context of a Bernoulli Model.</p>
+<h2 id="inducing-bernoulli-types">Inducing Bernoulli Types</h2>
+<p>Here, we discuss how to generalize the results.</p>
+<h3 id="unit-functions">Unit Functions</h3>
+<p>We discussed the idea of the Bernoulli Model for <strong>value types</strong> like $\mathrm{bool}$.
+We can think of these Bernoulli Models as Bernoulli approximations of the set of unit types $() \mapsto X$. A unit type has no input, and it maps to a single constant value in the output. There are $|X|$ functions of this type.</p>
+<p>If we replace $() \mapsto X$ with $B_X$ or, equivalently, $B_{() \mapsto X}$, we allow for the possibility of errors. The confusion matrix for $B_{() \mapsto \mathrm{bool}}^{(2)}$ is provided in Table 1.</p>
+<p>Table 1: Second-order Bernoulli Boolean Model for $() \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th>$x / B_{\mathrm{bool}}^{(2)}$</th>
+          <th>observe $1$</th>
+          <th>observe $0$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>latent</strong> $1$</td>
+          <td>$\tau = 1-\eta$</td>
+          <td>$\eta$</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $0$</td>
+          <td>$\varepsilon$</td>
+          <td>$\nu = 1-\varepsilon$</td>
+      </tr>
+  </tbody>
+</table>
+<p>So, we might observe $B_{() \mapsto \mathrm{bool}}(x) = 1$ and, according to the confusion
+matrix, the latent value $x$ is $1$ with probability $\tau$ (true positive rate) and $0$ with probability $\varepsilon$ (false positive rate). Likewise, we might observe $B_{() \mapsto \mathrm{bool}}(x) = 0$ and the latent value $x$ is $1$ with probability $\eta$ (false negative rate) and $0$ with probability $\nu$ (true negative rate).</p>
+<p>We see that the Bernoulli Model for $() \mapsto \mathrm{bool}$ has a maximum order of 2, since $\eta$ and $\varepsilon$ are independent probabilities that fully describe the model. No additional free parameters are possible, since each row must sum to 1 (the total probability theorem), i.e., given a latent value $x$, the probability of observing $1$ or $0$ must sum to $1$ since that is the only possible two outcomes in the Bernoulli Boolean Model.</p>
+<p>We can think of this as the asymmetric binary channel, where the probability of an error is different for $1$ and $0$.</p>
+<p>A first-order Bernoulli Boolean model is a model where $\epsilon = \varepsilon = \eta$. See the confusion matrix in Table 2.</p>
+<p>Table 2: First-Order Bernoulli Boolean Model for $() \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th>$x / B_{\mathrm{bool}}^{(1)}$</th>
+          <th>observe $1$</th>
+          <th>observe $0$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>latent</strong> $1$</td>
+          <td>$\tau =1-\epsilon$</td>
+          <td>$\eta = \epsilon$</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $0$</td>
+          <td>$\varepsilon = \epsilon$</td>
+          <td>$\nu = 1-\epsilon$</td>
+      </tr>
+  </tbody>
+</table>
+<p>We can see that there is only one free parameter, $\epsilon$, corresponding to the first-order Bernoulli Boolean Model. We can think of this as a binary symmetric channel, where the probability of an error is the same for $1$ and $0$.</p>
+<p>For completeness, we can write down the confusion matrix for the zeroth-order model, which is just the standard Boolean model:</p>
+<p>Table 3: Zeroth-Order Bernoulli Boolean Model for $() \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th>$x / B_{\mathrm{bool}}^{(1)}$</th>
+          <th>observe $1$</th>
+          <th>observe $0$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>latent</strong> $1$</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $0$</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p>We see that there are 0 free parameters, and the model is deterministic.</p>
+<h4 id="prediction-boolean-values">Prediction: Boolean Values</h4>
+<p>Earlier, we discussed how to predict latent values from Bernoulli Model observations. Let&rsquo;s apply these insights to the first-order Bernoulli Model for $() \mapsto \mathrm{bool}$, which we can denote as $B_{\mathrm{bool}}^{(1)}$.</p>
+$$
+\Pr\\{X = 1 | B_{\rm{bool}}^{(1)} = 1\\} =
+    \frac{
+        \Pr\\{B_{\rm{bool}}^{(1)} =1 | X=1\\} \Pr\\{X = 1\\}
+    }
+    {
+        \Pr\\{B_{\rm{bool}}^{(1)} = 1\\}
+    }
+$$$$
+\Pr\\{X=1 | B_{\rm{bool}}^{(1)}=1\\} = \frac
+    {(1-\epsilon) \Pr\\{X = 1\\}}
+    {\Pr\\{B_{\rm{bool}}^{(1)}=1\\}}
+$$$$
+\begin{split}
+\Pr\\{B_{\rm{bool}}^{(1)} = 1\\} = \Pr\\{
+    B_{\rm{bool}}^{(1)}=1 | X=1\\} \Pr\\{X = 1\\} + \\\
+    \Pr\\{B_{\rm{bool}}^{(1)}=1 | X=0\\} \Pr\\{X = 0\\}.
+\end{split}
+$$$$
+\Pr\\{B_{\rm{bool}}^{(1)} = 1\\} = (1-\epsilon) \Pr\\{X = 1\\} + \epsilon \Pr\\{X = 0\\}.
+$$$$
+\Pr\\{X=1 | B_{\rm{bool}}^{(1)}=1\\} = \frac
+    {1-\epsilon}
+    {1-\epsilon (1 - q/(1-q))}
+$$<p>
+where $q = \Pr\{X = 0\}$.</p>
+<p>Let&rsquo;s evaluate $q = \Pr\{X = 0\}$ at some interesting points:</p>
+<ol>
+<li>At $q = 0$, $\Pr\{X=1 | B_{\rm{bool}}^{(1)}=1\} = 1$. This makes sense. We know that the latent value $1$ occurs with probability $1-q=1$, therefore whatever no matter what we observe, the latent value is $1$.</li>
+<li>As $q \to 1$, $\Pr\{X=1 |B_{\rm{bool}}^{(1)}=1\} \to 0$. This also makes sense; we know that the latent value $1$ occurs with probability $q=1$, so no matter what we observe, the latent value is $0$.</li>
+<li>At $q = 0.5$, $\Pr\{X=1 |B_{\rm{bool}}^{(1)}=1\} = 1-\epsilon$. This is the maximum entropy case, where we have no prior information about the latent value and assume maximum ignorance.</li>
+</ol>
+<h2 id="unary-bernoulli-functions">Unary Bernoulli Functions</h2>
+<p>In this section, we expand our focus to unary functions.</p>
+<h3 id="lifing-unary-functions">Lifing Unary Functions</h3>
+<p>If we have a function $f : \rm{bool} \mapsto \rm{bool}$, then the space of all possible functions is given by Table 4.</p>
+<p>Table 4: All possible functions of type $\rm{bool} \mapsto \rm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th>$f$</th>
+          <th>$f(\rm{true})$</th>
+          <th>$f(\rm{false})$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\rm{id}$</td>
+          <td>$\rm{true}$</td>
+          <td>$\rm{false}$</td>
+      </tr>
+      <tr>
+          <td>$\rm{not}$</td>
+          <td>$\rm{false}$</td>
+          <td>$\rm{true}$</td>
+      </tr>
+      <tr>
+          <td>$\rm{true}$</td>
+          <td>$\rm{true}$</td>
+          <td>$\rm{true}$</td>
+      </tr>
+      <tr>
+          <td>$\rm{false}$</td>
+          <td>$\rm{false}$</td>
+          <td>$\rm{false}$</td>
+      </tr>
+  </tbody>
+</table>
+<p>Suppose we replace the Boolean inputs with Bernoulli Boolean values and ask the question, &ldquo;What is the probability that $f\bigl(B_{\rm{bool}}^{(1)}(x)\bigr) = f(x)$?&rdquo;</p>
+<p>Notice that $f\bigl(B_{\rm{bool}}^{(1)}(x)\bigr)$ is $f(x)$ with some probability, but $f(x)$ may be latent depending on $f$. For the constant fuctions, $\mathrm{true}$ and $\mathrm{false}$, we get the same function, i.e., $\mathrm{true} : B_{\rm{bool}}^{(k)} \mapsto B_{\rm{bool}}^{(0)} \equiv \mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$ since $\mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$ always outputs $\mathrm{true}$, and similiarly for $\mathrm{false} : \mathrm{bool} \mapsto \mathrm{bool}$.</p>
+<p>However, the $\mathrm{id}$ and $\mathrm{not}$ functions are different. For instance, suppose
+$\Pr\{B_{\rm{bool}}^{(1)}(x) = x\} = p$. Then, when we input
+$B_{\rm{bool}}^{(1)}(\mathrm{true})$ into $\mathrm{id}$, we get the correct output $\mathrm{true}$ with probability $p$ and the incorrect output $\mathrm{false}$ with probability $1-p$. Likewise,when we input $B_{\mathrm{bool}}^{(1)}(\mathrm{false})$ into $\mathrm{id}$, we get the correct output $\mathrm{false}$ with probability $p$ and the incorrect output $\mathrm{true}$ with probability $1-p$.</p>
+<p>Since we can think of these outputs as either correct or incorrect with probability $p$ and $1-p$ respectively, they are Bernoulli Boolean values, e.g., this $\mathrm{id}$ function on Bernoulli Booleans is of type $B_{\mathrm{bool}}^{(1)} \mapsto B_{\mathrm{bool}}^{(1)}$. We monadically lift $\mathrm{id} : \mathrm{bool} \mapsto \mathrm{bool}$ to a function of type $B_{\mathrm{bool}}^{(1)} \mapsto B_{\mathrm{bool}}^{(1)}$.</p>
+<p>Notice that this is not a Bernoulli Model of $B_{\mathrm{bool} \mapsto \mathrm{bool}}$, but rather a function of type $B_{\mathrm{bool}} \mapsto B_{\mathrm{bool}}$. This may surprise the reader, but it is important to think about how these Bernoulli Models compose.</p>
+<p>For instance, if we have the function $\mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$, then when we provide it with a Bernoulli Boolean value, we know that we $\mathrm{true}$ is the correct output &ndash; there are no latent values. However, a Bernoulli Model of the (function) $\mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$ is a completely different concept. The Bernoulli approximation of this funcction is of type $B_{\mathrm{bool} \mapsto \mathrm{bool}}$, and the latent function, $\mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$, is not observable, but $B_{\mathrm{bool} \mapsto \mathrm{bool}}(\mathrm{true})$ is observable and provides some information about the latent function.</p>
+<p>Presumably, some process generated the Bernoulli approximation $B_{\mathrm{bool} \mapsto \mathrm{bool}}(\mathrm{true})$, and we wish to use that approxmiate function as a replacement for the latent function we are actually interested in, which is $\mathrm{true} : \mathrm{bool} \mapsto \mathrm{bool}$.</p>
+<p>There are only 4 possible functions of type $\mathrm{bool} \mapsto \mathrm{bool}$, and in Table 5 we show the confusion matrix for the highest-order model, $B_{\mathrm{bool} \mapsto \mathrm{bool}}^{(12)}$.</p>
+<p>Table 5: Bernoulli Model for $\mathrm{bool} \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>observe $\mathrm{id}$</th>
+          <th>observe $\mathrm{not}$</th>
+          <th>observe $\mathrm{true}$</th>
+          <th>observe $\mathrm{false}$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>latent $\mathrm{id}$</td>
+          <td>$p_{1 1}$</td>
+          <td>$p_{1 2}$</td>
+          <td>$p_{1 3}$</td>
+          <td>$p_{1 4}$</td>
+      </tr>
+      <tr>
+          <td>latent $\mathrm{not}$</td>
+          <td>$p_{2 1}$</td>
+          <td>$p_{2 2}$</td>
+          <td>$p_{2 3}$</td>
+          <td>$p_{2 4}$</td>
+      </tr>
+      <tr>
+          <td>latent $\mathrm{true}$</td>
+          <td>$p_{3 1}$</td>
+          <td>$p_{3 2}$</td>
+          <td>$p_{3 3}$</td>
+          <td>$p_{3 4}$</td>
+      </tr>
+      <tr>
+          <td>latent $\mathrm{false}$</td>
+          <td>$p_{4 1}$</td>
+          <td>$p_{4 2}$</td>
+          <td>$p_{4 3}$</td>
+          <td>$p_{4 4}$</td>
+      </tr>
+  </tbody>
+</table>
+<p>Each row must sum to 1, $\sum_j p_{i j} = 1$, so we only have up to a maximum of
+$4 (4-1) = 12$ degrees of freedom. This means the highest Bernoulli Boolean order is
+12, but we normally drop the order information and just write $B_{\mathrm{bool} \mapsto \mathrm{bool}}$ (and propogate error rates using interval arithmetic).</p>
+<p>Often, the order is either first-order or for various reasons. The first-order
+Bernoulli Model of $\mathrm{bool} \mapsto \mathrm{bool}$ is a model where every entry in the confusion matrix is a function of some single value. The maximum entropy
+confusion matrix, given error rates $\epsilon$, is given in Table 6.</p>
+<p>Table 5: Bernoulli Model for $\mathrm{bool} \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>observe $\mathrm{id}$</th>
+          <th>observe $\mathrm{not}$</th>
+          <th>observe $\mathrm{true}$</th>
+          <th>observe $\mathrm{false}$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>latent</strong> $\mathrm{id}$</td>
+          <td>$1-\epsilon$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $\mathrm{not}$</td>
+          <td>$\epsilon/3$</td>
+          <td>$1-\epsilon$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $\mathrm{true}$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+          <td>$1-\epsilon$</td>
+          <td>$\epsilon/3$</td>
+      </tr>
+      <tr>
+          <td><strong>latent</strong> $\mathrm{false}$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+          <td>$\epsilon/3$</td>
+          <td>$1-\epsilon$</td>
+      </tr>
+  </tbody>
+</table>
+<p>When we have a Bernoulli Model approximation of some latent function of type
+$\mathrm{bool} \mapsto \mathrm{bool}$, we wish to store the error information in the output so that we can propagate error information through the computation.</p>
+<p>We do this by saying that the output is a Bernoulli Boolean, because it may or may not be correct, i.e., the Bernoulli Model generates a function of type $\mathrm{bool} \mapsto B_{\mathrm{bool}}$ where the output is a Bernoulli Boolean value. In our algorithms, we created a type system for this, using interval arithmetic to propagate the error rates through the computation.</p>
+<p>Notice that the Bernoulli Model on $\mathrm{bool} \mapsto \mathrm{bool}$ does not change the type of the input, $\mathrm{bool}$. We can, of course, also provide as input to this function a Bernoulli Booleans, in which case we will usually get an even higher-order Bernoulli Boolean as output.</p>
+$$
+\Pr\\{ B_{\mathrm{bool} \mapsto \mathrm{bool}}(f) = f\\}.
+$$$$
+\begin{split}
+\Pr\\{B_{\mathrm{bool}\mapsto \mathrm{bool}}^{(1)}(\mathrm{id})(\mathrm{true}) = \mathrm{id}(\mathrm{true}) \\} \times \\\ \Pr\\{B_{\mathrm{bool}\mapsto \mathrm{bool}}^{(1)}(\mathrm{id})(\mathrm{false}) = \mathrm{id}(\mathrm{false}) \\}
+\end{split}
+$$<p>From the confusion matrix, we know this product of probabilities is $1-\epsilon$. In fact, normally, the process that generates the Bernoulli Model of the latent function is based on these kinds of probabilities on individual inputs.</p>
+<h3 id="higher-order-bernoulli-models">Higher-Order Bernoulli Models</h3>
+<p>If we are trying to estimate the latent function, a higher order complicates the estimation problem (more parameters to estimate). However, a higher-order may be <em>desirable</em> in many cases, since it allows for more capacity to approximate the latent function. In general, when looking at the confusion matrix, we want the diagonal to be as close to 1 as possible. For the off-diagonal elements, we want functions that are more similiar to the latent function to have larger probabilities than functions that are less similiar to the latent function. This is just a way of
+minimizing a loss function.</p>
+<h2 id="set-indicator-functions">Set-Indicator Functions</h2>
+<p>The set-indicator function is a function that maps an element of a set to a
+Boolean value. We can think of this as a function of type $X \mapsto \mathrm{bool}$,
+which returns true if the input is in the set and false otherwise.</p>
+<p>Let us consider Bernoulli Models for set-indicator functions. The Bloom filter,
+for instance, is a Bernoulli model of the set-indicator function. It is a second-order
+model, since false negatives occur with probability 0 and false positives occur with
+probability $\varepsilon$. This is actually the <em>expectation</em> of the false positive
+rate, and the true false positive rate is a random variable that cannot usually be
+computed unless $X$ is a finite set.</p>
+<h3 id="hashset-approximate-set-indicator-functions">HashSet: Approximate Set-Indicator Functions</h3>
+<p>Suppose we have a cryptographic hash function $h : X \mapsto {0,1}^n$, where
+$n$ is the number of bits in the hash value. We define an approximate set-indicator
+function, denoted by $\mathrm{HashSet}$, in the following way:</p>
+<ul>
+<li>We are given a set $A$ to (approximately) represent.</li>
+<li>We find a seed $s$ such that $h(x s) = 0^n$ for all $x \in A$.</li>
+<li>We do not look at any $x \notin A$, and by the properties of $h$, for $x \notin A$, $h(x s) = 0^n$ with probability $2^{-n}$ corresponding to a false positive, and otherwise $h(x s) \neq 0^n$ with probability $1-2^{-n}$.</li>
+<li>We define membership as $x \in A \equiv h(x s) = 0^n$.</li>
+</ul>
+$$
+    \prod_{j=1}^{|A|} 2^{-n} = 2^{-n|A|},
+$$<p>
+which will take an expected number of trials $2^{n|A|}$. We can store the seed as a string of $n|A|$ bits, or $n$ bits per element in the set $A$. Since it has a false positive rate $\varepsilon = 2^{-n}$, $n = -\log_2 \varepsilon$, and we can reparametrize the space complexity as $-\log_2 \varepsilon$ bits per element. This is the information theoretic lower-bound, but we achieved it only by using an algorithm with exponential time complexity. We can do better by using different algorithms, but it comes at a cost to space complexity.</p>
+<h3 id="bernoulli-model-for-set-indicator-functions">Bernoulli Model for Set-Indicator Functions</h3>
+<p>The number of functions of type $X \mapsto \mathrm{bool}$ is $2^{|X|}$. We can
+think of these as the set of all possible set-indicator functions. We can
+approximate this set of functions with a Bernoulli Model, which we denote
+$B_{X \mapsto \mathrm{bool}}$.</p>
+<p>We can use the simple $\mathrm{HashSet}$ construction to induce the Bernoulli Model for set-indicator functions. Specifically, in the $\mathrm{HashSet}$, false positives occur with some positive probability $\epsilon$ and false negatives occur with probability $0$.</p>
+<p>Technically, however, the Bernoulli Model is being applied to the set-indicator function, but this also specifies a Bernoulli Model on the Boolean output of the set-indicator function:</p>
+$$
+    \in : X \times \mathcal{P}(X) \mapsto B_{\mathrm{bool}}.
+$$<p>Let&rsquo;s consider $X = \{1,2\}$ and $A = \{2\}$. The confusion matrix for the this contruction is given in Table 7.</p>
+<p>Table 7: Bernoulli Model for $X \mapsto \mathrm{bool}$</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>$1_\emptyset$</th>
+          <th>$1_{\{1\}}$</th>
+          <th>$1_{\{2\}}$</th>
+          <th>$1_{\{1,2\}}$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$1_\emptyset$</td>
+          <td>$(1-\epsilon)^2$</td>
+          <td>$\epsilon(1-\epsilon)$</td>
+          <td>$\epsilon(1-\epsilon)$</td>
+          <td>$\epsilon^2$</td>
+      </tr>
+      <tr>
+          <td>$1_{\{1\}}$</td>
+          <td>$0$</td>
+          <td>$1-\epsilon$</td>
+          <td>$0$</td>
+          <td>$\epsilon$</td>
+      </tr>
+      <tr>
+          <td>$1_{\{2\}}$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$1-\epsilon$</td>
+          <td>$\epsilon$</td>
+      </tr>
+      <tr>
+          <td>$1_{\{1,2\}}$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+      </tr>
+  </tbody>
+</table>
+<p>We do not know the latent set $A = \{2\}$, we only have the approximation
+$B_{X \mapsto \mathrm{bool}}(A)$, and we use this as a replacement for the latent set $A$.</p>
+<p>Notice that if we start with $A = \{2\}$, in row 3, we have zeros in the
+first two columns for the empty set and $\{1\}$, which makes sense
+as by construction no false negatives are possible, only false positives.</p>
+<p>We see that with probability $1-\epsilon$, the output is correct, and with
+probability $\epsilon$, the output is incorrect. This is a Bernoulli Model of
+the set-indicator function (or Bernoulli Set), and we can use this to provide information
+about the latent set.</p>
+$$
+\Pr\\{x \in B_{X \mapsto \mathrm{bool}}(A)\\}.
+$$$$
+    x \in B_{X \mapsto \mathrm{bool}}(A) : X \mapsto \mathrm{bool}^{(2)}.
+$$<h2 id="conclusion">Conclusion</h2>
+<p>The Bernoulli Model is a way of thinking about the uncertainty in the output of a function, and how that uncertainty propagates through a computation, and typically the uncertainty is due to a trade-off between space complexity and accuracy. The more space we use to represent the function, the more closely it is expected to approximate the latent function.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
