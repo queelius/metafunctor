@@ -2,689 +2,689 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on metafunctor</title>
-    <link>http://192.168.0.225:42999/tags/github/</link>
+    <link>http://192.168.0.225:38061/tags/github/</link>
     <description>Recent content in GitHub on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2024 18:01:55 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:42999/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:38061/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://192.168.0.225:42999/projects/</link>
+      <link>http://192.168.0.225:38061/projects/</link>
       <pubDate>Wed, 27 Nov 2024 18:01:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/</guid>
+      <guid>http://192.168.0.225:38061/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>xtoolkit</title>
-      <link>http://192.168.0.225:42999/ghprojects/xtoolkit/</link>
+      <link>http://192.168.0.225:38061/ghprojects/xtoolkit/</link>
       <pubDate>Wed, 27 Nov 2024 18:01:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/xtoolkit/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/xtoolkit/</guid>
       <description>&lt;h1 id=&#34;xtoolkit&#34;&gt;xtoolkit&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/xtoolkit&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook, Makefile&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;expression-toolkit-xtoolkit&#34;&gt;Expression Toolkit: &lt;code&gt;xtoolkit&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Note: Broke some of the logic, will fix soon.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project is a Python package that provides tools for expression rewriting,&#xA;including pattern matching, rule-based transformations (which may sometimes&#xA;be considered simplifications, but it depends on the rules), and evaluation of&#xA;expressions.&lt;/p&gt;&#xA;&lt;p&gt;The package includes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An expression rewriting engine in &lt;code&gt;xtoolkit/rewriter.py&lt;/code&gt;, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules.&lt;/li&gt;&#xA;&lt;li&gt;A set of predefined mathematical rules in &lt;code&gt;xtoolkit/rules/&lt;/code&gt; for basic algebra, calculus, trigonometry, etc.&lt;/li&gt;&#xA;&lt;li&gt;Jupyter notebooks in &lt;code&gt;notebooks/&lt;/code&gt; that demonstrate and test the functionality of the package.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;To install the package locally, navigate to the root directory and run:&lt;/p&gt;</description>
     </item>
     <item>
       <title>xtoolkit</title>
-      <link>http://192.168.0.225:42999/projects/xtoolkit/</link>
+      <link>http://192.168.0.225:38061/projects/xtoolkit/</link>
       <pubDate>Wed, 27 Nov 2024 18:01:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/xtoolkit/</guid>
+      <guid>http://192.168.0.225:38061/projects/xtoolkit/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook, Makefile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;expression-toolkit-xtoolkit&#34;&gt;Expression Toolkit: &lt;code&gt;xtoolkit&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Note: Broke some of the logic, will fix soon.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project is a Python package that provides tools for expression rewriting,&#xA;including pattern matching, rule-based transformations (which may sometimes&#xA;be considered simplifications, but it depends on the rules), and evaluation of&#xA;expressions.&lt;/p&gt;&#xA;&lt;p&gt;The package includes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An expression rewriting engine in &lt;code&gt;xtoolkit/rewriter.py&lt;/code&gt;, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules.&lt;/li&gt;&#xA;&lt;li&gt;A set of predefined mathematical rules in &lt;code&gt;xtoolkit/rules/&lt;/code&gt; for basic algebra, calculus, trigonometry, etc.&lt;/li&gt;&#xA;&lt;li&gt;Jupyter notebooks in &lt;code&gt;notebooks/&lt;/code&gt; that demonstrate and test the functionality of the package.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;To install the package locally, navigate to the root directory and run:&lt;/p&gt;</description>
     </item>
     <item>
       <title>resume</title>
-      <link>http://192.168.0.225:42999/ghprojects/resume/</link>
+      <link>http://192.168.0.225:38061/ghprojects/resume/</link>
       <pubDate>Sun, 17 Nov 2024 21:04:21 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/resume/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/resume/</guid>
       <description>&lt;h1 id=&#34;resume&#34;&gt;resume&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/resume&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: TeX&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;My resume / cv&lt;/p&gt;</description>
     </item>
     <item>
       <title>resume</title>
-      <link>http://192.168.0.225:42999/projects/resume/</link>
+      <link>http://192.168.0.225:38061/projects/resume/</link>
       <pubDate>Sun, 17 Nov 2024 21:04:21 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/resume/</guid>
+      <guid>http://192.168.0.225:38061/projects/resume/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: TeX&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;My resume / cv&lt;/p&gt;</description>
     </item>
     <item>
       <title>fuzzy-logic-search</title>
-      <link>http://192.168.0.225:42999/ghprojects/fuzzy-logic-search/</link>
+      <link>http://192.168.0.225:38061/ghprojects/fuzzy-logic-search/</link>
       <pubDate>Mon, 04 Nov 2024 09:55:31 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/fuzzy-logic-search/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/fuzzy-logic-search/</guid>
       <description>&lt;h1 id=&#34;fuzzy-logic-search&#34;&gt;fuzzy-logic-search&lt;/h1&gt;&#xA;&lt;p&gt;Fuzzy logic search on plain documents and JSON documents.&#xA;&lt;a href=&#34;https://github.com/queelius/fuzzy-logic-search&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook, Batchfile, Makefile&#xA;&lt;a href=&#34;https://queelius.github.io/fuzzy-logic-search/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;boolean-and-fuzzy-boolean-query-framework&#34;&gt;Boolean and Fuzzy Boolean Query Framework&lt;/h1&gt;&#xA;&lt;p&gt;NOTE: Very early stage. I  have also implemented fuzzy queries on JSON documents, allowing you to specify field paths, and various predicates on field paths&#xA;(including paths with wildcards). It should have minimal dependencies and work without&#xA;building a database (the raw files will be the representation of the database). All queries are JSON already, so it should be easy to integrate it in web APIs.&#xA;The documentation is out of date.&lt;/p&gt;</description>
     </item>
     <item>
       <title>fuzzy-logic-search</title>
-      <link>http://192.168.0.225:42999/projects/fuzzy-logic-search/</link>
+      <link>http://192.168.0.225:38061/projects/fuzzy-logic-search/</link>
       <pubDate>Mon, 04 Nov 2024 09:55:31 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/fuzzy-logic-search/</guid>
+      <guid>http://192.168.0.225:38061/projects/fuzzy-logic-search/</guid>
       <description>&lt;p&gt;Fuzzy logic search on plain documents and JSON documents.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook, Batchfile, Makefile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (15 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;boolean-and-fuzzy-boolean-query-framework&#34;&gt;Boolean and Fuzzy Boolean Query Framework&lt;/h1&gt;&#xA;&lt;p&gt;NOTE: Very early stage. I  have also implemented fuzzy queries on JSON documents, allowing you to specify field paths, and various predicates on field paths&#xA;(including paths with wildcards). It should have minimal dependencies and work without&#xA;building a database (the raw files will be the representation of the database). All queries are JSON already, so it should be easy to integrate it in web APIs.&#xA;The documentation is out of date.&lt;/p&gt;</description>
     </item>
     <item>
       <title>space-sandbox-sim</title>
-      <link>http://192.168.0.225:42999/ghprojects/space-sandbox-sim/</link>
+      <link>http://192.168.0.225:38061/ghprojects/space-sandbox-sim/</link>
       <pubDate>Sat, 12 Oct 2024 07:23:23 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/space-sandbox-sim/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/space-sandbox-sim/</guid>
       <description>&lt;h1 id=&#34;space-sandbox-sim&#34;&gt;space-sandbox-sim&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/space-sandbox-sim&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python&lt;/p&gt;</description>
     </item>
     <item>
       <title>space-sandbox-sim</title>
-      <link>http://192.168.0.225:42999/projects/space-sandbox-sim/</link>
+      <link>http://192.168.0.225:38061/projects/space-sandbox-sim/</link>
       <pubDate>Sat, 12 Oct 2024 07:23:23 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/space-sandbox-sim/</guid>
+      <guid>http://192.168.0.225:38061/projects/space-sandbox-sim/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (6 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>ga-llm</title>
-      <link>http://192.168.0.225:42999/ghprojects/ga-llm/</link>
+      <link>http://192.168.0.225:38061/ghprojects/ga-llm/</link>
       <pubDate>Mon, 26 Aug 2024 12:12:03 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/ga-llm/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/ga-llm/</guid>
       <description>&lt;h1 id=&#34;ga-llm&#34;&gt;ga-llm&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/ga-llm&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;improving-generative-model-performance-using-genetic-algorithms&#34;&gt;Improving Generative Model Performance using Genetic Algorithms&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;In this paper, we propose a novel approach to improving the performance of generative models, including large language models (LLMs), using Genetic Algorithms (GAs). Our method iteratively refines model outputs through the evolutionary process of selection, crossover, and mutation, guided by a problem-specific fitness function. We demonstrate the effectiveness of this approach across several tasks, including text generation and reasoning, and explore the trade-offs between quality, diversity, and computational efficiency.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ga-llm</title>
-      <link>http://192.168.0.225:42999/projects/ga-llm/</link>
+      <link>http://192.168.0.225:38061/projects/ga-llm/</link>
       <pubDate>Mon, 26 Aug 2024 12:12:03 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/ga-llm/</guid>
+      <guid>http://192.168.0.225:38061/projects/ga-llm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;improving-generative-model-performance-using-genetic-algorithms&#34;&gt;Improving Generative Model Performance using Genetic Algorithms&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;In this paper, we propose a novel approach to improving the performance of generative models, including large language models (LLMs), using Genetic Algorithms (GAs). Our method iteratively refines model outputs through the evolutionary process of selection, crossover, and mutation, guided by a problem-specific fitness function. We demonstrate the effectiveness of this approach across several tasks, including text generation and reasoning, and explore the trade-offs between quality, diversity, and computational efficiency.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RPSDG</title>
-      <link>http://192.168.0.225:42999/ghprojects/rpsdg/</link>
+      <link>http://192.168.0.225:38061/ghprojects/rpsdg/</link>
       <pubDate>Thu, 25 Jul 2024 16:24:45 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/rpsdg/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/rpsdg/</guid>
       <description>&lt;h1 id=&#34;rpsdg&#34;&gt;RPSDG&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/RPSDG&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, JavaScript, Jupyter Notebook, CSS, HTML, Mathematica, Dockerfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;reverse-process-synthetic-data-generation-automatically-generating-training-language-models-for-complex-problem-solving&#34;&gt;Reverse-Process Synthetic Data Generation: Automatically Generating Training Language Models for Complex Problem Solving&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract:&lt;/h2&gt;&#xA;&lt;p&gt;This paper introduces a methodology for generating high-quality, diverse training data for Language Models (LMs) in complex problem-solving domains. Our approach, termed &amp;ldquo;Reverse-Process Synthetic Data Generation&amp;rdquo; (RPSDG), inverts traditionally difficult problems to create an abundance of training examples with known solutions,&#xA;e.g., symbolically taking the deriative of a function, $f \mapsto f&amp;rsquo;$, versus solving antiderivatives of $f&amp;rsquo;$. By automating the generation of problems of graduating difficulty, we create datasets that enable process-supervised training of LLMs. We demonstrate the efficacy of this method for training mathematical reasoning. Our results show significant improvements in LLMs&amp;rsquo; problem-solving capabilities, particularly in areas requiring multi-step reasoning and creative insights. This methodology not only enhances model performance but also provides a framework for generating explainable AI solutions, as the step-by-step problem-solving process is inherent in the training data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RPSDG</title>
-      <link>http://192.168.0.225:42999/projects/rpsdg/</link>
+      <link>http://192.168.0.225:38061/projects/rpsdg/</link>
       <pubDate>Thu, 25 Jul 2024 16:24:45 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/rpsdg/</guid>
+      <guid>http://192.168.0.225:38061/projects/rpsdg/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, JavaScript, Jupyter Notebook, CSS, HTML, Mathematica, Dockerfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (4 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;reverse-process-synthetic-data-generation-automatically-generating-training-language-models-for-complex-problem-solving&#34;&gt;Reverse-Process Synthetic Data Generation: Automatically Generating Training Language Models for Complex Problem Solving&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract:&lt;/h2&gt;&#xA;&lt;p&gt;This paper introduces a methodology for generating high-quality, diverse training data for Language Models (LMs) in complex problem-solving domains. Our approach, termed &amp;ldquo;Reverse-Process Synthetic Data Generation&amp;rdquo; (RPSDG), inverts traditionally difficult problems to create an abundance of training examples with known solutions,&#xA;e.g., symbolically taking the deriative of a function, $f \mapsto f&amp;rsquo;$, versus solving antiderivatives of $f&amp;rsquo;$. By automating the generation of problems of graduating difficulty, we create datasets that enable process-supervised training of LLMs. We demonstrate the efficacy of this method for training mathematical reasoning. Our results show significant improvements in LLMs&amp;rsquo; problem-solving capabilities, particularly in areas requiring multi-step reasoning and creative insights. This methodology not only enhances model performance but also provides a framework for generating explainable AI solutions, as the step-by-step problem-solving process is inherent in the training data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>digistar</title>
-      <link>http://192.168.0.225:42999/ghprojects/digistar/</link>
+      <link>http://192.168.0.225:38061/ghprojects/digistar/</link>
       <pubDate>Sat, 20 Jul 2024 05:38:08 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/digistar/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/digistar/</guid>
       <description>&lt;h1 id=&#34;digistar&#34;&gt;digistar&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/digistar&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: C++, C, Python, Cuda, Makefile, CMake, TeX, HTML, JavaScript, TypeScript&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;sandbox-space-simulation-game-design-document&#34;&gt;Sandbox Space Simulation Game Design Document&lt;/h2&gt;&#xA;&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;&#xA;&lt;p&gt;The primary motivation for this project is to create a highly interactive and scalable sandbox space simulation game. This game will simulate a vast number of &amp;ldquo;big atoms&amp;rdquo; interacting through various interesting forces, both global (e.g., gravity, electric fields) and local (e.g., repulsions, collisions). By leveraging GPU acceleration and optimized data structures like octrees, we aim to achieve high performance and handle a large number of simultaneous players and AI bots efficiently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>digistar</title>
-      <link>http://192.168.0.225:42999/projects/digistar/</link>
+      <link>http://192.168.0.225:38061/projects/digistar/</link>
       <pubDate>Sat, 20 Jul 2024 05:38:08 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/digistar/</guid>
+      <guid>http://192.168.0.225:38061/projects/digistar/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: C++, C, Python, Cuda, Makefile, CMake, TeX, HTML, JavaScript, TypeScript&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (13 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;sandbox-space-simulation-game-design-document&#34;&gt;Sandbox Space Simulation Game Design Document&lt;/h2&gt;&#xA;&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;&#xA;&lt;p&gt;The primary motivation for this project is to create a highly interactive and scalable sandbox space simulation game. This game will simulate a vast number of &amp;ldquo;big atoms&amp;rdquo; interacting through various interesting forces, both global (e.g., gravity, electric fields) and local (e.g., repulsions, collisions). By leveraging GPU acceleration and optimized data structures like octrees, we aim to achieve high performance and handle a large number of simultaneous players and AI bots efficiently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ngram-projections</title>
-      <link>http://192.168.0.225:42999/ghprojects/ngram-projections/</link>
+      <link>http://192.168.0.225:38061/ghprojects/ngram-projections/</link>
       <pubDate>Fri, 21 Jun 2024 11:50:22 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/ngram-projections/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/ngram-projections/</guid>
       <description>&lt;h1 id=&#34;ngram-projections&#34;&gt;ngram-projections&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/ngram-projections&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;autoregressive-models-inductive-biases-and-projections&#34;&gt;Autoregressive Models: Inductive Biases and Projections&lt;/h1&gt;&#xA;&lt;p&gt;This paper investigates how inductive biases, particularly projections onto training data, can be utilized in autoregressive (AR) models to improve out-of-distribution (OOD) generalization.&lt;/p&gt;&#xA;&lt;p&gt;Our approach consists of the following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Infini-gram Model Exploration&lt;/strong&gt;: We begin by considering the infinite-gram model, which uses suffix arrays to efficiently handle arbitrary input (context) lengths. Infinite-gram models are noteworthy due to their ability to scale to any Markov order. For reference, see the paper &lt;em&gt;Infini-gram: An Engine for n-gram / ∞-gram Language Modeling with Trillion-Token Corpora&lt;/em&gt; by Jiacheng Liu et al. (&lt;a href=&#34;https://huggingface.co/papers/2401.17377)&#34;&gt;https://huggingface.co/papers/2401.17377)&lt;/a&gt;. A brute-force approach could involve storing the training data as-is and searching for the longest matching suffix in the input sequence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ngram-projections</title>
-      <link>http://192.168.0.225:42999/projects/ngram-projections/</link>
+      <link>http://192.168.0.225:38061/projects/ngram-projections/</link>
       <pubDate>Fri, 21 Jun 2024 11:50:22 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/ngram-projections/</guid>
+      <guid>http://192.168.0.225:38061/projects/ngram-projections/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;autoregressive-models-inductive-biases-and-projections&#34;&gt;Autoregressive Models: Inductive Biases and Projections&lt;/h1&gt;&#xA;&lt;p&gt;This paper investigates how inductive biases, particularly projections onto training data, can be utilized in autoregressive (AR) models to improve out-of-distribution (OOD) generalization.&lt;/p&gt;&#xA;&lt;p&gt;Our approach consists of the following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Infini-gram Model Exploration&lt;/strong&gt;: We begin by considering the infinite-gram model, which uses suffix arrays to efficiently handle arbitrary input (context) lengths. Infinite-gram models are noteworthy due to their ability to scale to any Markov order. For reference, see the paper &lt;em&gt;Infini-gram: An Engine for n-gram / ∞-gram Language Modeling with Trillion-Token Corpora&lt;/em&gt; by Jiacheng Liu et al. (&lt;a href=&#34;https://huggingface.co/papers/2401.17377)&#34;&gt;https://huggingface.co/papers/2401.17377)&lt;/a&gt;. A brute-force approach could involve storing the training data as-is and searching for the longest matching suffix in the input sequence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>treeprog</title>
-      <link>http://192.168.0.225:42999/ghprojects/treeprog/</link>
+      <link>http://192.168.0.225:38061/ghprojects/treeprog/</link>
       <pubDate>Sun, 16 Jun 2024 03:18:26 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/treeprog/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/treeprog/</guid>
       <description>&lt;h1 id=&#34;treeprog&#34;&gt;treeprog&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/treeprog&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;universal-tree-traversal&#34;&gt;&lt;code&gt;Universal Tree Traversal&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;There are many ways to traverse a tree. The most common ways are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pre-order traversal&lt;/li&gt;&#xA;&lt;li&gt;Post-order traversal&lt;/li&gt;&#xA;&lt;li&gt;In-order traversal&lt;/li&gt;&#xA;&lt;li&gt;Level-order traversal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These are the most common ways to traverse a tree, but there are many other&#xA;ways to traverse a tree. For example, you can traverse a tree in a spiral&#xA;pattern, or you can traverse a tree in a zig-zag pattern. You can also&#xA;traverse a tree in a random order. There are many ways to traverse a tree,&#xA;and each way has its own advantages and disadvantages. Sometimes, you only&#xA;want to traverse a subset of the tree, or you may want to traverse the tree&#xA;upwards (parent relationships) instead of downwards (child relationships),&#xA;or even sideways (level order via sibling relationships).&lt;/p&gt;</description>
     </item>
     <item>
       <title>treeprog</title>
-      <link>http://192.168.0.225:42999/projects/treeprog/</link>
+      <link>http://192.168.0.225:38061/projects/treeprog/</link>
       <pubDate>Sun, 16 Jun 2024 03:18:26 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/treeprog/</guid>
+      <guid>http://192.168.0.225:38061/projects/treeprog/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (1 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;universal-tree-traversal&#34;&gt;&lt;code&gt;Universal Tree Traversal&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;There are many ways to traverse a tree. The most common ways are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pre-order traversal&lt;/li&gt;&#xA;&lt;li&gt;Post-order traversal&lt;/li&gt;&#xA;&lt;li&gt;In-order traversal&lt;/li&gt;&#xA;&lt;li&gt;Level-order traversal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These are the most common ways to traverse a tree, but there are many other&#xA;ways to traverse a tree. For example, you can traverse a tree in a spiral&#xA;pattern, or you can traverse a tree in a zig-zag pattern. You can also&#xA;traverse a tree in a random order. There are many ways to traverse a tree,&#xA;and each way has its own advantages and disadvantages. Sometimes, you only&#xA;want to traverse a subset of the tree, or you may want to traverse the tree&#xA;upwards (parent relationships) instead of downwards (child relationships),&#xA;or even sideways (level order via sibling relationships).&lt;/p&gt;</description>
     </item>
     <item>
       <title>random_oracles</title>
-      <link>http://192.168.0.225:42999/ghprojects/random_oracles/</link>
+      <link>http://192.168.0.225:38061/ghprojects/random_oracles/</link>
       <pubDate>Wed, 15 May 2024 20:40:25 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/random_oracles/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/random_oracles/</guid>
       <description>&lt;h1 id=&#34;random_oracles&#34;&gt;random_oracles&lt;/h1&gt;&#xA;&lt;p&gt;Cryptographic Hash Functions,, Random Oracles, and Lazy Computation&#xA;&lt;a href=&#34;https://github.com/queelius/random_oracles&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;introduction-to-cryptographic-hash-functions-and-random-oracles&#34;&gt;Introduction to Cryptographic Hash Functions and Random Oracles&lt;/h1&gt;&#xA;&lt;p&gt;In this module, we explore the fundamental concepts of hash functions, random oracles, and lazy computation. These concepts are pivotal in the fields of cryptography and theoretical computer science, offering a robust foundation for understanding secure communications and data integrity. Through a series of Python classes, we simulate behaviors and properties that, while often theoretical, provide deep insights into the practical applications of these abstract concepts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>random_oracles</title>
-      <link>http://192.168.0.225:42999/projects/random_oracles/</link>
+      <link>http://192.168.0.225:38061/projects/random_oracles/</link>
       <pubDate>Wed, 15 May 2024 20:40:25 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/random_oracles/</guid>
+      <guid>http://192.168.0.225:38061/projects/random_oracles/</guid>
       <description>&lt;p&gt;Cryptographic Hash Functions,, Random Oracles, and Lazy Computation&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;introduction-to-cryptographic-hash-functions-and-random-oracles&#34;&gt;Introduction to Cryptographic Hash Functions and Random Oracles&lt;/h1&gt;&#xA;&lt;p&gt;In this module, we explore the fundamental concepts of hash functions, random oracles, and lazy computation. These concepts are pivotal in the fields of cryptography and theoretical computer science, offering a robust foundation for understanding secure communications and data integrity. Through a series of Python classes, we simulate behaviors and properties that, while often theoretical, provide deep insights into the practical applications of these abstract concepts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ollama_data_tools</title>
-      <link>http://192.168.0.225:42999/ghprojects/ollama_data_tools/</link>
+      <link>http://192.168.0.225:38061/ghprojects/ollama_data_tools/</link>
       <pubDate>Mon, 13 May 2024 15:13:03 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/ollama_data_tools/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/ollama_data_tools/</guid>
       <description>&lt;h1 id=&#34;ollama_data_tools&#34;&gt;ollama_data_tools&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/ollama_data_tools&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook&#xA;&lt;a href=&#34;https://queelius.github.io/ollama_data_tools/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;ollama-data-tools&#34;&gt;Ollama Data Tools&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/pypi/v/ollama_data_tools.svg&#34; alt=&#34;PyPI version&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 3.x&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Clone the repository and install the necessary dependencies:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/queelius/ollama_data_tools.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ollama_data_tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -r requirements.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -e .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ollama-data-tools-1&#34;&gt;Ollama Data Tools&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;OllamaData&lt;/code&gt; class is the core module of the Ollama Data Tools, allowing users to work programmatically with Ollama model data. This class provides methods to access, search, and filter model information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ollama_data_tools</title>
-      <link>http://192.168.0.225:42999/projects/ollama_data_tools/</link>
+      <link>http://192.168.0.225:38061/projects/ollama_data_tools/</link>
       <pubDate>Mon, 13 May 2024 15:13:03 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/ollama_data_tools/</guid>
+      <guid>http://192.168.0.225:38061/projects/ollama_data_tools/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (22 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;ollama-data-tools&#34;&gt;Ollama Data Tools&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/pypi/v/ollama_data_tools.svg&#34; alt=&#34;PyPI version&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python 3.x&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Clone the repository and install the necessary dependencies:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/queelius/ollama_data_tools.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ollama_data_tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -r requirements.txt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -e .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ollama-data-tools-1&#34;&gt;Ollama Data Tools&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;OllamaData&lt;/code&gt; class is the core module of the Ollama Data Tools, allowing users to work programmatically with Ollama model data. This class provides methods to access, search, and filter model information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AlgoTree</title>
-      <link>http://192.168.0.225:42999/ghprojects/algotree/</link>
+      <link>http://192.168.0.225:38061/ghprojects/algotree/</link>
       <pubDate>Tue, 30 Apr 2024 17:34:58 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/algotree/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/algotree/</guid>
       <description>&lt;h1 id=&#34;algotree&#34;&gt;AlgoTree&lt;/h1&gt;&#xA;&lt;p&gt;AlgoTree&#xA;&lt;a href=&#34;https://github.com/queelius/AlgoTree&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 15 | &lt;strong&gt;Forks&lt;/strong&gt;: 1 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook, Makefile, Batchfile&#xA;&lt;a href=&#34;https://queelius.github.io/AlgoTree/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;algotree-1&#34;&gt;AlgoTree&lt;/h1&gt;&#xA;&lt;p&gt;.. image:: &lt;a href=&#34;https://img.shields.io/pypi/v/AlgoTree.svg&#34;&gt;https://img.shields.io/pypi/v/AlgoTree.svg&lt;/a&gt;&#xA;:target: &lt;a href=&#34;https://pypi.org/project/AlgoTree/&#34;&gt;https://pypi.org/project/AlgoTree/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;.. image:: &lt;a href=&#34;https://img.shields.io/pypi/l/AlgoTree.svg&#34;&gt;https://img.shields.io/pypi/l/AlgoTree.svg&lt;/a&gt;&#xA;:target: &lt;a href=&#34;https://pypi.org/project/AlgoTree/&#34;&gt;https://pypi.org/project/AlgoTree/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;AlgoTree&lt;/code&gt; is a Python package for working with tree structures, including&#xA;FlatForest and TreeNode representations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the documentation for the &lt;code&gt;AlgoTree&lt;/code&gt; package. This package provides a&#xA;suite of utilities for working with tree-like data structures in Python. It&#xA;supports various tree representations, including:&lt;/p&gt;</description>
     </item>
     <item>
       <title>AlgoTree</title>
-      <link>http://192.168.0.225:42999/projects/algotree/</link>
+      <link>http://192.168.0.225:38061/projects/algotree/</link>
       <pubDate>Tue, 30 Apr 2024 17:34:58 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/algotree/</guid>
+      <guid>http://192.168.0.225:38061/projects/algotree/</guid>
       <description>&lt;p&gt;AlgoTree&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 15 | &lt;strong&gt;Forks&lt;/strong&gt;: 1 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook, Makefile, Batchfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (88 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;algotree&#34;&gt;AlgoTree&lt;/h1&gt;&#xA;&lt;p&gt;.. image:: &lt;a href=&#34;https://img.shields.io/pypi/v/AlgoTree.svg&#34;&gt;https://img.shields.io/pypi/v/AlgoTree.svg&lt;/a&gt;&#xA;:target: &lt;a href=&#34;https://pypi.org/project/AlgoTree/&#34;&gt;https://pypi.org/project/AlgoTree/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;.. image:: &lt;a href=&#34;https://img.shields.io/pypi/l/AlgoTree.svg&#34;&gt;https://img.shields.io/pypi/l/AlgoTree.svg&lt;/a&gt;&#xA;:target: &lt;a href=&#34;https://pypi.org/project/AlgoTree/&#34;&gt;https://pypi.org/project/AlgoTree/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;AlgoTree&lt;/code&gt; is a Python package for working with tree structures, including&#xA;FlatForest and TreeNode representations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the documentation for the &lt;code&gt;AlgoTree&lt;/code&gt; package. This package provides a&#xA;suite of utilities for working with tree-like data structures in Python. It&#xA;supports various tree representations, including:&lt;/p&gt;</description>
     </item>
     <item>
       <title>hypothesize</title>
-      <link>http://192.168.0.225:42999/ghprojects/hypothesize/</link>
+      <link>http://192.168.0.225:38061/ghprojects/hypothesize/</link>
       <pubDate>Mon, 19 Feb 2024 11:02:17 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/hypothesize/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/hypothesize/</guid>
       <description>&lt;h1 id=&#34;hypothesize&#34;&gt;hypothesize&lt;/h1&gt;&#xA;&lt;p&gt;hypothesize&#xA;&lt;a href=&#34;https://github.com/queelius/hypothesize&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/hypothesize/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;hypothesize-statistical-tests-in-r&#34;&gt;&lt;code&gt;hypothesize&lt;/code&gt;: Statistical Tests in R&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;hypothesize&lt;/code&gt; is a simple hypothesis testing API in R.&#xA;It is mostly designed to be used by other libraries so that they can wrap&#xA;their own hypothesis tests in a consistent way.&lt;/p&gt;&#xA;&lt;p&gt;We define the API as a set of generic methods. We also&#xA;provide implementations for the likelihood ration test (LRT) and the Wald test.&lt;/p&gt;</description>
     </item>
     <item>
       <title>hypothesize</title>
-      <link>http://192.168.0.225:42999/projects/hypothesize/</link>
+      <link>http://192.168.0.225:38061/projects/hypothesize/</link>
       <pubDate>Mon, 19 Feb 2024 11:02:17 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/hypothesize/</guid>
+      <guid>http://192.168.0.225:38061/projects/hypothesize/</guid>
       <description>&lt;p&gt;hypothesize&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (7 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;hypothesize-statistical-tests-in-r&#34;&gt;&lt;code&gt;hypothesize&lt;/code&gt;: Statistical Tests in R&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;hypothesize&lt;/code&gt; is a simple hypothesis testing API in R.&#xA;It is mostly designed to be used by other libraries so that they can wrap&#xA;their own hypothesis tests in a consistent way.&lt;/p&gt;&#xA;&lt;p&gt;We define the API as a set of generic methods. We also&#xA;provide implementations for the likelihood ration test (LRT) and the Wald test.&lt;/p&gt;</description>
     </item>
     <item>
       <title>solomonoff_induction</title>
-      <link>http://192.168.0.225:42999/ghprojects/solomonoff_induction/</link>
+      <link>http://192.168.0.225:38061/ghprojects/solomonoff_induction/</link>
       <pubDate>Thu, 15 Feb 2024 19:28:46 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/solomonoff_induction/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/solomonoff_induction/</guid>
       <description>&lt;h1 id=&#34;solomonoff_induction&#34;&gt;solomonoff_induction&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/solomonoff_induction&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Jupyter Notebook&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;markov-chains&#34;&gt;Markov chains&lt;/h1&gt;&#xA;$$&#xA;    P(X_k = x_k | X_{k-1} = x_{k-1}),&#xA;$$&lt;p&gt;&#xA;where $x_j \in X$, $X$ is the support of $X_1,X_2,\ldots$.&#xA;In this context, we refer to $X$ as the set of &lt;em&gt;tokens&lt;/em&gt; that may be observed.&lt;/p&gt;&#xA;$$&#xA;    P(X_k = x_k | x_{k-1}, x_{k-2}, \ldots, x_{k-n + 1}).&#xA;$$$$&#xA;    P(S_k = s_k | S_{k-1} = s_{k-1})&#xA;$$&lt;p&gt;&#xA;where $s_1,s_2,\ldots \in X^n$ but we still do state transitions on $x_1,x_2,\ldots$.&#xA;Some observations:&lt;/p&gt;</description>
     </item>
     <item>
       <title>solomonoff_induction</title>
-      <link>http://192.168.0.225:42999/projects/solomonoff_induction/</link>
+      <link>http://192.168.0.225:38061/projects/solomonoff_induction/</link>
       <pubDate>Thu, 15 Feb 2024 19:28:46 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/solomonoff_induction/</guid>
+      <guid>http://192.168.0.225:38061/projects/solomonoff_induction/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Jupyter Notebook&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (10 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;markov-chains&#34;&gt;Markov chains&lt;/h1&gt;&#xA;$$&#xA;    P(X_k = x_k | X_{k-1} = x_{k-1}),&#xA;$$&lt;p&gt;&#xA;where $x_j \in X$, $X$ is the support of $X_1,X_2,\ldots$.&#xA;In this context, we refer to $X$ as the set of &lt;em&gt;tokens&lt;/em&gt; that may be observed.&lt;/p&gt;&#xA;$$&#xA;    P(X_k = x_k | x_{k-1}, x_{k-2}, \ldots, x_{k-n + 1}).&#xA;$$$$&#xA;    P(S_k = s_k | S_{k-1} = s_{k-1})&#xA;$$&lt;p&gt;&#xA;where $s_1,s_2,\ldots \in X^n$ but we still do state transitions on $x_1,x_2,\ldots$.&#xA;Some observations:&lt;/p&gt;</description>
     </item>
     <item>
       <title>sluug-talk-llm</title>
-      <link>http://192.168.0.225:42999/ghprojects/sluug-talk-llm/</link>
+      <link>http://192.168.0.225:38061/ghprojects/sluug-talk-llm/</link>
       <pubDate>Fri, 09 Feb 2024 09:45:34 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/sluug-talk-llm/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/sluug-talk-llm/</guid>
       <description>&lt;h1 id=&#34;sluug-talk-llm&#34;&gt;sluug-talk-llm&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/sluug-talk-llm&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Jupyter Notebook, Python, Shell&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;math-mathjax&#34;&gt;marp: true&#xA;#theme: uncover&#xA;math: mathjax&lt;/h2&gt;&#xA;&lt;h1 id=&#34;sluug-talk-large-language-models&#34;&gt;SLUUG Talk: Large Language Models&lt;/h1&gt;&#xA;&lt;p&gt;This repository contains the slides and code for the talk:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demystifying Large Language Models (LLMs) on Linux: From Theory to Application&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It was given for the St. Louis Unix Users Group (SLUUG) on 2024/2/22 @ 6:30 PM CST.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;SLUUG: &lt;a href=&#34;https://www.stllinux.org/&#34;&gt;https://www.stllinux.org/&lt;/a&gt; :link:&lt;/p&gt;</description>
     </item>
     <item>
       <title>sluug-talk-llm</title>
-      <link>http://192.168.0.225:42999/projects/sluug-talk-llm/</link>
+      <link>http://192.168.0.225:38061/projects/sluug-talk-llm/</link>
       <pubDate>Fri, 09 Feb 2024 09:45:34 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/sluug-talk-llm/</guid>
+      <guid>http://192.168.0.225:38061/projects/sluug-talk-llm/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Jupyter Notebook, Python, Shell&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (23 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;math-mathjax&#34;&gt;marp: true&#xA;#theme: uncover&#xA;math: mathjax&lt;/h2&gt;&#xA;&lt;h1 id=&#34;sluug-talk-large-language-models&#34;&gt;SLUUG Talk: Large Language Models&lt;/h1&gt;&#xA;&lt;p&gt;This repository contains the slides and code for the talk:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demystifying Large Language Models (LLMs) on Linux: From Theory to Application&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;It was given for the St. Louis Unix Users Group (SLUUG) on 2024/2/22 @ 6:30 PM CST.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;SLUUG: &lt;a href=&#34;https://www.stllinux.org/&#34;&gt;https://www.stllinux.org/&lt;/a&gt; :link:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Meetup: &lt;a href=&#34;https://www.meetup.com/saint-louis-unix-users-group/events/290697932/&#34;&gt;https://www.meetup.com/saint-louis-unix-users-group/events/290697932/&lt;/a&gt; :link:&lt;/p&gt;</description>
     </item>
     <item>
       <title>elasticsearch-lm</title>
-      <link>http://192.168.0.225:42999/ghprojects/elasticsearch-lm/</link>
+      <link>http://192.168.0.225:38061/ghprojects/elasticsearch-lm/</link>
       <pubDate>Sat, 03 Feb 2024 17:11:56 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/elasticsearch-lm/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/elasticsearch-lm/</guid>
       <description>&lt;h1 id=&#34;elasticsearch-lm&#34;&gt;elasticsearch-lm&lt;/h1&gt;&#xA;&lt;p&gt;ElasticSearch Query Fine-Tuning Training Data for Large Language Models&#xA;&lt;a href=&#34;https://github.com/queelius/elasticsearch-lm&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 14 | &lt;strong&gt;Forks&lt;/strong&gt;: 2 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Shell&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;fine-tuning-language-models-for-api-query-generation&#34;&gt;Fine-Tuning Language Models for API Query Generation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project aims to fine-tune a smaller Large Language Model (LLM) for the specific task of translating natural language queries (NLQs) into structured API queries, with an initial focus on Elasticsearch&amp;rsquo;s Query DSL. The motivation behind this effort is to significantly enhance the accessibility and usability of API endpoints, making them more intuitive for users by allowing interactions in natural language.&lt;/p&gt;</description>
     </item>
     <item>
       <title>elasticsearch-lm</title>
-      <link>http://192.168.0.225:42999/projects/elasticsearch-lm/</link>
+      <link>http://192.168.0.225:38061/projects/elasticsearch-lm/</link>
       <pubDate>Sat, 03 Feb 2024 17:11:56 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/elasticsearch-lm/</guid>
+      <guid>http://192.168.0.225:38061/projects/elasticsearch-lm/</guid>
       <description>&lt;p&gt;ElasticSearch Query Fine-Tuning Training Data for Large Language Models&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 14 | &lt;strong&gt;Forks&lt;/strong&gt;: 2 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Shell&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (12 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;fine-tuning-language-models-for-api-query-generation&#34;&gt;Fine-Tuning Language Models for API Query Generation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project aims to fine-tune a smaller Large Language Model (LLM) for the specific task of translating natural language queries (NLQs) into structured API queries, with an initial focus on Elasticsearch&amp;rsquo;s Query DSL. The motivation behind this effort is to significantly enhance the accessibility and usability of API endpoints, making them more intuitive for users by allowing interactions in natural language.&lt;/p&gt;</description>
     </item>
     <item>
       <title>video-playlist-manager</title>
-      <link>http://192.168.0.225:42999/ghprojects/video-playlist-manager/</link>
+      <link>http://192.168.0.225:38061/ghprojects/video-playlist-manager/</link>
       <pubDate>Tue, 30 Jan 2024 13:16:07 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/video-playlist-manager/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/video-playlist-manager/</guid>
       <description>&lt;h1 id=&#34;video-playlist-manager&#34;&gt;video-playlist-manager&lt;/h1&gt;&#xA;&lt;p&gt;video-playlist-manager&#xA;&lt;a href=&#34;https://github.com/queelius/video-playlist-manager&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python, Shell, Dockerfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;video-playlist-daemon&#34;&gt;Video Playlist Daemon&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Video Playlist Daemon is a tool designed to serve as a backend for managing video playlists. It is designed to be used as a standalone application or as a tool for lage language models (LLM). It is built using Python and FastAPI, and uses MongoDB as the database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>video-playlist-manager</title>
-      <link>http://192.168.0.225:42999/projects/video-playlist-manager/</link>
+      <link>http://192.168.0.225:38061/projects/video-playlist-manager/</link>
       <pubDate>Tue, 30 Jan 2024 13:16:07 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/video-playlist-manager/</guid>
+      <guid>http://192.168.0.225:38061/projects/video-playlist-manager/</guid>
       <description>&lt;p&gt;video-playlist-manager&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python, Shell, Dockerfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;video-playlist-daemon&#34;&gt;Video Playlist Daemon&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Video Playlist Daemon is a tool designed to serve as a backend for managing video playlists. It is designed to be used as a standalone application or as a tool for lage language models (LLM). It is built using Python and FastAPI, and uses MongoDB as the database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>taskd</title>
-      <link>http://192.168.0.225:42999/ghprojects/taskd/</link>
+      <link>http://192.168.0.225:38061/ghprojects/taskd/</link>
       <pubDate>Sat, 27 Jan 2024 16:35:06 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/taskd/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/taskd/</guid>
       <description>&lt;h1 id=&#34;taskd&#34;&gt;taskd&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;taskd&lt;/code&gt;: Task Daemon for Decentralized Task Execution for Long-Running Tasks&#xA;&lt;a href=&#34;https://github.com/queelius/taskd&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Python&#xA;&lt;a href=&#34;https://queelius.github.io/taskd/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;taskd-task-daemon-for-decentralized-task-execution-for-long-running-tasks&#34;&gt;&lt;code&gt;taskd&lt;/code&gt;: Task Daemon for Decentralized Task Execution for Long-Running Tasks&lt;/h1&gt;&#xA;&lt;p&gt;The project &lt;code&gt;taskd&lt;/code&gt; is a web service for script execution environment with workspace management. It allows you to create a workspace, upload a script, execute the script, and delete the workspace.&lt;/p&gt;&#xA;&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a workspace&lt;/li&gt;&#xA;&lt;li&gt;Upload a script&lt;/li&gt;&#xA;&lt;li&gt;Execute a script&lt;/li&gt;&#xA;&lt;li&gt;Delete a workspace&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To get the server up and running, follow these steps:&lt;/p&gt;</description>
     </item>
     <item>
       <title>taskd</title>
-      <link>http://192.168.0.225:42999/projects/taskd/</link>
+      <link>http://192.168.0.225:38061/projects/taskd/</link>
       <pubDate>Sat, 27 Jan 2024 16:35:06 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/taskd/</guid>
+      <guid>http://192.168.0.225:38061/projects/taskd/</guid>
       <description>&lt;p&gt;&lt;code&gt;taskd&lt;/code&gt;: Task Daemon for Decentralized Task Execution for Long-Running Tasks&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Python&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;taskd-task-daemon-for-decentralized-task-execution-for-long-running-tasks&#34;&gt;&lt;code&gt;taskd&lt;/code&gt;: Task Daemon for Decentralized Task Execution for Long-Running Tasks&lt;/h1&gt;&#xA;&lt;p&gt;The project &lt;code&gt;taskd&lt;/code&gt; is a web service for script execution environment with workspace management. It allows you to create a workspace, upload a script, execute the script, and delete the workspace.&lt;/p&gt;&#xA;&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a workspace&lt;/li&gt;&#xA;&lt;li&gt;Upload a script&lt;/li&gt;&#xA;&lt;li&gt;Execute a script&lt;/li&gt;&#xA;&lt;li&gt;Delete a workspace&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To get the server up and running, follow these steps:&lt;/p&gt;</description>
     </item>
     <item>
       <title>papers</title>
-      <link>http://192.168.0.225:42999/ghprojects/papers/</link>
+      <link>http://192.168.0.225:38061/ghprojects/papers/</link>
       <pubDate>Sat, 16 Dec 2023 15:45:27 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/papers/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/papers/</guid>
       <description>&lt;h1 id=&#34;papers&#34;&gt;papers&lt;/h1&gt;&#xA;&lt;p&gt;latent-data&#xA;&lt;a href=&#34;https://github.com/queelius/papers&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: TeX, Shell, CSS&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;collection-of-unfinished-papers&#34;&gt;Collection of Unfinished Papers&lt;/h1&gt;</description>
     </item>
     <item>
       <title>papers</title>
-      <link>http://192.168.0.225:42999/projects/papers/</link>
+      <link>http://192.168.0.225:38061/projects/papers/</link>
       <pubDate>Sat, 16 Dec 2023 15:45:27 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/papers/</guid>
+      <guid>http://192.168.0.225:38061/projects/papers/</guid>
       <description>&lt;p&gt;latent-data&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: TeX, Shell, CSS&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (30 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;collection-of-unfinished-papers&#34;&gt;Collection of Unfinished Papers&lt;/h1&gt;</description>
     </item>
     <item>
       <title>tournamentpetersonlock</title>
-      <link>http://192.168.0.225:42999/ghprojects/tournamentpetersonlock/</link>
+      <link>http://192.168.0.225:38061/ghprojects/tournamentpetersonlock/</link>
       <pubDate>Thu, 07 Dec 2023 20:57:14 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/tournamentpetersonlock/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/tournamentpetersonlock/</guid>
       <description>&lt;h1 id=&#34;tournamentpetersonlock&#34;&gt;tournamentpetersonlock&lt;/h1&gt;&#xA;&lt;p&gt;Scalable lock based on 2-thread Peterson lock.&#xA;&lt;a href=&#34;https://github.com/queelius/tournamentpetersonlock&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Java&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;java-package-tournamentpetersonlock&#34;&gt;Java Package: &lt;code&gt;tournamentpetersonlock&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;tournamentpetersonlock&lt;/code&gt; is an elegant Java implementation of a scalable locking mechanism based on the classic Peterson lock algorithm. This project addresses the challenge of generalizing the two-thread Peterson lock to accommodate &lt;code&gt;n&lt;/code&gt; threads, with &lt;code&gt;n&lt;/code&gt; being a power of two, using a binary tree of Peterson locks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>tournamentpetersonlock</title>
-      <link>http://192.168.0.225:42999/projects/tournamentpetersonlock/</link>
+      <link>http://192.168.0.225:38061/projects/tournamentpetersonlock/</link>
       <pubDate>Thu, 07 Dec 2023 20:57:14 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/tournamentpetersonlock/</guid>
+      <guid>http://192.168.0.225:38061/projects/tournamentpetersonlock/</guid>
       <description>&lt;p&gt;Scalable lock based on 2-thread Peterson lock.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Java&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;java-package-tournamentpetersonlock&#34;&gt;Java Package: &lt;code&gt;tournamentpetersonlock&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;tournamentpetersonlock&lt;/code&gt; is an elegant Java implementation of a scalable locking mechanism based on the classic Peterson lock algorithm. This project addresses the challenge of generalizing the two-thread Peterson lock to accommodate &lt;code&gt;n&lt;/code&gt; threads, with &lt;code&gt;n&lt;/code&gt; being a power of two, using a binary tree of Peterson locks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>reliability-estimation-in-series-systems-model-selection</title>
-      <link>http://192.168.0.225:42999/ghprojects/reliability-estimation-in-series-systems-model-selection/</link>
+      <link>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems-model-selection/</link>
       <pubDate>Fri, 10 Nov 2023 04:16:05 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/reliability-estimation-in-series-systems-model-selection/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems-model-selection/</guid>
       <description>&lt;h1 id=&#34;reliability-estimation-in-series-systems-model-selection&#34;&gt;reliability-estimation-in-series-systems-model-selection&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/reliability-estimation-in-series-systems-model-selection&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: HTML, R, Python, TeX, Shell, CSS&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;model-selection-in-series-systems-with-weibull-components&#34;&gt;Model Selection in Series Systems with Weibull Components&lt;/h2&gt;</description>
     </item>
     <item>
       <title>reliability-estimation-in-series-systems-model-selection</title>
-      <link>http://192.168.0.225:42999/projects/reliability-estimation-in-series-systems-model-selection/</link>
+      <link>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems-model-selection/</link>
       <pubDate>Fri, 10 Nov 2023 04:16:05 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/reliability-estimation-in-series-systems-model-selection/</guid>
+      <guid>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems-model-selection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: HTML, R, Python, TeX, Shell, CSS&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;model-selection-in-series-systems-with-weibull-components&#34;&gt;Model Selection in Series Systems with Weibull Components&lt;/h2&gt;</description>
     </item>
     <item>
       <title>disjoint_interval_set</title>
-      <link>http://192.168.0.225:42999/ghprojects/disjoint_interval_set/</link>
+      <link>http://192.168.0.225:38061/ghprojects/disjoint_interval_set/</link>
       <pubDate>Fri, 06 Oct 2023 06:58:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/disjoint_interval_set/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/disjoint_interval_set/</guid>
       <description>&lt;h1 id=&#34;disjoint_interval_set&#34;&gt;disjoint_interval_set&lt;/h1&gt;&#xA;&lt;p&gt;Disjoint Interval Set (DIS)&#xA;&lt;a href=&#34;https://github.com/queelius/disjoint_interval_set&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;disjoint-interval-set&#34;&gt;Disjoint Interval Set&lt;/h1&gt;&#xA;&lt;p&gt;The Disjoint Interval Set (DIS) equipped with a few operations&#xA;satisfies the concept of a Boolean algebra over sets of disjoint&#xA;intervals equipped with all the standard set-theoretic operations,&#xA;like intersection (*), union (+), and complement (~).&lt;/p&gt;&#xA;&lt;h2 id=&#34;concept-boolean-algebra&#34;&gt;Concept: Boolean Algebra&lt;/h2&gt;&#xA;&lt;p&gt;A Boolean algebra provides a powerful conceptual and mathematical framework.&#xA;It is a set of elements equipped with a few operations that satisfy&#xA;a few axioms. The operations are usually called union (+), intersection (*),&#xA;and complement (~). The axioms are usually called the Boolean laws.&lt;/p&gt;</description>
     </item>
     <item>
       <title>disjoint_interval_set</title>
-      <link>http://192.168.0.225:42999/projects/disjoint_interval_set/</link>
+      <link>http://192.168.0.225:38061/projects/disjoint_interval_set/</link>
       <pubDate>Fri, 06 Oct 2023 06:58:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/disjoint_interval_set/</guid>
+      <guid>http://192.168.0.225:38061/projects/disjoint_interval_set/</guid>
       <description>&lt;p&gt;Disjoint Interval Set (DIS)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;disjoint-interval-set&#34;&gt;Disjoint Interval Set&lt;/h1&gt;&#xA;&lt;p&gt;The Disjoint Interval Set (DIS) equipped with a few operations&#xA;satisfies the concept of a Boolean algebra over sets of disjoint&#xA;intervals equipped with all the standard set-theoretic operations,&#xA;like intersection (*), union (+), and complement (~).&lt;/p&gt;&#xA;&lt;h2 id=&#34;concept-boolean-algebra&#34;&gt;Concept: Boolean Algebra&lt;/h2&gt;&#xA;&lt;p&gt;A Boolean algebra provides a powerful conceptual and mathematical framework.&#xA;It is a set of elements equipped with a few operations that satisfy&#xA;a few axioms. The operations are usually called union (+), intersection (*),&#xA;and complement (~). The axioms are usually called the Boolean laws.&lt;/p&gt;</description>
     </item>
     <item>
       <title>wei.series.md.c1.c2.c3</title>
-      <link>http://192.168.0.225:42999/ghprojects/wei.series.md.c1.c2.c3/</link>
+      <link>http://192.168.0.225:38061/ghprojects/wei.series.md.c1.c2.c3/</link>
       <pubDate>Sun, 23 Jul 2023 12:12:30 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/wei.series.md.c1.c2.c3/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/wei.series.md.c1.c2.c3/</guid>
       <description>&lt;h1 id=&#34;weiseriesmdc1c2c3&#34;&gt;wei.series.md.c1.c2.c3&lt;/h1&gt;&#xA;&lt;p&gt;Weibull series system estimation from data with censored lifetimes and masked component cause of failure.&#xA;&lt;a href=&#34;https://github.com/queelius/wei.series.md.c1.c2.c3&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/wei.series.md.c1.c2.c3/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-weiseriesmdc1c2c3&#34;&gt;R package: &lt;code&gt;wei.series.md.c1.c2.c3&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;A likelihood model for series systems with Weibull component lifetimes.&#xA;Accounts for right-censoring and candidate sets indicative of masked&#xA;failure causes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;related-publication&#34;&gt;Related Publication&lt;/h2&gt;&#xA;&lt;p&gt;This library was developed to support the research presented in the&#xA;following paper:&lt;/p&gt;</description>
     </item>
     <item>
       <title>wei.series.md.c1.c2.c3</title>
-      <link>http://192.168.0.225:42999/projects/wei.series.md.c1.c2.c3/</link>
+      <link>http://192.168.0.225:38061/projects/wei.series.md.c1.c2.c3/</link>
       <pubDate>Sun, 23 Jul 2023 12:12:30 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/wei.series.md.c1.c2.c3/</guid>
+      <guid>http://192.168.0.225:38061/projects/wei.series.md.c1.c2.c3/</guid>
       <description>&lt;p&gt;Weibull series system estimation from data with censored lifetimes and masked component cause of failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (24 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-weiseriesmdc1c2c3&#34;&gt;R package: &lt;code&gt;wei.series.md.c1.c2.c3&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;A likelihood model for series systems with Weibull component lifetimes.&#xA;Accounts for right-censoring and candidate sets indicative of masked&#xA;failure causes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;related-publication&#34;&gt;Related Publication&lt;/h2&gt;&#xA;&lt;p&gt;This library was developed to support the research presented in the&#xA;following paper:&lt;/p&gt;</description>
     </item>
     <item>
       <title>reliability-estimation-in-series-systems</title>
-      <link>http://192.168.0.225:42999/ghprojects/reliability-estimation-in-series-systems/</link>
+      <link>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems/</link>
       <pubDate>Thu, 13 Jul 2023 09:25:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/reliability-estimation-in-series-systems/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems/</guid>
       <description>&lt;h1 id=&#34;reliability-estimation-in-series-systems&#34;&gt;reliability-estimation-in-series-systems&lt;/h1&gt;&#xA;&lt;p&gt;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&#xA;&lt;a href=&#34;https://github.com/queelius/reliability-estimation-in-series-systems&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: HTML, TeX, R, Python, CSS, JavaScript, Shell&#xA;&lt;a href=&#34;https://queelius.github.io/reliability-estimation-in-series-systems/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;pres/title.png&#34; alt=&#34;bg left height:7in&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;reliability-estimation-in-series-systems-maximum-likelihood-techniques-for-right-censored-and-masked-failure-data&#34;&gt;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&lt;/h2&gt;&#xA;&lt;p&gt;Alex Towell&#xA;Email: &lt;a href=&#34;mailto:lex@metafunctor.com&#34;&gt;lex@metafunctor.com&lt;/a&gt;&#xA;GitHub: &lt;a href=&#34;https://github.com/queelius&#34;&gt;github.com/queelius&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This paper investigates maximum likelihood techniques to estimate component reliability from masked ailure data in series systems. A likelihood model accounts for right-censoring and candidate sets indicative of masked failure causes. Extensive simulation studies assess the accuracy and precision of maximum likelihood estimates under varying sample size, masking probability, and right-censoring time for components with Weibull lifetimes. The studies specifically examine the accuracy and precision of estimates, along with the coverage probability and width of BCa confidence intervals. Despite significant masking and censoring, the maximum likelihood estimator demonstrates good overall performance. The bootstrap yields correctly specified confidence intervals even for small sample sizes. Together, the modeling framework and simulation studies provide rigorous validation of statistical learning from masked reliability data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>reliability-estimation-in-series-systems</title>
-      <link>http://192.168.0.225:42999/projects/reliability-estimation-in-series-systems/</link>
+      <link>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems/</link>
       <pubDate>Thu, 13 Jul 2023 09:25:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/reliability-estimation-in-series-systems/</guid>
+      <guid>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems/</guid>
       <description>&lt;p&gt;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: HTML, TeX, R, Python, CSS, JavaScript, Shell&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (297 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;pres/title.png&#34; alt=&#34;bg left height:7in&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;reliability-estimation-in-series-systems-maximum-likelihood-techniques-for-right-censored-and-masked-failure-data&#34;&gt;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&lt;/h2&gt;&#xA;&lt;p&gt;Alex Towell&#xA;Email: &lt;a href=&#34;mailto:lex@metafunctor.com&#34;&gt;lex@metafunctor.com&lt;/a&gt;&#xA;GitHub: &lt;a href=&#34;https://github.com/queelius&#34;&gt;github.com/queelius&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This paper investigates maximum likelihood techniques to estimate component reliability from masked ailure data in series systems. A likelihood model accounts for right-censoring and candidate sets indicative of masked failure causes. Extensive simulation studies assess the accuracy and precision of maximum likelihood estimates under varying sample size, masking probability, and right-censoring time for components with Weibull lifetimes. The studies specifically examine the accuracy and precision of estimates, along with the coverage probability and width of BCa confidence intervals. Despite significant masking and censoring, the maximum likelihood estimator demonstrates good overall performance. The bootstrap yields correctly specified confidence intervals even for small sample sizes. Together, the modeling framework and simulation studies provide rigorous validation of statistical learning from masked reliability data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>dfr_dist</title>
-      <link>http://192.168.0.225:42999/ghprojects/dfr_dist/</link>
+      <link>http://192.168.0.225:38061/ghprojects/dfr_dist/</link>
       <pubDate>Fri, 16 Jun 2023 09:56:38 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/dfr_dist/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/dfr_dist/</guid>
       <description>&lt;h1 id=&#34;dfr_dist&#34;&gt;dfr_dist&lt;/h1&gt;&#xA;&lt;p&gt;Dynamic failure rate distributions (DFR)&#xA;&lt;a href=&#34;https://github.com/queelius/dfr_dist&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/dfr_dist/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#r-package-dfrdist-dynamic-failure-rate-dfr-distributions&#34;&gt;R package &lt;code&gt;dfr.dist&lt;/code&gt;: dynamic failure rate (DFR)&#xA;distributions&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#usage&#34;&gt;Usage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h2 id=&#34;r-package-dfrdist-dynamic-failure-rate-dfr-distributions&#34;&gt;R package &lt;code&gt;dfr.dist&lt;/code&gt;: dynamic failure rate (DFR) distributions&lt;/h2&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;An R package for working with models in survival analysis in which the&#xA;distribution is parameterized by a very flexible failure rate function&#xA;(any function that satisfies properties like being non-negative,&#xA;integrating to infinity over the domain, and having a support of &lt;code&gt;(0, Inf)&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>dfr_dist</title>
-      <link>http://192.168.0.225:42999/projects/dfr_dist/</link>
+      <link>http://192.168.0.225:38061/projects/dfr_dist/</link>
       <pubDate>Fri, 16 Jun 2023 09:56:38 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/dfr_dist/</guid>
+      <guid>http://192.168.0.225:38061/projects/dfr_dist/</guid>
       <description>&lt;p&gt;Dynamic failure rate distributions (DFR)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (13 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#r-package-dfrdist-dynamic-failure-rate-dfr-distributions&#34;&gt;R package &lt;code&gt;dfr.dist&lt;/code&gt;: dynamic failure rate (DFR)&#xA;distributions&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#usage&#34;&gt;Usage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h2 id=&#34;r-package-dfrdist-dynamic-failure-rate-dfr-distributions&#34;&gt;R package &lt;code&gt;dfr.dist&lt;/code&gt;: dynamic failure rate (DFR) distributions&lt;/h2&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;An R package for working with models in survival analysis in which the&#xA;distribution is parameterized by a very flexible failure rate function&#xA;(any function that satisfies properties like being non-negative,&#xA;integrating to infinity over the domain, and having a support of &lt;code&gt;(0, Inf)&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>likelihood.model.series.md</title>
-      <link>http://192.168.0.225:42999/ghprojects/likelihood.model.series.md/</link>
+      <link>http://192.168.0.225:38061/ghprojects/likelihood.model.series.md/</link>
       <pubDate>Mon, 12 Jun 2023 19:18:49 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/likelihood.model.series.md/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/likelihood.model.series.md/</guid>
       <description>&lt;h1 id=&#34;likelihoodmodelseriesmd&#34;&gt;likelihood.model.series.md&lt;/h1&gt;&#xA;&lt;p&gt;Likelihood model for series systems with masked component cause of failure and other censoring mechanisms&#xA;&lt;a href=&#34;https://github.com/queelius/likelihood.model.series.md&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/likelihood.model.series.md/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-likelihoodmodelseriesmd&#34;&gt;R Package: &lt;code&gt;likelihood.model.series.md&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;This is an R package for estimating the parameters of a series system&#xA;model from masked data. It provides a flexible and intuitive interface&#xA;for specifying the model and performing maximum likelihood estimation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>likelihood.model.series.md</title>
-      <link>http://192.168.0.225:42999/projects/likelihood.model.series.md/</link>
+      <link>http://192.168.0.225:38061/projects/likelihood.model.series.md/</link>
       <pubDate>Mon, 12 Jun 2023 19:18:49 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/likelihood.model.series.md/</guid>
+      <guid>http://192.168.0.225:38061/projects/likelihood.model.series.md/</guid>
       <description>&lt;p&gt;Likelihood model for series systems with masked component cause of failure and other censoring mechanisms&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (71 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-likelihoodmodelseriesmd&#34;&gt;R Package: &lt;code&gt;likelihood.model.series.md&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;This is an R package for estimating the parameters of a series system&#xA;model from masked data. It provides a flexible and intuitive interface&#xA;for specifying the model and performing maximum likelihood estimation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>chatgpt-pysearch</title>
-      <link>http://192.168.0.225:42999/ghprojects/chatgpt-pysearch/</link>
+      <link>http://192.168.0.225:38061/ghprojects/chatgpt-pysearch/</link>
       <pubDate>Sun, 11 Jun 2023 08:03:50 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/chatgpt-pysearch/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/chatgpt-pysearch/</guid>
       <description>&lt;h1 id=&#34;chatgpt-pysearch&#34;&gt;chatgpt-pysearch&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/chatgpt-pysearch&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: HTML, Python, CSS, Procfile&#xA;&lt;a href=&#34;https://queelius.github.io/chatgpt-pysearch/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;chatgpt-chat-search&#34;&gt;ChatGPT chat search&lt;/h1&gt;&#xA;&lt;p&gt;This was the first python app I developed in quite some time. I wanted to host ChatGPT logs, experiment with heroku, and see how easy it would be to develop the search app using nothing but ChatGPT. I&amp;rsquo;ve hosted the entire chat log that directly generated this app in this repo. It&amp;rsquo;s nothing special, but it&amp;rsquo;s interesting to see my early efforts at using ChatGPT.&lt;/p&gt;</description>
     </item>
     <item>
       <title>chatgpt-pysearch</title>
-      <link>http://192.168.0.225:42999/projects/chatgpt-pysearch/</link>
+      <link>http://192.168.0.225:38061/projects/chatgpt-pysearch/</link>
       <pubDate>Sun, 11 Jun 2023 08:03:50 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/chatgpt-pysearch/</guid>
+      <guid>http://192.168.0.225:38061/projects/chatgpt-pysearch/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: HTML, Python, CSS, Procfile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (16 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;chatgpt-chat-search&#34;&gt;ChatGPT chat search&lt;/h1&gt;&#xA;&lt;p&gt;This was the first python app I developed in quite some time. I wanted to host ChatGPT logs, experiment with heroku, and see how easy it would be to develop the search app using nothing but ChatGPT. I&amp;rsquo;ve hosted the entire chat log that directly generated this app in this repo. It&amp;rsquo;s nothing special, but it&amp;rsquo;s interesting to see my early efforts at using ChatGPT.&lt;/p&gt;</description>
     </item>
     <item>
       <title>likelihood.model</title>
-      <link>http://192.168.0.225:42999/ghprojects/likelihood.model/</link>
+      <link>http://192.168.0.225:38061/ghprojects/likelihood.model/</link>
       <pubDate>Sat, 03 Jun 2023 05:48:59 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/likelihood.model/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/likelihood.model/</guid>
       <description>&lt;h1 id=&#34;likelihoodmodel&#34;&gt;likelihood.model&lt;/h1&gt;&#xA;&lt;p&gt;Likelihood model framework&#xA;&lt;a href=&#34;https://github.com/queelius/likelihood.model&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R, HTML&#xA;&lt;a href=&#34;https://queelius.github.io/likelihood.model/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;likelihood-model&#34;&gt;Likelihood model&lt;/h1&gt;&#xA;&lt;h1 id=&#34;r-package-likelihoodmodel&#34;&gt;R package: &lt;code&gt;likelihood.model&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;The R package &lt;code&gt;likelihood.model&lt;/code&gt; is designed for specifying and using&#xA;likelihood models for statistical inference.&lt;/p&gt;&#xA;&lt;p&gt;The basic likelihood model is a concept that, in order for your object&#xA;to satisfy, must implement a number of generic functions/methods. The&#xA;package provides a class, &lt;code&gt;likelihood_contr_model&lt;/code&gt;, which implements&#xA;these functions and serves as a flexible framework for specifying&#xA;likelihood models based on the idea of independent likelihood&#xA;contributions for different types of observations, e.g., right-censored&#xA;versus exact observations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>likelihood.model</title>
-      <link>http://192.168.0.225:42999/projects/likelihood.model/</link>
+      <link>http://192.168.0.225:38061/projects/likelihood.model/</link>
       <pubDate>Sat, 03 Jun 2023 05:48:59 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/likelihood.model/</guid>
+      <guid>http://192.168.0.225:38061/projects/likelihood.model/</guid>
       <description>&lt;p&gt;Likelihood model framework&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R, HTML&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (20 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;likelihood-model&#34;&gt;Likelihood model&lt;/h1&gt;&#xA;&lt;h1 id=&#34;r-package-likelihoodmodel&#34;&gt;R package: &lt;code&gt;likelihood.model&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;The R package &lt;code&gt;likelihood.model&lt;/code&gt; is designed for specifying and using&#xA;likelihood models for statistical inference.&lt;/p&gt;&#xA;&lt;p&gt;The basic likelihood model is a concept that, in order for your object&#xA;to satisfy, must implement a number of generic functions/methods. The&#xA;package provides a class, &lt;code&gt;likelihood_contr_model&lt;/code&gt;, which implements&#xA;these functions and serves as a flexible framework for specifying&#xA;likelihood models based on the idea of independent likelihood&#xA;contributions for different types of observations, e.g., right-censored&#xA;versus exact observations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>numerical.mle</title>
-      <link>http://192.168.0.225:42999/ghprojects/numerical.mle/</link>
+      <link>http://192.168.0.225:38061/ghprojects/numerical.mle/</link>
       <pubDate>Sat, 06 May 2023 22:02:22 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/numerical.mle/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/numerical.mle/</guid>
       <description>&lt;h1 id=&#34;numericalmle&#34;&gt;numerical.mle&lt;/h1&gt;&#xA;&lt;p&gt;Numerical MLE solvers&#xA;&lt;a href=&#34;https://github.com/queelius/numerical.mle&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/numerical.mle/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-numericalmle&#34;&gt;R package: &lt;code&gt;numerical.mle&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;A set of numeric MLE solvers.&lt;/p&gt;&#xA;&lt;p&gt;This is very early alpha. I just started this project and it is not&#xA;ready for use yet. I just took a bunch of numerical code from&#xA;&lt;code&gt;algebraic.mle&lt;/code&gt; and put it in this separate package. I will be adding&#xA;more numerical solvers and more examples in the future. Most of the code&#xA;probably does not even work yet, since I haven’t tested it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>numerical.mle</title>
-      <link>http://192.168.0.225:42999/projects/numerical.mle/</link>
+      <link>http://192.168.0.225:38061/projects/numerical.mle/</link>
       <pubDate>Sat, 06 May 2023 22:02:22 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/numerical.mle/</guid>
+      <guid>http://192.168.0.225:38061/projects/numerical.mle/</guid>
       <description>&lt;p&gt;Numerical MLE solvers&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (2 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-numericalmle&#34;&gt;R package: &lt;code&gt;numerical.mle&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;A set of numeric MLE solvers.&lt;/p&gt;&#xA;&lt;p&gt;This is very early alpha. I just started this project and it is not&#xA;ready for use yet. I just took a bunch of numerical code from&#xA;&lt;code&gt;algebraic.mle&lt;/code&gt; and put it in this separate package. I will be adding&#xA;more numerical solvers and more examples in the future. Most of the code&#xA;probably does not even work yet, since I haven’t tested it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>locus</title>
-      <link>http://192.168.0.225:42999/ghprojects/locus/</link>
+      <link>http://192.168.0.225:38061/ghprojects/locus/</link>
       <pubDate>Wed, 19 Apr 2023 15:40:35 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/locus/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/locus/</guid>
       <description>&lt;h1 id=&#34;locus&#34;&gt;locus&lt;/h1&gt;&#xA;&lt;p&gt;Seeing how easy it is to convert an old project on Google App Engine to a modern framework with the help of ChatGPT&#xA;&lt;a href=&#34;https://github.com/queelius/locus&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;locus-1&#34;&gt;locus&lt;/h1&gt;&#xA;&lt;p&gt;Seeing how easy it is to convert an old project on Google App Engine to a modern framework with the help of ChatGPT&lt;/p&gt;</description>
     </item>
     <item>
       <title>locus</title>
-      <link>http://192.168.0.225:42999/projects/locus/</link>
+      <link>http://192.168.0.225:38061/projects/locus/</link>
       <pubDate>Wed, 19 Apr 2023 15:40:35 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/locus/</guid>
+      <guid>http://192.168.0.225:38061/projects/locus/</guid>
       <description>&lt;p&gt;Seeing how easy it is to convert an old project on Google App Engine to a modern framework with the help of ChatGPT&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (1 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;locus&#34;&gt;locus&lt;/h1&gt;&#xA;&lt;p&gt;Seeing how easy it is to convert an old project on Google App Engine to a modern framework with the help of ChatGPT&lt;/p&gt;</description>
     </item>
     <item>
       <title>problem_sets</title>
-      <link>http://192.168.0.225:42999/ghprojects/problem_sets/</link>
+      <link>http://192.168.0.225:38061/ghprojects/problem_sets/</link>
       <pubDate>Thu, 30 Mar 2023 07:33:06 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/problem_sets/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/problem_sets/</guid>
       <description>&lt;h1 id=&#34;problem_sets&#34;&gt;problem_sets&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/problem_sets&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Mathematica, HTML, TeX, R, Jupyter Notebook, CSS, C++, JavaScript, Perl&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;problem_sets-1&#34;&gt;problem_sets&lt;/h1&gt;</description>
     </item>
     <item>
       <title>problem_sets</title>
-      <link>http://192.168.0.225:42999/projects/problem_sets/</link>
+      <link>http://192.168.0.225:38061/projects/problem_sets/</link>
       <pubDate>Thu, 30 Mar 2023 07:33:06 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/problem_sets/</guid>
+      <guid>http://192.168.0.225:38061/projects/problem_sets/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Mathematica, HTML, TeX, R, Jupyter Notebook, CSS, C++, JavaScript, Perl&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (3 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;problem_sets&#34;&gt;problem_sets&lt;/h1&gt;</description>
     </item>
     <item>
       <title>femtograd</title>
-      <link>http://192.168.0.225:42999/ghprojects/femtograd/</link>
+      <link>http://192.168.0.225:38061/ghprojects/femtograd/</link>
       <pubDate>Fri, 17 Mar 2023 14:32:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/femtograd/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/femtograd/</guid>
       <description>&lt;h1 id=&#34;femtograd&#34;&gt;femtograd&lt;/h1&gt;&#xA;&lt;p&gt;Like micrograd, but worse.&#xA;&lt;a href=&#34;https://github.com/queelius/femtograd&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/femtograd/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;femtograd-1&#34;&gt;femtograd&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#exponential-distribution&#34;&#xA;id=&#34;toc-exponential-distribution&#34;&gt;Exponential distribution&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#automatic-differentiation-ad&#34;&#xA;id=&#34;toc-automatic-differentiation-ad&#34;&gt;Automatic differentiation (AD)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here’s a quick demonstration of how to use the&#xA;&lt;a href=&#34;https://github.com/queelius/femtograd&#34;&gt;&lt;code&gt;femtograd&lt;/code&gt;&lt;/a&gt; R package.&lt;/p&gt;&#xA;&lt;p&gt;Load it like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(femtograd)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; &lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; Attaching package: &amp;#39;femtograd&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; The following object is masked from &amp;#39;package:utils&amp;#39;:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; &lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt;     data&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exponential-distribution&#34;&gt;Exponential distribution&lt;/h2&gt;&#xA;&lt;p&gt;Let’s create a simple loglikelihood function for the exponential&#xA;distribution paramterized by $\lambda$ (failure rate).&lt;/p&gt;</description>
     </item>
     <item>
       <title>femtograd</title>
-      <link>http://192.168.0.225:42999/projects/femtograd/</link>
+      <link>http://192.168.0.225:38061/projects/femtograd/</link>
       <pubDate>Fri, 17 Mar 2023 14:32:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/femtograd/</guid>
+      <guid>http://192.168.0.225:38061/projects/femtograd/</guid>
       <description>&lt;p&gt;Like micrograd, but worse.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (26 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;femtograd&#34;&gt;femtograd&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#exponential-distribution&#34;&#xA;id=&#34;toc-exponential-distribution&#34;&gt;Exponential distribution&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#automatic-differentiation-ad&#34;&#xA;id=&#34;toc-automatic-differentiation-ad&#34;&gt;Automatic differentiation (AD)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here’s a quick demonstration of how to use the&#xA;&lt;a href=&#34;https://github.com/queelius/femtograd&#34;&gt;&lt;code&gt;femtograd&lt;/code&gt;&lt;/a&gt; R package.&lt;/p&gt;&#xA;&lt;p&gt;Load it like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(femtograd)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; &lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; Attaching package: &amp;#39;femtograd&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; The following object is masked from &amp;#39;package:utils&amp;#39;:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt; &lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&amp;gt;     data&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;exponential-distribution&#34;&gt;Exponential distribution&lt;/h2&gt;&#xA;&lt;p&gt;Let’s create a simple loglikelihood function for the exponential&#xA;distribution paramterized by $\lambda$ (failure rate).&lt;/p&gt;</description>
     </item>
     <item>
       <title>queelius.github.io</title>
-      <link>http://192.168.0.225:42999/ghprojects/queelius.github.io/</link>
+      <link>http://192.168.0.225:38061/ghprojects/queelius.github.io/</link>
       <pubDate>Sun, 28 Aug 2022 11:12:14 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/queelius.github.io/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/queelius.github.io/</guid>
       <description>&lt;h1 id=&#34;queeliusgithubio&#34;&gt;queelius.github.io&lt;/h1&gt;&#xA;&lt;p&gt;queelius.github.io&#xA;&lt;a href=&#34;https://github.com/queelius/queelius.github.io&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;a href=&#34;https://queelius.github.io/queelius.github.io/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;queeliuss-github-page-&#34;&gt;Queelius&amp;rsquo;s GitHub Page 👋&lt;/h1&gt;&#xA;&lt;p&gt;Hello! I&amp;rsquo;m Alex Towell, a Computer Science Master from SIUE, currently deepening my knowledge in Statistics. With a keen interest in everything from AI/ML/LLM and Encryption to Programming Language Design, I am consistently exploring new frontiers in technology.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-interests&#34;&gt;My Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI/ML/LLM&lt;/li&gt;&#xA;&lt;li&gt;Encrypted Search &amp;amp; Homomorphic Encryption&lt;/li&gt;&#xA;&lt;li&gt;Encryption and Cryptographic Hashing&lt;/li&gt;&#xA;&lt;li&gt;Oblivious and Probabilistic Data Structures &amp;amp; Algorithms&lt;/li&gt;&#xA;&lt;li&gt;Statistical Modeling and Probabilistic Programming&lt;/li&gt;&#xA;&lt;li&gt;Reliability Engineering&lt;/li&gt;&#xA;&lt;li&gt;Programming Language Design&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always working on projects to explore new ideas and technologies.&#xA;You can find a comprehensive list and detailed information about my projects over at &lt;a href=&#34;https://metafunctor.com/#projects&#34;&gt;metafunctor.com&lt;/a&gt; or by looking at&#xA;my GitHub &lt;a href=&#34;https://github.com/queelius&#34;&gt;repo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>queelius.github.io</title>
-      <link>http://192.168.0.225:42999/projects/queelius.github.io/</link>
+      <link>http://192.168.0.225:38061/projects/queelius.github.io/</link>
       <pubDate>Sun, 28 Aug 2022 11:12:14 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/queelius.github.io/</guid>
+      <guid>http://192.168.0.225:38061/projects/queelius.github.io/</guid>
       <description>&lt;p&gt;queelius.github.io&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (7 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;queeliuss-github-page-&#34;&gt;Queelius&amp;rsquo;s GitHub Page 👋&lt;/h1&gt;&#xA;&lt;p&gt;Hello! I&amp;rsquo;m Alex Towell, a Computer Science Master from SIUE, currently deepening my knowledge in Statistics. With a keen interest in everything from AI/ML/LLM and Encryption to Programming Language Design, I am consistently exploring new frontiers in technology.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-interests&#34;&gt;My Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI/ML/LLM&lt;/li&gt;&#xA;&lt;li&gt;Encrypted Search &amp;amp; Homomorphic Encryption&lt;/li&gt;&#xA;&lt;li&gt;Encryption and Cryptographic Hashing&lt;/li&gt;&#xA;&lt;li&gt;Oblivious and Probabilistic Data Structures &amp;amp; Algorithms&lt;/li&gt;&#xA;&lt;li&gt;Statistical Modeling and Probabilistic Programming&lt;/li&gt;&#xA;&lt;li&gt;Reliability Engineering&lt;/li&gt;&#xA;&lt;li&gt;Programming Language Design&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always working on projects to explore new ideas and technologies.&#xA;You can find a comprehensive list and detailed information about my projects over at &lt;a href=&#34;https://metafunctor.com/#projects&#34;&gt;metafunctor.com&lt;/a&gt; or by looking at&#xA;my GitHub &lt;a href=&#34;https://github.com/queelius&#34;&gt;repo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic.dist</title>
-      <link>http://192.168.0.225:42999/ghprojects/algebraic.dist/</link>
+      <link>http://192.168.0.225:38061/ghprojects/algebraic.dist/</link>
       <pubDate>Thu, 26 May 2022 19:17:07 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/algebraic.dist/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/algebraic.dist/</guid>
       <description>&lt;h1 id=&#34;algebraicdist&#34;&gt;algebraic.dist&lt;/h1&gt;&#xA;&lt;p&gt;Algebraic distributions&#xA;&lt;a href=&#34;https://github.com/queelius/algebraic.dist&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/algebraic.dist/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#r-package-algebraicdist&#34;&gt;R package: &lt;code&gt;algebraic.dist&lt;/code&gt;&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#todo&#34;&gt;TODO&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-algebraicdist&#34;&gt;R package: &lt;code&gt;algebraic.dist&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/licenses/gpl-3.0&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPL--3-blue.svg&#34; alt=&#34;GPL-3&#xA;License&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;An algebra over distributions (random elements).&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;You can install the development version of &lt;code&gt;algebraic.dist&lt;/code&gt; from&#xA;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; with:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;devtools&amp;#34;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;devtools&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;install_github&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;queelius/algebraic.dist&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See the vignette &lt;a href=&#34;http://queelius.github.io/algebraic.dist/articles/example.html&#34;&gt;algebraic.dist:&#xA;Example&lt;/a&gt;&#xA;for a quick introduction to the package.&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic.dist</title>
-      <link>http://192.168.0.225:42999/projects/algebraic.dist/</link>
+      <link>http://192.168.0.225:38061/projects/algebraic.dist/</link>
       <pubDate>Thu, 26 May 2022 19:17:07 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/algebraic.dist/</guid>
+      <guid>http://192.168.0.225:38061/projects/algebraic.dist/</guid>
       <description>&lt;p&gt;Algebraic distributions&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (27 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#r-package-algebraicdist&#34;&gt;R package: &lt;code&gt;algebraic.dist&lt;/code&gt;&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#todo&#34;&gt;TODO&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-algebraicdist&#34;&gt;R package: &lt;code&gt;algebraic.dist&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/licenses/gpl-3.0&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPL--3-blue.svg&#34; alt=&#34;GPL-3&#xA;License&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;An algebra over distributions (random elements).&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;You can install the development version of &lt;code&gt;algebraic.dist&lt;/code&gt; from&#xA;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; with:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install.packages(&amp;#34;devtools&amp;#34;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;devtools&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;install_github&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;queelius/algebraic.dist&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See the vignette &lt;a href=&#34;http://queelius.github.io/algebraic.dist/articles/example.html&#34;&gt;algebraic.dist:&#xA;Example&lt;/a&gt;&#xA;for a quick introduction to the package.&lt;/p&gt;</description>
     </item>
     <item>
       <title>md.tools</title>
-      <link>http://192.168.0.225:42999/ghprojects/md.tools/</link>
+      <link>http://192.168.0.225:38061/ghprojects/md.tools/</link>
       <pubDate>Sat, 29 Jan 2022 20:41:28 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/md.tools/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/md.tools/</guid>
       <description>&lt;h1 id=&#34;mdtools&#34;&gt;md.tools&lt;/h1&gt;&#xA;&lt;p&gt;Masked data tools&#xA;&lt;a href=&#34;https://github.com/queelius/md.tools&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/md.tools/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-mdtools&#34;&gt;R package: &lt;code&gt;md.tools&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;A miscellaneous set of tools for working with &lt;em&gt;masked data&lt;/em&gt; and common&#xA;features of masked data. The tool set takes inspiration from functional&#xA;programming, with inputs and outputs defined over masked data frames of&#xA;type &lt;code&gt;tbl_md&lt;/code&gt; (or just data frames), making it consistent with the&#xA;&lt;em&gt;tidyverse&lt;/em&gt; way of doing things.&lt;/p&gt;</description>
     </item>
     <item>
       <title>md.tools</title>
-      <link>http://192.168.0.225:42999/projects/md.tools/</link>
+      <link>http://192.168.0.225:38061/projects/md.tools/</link>
       <pubDate>Sat, 29 Jan 2022 20:41:28 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/md.tools/</guid>
+      <guid>http://192.168.0.225:38061/projects/md.tools/</guid>
       <description>&lt;p&gt;Masked data tools&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (34 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;!-- README.md is generated from README.Rmd. Please edit that file --&gt;&#xA;&lt;h1 id=&#34;r-package-mdtools&#34;&gt;R package: &lt;code&gt;md.tools&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;A miscellaneous set of tools for working with &lt;em&gt;masked data&lt;/em&gt; and common&#xA;features of masked data. The tool set takes inspiration from functional&#xA;programming, with inputs and outputs defined over masked data frames of&#xA;type &lt;code&gt;tbl_md&lt;/code&gt; (or just data frames), making it consistent with the&#xA;&lt;em&gt;tidyverse&lt;/em&gt; way of doing things.&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic.mle</title>
-      <link>http://192.168.0.225:42999/ghprojects/algebraic.mle/</link>
+      <link>http://192.168.0.225:38061/ghprojects/algebraic.mle/</link>
       <pubDate>Thu, 27 Jan 2022 09:12:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/algebraic.mle/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/algebraic.mle/</guid>
       <description>&lt;h1 id=&#34;algebraicmle&#34;&gt;algebraic.mle&lt;/h1&gt;&#xA;&lt;p&gt;Algebraic maximum likelihood estimators&#xA;&lt;a href=&#34;https://github.com/queelius/algebraic.mle&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&#xA;&lt;a href=&#34;https://queelius.github.io/algebraic.mle/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;r-package-algebraicmle&#34;&gt;R package: &lt;code&gt;algebraic.mle&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/licenses/gpl-3.0&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPL--3-blue.svg&#34; alt=&#34;GPL-3&#xA;License&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;&lt;code&gt;algebraic.mle&lt;/code&gt; is an R package that provides an algebra over Maximum&#xA;Likelihood Estimators (MLEs). These estimators possess many desirable,&#xA;well-defined statistical properties which the package helps you&#xA;manipulate and utilize.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;algebraic.mle&lt;/code&gt; can be installed from GitHub by using the devtools&#xA;package in R:&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic.mle</title>
-      <link>http://192.168.0.225:42999/projects/algebraic.mle/</link>
+      <link>http://192.168.0.225:38061/projects/algebraic.mle/</link>
       <pubDate>Thu, 27 Jan 2022 09:12:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/algebraic.mle/</guid>
+      <guid>http://192.168.0.225:38061/projects/algebraic.mle/</guid>
       <description>&lt;p&gt;Algebraic maximum likelihood estimators&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (120 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;r-package-algebraicmle&#34;&gt;R package: &lt;code&gt;algebraic.mle&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;!-- badges: start --&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/licenses/gpl-3.0&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPL--3-blue.svg&#34; alt=&#34;GPL-3&#xA;License&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- badges: end --&gt;&#xA;&lt;p&gt;&lt;code&gt;algebraic.mle&lt;/code&gt; is an R package that provides an algebra over Maximum&#xA;Likelihood Estimators (MLEs). These estimators possess many desirable,&#xA;well-defined statistical properties which the package helps you&#xA;manipulate and utilize.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;algebraic.mle&lt;/code&gt; can be installed from GitHub by using the devtools&#xA;package in R:&lt;/p&gt;</description>
     </item>
     <item>
       <title>md-series-systems-relaxed-candidate-set-models</title>
-      <link>http://192.168.0.225:42999/ghprojects/md-series-systems-relaxed-candidate-set-models/</link>
+      <link>http://192.168.0.225:38061/ghprojects/md-series-systems-relaxed-candidate-set-models/</link>
       <pubDate>Mon, 06 Dec 2021 09:36:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/md-series-systems-relaxed-candidate-set-models/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/md-series-systems-relaxed-candidate-set-models/</guid>
       <description>&lt;h1 id=&#34;md-series-systems-relaxed-candidate-set-models&#34;&gt;md-series-systems-relaxed-candidate-set-models&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/md-series-systems-relaxed-candidate-set-models&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: HTML, R&#xA;&lt;a href=&#34;https://queelius.github.io/md-series-systems-relaxed-candidate-set-models/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This is not functional. I intend to use it to extend my master&amp;rsquo;s project on estimating reliability of series system from masked data by relaxing some of its conditions.&lt;/p&gt;&#xA;&lt;p&gt;The project is currently in an unknown state.&lt;/p&gt;</description>
     </item>
     <item>
       <title>md-series-systems-relaxed-candidate-set-models</title>
-      <link>http://192.168.0.225:42999/projects/md-series-systems-relaxed-candidate-set-models/</link>
+      <link>http://192.168.0.225:38061/projects/md-series-systems-relaxed-candidate-set-models/</link>
       <pubDate>Mon, 06 Dec 2021 09:36:36 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/md-series-systems-relaxed-candidate-set-models/</guid>
+      <guid>http://192.168.0.225:38061/projects/md-series-systems-relaxed-candidate-set-models/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: HTML, R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (66 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This is not functional. I intend to use it to extend my master&amp;rsquo;s project on estimating reliability of series system from masked data by relaxing some of its conditions.&lt;/p&gt;&#xA;&lt;p&gt;The project is currently in an unknown state.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rstatlab</title>
-      <link>http://192.168.0.225:42999/ghprojects/rstatlab/</link>
+      <link>http://192.168.0.225:38061/ghprojects/rstatlab/</link>
       <pubDate>Mon, 30 Aug 2021 23:25:35 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/rstatlab/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/rstatlab/</guid>
       <description>&lt;h1 id=&#34;rstatlab&#34;&gt;rstatlab&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/rstatlab&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This repository contains weekly statistical lab materials for Stat 244 and Stat 380 at SIUE.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rstatlab</title>
-      <link>http://192.168.0.225:42999/projects/rstatlab/</link>
+      <link>http://192.168.0.225:38061/projects/rstatlab/</link>
       <pubDate>Mon, 30 Aug 2021 23:25:35 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/rstatlab/</guid>
+      <guid>http://192.168.0.225:38061/projects/rstatlab/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;jpailden (165 commits)&lt;/li&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This repository contains weekly statistical lab materials for Stat 244 and Stat 380 at SIUE.&lt;/p&gt;</description>
     </item>
     <item>
       <title>prob.4.2.comp.stats</title>
-      <link>http://192.168.0.225:42999/ghprojects/prob.4.2.comp.stats/</link>
+      <link>http://192.168.0.225:38061/ghprojects/prob.4.2.comp.stats/</link>
       <pubDate>Sun, 25 Jul 2021 08:49:08 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/prob.4.2.comp.stats/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/prob.4.2.comp.stats/</guid>
       <description>&lt;h1 id=&#34;prob42compstats&#34;&gt;prob.4.2.comp.stats&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/prob.4.2.comp.stats&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;problem-42---computational-statistics&#34;&gt;Problem 4.2 - Computational Statistics&lt;/h1&gt;</description>
     </item>
     <item>
       <title>prob.4.2.comp.stats</title>
-      <link>http://192.168.0.225:42999/projects/prob.4.2.comp.stats/</link>
+      <link>http://192.168.0.225:38061/projects/prob.4.2.comp.stats/</link>
       <pubDate>Sun, 25 Jul 2021 08:49:08 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/prob.4.2.comp.stats/</guid>
+      <guid>http://192.168.0.225:38061/projects/prob.4.2.comp.stats/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (12 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;problem-42---computational-statistics&#34;&gt;Problem 4.2 - Computational Statistics&lt;/h1&gt;</description>
     </item>
     <item>
       <title>known_plaintext_attack_time_series_analysis</title>
-      <link>http://192.168.0.225:42999/ghprojects/known_plaintext_attack_time_series_analysis/</link>
+      <link>http://192.168.0.225:38061/ghprojects/known_plaintext_attack_time_series_analysis/</link>
       <pubDate>Fri, 30 Apr 2021 03:43:19 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/known_plaintext_attack_time_series_analysis/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/known_plaintext_attack_time_series_analysis/</guid>
       <description>&lt;h1 id=&#34;known_plaintext_attack_time_series_analysis&#34;&gt;known_plaintext_attack_time_series_analysis&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/known_plaintext_attack_time_series_analysis&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: TeX, C++, R&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;time-series-analysis-of-a-confidentiality-measure-for-an-encrypted-search-system&#34;&gt;Time series analysis of a confidentiality measure for an Encrypted search system&lt;/h1&gt;&#xA;&lt;p&gt;We derive a confidentiality measure against an adversary deploying a known-plaintext attack on the search agents Encrypted searches.&#xA;We perform a time series analysis on a theoretical adversary in order to derive an estimator of the forecast distribution&#xA;on the confidentiality measure, which may be used to inform policies such as when and how frequently a password change may&#xA;be called for to maintain a minimum level of confidentiality.&lt;/p&gt;</description>
     </item>
     <item>
       <title>known_plaintext_attack_time_series_analysis</title>
-      <link>http://192.168.0.225:42999/projects/known_plaintext_attack_time_series_analysis/</link>
+      <link>http://192.168.0.225:38061/projects/known_plaintext_attack_time_series_analysis/</link>
       <pubDate>Fri, 30 Apr 2021 03:43:19 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/known_plaintext_attack_time_series_analysis/</guid>
+      <guid>http://192.168.0.225:38061/projects/known_plaintext_attack_time_series_analysis/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: TeX, C++, R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (3 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;time-series-analysis-of-a-confidentiality-measure-for-an-encrypted-search-system&#34;&gt;Time series analysis of a confidentiality measure for an Encrypted search system&lt;/h1&gt;&#xA;&lt;p&gt;We derive a confidentiality measure against an adversary deploying a known-plaintext attack on the search agents Encrypted searches.&#xA;We perform a time series analysis on a theoretical adversary in order to derive an estimator of the forecast distribution&#xA;on the confidentiality measure, which may be used to inform policies such as when and how frequently a password change may&#xA;be called for to maintain a minimum level of confidentiality.&lt;/p&gt;</description>
     </item>
     <item>
       <title>queelius</title>
-      <link>http://192.168.0.225:42999/ghprojects/queelius/</link>
+      <link>http://192.168.0.225:38061/ghprojects/queelius/</link>
       <pubDate>Sun, 14 Feb 2021 21:17:44 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/queelius/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/queelius/</guid>
       <description>&lt;h1 id=&#34;queelius&#34;&gt;queelius&lt;/h1&gt;&#xA;&lt;p&gt;Config files for my GitHub profile.&#xA;&lt;a href=&#34;https://github.com/queelius/queelius&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I’m Alex Towell and I can be reached at &lt;a href=&#34;mailto:lex@metafunctor.com&#34;&gt;lex@metafunctor.com&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;I have two masters degrees from SIUE: Computer Science and Mathematics/Statistics.&lt;/li&gt;&#xA;&lt;li&gt;I’m interested encrypted search and homomorphic encryption, oblivious and probabilitistic data structures and algorithms, machine learning and statistics, AI, and programming.&lt;/li&gt;&#xA;&lt;li&gt;I’m looking to collaborate on papers (some partially complete). Here are some ideas, but I&amp;rsquo;m open to other opportunities:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Oblivious, privacy-preserving algebraic data types for confidential computation on untrusted systems, with analysis informed by information and probability theory. The data types are algebraic in nature because I have been researching ways to compose them to facilitate building larger oblivious programs from smaller oblivious components, the essence of programming.&lt;/li&gt;&#xA;&lt;li&gt;Probabilistic algorithms and probabilistic algebraic data types primarily concerned with specifying a type of approximation error (normally due to rate distortion) which I tentatively refer to as the Bernoulli Model.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Probabilistic data structures that model set-indicator functions, like the Bloom filter, are a well-known special case, but I seek to significantly generalize the results and propagate information about the approximation error through a family of monadic constructions.&lt;/li&gt;&#xA;&lt;li&gt;I have been pursuing derivations of the expected lower-bounds on the space complexity of these approximate Bernoulli types in addition to practical near-optimal data structures that model them.&lt;/li&gt;&#xA;&lt;li&gt;Related to my Computer Science thesis, I have also applied the above results to an approximate Boolean algebra for encrypted search.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Reliability engineering and applying statistical inference and learning to predict likely breakdowns (and its causes) of critical systems.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It concerns reliability theory and my publication titled &amp;ldquo;Estimating how confidential encrypted searches are using moving average bootstrap method&amp;rdquo; concerns reliability engineering.&lt;/li&gt;&#xA;&lt;li&gt;My master&amp;rsquo;s paper &amp;ldquo;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&amp;rdquo; is also related.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;An information-theoretic model of an optimal adversary (provides a lower-bound on confidientiality in some cases) who, with some probability of success, compromises the confidentiality of an encrypted search system by observing a time series of inputs and outputs.&lt;/li&gt;&#xA;&lt;li&gt;Decentralized &amp;ldquo;trust machines&amp;rdquo; (technological solutions to securing trust that does not rely on central authorities), Research on oblivious, privacy-preserving computations is one of the tools in automating trust, but I&amp;rsquo;m also interested in technologies like Blockchain.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!---&#xA;queelius/queelius is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.&#xA;You can click the Preview link to take a look at your changes.&#xA;---&gt;</description>
     </item>
     <item>
       <title>queelius</title>
-      <link>http://192.168.0.225:42999/projects/queelius/</link>
+      <link>http://192.168.0.225:38061/projects/queelius/</link>
       <pubDate>Sun, 14 Feb 2021 21:17:44 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/queelius/</guid>
+      <guid>http://192.168.0.225:38061/projects/queelius/</guid>
       <description>&lt;p&gt;Config files for my GitHub profile.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (5 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I’m Alex Towell and I can be reached at &lt;a href=&#34;mailto:lex@metafunctor.com&#34;&gt;lex@metafunctor.com&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;I have two masters degrees from SIUE: Computer Science and Mathematics/Statistics.&lt;/li&gt;&#xA;&lt;li&gt;I’m interested encrypted search and homomorphic encryption, oblivious and probabilitistic data structures and algorithms, machine learning and statistics, AI, and programming.&lt;/li&gt;&#xA;&lt;li&gt;I’m looking to collaborate on papers (some partially complete). Here are some ideas, but I&amp;rsquo;m open to other opportunities:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Oblivious, privacy-preserving algebraic data types for confidential computation on untrusted systems, with analysis informed by information and probability theory. The data types are algebraic in nature because I have been researching ways to compose them to facilitate building larger oblivious programs from smaller oblivious components, the essence of programming.&lt;/li&gt;&#xA;&lt;li&gt;Probabilistic algorithms and probabilistic algebraic data types primarily concerned with specifying a type of approximation error (normally due to rate distortion) which I tentatively refer to as the Bernoulli Model.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Probabilistic data structures that model set-indicator functions, like the Bloom filter, are a well-known special case, but I seek to significantly generalize the results and propagate information about the approximation error through a family of monadic constructions.&lt;/li&gt;&#xA;&lt;li&gt;I have been pursuing derivations of the expected lower-bounds on the space complexity of these approximate Bernoulli types in addition to practical near-optimal data structures that model them.&lt;/li&gt;&#xA;&lt;li&gt;Related to my Computer Science thesis, I have also applied the above results to an approximate Boolean algebra for encrypted search.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Reliability engineering and applying statistical inference and learning to predict likely breakdowns (and its causes) of critical systems.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It concerns reliability theory and my publication titled &amp;ldquo;Estimating how confidential encrypted searches are using moving average bootstrap method&amp;rdquo; concerns reliability engineering.&lt;/li&gt;&#xA;&lt;li&gt;My master&amp;rsquo;s paper &amp;ldquo;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&amp;rdquo; is also related.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;An information-theoretic model of an optimal adversary (provides a lower-bound on confidientiality in some cases) who, with some probability of success, compromises the confidentiality of an encrypted search system by observing a time series of inputs and outputs.&lt;/li&gt;&#xA;&lt;li&gt;Decentralized &amp;ldquo;trust machines&amp;rdquo; (technological solutions to securing trust that does not rely on central authorities), Research on oblivious, privacy-preserving computations is one of the tools in automating trust, but I&amp;rsquo;m also interested in technologies like Blockchain.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!---&#xA;queelius/queelius is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.&#xA;You can click the Preview link to take a look at your changes.&#xA;---&gt;</description>
     </item>
     <item>
       <title>homomorphic_computational_extensions</title>
-      <link>http://192.168.0.225:42999/ghprojects/homomorphic_computational_extensions/</link>
+      <link>http://192.168.0.225:38061/ghprojects/homomorphic_computational_extensions/</link>
       <pubDate>Fri, 18 Dec 2020 00:13:12 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/homomorphic_computational_extensions/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/homomorphic_computational_extensions/</guid>
       <description>&lt;h1 id=&#34;homomorphic_computational_extensions&#34;&gt;homomorphic_computational_extensions&lt;/h1&gt;&#xA;&lt;p&gt;Homomorphic computational extensions&#xA;&lt;a href=&#34;https://github.com/queelius/homomorphic_computational_extensions&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: C++&#xA;&lt;a href=&#34;https://queelius.github.io/homomorphic_computational_extensions/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;homomorphic-computational-extensions&#34;&gt;Homomorphic computational extensions&lt;/h1&gt;&#xA;&lt;p&gt;Alex Towell&#xA;3/5/2022&lt;/p&gt;&#xA;&lt;p&gt;We consider homomorphisms which are based on computational concerns which are used to&#xA;transform inefficient or lossy computations over some original domain &lt;code&gt;T&lt;/code&gt; into a&#xA;conceptually equivalent group &lt;code&gt;T*&lt;/code&gt; over a restricted set of operations.&lt;/p&gt;&#xA;&lt;p&gt;If the original problem can be solved using these restricted operations, then we may&#xA;transform &lt;code&gt;T&lt;/code&gt; into &lt;code&gt;T*&lt;/code&gt; and efficiently perform the computations.&#xA;Sometimes, the entire solution cannot be transformed back to &lt;code&gt;T&lt;/code&gt;, but the restricted&#xA;set of functions or operations may still be sufficient, e.g., evaluating&#xA;&lt;code&gt;a + c &amp;lt; b + c&lt;/code&gt; even though &lt;code&gt;a+c&lt;/code&gt; or &lt;code&gt;b+c&lt;/code&gt; may not be in the domain of &lt;code&gt;T&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>homomorphic_computational_extensions</title>
-      <link>http://192.168.0.225:42999/projects/homomorphic_computational_extensions/</link>
+      <link>http://192.168.0.225:38061/projects/homomorphic_computational_extensions/</link>
       <pubDate>Fri, 18 Dec 2020 00:13:12 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/homomorphic_computational_extensions/</guid>
+      <guid>http://192.168.0.225:38061/projects/homomorphic_computational_extensions/</guid>
       <description>&lt;p&gt;Homomorphic computational extensions&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (27 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;homomorphic-computational-extensions&#34;&gt;Homomorphic computational extensions&lt;/h1&gt;&#xA;&lt;p&gt;Alex Towell&#xA;3/5/2022&lt;/p&gt;&#xA;&lt;p&gt;We consider homomorphisms which are based on computational concerns which are used to&#xA;transform inefficient or lossy computations over some original domain &lt;code&gt;T&lt;/code&gt; into a&#xA;conceptually equivalent group &lt;code&gt;T*&lt;/code&gt; over a restricted set of operations.&lt;/p&gt;&#xA;&lt;p&gt;If the original problem can be solved using these restricted operations, then we may&#xA;transform &lt;code&gt;T&lt;/code&gt; into &lt;code&gt;T*&lt;/code&gt; and efficiently perform the computations.&#xA;Sometimes, the entire solution cannot be transformed back to &lt;code&gt;T&lt;/code&gt;, but the restricted&#xA;set of functions or operations may still be sufficient, e.g., evaluating&#xA;&lt;code&gt;a + c &amp;lt; b + c&lt;/code&gt; even though &lt;code&gt;a+c&lt;/code&gt; or &lt;code&gt;b+c&lt;/code&gt; may not be in the domain of &lt;code&gt;T&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic_cipher_types</title>
-      <link>http://192.168.0.225:42999/ghprojects/algebraic_cipher_types/</link>
+      <link>http://192.168.0.225:38061/ghprojects/algebraic_cipher_types/</link>
       <pubDate>Sat, 21 Dec 2019 17:56:50 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/algebraic_cipher_types/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/algebraic_cipher_types/</guid>
       <description>&lt;h1 id=&#34;algebraic_cipher_types&#34;&gt;algebraic_cipher_types&lt;/h1&gt;&#xA;&lt;p&gt;Algebraic cipher types&#xA;&lt;a href=&#34;https://github.com/queelius/algebraic_cipher_types&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: C++, CMake, Python, Makefile&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;algebraic_cipher_types_code&#34;&gt;algebraic_cipher_types_code&lt;/h1&gt;&#xA;&lt;p&gt;Algebraic cipher types&lt;/p&gt;</description>
     </item>
     <item>
       <title>algebraic_cipher_types</title>
-      <link>http://192.168.0.225:42999/projects/algebraic_cipher_types/</link>
+      <link>http://192.168.0.225:38061/projects/algebraic_cipher_types/</link>
       <pubDate>Sat, 21 Dec 2019 17:56:50 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/algebraic_cipher_types/</guid>
+      <guid>http://192.168.0.225:38061/projects/algebraic_cipher_types/</guid>
       <description>&lt;p&gt;Algebraic cipher types&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: C++, CMake, Python, Makefile&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (46 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;algebraic_cipher_types_code&#34;&gt;algebraic_cipher_types_code&lt;/h1&gt;&#xA;&lt;p&gt;Algebraic cipher types&lt;/p&gt;</description>
     </item>
     <item>
       <title>encrypted_search_probabilistic_estimator_conf</title>
-      <link>http://192.168.0.225:42999/ghprojects/encrypted_search_probabilistic_estimator_conf/</link>
+      <link>http://192.168.0.225:38061/ghprojects/encrypted_search_probabilistic_estimator_conf/</link>
       <pubDate>Tue, 15 Jan 2019 18:39:47 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/encrypted_search_probabilistic_estimator_conf/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/encrypted_search_probabilistic_estimator_conf/</guid>
       <description>&lt;h1 id=&#34;encrypted_search_probabilistic_estimator_conf&#34;&gt;encrypted_search_probabilistic_estimator_conf&lt;/h1&gt;&#xA;&lt;p&gt;Encrypted Search: A Probabilistic Estimator of Confiidentiality&#xA;&lt;a href=&#34;https://github.com/queelius/encrypted_search_probabilistic_estimator_conf&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: HTML, TeX, C++, CSS, JavaScript, Roff&#xA;&lt;a href=&#34;https://queelius.github.io/encrypted_search_probabilistic_estimator_conf/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;encrypted-search-a-probabilistic-estimator-of-confidentiality&#34;&gt;Encrypted Search: A Probabilistic Estimator of Confidentiality&lt;/h2&gt;&#xA;&lt;p&gt;This repository contains research on measuring the confidentiality of encrypted&#xA;search systems against an adversary that observes hidden queries to infer plaintext queries.&lt;/p&gt;&#xA;&lt;p&gt;This paper is written in Bookdown and provides output options for PDF (pdfbook)&#xA;and HTML (gitbook).&lt;/p&gt;</description>
     </item>
     <item>
       <title>encrypted_search_probabilistic_estimator_conf</title>
-      <link>http://192.168.0.225:42999/projects/encrypted_search_probabilistic_estimator_conf/</link>
+      <link>http://192.168.0.225:38061/projects/encrypted_search_probabilistic_estimator_conf/</link>
       <pubDate>Tue, 15 Jan 2019 18:39:47 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/encrypted_search_probabilistic_estimator_conf/</guid>
+      <guid>http://192.168.0.225:38061/projects/encrypted_search_probabilistic_estimator_conf/</guid>
       <description>&lt;p&gt;Encrypted Search: A Probabilistic Estimator of Confiidentiality&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: HTML, TeX, C++, CSS, JavaScript, Roff&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (7 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h2 id=&#34;encrypted-search-a-probabilistic-estimator-of-confidentiality&#34;&gt;Encrypted Search: A Probabilistic Estimator of Confidentiality&lt;/h2&gt;&#xA;&lt;p&gt;This repository contains research on measuring the confidentiality of encrypted&#xA;search systems against an adversary that observes hidden queries to infer plaintext queries.&lt;/p&gt;&#xA;&lt;p&gt;This paper is written in Bookdown and provides output options for PDF (pdfbook)&#xA;and HTML (gitbook).&lt;/p&gt;</description>
     </item>
     <item>
       <title>cipher_maps</title>
-      <link>http://192.168.0.225:42999/ghprojects/cipher_maps/</link>
+      <link>http://192.168.0.225:38061/ghprojects/cipher_maps/</link>
       <pubDate>Mon, 14 Jan 2019 16:34:53 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/cipher_maps/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/cipher_maps/</guid>
       <description>&lt;h1 id=&#34;cipher_maps&#34;&gt;cipher_maps&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/cipher_maps&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: TeX&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;universal-function-bernoulli-approximators&#34;&gt;Universal function Bernoulli approximators&lt;/h1&gt;&#xA;&lt;h1 id=&#34;oblivious-maps&#34;&gt;Oblivious maps&lt;/h1&gt;&#xA;&lt;p&gt;A set is an unordered collection of distinct elements, typically from&#xA;some implicitly understood universe. A countable set is a &lt;em&gt;finite set&lt;/em&gt;&#xA;or a &lt;em&gt;countably infinite set&lt;/em&gt;. A &lt;em&gt;finite set&lt;/em&gt; has a finite number of&#xA;elements, such as&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5C%7B%201%2C%203%2C%205%20%5C%7D&#34; alt=&#34;\{ 1, 3, 5 \}&#34; title=&#34;{ 1, 3, 5 }&#34;&gt;,&#xA;and a &lt;em&gt;countably infinite set&lt;/em&gt; can be put in one-to-one correspondence&#xA;with the set of natural numbers,&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5C%7B1%2C2%2C3%2C4%2C5%2C%5Cldots%5C%7D&#34; alt=&#34;\{1,2,3,4,5,\ldots\}&#34; title=&#34;{1,2,3,4,5,\ldots}&#34;&gt;.&#xA;The cardinality of a set&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5Cmathbb%7BA%7D&#34; alt=&#34;\mathbb{A}&#34; title=&#34;\mathbb{A}&#34;&gt;,&#xA;denoted by&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%7C%5Cmathbb%7BA%7D%7C&#34; alt=&#34;|\mathbb{A}|&#34; title=&#34;|\mathbb{A}|&#34;&gt;,&#xA;is a measure on the number of elements in the set, e.g.,&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%7C%5C%7Ba%2Cb%5C%7D%7C%3D2&#34; alt=&#34;|\{a,b\}|=2&#34; title=&#34;|{a,b}|=2&#34;&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>cipher_maps</title>
-      <link>http://192.168.0.225:42999/projects/cipher_maps/</link>
+      <link>http://192.168.0.225:38061/projects/cipher_maps/</link>
       <pubDate>Mon, 14 Jan 2019 16:34:53 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/cipher_maps/</guid>
+      <guid>http://192.168.0.225:38061/projects/cipher_maps/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 0 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: TeX&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (7 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;universal-function-bernoulli-approximators&#34;&gt;Universal function Bernoulli approximators&lt;/h1&gt;&#xA;&lt;h1 id=&#34;oblivious-maps&#34;&gt;Oblivious maps&lt;/h1&gt;&#xA;&lt;p&gt;A set is an unordered collection of distinct elements, typically from&#xA;some implicitly understood universe. A countable set is a &lt;em&gt;finite set&lt;/em&gt;&#xA;or a &lt;em&gt;countably infinite set&lt;/em&gt;. A &lt;em&gt;finite set&lt;/em&gt; has a finite number of&#xA;elements, such as&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5C%7B%201%2C%203%2C%205%20%5C%7D&#34; alt=&#34;\{ 1, 3, 5 \}&#34; title=&#34;{ 1, 3, 5 }&#34;&gt;,&#xA;and a &lt;em&gt;countably infinite set&lt;/em&gt; can be put in one-to-one correspondence&#xA;with the set of natural numbers,&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5C%7B1%2C2%2C3%2C4%2C5%2C%5Cldots%5C%7D&#34; alt=&#34;\{1,2,3,4,5,\ldots\}&#34; title=&#34;{1,2,3,4,5,\ldots}&#34;&gt;.&#xA;The cardinality of a set&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%5Cmathbb%7BA%7D&#34; alt=&#34;\mathbb{A}&#34; title=&#34;\mathbb{A}&#34;&gt;,&#xA;denoted by&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%7C%5Cmathbb%7BA%7D%7C&#34; alt=&#34;|\mathbb{A}|&#34; title=&#34;|\mathbb{A}|&#34;&gt;,&#xA;is a measure on the number of elements in the set, e.g.,&#xA;&lt;img src=&#34;https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;amp;space;%5Cbg_white&amp;amp;space;%7C%5C%7Ba%2Cb%5C%7D%7C%3D2&#34; alt=&#34;|\{a,b\}|=2&#34; title=&#34;|{a,b}|=2&#34;&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rd_ph_filter</title>
-      <link>http://192.168.0.225:42999/ghprojects/rd_ph_filter/</link>
+      <link>http://192.168.0.225:38061/ghprojects/rd_ph_filter/</link>
       <pubDate>Mon, 14 Jan 2019 12:52:04 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/rd_ph_filter/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/rd_ph_filter/</guid>
       <description>&lt;h1 id=&#34;rd_ph_filter&#34;&gt;rd_ph_filter&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/rd_ph_filter&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: TeX, C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;rate-distorted-perfect-hash-filter&#34;&gt;Rate-distorted perfect hash filter&lt;/h1&gt;&#xA;&lt;p&gt;The library &lt;code&gt;rd_ph_filter&lt;/code&gt;, which standards for rate-distorted perfect hash filter,&#xA;models the concept of a bernoulli set. It is a very practical implementation of&#xA;the concept.&lt;/p&gt;&#xA;&lt;p&gt;The rate-distortion occurs in two independent ways, yielding two different types&#xA;of rate-distortion. The first distortion is given by perfectly hashing each element&#xA;of the objective set, and then storing its hash (not the perfect hash, but a&#xA;standard hash) at the index the perfect hash function assigns to it. There is a&#xA;small chance that a random element not in the objective set will hash to the same&#xA;value. This causes a type of rate distortion denoted the false positive rate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rd_ph_filter</title>
-      <link>http://192.168.0.225:42999/projects/rd_ph_filter/</link>
+      <link>http://192.168.0.225:38061/projects/rd_ph_filter/</link>
       <pubDate>Mon, 14 Jan 2019 12:52:04 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/rd_ph_filter/</guid>
+      <guid>http://192.168.0.225:38061/projects/rd_ph_filter/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: TeX, C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (43 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;rate-distorted-perfect-hash-filter&#34;&gt;Rate-distorted perfect hash filter&lt;/h1&gt;&#xA;&lt;p&gt;The library &lt;code&gt;rd_ph_filter&lt;/code&gt;, which standards for rate-distorted perfect hash filter,&#xA;models the concept of a bernoulli set. It is a very practical implementation of&#xA;the concept.&lt;/p&gt;&#xA;&lt;p&gt;The rate-distortion occurs in two independent ways, yielding two different types&#xA;of rate-distortion. The first distortion is given by perfectly hashing each element&#xA;of the objective set, and then storing its hash (not the perfect hash, but a&#xA;standard hash) at the index the perfect hash function assigns to it. There is a&#xA;small chance that a random element not in the objective set will hash to the same&#xA;value. This causes a type of rate distortion denoted the false positive rate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>cipher_trapdoor_sets</title>
-      <link>http://192.168.0.225:42999/ghprojects/cipher_trapdoor_sets/</link>
+      <link>http://192.168.0.225:38061/ghprojects/cipher_trapdoor_sets/</link>
       <pubDate>Mon, 14 Jan 2019 12:49:37 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/cipher_trapdoor_sets/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/cipher_trapdoor_sets/</guid>
       <description>&lt;h1 id=&#34;cipher_trapdoor_sets&#34;&gt;cipher_trapdoor_sets&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/queelius/cipher_trapdoor_sets&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Jupyter Notebook, TeX, Mathematica, C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;cipher-sets-over-trapdoors&#34;&gt;Cipher sets over trapdoors&lt;/h1&gt;</description>
     </item>
     <item>
       <title>cipher_trapdoor_sets</title>
-      <link>http://192.168.0.225:42999/projects/cipher_trapdoor_sets/</link>
+      <link>http://192.168.0.225:38061/projects/cipher_trapdoor_sets/</link>
       <pubDate>Mon, 14 Jan 2019 12:49:37 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/cipher_trapdoor_sets/</guid>
+      <guid>http://192.168.0.225:38061/projects/cipher_trapdoor_sets/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 1 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Jupyter Notebook, TeX, Mathematica, C++&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (29 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;h1 id=&#34;cipher-sets-over-trapdoors&#34;&gt;Cipher sets over trapdoors&lt;/h1&gt;</description>
     </item>
     <item>
       <title>bernoulli_data_type</title>
-      <link>http://192.168.0.225:42999/ghprojects/bernoulli_data_type/</link>
+      <link>http://192.168.0.225:38061/ghprojects/bernoulli_data_type/</link>
       <pubDate>Mon, 14 Jan 2019 09:29:11 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/ghprojects/bernoulli_data_type/</guid>
+      <guid>http://192.168.0.225:38061/ghprojects/bernoulli_data_type/</guid>
       <description>&lt;h1 id=&#34;bernoulli_data_type&#34;&gt;bernoulli_data_type&lt;/h1&gt;&#xA;&lt;p&gt;Bernoulli data type&#xA;&lt;a href=&#34;https://github.com/queelius/bernoulli_data_type&#34;&gt;GitHub Link&lt;/a&gt;&#xA;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&#xA;&lt;strong&gt;Languages Used&lt;/strong&gt;: Mathematica, TeX, Jupyter Notebook, C++, HTML, JavaScript, CSS, Gnuplot, Shell, Makefile, R&#xA;&lt;a href=&#34;https://queelius.github.io/bernoulli_data_type/&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This is a repo that I will use to develop my Bernoulli data type concept, which is a general framework for understanding and constructing&#xA;a lot of interesting new data types and compuational trade-offs. It can also be used as a foundation for constructing oblivious programs&#xA;as a composition of oblivious data types / obvious functions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>bernoulli_data_type</title>
-      <link>http://192.168.0.225:42999/projects/bernoulli_data_type/</link>
+      <link>http://192.168.0.225:38061/projects/bernoulli_data_type/</link>
       <pubDate>Mon, 14 Jan 2019 09:29:11 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/bernoulli_data_type/</guid>
+      <guid>http://192.168.0.225:38061/projects/bernoulli_data_type/</guid>
       <description>&lt;p&gt;Bernoulli data type&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 2 | &lt;strong&gt;Forks&lt;/strong&gt;: 0 | &lt;strong&gt;Open Issues&lt;/strong&gt;: 0&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Mathematica, TeX, Jupyter Notebook, C++, HTML, JavaScript, CSS, Gnuplot, Shell, Makefile, R&lt;/p&gt;&#xA;&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;queelius (114 commits)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;readme&#34;&gt;README&lt;/h2&gt;&#xA;&lt;p&gt;This is a repo that I will use to develop my Bernoulli data type concept, which is a general framework for understanding and constructing&#xA;a lot of interesting new data types and compuational trade-offs. It can also be used as a foundation for constructing oblivious programs&#xA;as a composition of oblivious data types / obvious functions.&lt;/p&gt;</description>
     </item>
   </channel>

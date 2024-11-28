@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Development on metafunctor</title>
-    <link>http://192.168.0.225:42999/tags/software-development/</link>
-    <description>Recent content in Software Development on metafunctor</description>
+    <title>Software-Development on metafunctor</title>
+    <link>http://192.168.0.225:38061/tags/software-development/</link>
+    <description>Recent content in Software-Development on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2024 18:01:55 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:42999/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:38061/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://192.168.0.225:42999/projects/</link>
+      <link>http://192.168.0.225:38061/projects/</link>
       <pubDate>Wed, 27 Nov 2024 18:01:55 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects/</guid>
+      <guid>http://192.168.0.225:38061/projects/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>AlgoTree: Comprehensive Tree Structure Algorithms in Python</title>
-      <link>http://192.168.0.225:42999/projects-orig/algotree/</link>
-      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/projects-orig/algotree/</guid>
-      <description>Explore the AlgoTree package, a suite of utilities for working with tree-like data structures in Python using a generic API (duck typing).</description>
     </item>
   </channel>
 </rss>

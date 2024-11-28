@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Likelihood Model on metafunctor</title>
-    <link>http://192.168.0.225:42999/tags/likelihood-model/</link>
+    <link>http://192.168.0.225:38061/tags/likelihood-model/</link>
     <description>Recent content in Likelihood Model on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:42999/tags/likelihood-model/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:38061/tags/likelihood-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reliability Estimation in Series Systems</title>
-      <link>http://192.168.0.225:42999/publications/math-proj/</link>
+      <link>http://192.168.0.225:38061/publications/math-proj/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:42999/publications/math-proj/</guid>
+      <guid>http://192.168.0.225:38061/publications/math-proj/</guid>
       <description></description>
     </item>
   </channel>

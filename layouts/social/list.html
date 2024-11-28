@@ -1,16 +1,49 @@
-
 {{ define "main" }}
 <div class="social-page">
-  <h1>{{ .Title }}</h1>
-  <ul class="social-list">
-    {{ range .Site.Params.social.links }}
-      <li>
-        <a href="{{ .url }}" target="_blank">
-          <i class="{{ .icon }}"></i>
-          <span>{{ .name }}</span>
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+  <h1 class="social-title">{{ .Title }}</h1>
+  
+  {{ $links := .Site.Params.social.links }}
+  {{ $categories := slice }}
+  {{ range $links }}
+    {{ $categories = $categories | append .category }}
+  {{ end }}
+  {{ $categories = uniq $categories }}
+
+  {{ range $category := $categories }}
+  <section class="social-category">
+    <h2>{{ $category }}</h2>
+    <div class="social-grid">
+      {{ range $link := $links }}
+        {{ if eq .category $category }}
+        <div class="social-card">
+          <a href="{{ .url }}" target="_blank" class="social-card-inner">
+            <i class="{{ .icon }} social-icon"></i>
+            <h3>{{ .name }}</h3>
+            {{ with .description }}
+            <p>{{ . }}</p>
+            {{ end }}
+          </a>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Site.Params.social.twitter }}
+  <section class="twitter-feed">
+    <h2>Latest Tweets</h2>
+    <div id="twitter-timeline"></div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+      twttr.ready(function(twr) {
+        twttr.widgets.createTimeline({
+          sourceType: "profile",
+          screenName: "{{ .Site.Params.social.twitter }}"
+        }, document.getElementById("twitter-timeline"));
+      });
+    </script>
+  </section>
+  {{ end }}
 </div>
 {{ end }}
