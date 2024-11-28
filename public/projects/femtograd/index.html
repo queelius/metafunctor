@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42999&amp;path=livereload" data-no-instant defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>femtograd R package | metafunctor</title>
+    <title>femtograd | metafunctor</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="An R package for backpropagation through a computational graph">
+    <meta name="description" content="Like micrograd, but worse.">
     <meta name="generator" content="Hugo 0.139.2">
     
     
@@ -47,37 +47,30 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/projects/femtograd/">
+      <link rel="canonical" href="http://192.168.0.225:42999/projects/femtograd/">
     
 
-    <meta property="og:url" content="http://localhost:1313/projects/femtograd/">
+    <meta property="og:url" content="http://192.168.0.225:42999/projects/femtograd/">
   <meta property="og:site_name" content="metafunctor">
-  <meta property="og:title" content="femtograd R package">
-  <meta property="og:description" content="An R package for backpropagation through a computational graph">
+  <meta property="og:title" content="femtograd">
+  <meta property="og:description" content="Like micrograd, but worse.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2023-03-29T00:00:00+00:00">
-    <meta property="article:modified_time" content="2023-03-29T00:00:00+00:00">
-    <meta property="article:tag" content="Maximum-Likelihood-Estimation">
-    <meta property="article:tag" content="R">
-    <meta property="article:tag" content="Automatic-Differentiation">
-    <meta property="article:tag" content="Backpropagation">
-    <meta property="article:tag" content="Computational-Graph">
-    <meta property="article:tag" content="Statistics">
-    <meta property="og:image" content="http://localhost:1313/projects/femtograd/featured.png">
+    <meta property="article:published_time" content="2023-03-17T14:32:36+00:00">
+    <meta property="article:modified_time" content="2023-03-17T14:32:36+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
 
-  <meta itemprop="name" content="femtograd R package">
-  <meta itemprop="description" content="An R package for backpropagation through a computational graph">
-  <meta itemprop="datePublished" content="2023-03-29T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2023-03-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="66">
-  <meta itemprop="image" content="http://localhost:1313/projects/femtograd/featured.png">
-  <meta itemprop="keywords" content="Maximum-Likelihood-Estimation,R,Automatic-Differentiation,Backpropagation,Computational-Graph,Statistics,Data-Science,Inference,Likelihood-Models,Machine-Learning,Optimization">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/projects/femtograd/featured.png">
-  <meta name="twitter:title" content="femtograd R package">
-  <meta name="twitter:description" content="An R package for backpropagation through a computational graph">
+  <meta itemprop="name" content="femtograd">
+  <meta itemprop="description" content="Like micrograd, but worse.">
+  <meta itemprop="datePublished" content="2023-03-17T14:32:36+00:00">
+  <meta itemprop="dateModified" content="2023-03-17T14:32:36+00:00">
+  <meta itemprop="wordCount" content="686">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="femtograd">
+  <meta name="twitter:description" content="Like micrograd, but worse.">
 
 	
   </head>
@@ -86,9 +79,8 @@
 
     
 
-  
-  <header class="cover bg-top" style="background-image: url('/projects/femtograd/featured.png');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -101,6 +93,12 @@
 
       
         <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/social/" title="Social page">
+              Social
+            </a>
+          </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
@@ -128,6 +126,12 @@
           
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects-orig/" title="Projects page">
               Projects
             </a>
           </li>
@@ -161,12 +165,6 @@
   </div>
 </nav>
 
-      <div class="tc-l pv6 ph3 ph4-ns">
-        
-          <div class="f2 f1-l fw2 white-90 mb0 lh-title">femtograd R package</div>
-          
-        
-      </div>
     </div>
   </header>
 
@@ -182,17 +180,15 @@
       <div>
         
         <header style="margin-bottom: 2rem;">
-          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">femtograd R package</h1>
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">femtograd</h1>
           <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
-            Alex Towell | March 29, 2023 | <a href="mailto:lex@metafunctor.com" style="color: #007acc;">lex@metafunctor.com</a>
+             | March 17, 2023 | <a href="mailto:" style="color: #007acc;"></a>
           </p>
 
           
           <div style="overflow: hidden;">
             
-            <img src="/projects/femtograd/featured.png" alt="featured.png" style="float: left; width: 200px; height: auto; object-fit: cover; margin-right: 1.5rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            
-            <p style="font-size: 1.25rem; color: #666;">An R package for backpropagation through a computational graph</p>
+            <p style="font-size: 1.25rem; color: #666;"></p>
           </div>
         </header>
 
@@ -205,22 +201,22 @@
               GitHub
             </a>
             
-            <a href="https://queelius.github.io/femtograd" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-              API Docs
+            <a href="https://queelius.github.io/femtograd/" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub Pages
             </a>
             
             
-            <a href="https://twitter.com/intent/tweet?text=femtograd-r-package&url=http%3a%2f%2flocalhost%3a1313%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+            <a href="https://twitter.com/intent/tweet?text=femtograd&url=http%3a%2f%2f192.168.0.225%3a42999%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
               <i class="fab fa-twitter"></i>
             </a>
 
             
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2f192.168.0.225%3a42999%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
               <i class="fab fa-linkedin"></i>
             </a>
 
             
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.0.225%3a42999%2fprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
               <i class="fab fa-facebook"></i>
             </a>
           </div>
@@ -231,12 +227,121 @@
         <section style="margin-bottom: 3rem;">
           <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
           <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-            <p>The R package <code>femtograd</code> provides a way of doing automatic differentation.
-It&rsquo;s not particularly fast, as it was just an experiment, but I may end up using
-it in my <code>likelihood.model</code> or <code>algebraic.mle</code> packages.</p>
-<p>I will probably optimize it and provide a C++ implementation using Rcpp, but
-I don&rsquo;t want to spend too much time on it since there are already nice packages
-that do this.</p>
+            <p>Like micrograd, but worse.</p>
+<p><strong>Stars</strong>: 1 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages</strong>: R</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>queelius (26 commits)</li>
+</ul>
+<h2 id="readme">README</h2>
+<h1 id="femtograd">femtograd</h1>
+<ul>
+<li><a href="#exponential-distribution"
+id="toc-exponential-distribution">Exponential distribution</a></li>
+<li><a href="#automatic-differentiation-ad"
+id="toc-automatic-differentiation-ad">Automatic differentiation (AD)</a></li>
+</ul>
+<p>Here’s a quick demonstration of how to use the
+<a href="https://github.com/queelius/femtograd"><code>femtograd</code></a> R package.</p>
+<p>Load it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(femtograd)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; Attaching package: &#39;femtograd&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The following object is masked from &#39;package:utils&#39;:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;     data</span>
+</span></span></code></pre></div><h2 id="exponential-distribution">Exponential distribution</h2>
+<p>Let’s create a simple loglikelihood function for the exponential
+distribution paramterized by $\lambda$ (failure rate).</p>
+<p>We have</p>
+$$
+  f_{T_i}(t_i | \lambda) = \lambda \exp(-\lambda t_i).
+$$<p>So, the loglikelihood function is just</p>
+$$
+  \ell(\lambda) = n \log \lambda - \lambda \sum_{i=1}^n t_i.
+$$<p>Let’s generate $n=30$ observations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>true_rate <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">7.3</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rexp</span>(n,true_rate)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(data)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 0.102432677 0.009849689 0.037429092 0.093926112 0.033046038 0.181780460</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(mle.rate <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">abs</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mean</span>(data)))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 6.245535</span>
+</span></span></code></pre></div><p>We see that the MLE $\hat\theta$ is 6.2455349.</p>
+<h1 id="automatic-differentiation-ad">Automatic differentiation (AD)</h1>
+<p>Finding the value (argmax) that maximizes the
+log-likelihood function is trivial to solve in this case, and it has a
+closed-form solution. However, to demonstrate the use of <code>femtograd</code>, we
+will construct a <code>loglike_exp</code> function generator that returns an object
+that can be automatically differentiated (AD) using backpropogation,
+which is an efficient way of applying the chain-rule to expressions
+(like $\exp{y a x^2}$ using a <em>computational graph</em> that represents
+the expression.</p>
+<p>These kind of computational graphs have the nice property that for any
+differentiable expression that we can model in software, its partial
+derivative with respect to some node in the graph can be efficiently and
+accurately computed without resorting to numerical finite difference
+methods or slow, potentially difficult to compose symbolic methods.</p>
+<p>There are many libraries that do this. This library itself is based on
+the excellent work by Karpathy who developed the Python library known as
+<a href="https://github.com/karpathy/micrograd"><code>micrograd</code></a>, which was
+developed for the explicit purpose of teaching the basic concept of AD
+and backpropagation for minimizing loss functions for neural networks.</p>
+<p>Let’s solve for the MLE iteratively as a demonstration of how to use
+<a href="https://github.com/queelius/femtograd"><code>femtograd</code></a>. First, we
+construct the log-likelihood generator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>loglike_exp <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(rate, data)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>(<span style="color:#a6e22e">log</span>(rate)<span style="color:#f92672">*</span><span style="color:#a6e22e">length</span>(data) <span style="color:#f92672">-</span> rate <span style="color:#f92672">*</span> <span style="color:#a6e22e">sum</span>(data))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Initially, we guess that $\hat\lambda$ is $1$, which is a terrible
+estimate.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>rate <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">val</span>(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>Gradient clipping is a technique to prevent taking too large of a step
+when gradients become too large (remember that gradients are a <em>local</em>
+feature, so we generally should not use it to take too big of a step)
+during optimization, which can cause instability or overshooting the
+optimal value. By limiting the step size, gradient clipping helps ensure
+that the optimization takes smaller, more stable steps.</p>
+<p>Here is the R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Takes a gradient `g` and an optional `max_norm` parameter, which defaults</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to 1. It calculates the gradient&#39;s L2 norm (Euclidean norm) and scales the</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># gradient down if its norm exceeds the specified max_norm. This is used during</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the gradient ascent loop to help ensure stable optimization.</span>
+</span></span><span style="display:flex;"><span>grad_clip <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(g, max_norm <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>  norm <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">sum</span>(g <span style="color:#f92672">*</span> g))
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (norm <span style="color:#f92672">&gt;</span> max_norm) {
+</span></span><span style="display:flex;"><span>    g <span style="color:#f92672">&lt;-</span> (max_norm <span style="color:#f92672">/</span> norm) <span style="color:#f92672">*</span> g
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  g
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We find the MLE using a simple iteration (200 loops).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>loglik <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">loglike_exp</span>(rate, data)
+</span></span><span style="display:flex;"><span>lr <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.2</span> <span style="color:#75715e"># learning rate</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">zero_grad</span>(loglik)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backward</span>(loglik)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>(rate) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data</span>(rate) <span style="color:#f92672">+</span> lr <span style="color:#f92672">*</span> <span style="color:#a6e22e">grad_clip</span>(<span style="color:#a6e22e">grad</span>(rate))
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;iteration&#34;</span>, i, <span style="color:#e6db74">&#34;, rate =&#34;</span>, <span style="color:#a6e22e">data</span>(rate), <span style="color:#e6db74">&#34;, drate/dl =&#34;</span>, <span style="color:#a6e22e">grad</span>(rate), <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 50 , rate = 6.238781 , drate/dl = 0.006148105 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 100 , rate = 6.245533 , drate/dl = 1.447689e-06 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 150 , rate = 6.245535 , drate/dl = 3.418377e-10 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 200 , rate = 6.245535 , drate/dl = 8.082424e-14</span>
+</span></span></code></pre></div><p>Did the gradient ascent method converge to the MLE?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>(converged <span style="color:#f92672">&lt;-</span> (<span style="color:#a6e22e">abs</span>(mle.rate <span style="color:#f92672">-</span> <span style="color:#a6e22e">data</span>(rate)) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e-3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] TRUE</span>
+</span></span></code></pre></div><p>It’s worth pointing out that we did not update <code>loglik</code> in the gradient
+ascent loop, since we only needed the gradient (score) in this case. If,
+however, we had needed to know the log-likelihood for some reason, such
+as when using a line search method to avoid overshooting, we would need
+to update with <code>loglik &lt;- loglike_exp(rate, data)</code> each time through the
+loop.</p>
 
           </p>
         </section>
@@ -255,15 +360,15 @@ that do this.</p>
           <h2 style="font-size: 1.5rem;">Related</h2>
           <div style="display: flex; flex-direction: column; gap: 1rem;">
             
-            <a href="http://localhost:1313/projects/algebraic.mle/">algebraic.mle R package</a>
+            <a href="http://192.168.0.225:42999/ghprojects/femtograd/">femtograd</a>
             
-            <a href="http://localhost:1313/projects/reliability-estimation-in-series-systems/">Reliability Estimation in Series Systems</a>
+            <a href="http://192.168.0.225:42999/projects/queelius.github.io/">queelius.github.io</a>
             
-            <a href="http://localhost:1313/projects/algebraic-dist/">algebraic.dist R package</a>
+            <a href="http://192.168.0.225:42999/ghprojects/queelius.github.io/">queelius.github.io</a>
             
-            <a href="http://localhost:1313/projects/wei-series-md-c1-c2-c3/">wei.series.md.c1.c2.c3</a>
+            <a href="http://192.168.0.225:42999/ghprojects/algebraic.dist/">algebraic.dist</a>
             
-            <a href="http://localhost:1313/projects/dfr-dist/">R Package: Dynamic failure rate (DFR) distributions</a>
+            <a href="http://192.168.0.225:42999/projects/algebraic.dist/">algebraic.dist</a>
             
           </div>
         </section>
@@ -275,48 +380,12 @@ that do this.</p>
           <h2 style="font-size: 1.5rem">Tags</h2>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
             
-            <a href="/tags/maximum-likelihood-estimation" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              maximum-likelihood-estimation
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
             </a>
             
-            <a href="/tags/r" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              R
-            </a>
-            
-            <a href="/tags/automatic-differentiation" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              automatic-differentiation
-            </a>
-            
-            <a href="/tags/backpropagation" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              backpropagation
-            </a>
-            
-            <a href="/tags/computational-graph" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              computational-graph
-            </a>
-            
-            <a href="/tags/statistics" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              statistics
-            </a>
-            
-            <a href="/tags/data-science" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              data-science
-            </a>
-            
-            <a href="/tags/inference" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              inference
-            </a>
-            
-            <a href="/tags/likelihood-models" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              likelihood-models
-            </a>
-            
-            <a href="/tags/machine-learning" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              machine-learning
-            </a>
-            
-            <a href="/tags/optimization" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-              optimization
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
             </a>
             
           </div>
@@ -332,7 +401,7 @@ that do this.</p>
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://192.168.0.225:42999/" >
     &copy;  metafunctor 2024 
   </a>
     <div>

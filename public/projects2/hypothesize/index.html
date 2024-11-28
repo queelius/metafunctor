@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>hypothesize | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="hypothesize">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/projects2/hypothesize/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/projects2/hypothesize/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="hypothesize">
+  <meta property="og:description" content="hypothesize">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects2">
+    <meta property="article:published_time" content="2024-02-19T11:02:17+00:00">
+    <meta property="article:modified_time" content="2024-02-19T11:02:17+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="hypothesize">
+  <meta itemprop="description" content="hypothesize">
+  <meta itemprop="datePublished" content="2024-02-19T11:02:17+00:00">
+  <meta itemprop="dateModified" content="2024-02-19T11:02:17+00:00">
+  <meta itemprop="wordCount" content="756">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="hypothesize">
+  <meta name="twitter:description" content="hypothesize">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects2/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Projects
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">hypothesize</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-02-19T11:02:17Z">February 19, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>hypothesize</p>
+<p><strong>Stars</strong>: 2 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages</strong>: R</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>queelius (7 commits)</li>
+</ul>
+<h2 id="readme">README</h2>
+<h1 id="hypothesize-statistical-tests-in-r"><code>hypothesize</code>: Statistical Tests in R</h1>
+<p><code>hypothesize</code> is a simple hypothesis testing API in R.
+It is mostly designed to be used by other libraries so that they can wrap
+their own hypothesis tests in a consistent way.</p>
+<p>We define the API as a set of generic methods. We also
+provide implementations for the likelihood ration test (LRT) and the Wald test.</p>
+<h2 id="installation">Installation</h2>
+<p>You can install the development version of <code>hypothesize</code> from GitHub
+with:</p>
+<pre><code># install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;queelius/hypothesize&quot;)
+</code></pre>
+<h2 id="load-the-package">Load the Package</h2>
+<pre><code>library(hypothesize)
+</code></pre>
+<h2 id="the-hypothesize-api">The <code>hypothesize</code> API</h2>
+<p><code>hypothesize</code> defines an API for retrieving hypothesis test results. An object
+satisfies the concept of a hypothesis test if it implements the following generic
+methods:</p>
+<ul>
+<li>
+<p><code>pval()</code>: Extracts the p-value from an object that models a hypothesis test.</p>
+</li>
+<li>
+<p><code>dof()</code>: Retrieves the degrees of freedom associated with a
+hypothesis test.</p>
+</li>
+<li>
+<p><code>test_stat()</code>: Obtains the test statistic from the hypothesis test.</p>
+</li>
+<li>
+<p><code>is_significant_at()</code>: Determines if the hypothesis test is
+significant at a specified significance level.</p>
+</li>
+</ul>
+<h2 id="implementation-hypothesis_test">Implementation: <code>hypothesis_test</code></h2>
+<p>We provide an implementations for <code>hypothesize</code>. It it has a
+constructor that takes a statistical test (stat), p-value (p.value),
+a degree-of-freedom (dof), and optionally a list of superclasses and
+any additional arguments that will be passed into the object. Here
+is its type signature:</p>
+<pre><code>`hypothesis_test &lt;- function(stat, p.value, dof, superclasses = NULL, ...) `
+</code></pre>
+<p>It creates a <code>hypothesis_test</code> object that implements all of the generic
+methods required by <code>hypothesize</code>. The <code>hypothesis_test</code> object also
+implements <code>print</code> for summary outputs.</p>
+<p>We use this constructor for two tests we implement, the LRT and Wald tests:</p>
+<ul>
+<li>
+<p><code>lrt()</code>: Performs a Likelihood Ratio Test based on log-likelihood
+values from nested models.</p>
+</li>
+<li>
+<p><code>wald_test()</code>: Performs a Wald test to compare a parameter estimate
+to a specified value.</p>
+</li>
+</ul>
+<h2 id="example-using-lrt">Example: Using <code>lrt</code></h2>
+<p>The <code>lrt</code> function is particularly useful for comparing nested models —
+where one model (the null model) is a special case of another (the
+alternative model).</p>
+<h3 id="scenario">Scenario</h3>
+<p>Suppose we have two models that aim to explain the same dataset. Model 1
+(the null model) is simpler, with fewer parameters, while Model 2 (the
+alternative model) includes additional parameters. We wish to test if
+the complexity of Model 2 is justified by a significantly better fit to
+the data.</p>
+<h3 id="step-by-step-example">Step-by-Step Example</h3>
+<ol>
+<li>
+<p><strong>Define Log-Likelihoods</strong>: Assume we have calculated the
+log-likelihoods for both models on the same dataset. For the null
+model, the log-likelihood is -100, and for the alternative model, it
+is -99. Assume that the difference in degrees of freedom between the
+two models is 2.</p>
+</li>
+<li>
+<p><strong>Perform LRT</strong>: We use <code>lrt</code> to perform the Likelihood Ratio Test.</p>
+</li>
+</ol>
+<!-- -->
+<pre><code># Perform LRT
+stat &lt;- lrt(null_loglik = -100, alt_loglik = -96.105, dof = 3)
+print(stat)
+#&gt; Hypothesis test ( likelihood_ratio_test )
+#&gt; -----------------------------
+#&gt; Test statistic:  7.79 
+#&gt; P-value:  0.0506 
+#&gt; Degrees of freedom:  3 
+#&gt; Significant at 5% level:  FALSE
+</code></pre>
+<p>We show the output of the <code>stat</code> object, which includes all the relevant
+information about the test. However, we might want to look at its parts
+independently, particularly if we need programmatic accees to relevant
+parts of the test.</p>
+<ol>
+<li><strong>Evaluate Significance</strong>: Determine if the difference in
+log-likelihoods is significant at the 5% level.</li>
+</ol>
+<!-- -->
+<pre><code># Check significance
+is_significant_at(stat, 0.05)
+#&gt; [1] FALSE
+</code></pre>
+<p>A negative test result indicates that the alternative model is not
+compatible with the data at the 5% significance level. However, we might
+want to extract the test statistic, p-value, and degrees of freedom to
+arrive at a more nuanced interpretation.</p>
+<ol>
+<li><strong>Examine the Test Result</strong>: Extract and examine the test statistic,
+p-value, and degrees of freedom to evaluate the significance.</li>
+</ol>
+<!-- -->
+<pre><code># Extract test statistic
+test_stat(stat)
+#&gt; [1] 7.79
+
+# Extract p-value
+pval(stat)
+#&gt; [1] 0.0506
+
+# Extract degrees of freedom
+dof(stat)
+#&gt; [1] 3
+</code></pre>
+<p>We see that the <em>p</em>-value is only slightly above our (arbitrarily)
+specified <em>α</em> = 0.05. This suggests that the alternative model may be
+reasonable to consider, but it is not a clear-cut decision. In practice,
+we would likely want to consider other factors, such as the practical
+significance of the additional complexity, or collecting more data to
+reduce uncertainty, before making a final decision.</p>
+<h2 id="example-using-wald-test">Example: Using Wald Test</h2>
+<p>The Wald test is also implemented in <code>hypothesize</code>. Tis test is used to
+compare the value of a parameter to a specified value, and is often used
+in the context of regression models.</p>
+<pre><code># Example: Wald Test
+print(wald_test(estimate = 1.5, se = 0.5, null_value = 1))
+#&gt; Hypothesis test ( wald_test )
+#&gt; -----------------------------
+#&gt; Test statistic:  1 
+#&gt; P-value:  0.317 
+#&gt; Degrees of freedom:  1 
+#&gt; Significant at 5% level:  FALSE
+</code></pre>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/github/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">GitHub</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/project/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Project</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/ghprojects/hypothesize/">hypothesize</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/solomonoff_induction/">solomonoff_induction</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/solomonoff_induction/">solomonoff_induction</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/sluug-talk-llm/">sluug-talk-llm</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/sluug-talk-llm/">sluug-talk-llm</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/elasticsearch-lm/">elasticsearch-lm</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/elasticsearch-lm/">elasticsearch-lm</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/video-playlist-manager/">video-playlist-manager</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/video-playlist-manager/">video-playlist-manager</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/taskd/">taskd</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/taskd/">taskd</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/papers/">papers</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/papers/">papers</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/tournamentpetersonlock/">tournamentpetersonlock</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/tournamentpetersonlock/">tournamentpetersonlock</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

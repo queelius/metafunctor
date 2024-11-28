@@ -6,7 +6,7 @@ languages:
 - TeX
 - Shell
 - CSS
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/papers
@@ -17,14 +17,10 @@ tags:
 - project
 title: papers
 ---
-
 # papers
 latent-data
-
 [GitHub Link](https://github.com/queelius/papers)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: TeX, Shell, CSS
 
 ## README

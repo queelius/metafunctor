@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abstract Data Type on metafunctor</title>
-    <link>http://localhost:1313/categories/abstract-data-type/</link>
+    <link>http://192.168.0.225:42999/categories/abstract-data-type/</link>
     <description>Recent content in Abstract Data Type on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/abstract-data-type/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/categories/abstract-data-type/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homomorphic computational extensions</title>
-      <link>http://localhost:1313/projects/homomorphic_computational_extensions/</link>
+      <link>http://192.168.0.225:42999/projects-orig/homomorphic_computational_extensions/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/homomorphic_computational_extensions/</guid>
+      <guid>http://192.168.0.225:42999/projects-orig/homomorphic_computational_extensions/</guid>
       <description>Class of homomorphic monads that &lt;em&gt;extend&lt;/em&gt; algebraic data types in some well-defined way for faciliating faster or more accurate calculations, such as the logarithm trick.</description>
     </item>
   </channel>

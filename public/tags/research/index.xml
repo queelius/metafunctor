@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on metafunctor</title>
-    <link>http://localhost:1313/tags/research/</link>
+    <link>http://192.168.0.225:42999/tags/research/</link>
     <description>Recent content in Research on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/publications/</link>
+      <link>http://192.168.0.225:42999/publications/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/</guid>
+      <guid>http://192.168.0.225:42999/publications/</guid>
       <description>Here are some publications I&amp;rsquo;ve worked on. I&amp;rsquo;ll try to keep this updated as I work on new things.</description>
     </item>
   </channel>

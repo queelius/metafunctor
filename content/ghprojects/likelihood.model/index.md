@@ -5,7 +5,7 @@ forks: 0
 languages:
 - R
 - HTML
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/likelihood.model
@@ -18,16 +18,11 @@ tags:
 - project
 title: likelihood.model
 ---
-
 # likelihood.model
 Likelihood model framework
-
 [GitHub Link](https://github.com/queelius/likelihood.model)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R, HTML
-
 [GitHub Pages](https://queelius.github.io/likelihood.model/)
 
 ## README

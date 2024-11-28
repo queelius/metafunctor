@@ -4,7 +4,7 @@ description: hypothesize
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/hypothesize
@@ -17,16 +17,11 @@ tags:
 - project
 title: hypothesize
 ---
-
 # hypothesize
 hypothesize
-
 [GitHub Link](https://github.com/queelius/hypothesize)
-
 **Stars**: 2 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/hypothesize/)
 
 ## README

@@ -1,10 +1,10 @@
 ---
 date: '2021-07-25T08:49:08Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/prob.4.2.comp.stats
@@ -15,14 +15,9 @@ tags:
 - project
 title: prob.4.2.comp.stats
 ---
-
 # prob.4.2.comp.stats
-No description available.
-
 [GitHub Link](https://github.com/queelius/prob.4.2.comp.stats)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
 
 ## README

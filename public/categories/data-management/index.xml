@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Management on metafunctor</title>
-    <link>http://localhost:1313/categories/data-management/</link>
+    <link>http://192.168.0.225:42999/categories/data-management/</link>
     <description>Recent content in Data Management on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/data-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/categories/data-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ollama_data_tools: Tools for working with Ollama model data.</title>
-      <link>http://localhost:1313/projects/ollama-data-tools/</link>
+      <link>http://192.168.0.225:42999/projects-orig/ollama-data-tools/</link>
       <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ollama-data-tools/</guid>
+      <guid>http://192.168.0.225:42999/projects-orig/ollama-data-tools/</guid>
       <description>Ollama Data Tools is a Python package and set of command line tools for working with Ollama model data, including searching, filtering, exporting,a and adapting for use with other inference engines like &lt;code&gt;llamacpp&lt;/code&gt;.</description>
     </item>
   </channel>

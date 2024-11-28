@@ -4,7 +4,7 @@ description: Disjoint Interval Set (DIS)
 forks: 0
 languages:
 - C++
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/disjoint_interval_set
@@ -15,14 +15,10 @@ tags:
 - project
 title: disjoint_interval_set
 ---
-
 # disjoint_interval_set
 Disjoint Interval Set (DIS)
-
 [GitHub Link](https://github.com/queelius/disjoint_interval_set)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: C++
 
 ## README

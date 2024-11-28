@@ -1,12 +1,12 @@
 ---
 date: '2021-04-30T03:43:19Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - TeX
 - C++
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/known_plaintext_attack_time_series_analysis
@@ -17,14 +17,9 @@ tags:
 - project
 title: known_plaintext_attack_time_series_analysis
 ---
-
 # known_plaintext_attack_time_series_analysis
-No description available.
-
 [GitHub Link](https://github.com/queelius/known_plaintext_attack_time_series_analysis)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: TeX, C++, R
 
 ## README

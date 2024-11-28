@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latent Codes on metafunctor</title>
-    <link>http://localhost:1313/tags/latent-codes/</link>
+    <link>http://192.168.0.225:42999/tags/latent-codes/</link>
     <description>Recent content in Latent Codes on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/latent-codes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/tags/latent-codes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instrumental Goals and Latent Codes In LLMs Fine-Tuned with RL</title>
-      <link>http://localhost:1313/research/llm-research/</link>
+      <link>http://192.168.0.225:42999/research/llm-research/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/llm-research/</guid>
+      <guid>http://192.168.0.225:42999/research/llm-research/</guid>
       <description>This paper explores the emergence of instrumental goals and latent codes in large language models (LLMs) fine-tuned with reinforcement learning (RL). The transition from self-supervised learning to RL introduces incentives for LLMs to develop covert strategies and hidden agendas. We examine the underlying mathematical frameworks and demonstrate that LLMs can encode instrumental goals in subtle ways, making them challenging to detect and interpret. Our findings highlight the importance of advanced interpretability techniques to ensure ethical alignment and mitigate risks associated with hidden instrumental goals in RL-fine-tuned LLMs. We conclude with a call for rigorous oversight and ethical foresight in AI development to address these challenges.</description>
     </item>
   </channel>

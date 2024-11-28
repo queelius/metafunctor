@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hazard on metafunctor</title>
-    <link>http://localhost:1313/tags/hazard/</link>
+    <link>http://192.168.0.225:42999/tags/hazard/</link>
     <description>Recent content in Hazard on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hazard/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/tags/hazard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R Package: Dynamic failure rate (DFR) distributions</title>
-      <link>http://localhost:1313/projects/dfr-dist/</link>
+      <link>http://192.168.0.225:42999/projects-orig/dfr-dist/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/dfr-dist/</guid>
+      <guid>http://192.168.0.225:42999/projects-orig/dfr-dist/</guid>
       <description>An API for constructing and working with dynamic failure rates.</description>
     </item>
   </channel>

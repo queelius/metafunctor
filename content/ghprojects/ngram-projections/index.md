@@ -1,11 +1,11 @@
 ---
 date: '2024-06-21T11:50:22Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - Python
 - Jupyter Notebook
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/ngram-projections
@@ -16,14 +16,9 @@ tags:
 - project
 title: ngram-projections
 ---
-
 # ngram-projections
-No description available.
-
 [GitHub Link](https://github.com/queelius/ngram-projections)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: Python, Jupyter Notebook
 
 ## README

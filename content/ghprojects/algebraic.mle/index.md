@@ -4,7 +4,7 @@ description: Algebraic maximum likelihood estimators
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/algebraic.mle
@@ -17,16 +17,11 @@ tags:
 - project
 title: algebraic.mle
 ---
-
 # algebraic.mle
 Algebraic maximum likelihood estimators
-
 [GitHub Link](https://github.com/queelius/algebraic.mle)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/algebraic.mle/)
 
 ## README

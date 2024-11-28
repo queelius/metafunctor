@@ -1,29 +1,25 @@
 ---
 date: '2024-02-03T17:11:56Z'
 description: ElasticSearch Query Fine-Tuning Training Data for Large Language Models
-forks: 1
+forks: 2
 languages:
 - Python
 - Shell
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/elasticsearch-lm
 open_issues: 0
-stars: 9
+stars: 14
 tags:
 - GitHub
 - project
 title: elasticsearch-lm
 ---
-
 # elasticsearch-lm
 ElasticSearch Query Fine-Tuning Training Data for Large Language Models
-
 [GitHub Link](https://github.com/queelius/elasticsearch-lm)
-
-**Stars**: 9 | **Forks**: 1 | **Open Issues**: 0
-
+**Stars**: 14 | **Forks**: 2 | **Open Issues**: 0
 **Languages Used**: Python, Shell
 
 ## README

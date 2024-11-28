@@ -9,7 +9,7 @@ languages:
 - CSS
 - JavaScript
 - Roff
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/encrypted_search_probabilistic_estimator_conf
@@ -22,16 +22,11 @@ tags:
 - project
 title: encrypted_search_probabilistic_estimator_conf
 ---
-
 # encrypted_search_probabilistic_estimator_conf
 Encrypted Search: A Probabilistic Estimator of Confiidentiality
-
 [GitHub Link](https://github.com/queelius/encrypted_search_probabilistic_estimator_conf)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: HTML, TeX, C++, CSS, JavaScript, Roff
-
 [GitHub Pages](https://queelius.github.io/encrypted_search_probabilistic_estimator_conf/)
 
 ## README

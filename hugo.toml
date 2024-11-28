@@ -21,51 +21,6 @@ enableRobotsTXT = true
 [pagination]
   pagerSize = 10
 
-[params]
-  math = true
-  author = "Alex Towell"
-  email = "lex@metafunctor.com"
-
-  [[params.social]]
-  name = "twitter"
-  url = "https://twitter.com/queelius"
-
-  [[params.social]]
-  name = "github"
-  url = "https://github.com/queelius"
-
-  [[params.social]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/alexander-towell-487015151/"
-
-  [[params.social]]
-  name = "rss"
-  url = "/index.xml"
-
-  [[params.social]]
-  name = "✉️"
-  url = "mailto:lex@metafunctor.com"
-
-  [[params.social]]
-  name = "keybase"
-  url = "https://keybase.io/queelius"
-
-  [[params.social]]
-  name = "youtube"
-  url = "https://www.youtube.com/@queelius"
-
-  [[params.social]]
-  name = "💬"
-  url = "https://discord.com/channels/904142927389929492/"
-
-  [[params.social]]
-  name = "📚"
-  url = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=E9mnFzQAAAAJ"
-
-  [[params.social]]
-  name = "🆔"
-  url = "https://orcid.org/my-orcid?orcid=0000-0001-6443-9897"
-
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
@@ -79,3 +34,68 @@ enableRobotsTXT = true
 
 [outputs]
   home = ["HTML", "JSON"]
+
+
+[params]
+  math = true
+  author = "Alex Towell"
+  email = "lex@metafunctor.com"
+
+  [params.social]
+    [[params.social.links]]
+    name = "Twitter"
+    url = "https://twitter.com/queelius"
+    icon = "fab fa-twitter"
+
+    [[params.social.links]]
+    name = "GitHub"
+    url = "https://github.com/queelius"
+    icon = "fab fa-github"
+
+    [[params.social.links]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/alexander-towell-487015151/"
+    icon = "fab fa-linkedin"
+
+    [[params.social.links]]
+    name = "RSS"
+    url = "/index.xml"
+    icon = "fas fa-rss"
+
+    [[params.social.links]]
+    name = "Email"
+    url = "mailto:lex@metafunctor.com"
+    icon = "fas fa-envelope"
+
+    [[params.social.links]]
+    name = "Keybase"
+    url = "https://keybase.io/queelius"
+    icon = "fab fa-keybase"
+
+    [[params.social.links]]
+    name = "YouTube"
+    url = "https://www.youtube.com/@queelius"
+    icon = "fab fa-youtube"
+
+    [[params.social.links]]
+    name = "Discord"
+    url = "https://discord.com/channels/904142927389929492/"
+    icon = "fab fa-discord"
+
+    [[params.social.links]]
+    name = "Google Scholar"
+    url = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=E9mnFzQAAAAJ"
+    icon = "fas fa-graduation-cap"
+
+    [[params.social.links]]
+    name = "ORCID"
+    url = "https://orcid.org/my-orcid?orcid=0000-0001-6443-9897"
+    icon = "fab fa-orcid"
+
+
+    [menu]
+  [[menu.main]]
+    identifier = "social"
+    name = "Social"
+    url = "/social/"
+    weight = 100

@@ -1,6 +1,6 @@
 ---
 date: '2024-07-20T05:38:08Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - C++
@@ -9,10 +9,11 @@ languages:
 - Cuda
 - Makefile
 - CMake
+- TeX
 - HTML
 - JavaScript
 - TypeScript
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/digistar
@@ -23,15 +24,10 @@ tags:
 - project
 title: digistar
 ---
-
 # digistar
-No description available.
-
 [GitHub Link](https://github.com/queelius/digistar)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
-**Languages Used**: C++, C, Python, Cuda, Makefile, CMake, HTML, JavaScript, TypeScript
+**Languages Used**: C++, C, Python, Cuda, Makefile, CMake, TeX, HTML, JavaScript, TypeScript
 
 ## README
 ## Sandbox Space Simulation Game Design Document

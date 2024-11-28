@@ -4,7 +4,7 @@ description: Like micrograd, but worse.
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/femtograd
@@ -17,16 +17,11 @@ tags:
 - project
 title: femtograd
 ---
-
 # femtograd
 Like micrograd, but worse.
-
 [GitHub Link](https://github.com/queelius/femtograd)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/femtograd/)
 
 ## README

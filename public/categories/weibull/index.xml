@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weibull on metafunctor</title>
-    <link>http://localhost:1313/categories/weibull/</link>
+    <link>http://192.168.0.225:42999/categories/weibull/</link>
     <description>Recent content in Weibull on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/weibull/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/categories/weibull/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master&#39;s project: Reliability Estimation in Series Systems</title>
-      <link>http://localhost:1313/posts/masters-stats-siue-proj/</link>
+      <link>http://192.168.0.225:42999/posts/masters-stats-siue-proj/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/masters-stats-siue-proj/</guid>
+      <guid>http://192.168.0.225:42999/posts/masters-stats-siue-proj/</guid>
       <description>I presented my master&amp;rsquo;s project in October 2023. It was titled &amp;lsquo;Reliability Estimation in Series Systems: Maximum Likelihood Techniques for Right-Censored and Masked Failure Data&amp;rsquo;.</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic Search on metafunctor</title>
-    <link>http://localhost:1313/tags/elastic-search/</link>
+    <link>http://192.168.0.225:42999/tags/elastic-search/</link>
     <description>Recent content in Elastic Search on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/elastic-search/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/tags/elastic-search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fine-Tuning Tiny LLMs for ElasticSearch DSL</title>
-      <link>http://localhost:1313/posts/llm-fine-tuning-es-dsl/</link>
+      <link>http://192.168.0.225:42999/posts/llm-fine-tuning-es-dsl/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/llm-fine-tuning-es-dsl/</guid>
+      <guid>http://192.168.0.225:42999/posts/llm-fine-tuning-es-dsl/</guid>
       <description>I am creating a tiny LLM for ElasticSearch DSL as a proof of concept.</description>
     </item>
     <item>
       <title>SLUUG: Demystifying Large Language Models (LLMs) on Linux: From Theory to Application</title>
-      <link>http://localhost:1313/projects/sluug-talk/</link>
+      <link>http://192.168.0.225:42999/projects-orig/sluug-talk/</link>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/sluug-talk/</guid>
+      <guid>http://192.168.0.225:42999/projects-orig/sluug-talk/</guid>
       <description>Presented for the St. Louis Unix Users Group (SLUUG) on Large Language Models (LLMs) on Linux, titled &amp;lsquo;Demystifying Large Language Models (LLMs) on Linux: From Theory to Application&amp;rsquo;.</description>
     </item>
     <item>
       <title>Fine-Tuning Tiny LLMs for ElasticSearch DSL</title>
-      <link>http://localhost:1313/projects/llm-fine-tuning-es-dsl/</link>
+      <link>http://192.168.0.225:42999/projects-orig/llm-fine-tuning-es-dsl/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/llm-fine-tuning-es-dsl/</guid>
+      <guid>http://192.168.0.225:42999/projects-orig/llm-fine-tuning-es-dsl/</guid>
       <description>I am creating a tiny LLM for ElasticSearch DSL as a proof of concept.</description>
     </item>
   </channel>

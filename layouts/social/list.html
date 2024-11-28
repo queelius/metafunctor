@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+<div class="social-page">
+  <h1>{{ .Title }}</h1>
+  <ul class="social-list">
+    {{ range .Site.Params.social.links }}
+      <li>
+        <a href="{{ .url }}" target="_blank">
+          <i class="{{ .icon }}"></i>
+          <span>{{ .name }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

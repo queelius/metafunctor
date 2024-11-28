@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>taskd | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="`taskd`: Task Daemon for Decentralized Task Execution for Long-Running Tasks">
+    <meta name="generator" content="Hugo 0.139.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/projects2/taskd/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/projects2/taskd/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="taskd">
+  <meta property="og:description" content="`taskd`: Task Daemon for Decentralized Task Execution for Long-Running Tasks">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects2">
+    <meta property="article:published_time" content="2024-01-27T16:35:06+00:00">
+    <meta property="article:modified_time" content="2024-01-27T16:35:06+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="taskd">
+  <meta itemprop="description" content="`taskd`: Task Daemon for Decentralized Task Execution for Long-Running Tasks">
+  <meta itemprop="datePublished" content="2024-01-27T16:35:06+00:00">
+  <meta itemprop="dateModified" content="2024-01-27T16:35:06+00:00">
+  <meta itemprop="wordCount" content="251">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="taskd">
+  <meta name="twitter:description" content="`taskd`: Task Daemon for Decentralized Task Execution for Long-Running Tasks">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects2/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research projects page">
+              Research projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Projects
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">taskd</h1>
+      
+      <p class="tracked">
+        By <strong>Alex Towell</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-01-27T16:35:06Z">January 27, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><code>taskd</code>: Task Daemon for Decentralized Task Execution for Long-Running Tasks</p>
+<p><strong>Stars</strong>: 1 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages</strong>: Python</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>queelius (5 commits)</li>
+</ul>
+<h2 id="readme">README</h2>
+<h1 id="taskd-task-daemon-for-decentralized-task-execution-for-long-running-tasks"><code>taskd</code>: Task Daemon for Decentralized Task Execution for Long-Running Tasks</h1>
+<p>The project <code>taskd</code> is a web service for script execution environment with workspace management. It allows you to create a workspace, upload a script, execute the script, and delete the workspace.</p>
+<h2 id="workflow">Workflow</h2>
+<ol>
+<li>Create a workspace</li>
+<li>Upload a script</li>
+<li>Execute a script</li>
+<li>Delete a workspace</li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<p>To get the server up and running, follow these steps:</p>
+<ol>
+<li>
+<p>Install dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div></li>
+<li>
+<p>Install and run <code>redis-server</code>:</p>
+<ul>
+<li>On Linux, you can install Redis using <code>apt-get install redis-server</code> and run it using <code>sudo systemctl start redis-server</code></li>
+</ul>
+</li>
+<li>
+<p>Install and run <code>rq worker</code>:</p>
+<ul>
+<li>On Linux, you can install RQ using <code>pip install rq</code> and run it using <code>rq worker</code></li>
+</ul>
+</li>
+<li>
+<p>Run <code>rq-dashboard</code>:</p>
+<ul>
+<li>On Linux, you can install RQ Dashboard using <code>pip install rq-dashboard</code> and run it using <code>rq-dashboard</code></li>
+</ul>
+</li>
+<li>
+<p>Run <code>uvicorn main:app --reload</code>:</p>
+<ul>
+<li>On Linux, you can install Uvicorn using <code>pip install uvicorn</code> and run it using <code>uvicorn main:app --reload</code></li>
+</ul>
+</li>
+<li>
+<p>Open <code>http://localhost:8000/docs</code> for the docs</p>
+</li>
+</ol>
+<h2 id="api-endpoints">API Endpoints</h2>
+<p>The application provides several API endpoints for managing workspaces and executing scripts. These are defined in <a href="routes.py"><code>routes.py</code></a>.</p>
+<h2 id="script-execution">Script Execution</h2>
+<p>Scripts are executed in their respective workspaces. The output of the script execution is logged to a file in the workspace. This is handled by the <code>execute_script</code> function in <a href="utils.py"><code>utils.py</code></a>.</p>
+<h2 id="documentation">Documentation</h2>
+<p>For more detailed information about the application and its usage, refer to the <a href="docs/index.md">docs</a>.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/github/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">GitHub</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/project/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Project</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/ghprojects/taskd/">taskd</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/papers/">papers</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/papers/">papers</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/tournamentpetersonlock/">tournamentpetersonlock</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/tournamentpetersonlock/">tournamentpetersonlock</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/reliability-estimation-in-series-systems-model-selection/">reliability-estimation-in-series-systems-model-selection</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/reliability-estimation-in-series-systems-model-selection/">reliability-estimation-in-series-systems-model-selection</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/disjoint_interval_set/">disjoint_interval_set</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/disjoint_interval_set/">disjoint_interval_set</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/wei.series.md.c1.c2.c3/">wei.series.md.c1.c2.c3</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/wei.series.md.c1.c2.c3/">wei.series.md.c1.c2.c3</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/reliability-estimation-in-series-systems/">reliability-estimation-in-series-systems</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/reliability-estimation-in-series-systems/">reliability-estimation-in-series-systems</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/projects2/dfr_dist/">dfr_dist</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/ghprojects/dfr_dist/">dfr_dist</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

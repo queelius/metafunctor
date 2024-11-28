@@ -1,44 +1,36 @@
 ---
-title: "likelihood.model.series.md R package"
-author: admin
-summary: "An R package for constructing likelihood models for series systems with masked component cause of failure and other censoring mechanisms."
-date: "2023-04-10"
-slug: likelihood-model-series-md
-external_url: "https://github.com/queelius/likelihood.model.series.md"
-image:
-  caption: In all likelihood!
-  focal_point: Smart
-  preview_only: yes
-links:
-- icon: github
-  icon_pack: fab
-  name: Code
-  url: "https://github.com/queelius/likelihood.model.series.md"
-- icon: paper-plane
-  icon_pack: fas
-  name: Docs
-  url: "https://queelius.github.io/likelihood.model.series.md"
-tags:
-- maximum-likelihood-estimation
-- likelihood-models
-- likelihood-contributions-model
-- masked-failure-data
-- right-censoring
-- series-systems
-- bootstrap
-- R-package
-- Fisher-information matrix
-- data-generating-process
+date: '2023-06-12T19:18:49Z'
+description: Likelihood model for series systems with masked component cause of failure
+  and other censoring mechanisms
+forks: 0
+languages:
 - R
-- statistics
-categories:
-- statistics
-- data-science
-- inference
-- survival-analysis
-- reliability-analysis
+layout: project
+links:
+- name: GitHub
+  url: https://github.com/queelius/likelihood.model.series.md
+- name: GitHub Pages
+  url: https://queelius.github.io/likelihood.model.series.md/
+open_issues: 0
+stars: 1
+tags:
+- GitHub
+- project
+title: likelihood.model.series.md
 ---
 
+Likelihood model for series systems with masked component cause of failure and other censoring mechanisms
+
+**Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
+
+**Languages**: R
+
+## Contributors
+- queelius (71 commits)
+
+## README
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # R Package: `likelihood.model.series.md`
 
@@ -72,8 +64,11 @@ Masked data comes in a variety of forms:
     system lifetime, and a *candidate set* of component indexes which
     plausibly contains the failed component index.
     
-    For a series system of $m$ components, the candidate sets are subsets of
-    $\{1,\ldots,m\}$.
+    For a series system of
+    ![m](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;m
+    "m") components, the candidate sets are subsets of
+    ![\\{1,\\ldots,m\\}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5C%7B1%2C%5Cldots%2Cm%5C%7D
+    "\\{1,\\ldots,m\\}").
 
 ## Installation
 
@@ -97,15 +92,15 @@ for the kind of data and series system under consideration.
 In general, masking models may characaterized by satisfy any (or none)
 of the following conditions:
 
-**Condition 1**: The probability that the failed component is in the
+Condition 1: The probability that the failed component is in the
 candidate set is 1.
 
-**Condition 2**: Given a candidate set of potential causes of failure, when
+Condition 2: Given a candidate set of potential causes of failure, when
 we condition on the component cause being any one of the components in
 the candidate set at the given system failure time, the probability of
 the candidate set is uniform.
 
-**Condition 3**: The distribution of candidate sets conditioned on a system
+Condition 3: The distribution of candidate sets conditioned on a system
 failure time and a component cause of failure is independent of the
 system parameter vector.
 
@@ -206,19 +201,28 @@ parameters.
 For example, we may have a strong belief that the components are Weibull
 distributed, and furthermore, that they are more or less on the same
 scale with slight differences in shape. In this case, we can simplify
-the model by assuming $\lambda_1 = \cdots = \lambda_m$ and then only fitting
-$\hat{\lambda}$ and $\hat{k}_1, \ldots, \hat{k}_m$, reducing a $2 m$ parameter
-model to a simpler $m+1$ parameter model. This is not an unrealistic assumption,
-since if a series system is well-designed, then the components should be more or
+the model by assuming ![\\lambda\_1 = \\cdots =
+\\lambda\_m](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Clambda_1%20%3D%20%5Ccdots%20%3D%20%5Clambda_m
+"\\lambda_1 = \\cdots = \\lambda_m") and then only fitting
+![\\hat\\lambda](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Chat%5Clambda
+"\\hat\\lambda") and ![\\hat k\_1, \\ldots, \\hat
+k\_m](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Chat%20k_1%2C%20%5Cldots%2C%20%5Chat%20k_m
+"\\hat k_1, \\ldots, \\hat k_m"), reducing a
+![2m](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;2m
+"2m") parameter model to a simpler
+![m+1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;m%2B1
+"m+1") parameter model. This is not an unrealistic assumption, since if
+a series system is well-designed, then the components should be more or
 less on the same scale (i.e., have approximately the same MTTF).
 
 # Bootstrapping Statistics of the MLE and Likleihood Mode
 
-To estimate various characteristcs, such as the bias, BCa confidence
-intervals, etc, then bootstraping may be used. The `likelihood.mode.series.md`
-package relies upon the bootstrapping functionality in `boot` and
-`likelihood.model`, but provide special functions and methods that are
-particular to the masked data series system context.
+To estimate various characteiristcs, such as the bias, BCa confidence
+intervals, etc, then bootstraping may be used. The
+`likelihood.md.series.systems` package relies upon the bootstrapping
+functionality in `boot` and `likelihood.model`, but provide special
+functions and methods that are particular to the masked data series
+system context.
 
 # Parametric Models
 
@@ -231,9 +235,12 @@ predictors, including time, any other covariates.
 # Documentation
 
 For more detailed information on how to use this package and what each
-function does, please refer the [dcoumentation](https://queelius.github.io/likelihood.model.series.md).
+function does, please refer to the package documentation. The
+series\_system function and its parameters are described in detail
+there.
 
 # Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request on
-GitHub if you find any bugs or if you’d like to suggest improvements.
+Contributions are welcome\! Please open an issue or submit a pull
+request on GitHub if you find any bugs or if you’d like to suggest
+improvements.

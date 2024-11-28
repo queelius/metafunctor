@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solomonoff Induction on metafunctor</title>
-    <link>http://localhost:1313/tags/solomonoff-induction/</link>
+    <link>http://192.168.0.225:42999/tags/solomonoff-induction/</link>
     <description>Recent content in Solomonoff Induction on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/solomonoff-induction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.0.225:42999/tags/solomonoff-induction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Approximations of Solomonoff Induction</title>
-      <link>http://localhost:1313/research/solomonoff/</link>
+      <link>http://192.168.0.225:42999/research/solomonoff/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/solomonoff/</guid>
+      <guid>http://192.168.0.225:42999/research/solomonoff/</guid>
       <description>I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.</description>
     </item>
   </channel>

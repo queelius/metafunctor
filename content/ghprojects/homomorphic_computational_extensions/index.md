@@ -4,7 +4,7 @@ description: Homomorphic computational extensions
 forks: 0
 languages:
 - C++
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/homomorphic_computational_extensions
@@ -17,16 +17,11 @@ tags:
 - project
 title: homomorphic_computational_extensions
 ---
-
 # homomorphic_computational_extensions
 Homomorphic computational extensions
-
 [GitHub Link](https://github.com/queelius/homomorphic_computational_extensions)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: C++
-
 [GitHub Pages](https://queelius.github.io/homomorphic_computational_extensions/)
 
 ## README

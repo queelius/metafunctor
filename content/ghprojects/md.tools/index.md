@@ -4,7 +4,7 @@ description: Masked data tools
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/md.tools
@@ -17,16 +17,11 @@ tags:
 - project
 title: md.tools
 ---
-
 # md.tools
 Masked data tools
-
 [GitHub Link](https://github.com/queelius/md.tools)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/md.tools/)
 
 ## README

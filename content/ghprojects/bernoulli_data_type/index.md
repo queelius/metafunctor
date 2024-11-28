@@ -25,19 +25,13 @@ stars: 2
 tags:
 - GitHub
 - project
-- GitHub Project
 title: bernoulli_data_type
 ---
-
 # bernoulli_data_type
 Bernoulli data type
-
 [GitHub Link](https://github.com/queelius/bernoulli_data_type)
-
 **Stars**: 2 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: Mathematica, TeX, Jupyter Notebook, C++, HTML, JavaScript, CSS, Gnuplot, Shell, Makefile, R
-
 [GitHub Pages](https://queelius.github.io/bernoulli_data_type/)
 
 ## README

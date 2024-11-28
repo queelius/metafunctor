@@ -2,7 +2,8 @@
 date: '2021-02-14T21:17:44Z'
 description: Config files for my GitHub profile.
 forks: 0
-layout: project
+languages: []
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/queelius
@@ -13,12 +14,9 @@ tags:
 - project
 title: queelius
 ---
-
 # queelius
 Config files for my GitHub profile.
-
 [GitHub Link](https://github.com/queelius/queelius)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
 
 ## README

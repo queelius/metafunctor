@@ -4,7 +4,7 @@ description: Dynamic failure rate distributions (DFR)
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/dfr_dist
@@ -17,16 +17,11 @@ tags:
 - project
 title: dfr_dist
 ---
-
 # dfr_dist
 Dynamic failure rate distributions (DFR)
-
 [GitHub Link](https://github.com/queelius/dfr_dist)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/dfr_dist/)
 
 ## README

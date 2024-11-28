@@ -1,8 +1,9 @@
 ---
 date: '2024-08-26T12:12:03Z'
-description: No description available.
+description: null
 forks: 0
-layout: project
+languages: []
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/ga-llm
@@ -13,12 +14,8 @@ tags:
 - project
 title: ga-llm
 ---
-
 # ga-llm
-No description available.
-
 [GitHub Link](https://github.com/queelius/ga-llm)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
 
 ## README

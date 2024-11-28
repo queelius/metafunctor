@@ -17,16 +17,11 @@ tags:
 - project
 title: algebraic.dist
 ---
-
 # algebraic.dist
 Algebraic distributions
-
 [GitHub Link](https://github.com/queelius/algebraic.dist)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/algebraic.dist/)
 
 ## README

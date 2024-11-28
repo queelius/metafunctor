@@ -1,11 +1,11 @@
 ---
 date: '2024-05-13T15:13:03Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - Python
 - Jupyter Notebook
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/ollama_data_tools
@@ -18,16 +18,10 @@ tags:
 - project
 title: ollama_data_tools
 ---
-
 # ollama_data_tools
-No description available.
-
 [GitHub Link](https://github.com/queelius/ollama_data_tools)
-
 **Stars**: 2 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: Python, Jupyter Notebook
-
 [GitHub Pages](https://queelius.github.io/ollama_data_tools/)
 
 ## README

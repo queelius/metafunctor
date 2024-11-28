@@ -5,10 +5,12 @@ description: Likelihood model for series systems with masked component cause of 
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/likelihood.model.series.md
+- name: GitHub Pages
+  url: https://queelius.github.io/likelihood.model.series.md/
 open_issues: 0
 stars: 1
 tags:
@@ -16,15 +18,12 @@ tags:
 - project
 title: likelihood.model.series.md
 ---
-
 # likelihood.model.series.md
 Likelihood model for series systems with masked component cause of failure and other censoring mechanisms
-
 [GitHub Link](https://github.com/queelius/likelihood.model.series.md)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
+[GitHub Pages](https://queelius.github.io/likelihood.model.series.md/)
 
 ## README
 

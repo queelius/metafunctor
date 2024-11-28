@@ -4,7 +4,7 @@ description: Numerical MLE solvers
 forks: 0
 languages:
 - R
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/numerical.mle
@@ -17,16 +17,11 @@ tags:
 - project
 title: numerical.mle
 ---
-
 # numerical.mle
 Numerical MLE solvers
-
 [GitHub Link](https://github.com/queelius/numerical.mle)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: R
-
 [GitHub Pages](https://queelius.github.io/numerical.mle/)
 
 ## README

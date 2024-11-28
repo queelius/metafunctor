@@ -1,8 +1,9 @@
 ---
 date: '2021-08-30T23:25:35Z'
-description: No description available.
+description: null
 forks: 0
-layout: project
+languages: []
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/rstatlab
@@ -13,12 +14,9 @@ tags:
 - project
 title: rstatlab
 ---
-
 # rstatlab
-No description available.
-
 [GitHub Link](https://github.com/queelius/rstatlab)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
 
-_No README available for this project._
+## README
+This repository contains weekly statistical lab materials for Stat 244 and Stat 380 at SIUE.

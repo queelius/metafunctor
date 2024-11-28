@@ -1,10 +1,10 @@
 ---
 date: '2019-01-14T16:34:53Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - TeX
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/cipher_maps
@@ -15,14 +15,9 @@ tags:
 - project
 title: cipher_maps
 ---
-
 # cipher_maps
-No description available.
-
 [GitHub Link](https://github.com/queelius/cipher_maps)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: TeX
 
 ## README

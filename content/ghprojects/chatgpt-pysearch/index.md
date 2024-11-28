@@ -1,13 +1,13 @@
 ---
 date: '2023-06-11T08:03:50Z'
-description: No description available.
+description: null
 forks: 0
 languages:
 - HTML
 - Python
 - CSS
 - Procfile
-layout: project
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/chatgpt-pysearch
@@ -20,16 +20,10 @@ tags:
 - project
 title: chatgpt-pysearch
 ---
-
 # chatgpt-pysearch
-No description available.
-
 [GitHub Link](https://github.com/queelius/chatgpt-pysearch)
-
 **Stars**: 0 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: HTML, Python, CSS, Procfile
-
 [GitHub Pages](https://queelius.github.io/chatgpt-pysearch/)
 
 ## README

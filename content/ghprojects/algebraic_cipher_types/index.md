@@ -7,7 +7,7 @@ languages:
 - CMake
 - Python
 - Makefile
-layout: ghprojects
+layout: ghproject
 links:
 - name: GitHub
   url: https://github.com/queelius/algebraic_cipher_types
@@ -18,14 +18,10 @@ tags:
 - project
 title: algebraic_cipher_types
 ---
-
 # algebraic_cipher_types
 Algebraic cipher types
-
 [GitHub Link](https://github.com/queelius/algebraic_cipher_types)
-
 **Stars**: 1 | **Forks**: 0 | **Open Issues**: 0
-
 **Languages Used**: C++, CMake, Python, Makefile
 
 ## README

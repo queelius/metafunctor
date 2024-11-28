@@ -2,10 +2,15 @@
 title: Projects
 author: Alex Towell
 email: lex@metafunctor.com
-date: "2021-08-01"
-description: "Here are some projects I've worked on. I'll try to keep this updated as I work on new things."
+description: "Here are some GitHub projects I'm working on or have worked on. It is automatically generated from my GitHub repositories. See the [GitHub](https://github.com/queelius) for the the actual code, as this page just provides a summary view." 
 tags:
-- SIUe
-- coursework
-- university
+- GitHub
+- projects
+- code
+- programming
+- software-development
+- software-engineering
+- open-source
+- free-software
 ---
+
