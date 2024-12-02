@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coursework on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/coursework/</link>
+    <link>http://localhost:1313/tags/coursework/</link>
     <description>Recent content in Coursework on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/coursework/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/coursework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Problem Sets</title>
-      <link>http://192.168.0.225:38061/probsets/</link>
+      <link>http://localhost:1313/probsets/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/</guid>
+      <guid>http://localhost:1313/probsets/</guid>
       <description>Problem sets and solutions for various courses.</description>
     </item>
   </channel>

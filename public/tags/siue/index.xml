@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siue on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/siue/</link>
+    <link>http://localhost:1313/tags/siue/</link>
     <description>Recent content in Siue on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/siue/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/siue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publications</title>
-      <link>http://192.168.0.225:38061/publications/</link>
+      <link>http://localhost:1313/publications/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/publications/</guid>
+      <guid>http://localhost:1313/publications/</guid>
       <description>Here are some publications I&amp;rsquo;ve worked on. I&amp;rsquo;ll try to keep this updated as I work on new things.</description>
     </item>
     <item>
       <title>Model Selection in Weibull Series Systems</title>
-      <link>http://192.168.0.225:38061/research/reliability-estimation-in-series-systems-model-sel/</link>
+      <link>http://localhost:1313/research/reliability-estimation-in-series-systems-model-sel/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/research/reliability-estimation-in-series-systems-model-sel/</guid>
+      <guid>http://localhost:1313/research/reliability-estimation-in-series-systems-model-sel/</guid>
       <description>In my paper, Reliability Estimation in Series Systems, I discarded a lot of research that may be interesting to pursue further. This one is about using homogeneous shape parameters for the Weibull series system, which can greatly simplify the analysis and reduce the number of parameters to estimate. It&amp;rsquo;s also quite reasonable for most well-designed systems.</description>
     </item>
     <item>
       <title>Problem Sets</title>
-      <link>http://192.168.0.225:38061/probsets/</link>
+      <link>http://localhost:1313/probsets/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/</guid>
+      <guid>http://localhost:1313/probsets/</guid>
       <description>Problem sets and solutions for various courses.</description>
     </item>
     <item>
       <title>STAT 482 - Regression Analysis - SIUe - Fall 2022</title>
-      <link>http://192.168.0.225:38061/probsets/stat482/</link>
+      <link>http://localhost:1313/probsets/stat482/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/stat482/</guid>
+      <guid>http://localhost:1313/probsets/stat482/</guid>
       <description>Problem sets and solutions for STAT 482 - Regression Analysis at SIUe.</description>
     </item>
     <item>
       <title>STAT 575 - Computational Statistics - SIUe - Summer 2021</title>
-      <link>http://192.168.0.225:38061/probsets/stat575/</link>
+      <link>http://localhost:1313/probsets/stat575/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/stat575/</guid>
+      <guid>http://localhost:1313/probsets/stat575/</guid>
       <description>Problem sets and solutions for STAT 575 - Computational Statistics at SIUe.</description>
     </item>
     <item>
       <title>Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents</title>
-      <link>http://192.168.0.225:38061/publications/cs-thesis/</link>
+      <link>http://localhost:1313/publications/cs-thesis/</link>
       <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/publications/cs-thesis/</guid>
+      <guid>http://localhost:1313/publications/cs-thesis/</guid>
       <description></description>
     </item>
   </channel>

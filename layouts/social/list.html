@@ -30,20 +30,5 @@
   </section>
   {{ end }}
 
-  {{ if .Site.Params.social.twitter }}
-  <section class="twitter-feed">
-    <h2>Latest Tweets</h2>
-    <div id="twitter-timeline"></div>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-      twttr.ready(function(twr) {
-        twttr.widgets.createTimeline({
-          sourceType: "profile",
-          screenName: "{{ .Site.Params.social.twitter }}"
-        }, document.getElementById("twitter-timeline"));
-      });
-    </script>
-  </section>
-  {{ end }}
 </div>
 {{ end }}

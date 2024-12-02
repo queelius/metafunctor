@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Secure Index on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/secure-index/</link>
+    <link>http://localhost:1313/tags/secure-index/</link>
     <description>Recent content in Secure Index on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/secure-index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/secure-index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents</title>
-      <link>http://192.168.0.225:38061/publications/cs-thesis/</link>
+      <link>http://localhost:1313/publications/cs-thesis/</link>
       <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/publications/cs-thesis/</guid>
+      <guid>http://localhost:1313/publications/cs-thesis/</guid>
       <description></description>
     </item>
   </channel>

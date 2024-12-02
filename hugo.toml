@@ -78,11 +78,6 @@ enableRobotsTXT = true
     icon = "fab fa-youtube"
 
     [[params.social.links]]
-    name = "Discord"
-    url = "https://discord.com/channels/904142927389929492/"
-    icon = "fab fa-discord"
-
-    [[params.social.links]]
     name = "Google Scholar"
     url = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=E9mnFzQAAAAJ"
     icon = "fas fa-graduation-cap"

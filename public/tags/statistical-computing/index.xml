@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistical-Computing on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/statistical-computing/</link>
+    <link>http://localhost:1313/tags/statistical-computing/</link>
     <description>Recent content in Statistical-Computing on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/statistical-computing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/statistical-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>STAT 575 - Computational Statistics - SIUe - Summer 2021</title>
-      <link>http://192.168.0.225:38061/probsets/stat575/</link>
+      <link>http://localhost:1313/probsets/stat575/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/stat575/</guid>
+      <guid>http://localhost:1313/probsets/stat575/</guid>
       <description>Problem sets and solutions for STAT 575 - Computational Statistics at SIUe.</description>
     </item>
   </channel>

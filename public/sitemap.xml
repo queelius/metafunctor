@@ -2,1284 +2,1284 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.0.225:38061/posts/rpsdg/</loc>
+    <loc>http://localhost:1313/posts/rpsdg/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/gave-a-presentation-for-sluug-about-llms/</loc>
+    <loc>http://localhost:1313/posts/gave-a-presentation-for-sluug-about-llms/</loc>
     <lastmod>2024-02-23T07:28:58-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/masters-stats-siue-proj/</loc>
+    <loc>http://localhost:1313/posts/masters-stats-siue-proj/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/llm-fine-tuning-es-dsl/</loc>
+    <loc>http://localhost:1313/posts/llm-fine-tuning-es-dsl/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/bernoulli-boolean-model/</loc>
+    <loc>http://localhost:1313/posts/bernoulli-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/code/</loc>
+    <loc>http://localhost:1313/tags/code/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/free-software/</loc>
+    <loc>http://localhost:1313/tags/free-software/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/</loc>
+    <loc>http://localhost:1313/ghprojects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/open-source/</loc>
+    <loc>http://localhost:1313/tags/open-source/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/programming/</loc>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/project/</loc>
+    <loc>http://localhost:1313/tags/project/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/projects/</loc>
+    <loc>http://localhost:1313/tags/projects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/software-development/</loc>
+    <loc>http://localhost:1313/tags/software-development/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/software-engineering/</loc>
+    <loc>http://localhost:1313/tags/software-engineering/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/xtoolkit/</loc>
+    <loc>http://localhost:1313/ghprojects/xtoolkit/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/xtoolkit/</loc>
+    <loc>http://localhost:1313/projects/xtoolkit/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/resume/</loc>
+    <loc>http://localhost:1313/ghprojects/resume/</loc>
     <lastmod>2024-11-17T21:04:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/resume/</loc>
+    <loc>http://localhost:1313/projects/resume/</loc>
     <lastmod>2024-11-17T21:04:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/fuzzy-logic-search/</loc>
+    <loc>http://localhost:1313/ghprojects/fuzzy-logic-search/</loc>
     <lastmod>2024-11-04T09:55:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/fuzzy-logic-search/</loc>
+    <loc>http://localhost:1313/projects/fuzzy-logic-search/</loc>
     <lastmod>2024-11-04T09:55:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/space-sandbox-sim/</loc>
+    <loc>http://localhost:1313/ghprojects/space-sandbox-sim/</loc>
     <lastmod>2024-10-12T07:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/space-sandbox-sim/</loc>
+    <loc>http://localhost:1313/projects/space-sandbox-sim/</loc>
     <lastmod>2024-10-12T07:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/ga-llm/</loc>
+    <loc>http://localhost:1313/ghprojects/ga-llm/</loc>
     <lastmod>2024-08-26T12:12:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/ga-llm/</loc>
+    <loc>http://localhost:1313/projects/ga-llm/</loc>
     <lastmod>2024-08-26T12:12:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/rpsdg/</loc>
+    <loc>http://localhost:1313/ghprojects/rpsdg/</loc>
     <lastmod>2024-07-25T16:24:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/rpsdg/</loc>
+    <loc>http://localhost:1313/projects/rpsdg/</loc>
     <lastmod>2024-07-25T16:24:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/digistar/</loc>
+    <loc>http://localhost:1313/ghprojects/digistar/</loc>
     <lastmod>2024-07-20T05:38:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/digistar/</loc>
+    <loc>http://localhost:1313/projects/digistar/</loc>
     <lastmod>2024-07-20T05:38:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/ai-training/</loc>
+    <loc>http://localhost:1313/tags/ai-training/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/algebra/</loc>
+    <loc>http://localhost:1313/tags/algebra/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/categories/artificial-intelligence/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/calculus/</loc>
+    <loc>http://localhost:1313/tags/calculus/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/data-generation/</loc>
+    <loc>http://localhost:1313/tags/data-generation/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/explainable-ai/</loc>
+    <loc>http://localhost:1313/tags/explainable-ai/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/llms/</loc>
+    <loc>http://localhost:1313/tags/llms/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/machine-learning/</loc>
+    <loc>http://localhost:1313/categories/machine-learning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/mathematics/</loc>
+    <loc>http://localhost:1313/tags/mathematics/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/mathematics/</loc>
+    <loc>http://localhost:1313/categories/mathematics/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/reasoning/</loc>
+    <loc>http://localhost:1313/tags/reasoning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/synthetic-data/</loc>
+    <loc>http://localhost:1313/tags/synthetic-data/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/ngram-projections/</loc>
+    <loc>http://localhost:1313/ghprojects/ngram-projections/</loc>
     <lastmod>2024-06-21T11:50:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/ngram-projections/</loc>
+    <loc>http://localhost:1313/projects/ngram-projections/</loc>
     <lastmod>2024-06-21T11:50:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/treeprog/</loc>
+    <loc>http://localhost:1313/ghprojects/treeprog/</loc>
     <lastmod>2024-06-16T03:18:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/treeprog/</loc>
+    <loc>http://localhost:1313/projects/treeprog/</loc>
     <lastmod>2024-06-16T03:18:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/infini-gram/</loc>
+    <loc>http://localhost:1313/posts/infini-gram/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/random_oracles/</loc>
+    <loc>http://localhost:1313/ghprojects/random_oracles/</loc>
     <lastmod>2024-05-15T20:40:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/random_oracles/</loc>
+    <loc>http://localhost:1313/projects/random_oracles/</loc>
     <lastmod>2024-05-15T20:40:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/ollama_data_tools/</loc>
+    <loc>http://localhost:1313/ghprojects/ollama_data_tools/</loc>
     <lastmod>2024-05-13T15:13:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/ollama_data_tools/</loc>
+    <loc>http://localhost:1313/projects/ollama_data_tools/</loc>
     <lastmod>2024-05-13T15:13:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/algotree/</loc>
+    <loc>http://localhost:1313/ghprojects/algotree/</loc>
     <lastmod>2024-04-30T17:34:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/algotree/</loc>
+    <loc>http://localhost:1313/projects/algotree/</loc>
     <lastmod>2024-04-30T17:34:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/autoregressive-models/</loc>
+    <loc>http://localhost:1313/tags/autoregressive-models/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/inference/</loc>
+    <loc>http://localhost:1313/categories/inference/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/instrumental-goals/</loc>
+    <loc>http://localhost:1313/tags/instrumental-goals/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/research/llm-research/</loc>
+    <loc>http://localhost:1313/research/llm-research/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/large-language-models/</loc>
+    <loc>http://localhost:1313/tags/large-language-models/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/latent-codes/</loc>
+    <loc>http://localhost:1313/tags/latent-codes/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/latent-space/</loc>
+    <loc>http://localhost:1313/tags/latent-space/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/reinforcement-learning/</loc>
+    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/research/</loc>
+    <loc>http://localhost:1313/research/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/statistics/</loc>
+    <loc>http://localhost:1313/categories/statistics/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/stenography/</loc>
+    <loc>http://localhost:1313/categories/stenography/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/hypothesize/</loc>
+    <loc>http://localhost:1313/ghprojects/hypothesize/</loc>
     <lastmod>2024-02-19T11:02:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/hypothesize/</loc>
+    <loc>http://localhost:1313/projects/hypothesize/</loc>
     <lastmod>2024-02-19T11:02:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/algorthmic-data/</loc>
+    <loc>http://localhost:1313/tags/algorthmic-data/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/research/solomonoff/</loc>
+    <loc>http://localhost:1313/research/solomonoff/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/bootstrap/</loc>
+    <loc>http://localhost:1313/categories/bootstrap/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/censoring/</loc>
+    <loc>http://localhost:1313/categories/censoring/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/data-generating-process/</loc>
+    <loc>http://localhost:1313/tags/data-generating-process/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/domain-specific-language/</loc>
+    <loc>http://localhost:1313/tags/domain-specific-language/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/elastic-search/</loc>
+    <loc>http://localhost:1313/tags/elastic-search/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/fine-tuning/</loc>
+    <loc>http://localhost:1313/tags/fine-tuning/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/foundation-models/</loc>
+    <loc>http://localhost:1313/tags/foundation-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/information-retrieval/</loc>
+    <loc>http://localhost:1313/tags/information-retrieval/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/json/</loc>
+    <loc>http://localhost:1313/tags/json/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/likelihood-contributions-model/</loc>
+    <loc>http://localhost:1313/tags/likelihood-contributions-model/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/likelihood-model/</loc>
+    <loc>http://localhost:1313/categories/likelihood-model/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/likelihood-models/</loc>
+    <loc>http://localhost:1313/tags/likelihood-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/markov-models/</loc>
+    <loc>http://localhost:1313/tags/markov-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/masked-failure-data/</loc>
+    <loc>http://localhost:1313/categories/masked-failure-data/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/mle/</loc>
+    <loc>http://localhost:1313/categories/mle/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/n-gram-models/</loc>
+    <loc>http://localhost:1313/tags/n-gram-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/reliability-analysis/</loc>
+    <loc>http://localhost:1313/categories/reliability-analysis/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/series-systems/</loc>
+    <loc>http://localhost:1313/categories/series-systems/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/solomonoff-induction/</loc>
+    <loc>http://localhost:1313/tags/solomonoff-induction/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/statistics/</loc>
+    <loc>http://localhost:1313/tags/statistics/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/research/llm-search/</loc>
+    <loc>http://localhost:1313/research/llm-search/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/weibull/</loc>
+    <loc>http://localhost:1313/categories/weibull/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/bernoulli-map/</loc>
+    <loc>http://localhost:1313/categories/bernoulli-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/entropy-map/</loc>
+    <loc>http://localhost:1313/categories/entropy-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/entropy-map/</loc>
+    <loc>http://localhost:1313/posts/entropy-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/probabilistic-data-structure/</loc>
+    <loc>http://localhost:1313/categories/probabilistic-data-structure/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/rate-distortion/</loc>
+    <loc>http://localhost:1313/categories/rate-distortion/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/solomonoff_induction/</loc>
+    <loc>http://localhost:1313/ghprojects/solomonoff_induction/</loc>
     <lastmod>2024-02-15T19:28:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/solomonoff_induction/</loc>
+    <loc>http://localhost:1313/projects/solomonoff_induction/</loc>
     <lastmod>2024-02-15T19:28:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/sluug-talk-llm/</loc>
+    <loc>http://localhost:1313/ghprojects/sluug-talk-llm/</loc>
     <lastmod>2024-02-09T09:45:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/sluug-talk-llm/</loc>
+    <loc>http://localhost:1313/projects/sluug-talk-llm/</loc>
     <lastmod>2024-02-09T09:45:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/elasticsearch-lm/</loc>
+    <loc>http://localhost:1313/ghprojects/elasticsearch-lm/</loc>
     <lastmod>2024-02-03T17:11:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/elasticsearch-lm/</loc>
+    <loc>http://localhost:1313/projects/elasticsearch-lm/</loc>
     <lastmod>2024-02-03T17:11:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/video-playlist-manager/</loc>
+    <loc>http://localhost:1313/ghprojects/video-playlist-manager/</loc>
     <lastmod>2024-01-30T13:16:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/video-playlist-manager/</loc>
+    <loc>http://localhost:1313/projects/video-playlist-manager/</loc>
     <lastmod>2024-01-30T13:16:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/taskd/</loc>
+    <loc>http://localhost:1313/ghprojects/taskd/</loc>
     <lastmod>2024-01-27T16:35:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/taskd/</loc>
+    <loc>http://localhost:1313/projects/taskd/</loc>
     <lastmod>2024-01-27T16:35:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/papers/</loc>
+    <loc>http://localhost:1313/ghprojects/papers/</loc>
     <lastmod>2023-12-16T15:45:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/papers/</loc>
+    <loc>http://localhost:1313/projects/papers/</loc>
     <lastmod>2023-12-16T15:45:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/tournamentpetersonlock/</loc>
+    <loc>http://localhost:1313/ghprojects/tournamentpetersonlock/</loc>
     <lastmod>2023-12-07T20:57:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/tournamentpetersonlock/</loc>
+    <loc>http://localhost:1313/projects/tournamentpetersonlock/</loc>
     <lastmod>2023-12-07T20:57:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems-model-selection/</loc>
+    <loc>http://localhost:1313/ghprojects/reliability-estimation-in-series-systems-model-selection/</loc>
     <lastmod>2023-11-10T04:16:05+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems-model-selection/</loc>
+    <loc>http://localhost:1313/projects/reliability-estimation-in-series-systems-model-selection/</loc>
     <lastmod>2023-11-10T04:16:05+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/disjoint_interval_set/</loc>
+    <loc>http://localhost:1313/ghprojects/disjoint_interval_set/</loc>
     <lastmod>2023-10-06T06:58:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/disjoint_interval_set/</loc>
+    <loc>http://localhost:1313/projects/disjoint_interval_set/</loc>
     <lastmod>2023-10-06T06:58:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/bootstrap/</loc>
+    <loc>http://localhost:1313/tags/bootstrap/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/likelihood-model/</loc>
+    <loc>http://localhost:1313/tags/likelihood-model/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/masked-failure-data/</loc>
+    <loc>http://localhost:1313/tags/masked-failure-data/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/maximum-likelihood-estimation/</loc>
+    <loc>http://localhost:1313/tags/maximum-likelihood-estimation/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/mle/</loc>
+    <loc>http://localhost:1313/tags/mle/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/publications/</loc>
+    <loc>http://localhost:1313/tags/publications/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/publications/</loc>
+    <loc>http://localhost:1313/publications/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/reliability/</loc>
+    <loc>http://localhost:1313/tags/reliability/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/publications/math-proj/</loc>
+    <loc>http://localhost:1313/publications/math-proj/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/research/</loc>
+    <loc>http://localhost:1313/tags/research/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/right-censoring/</loc>
+    <loc>http://localhost:1313/tags/right-censoring/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/series-systems/</loc>
+    <loc>http://localhost:1313/tags/series-systems/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/siue/</loc>
+    <loc>http://localhost:1313/tags/siue/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/survival-analysis/</loc>
+    <loc>http://localhost:1313/tags/survival-analysis/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/university/</loc>
+    <loc>http://localhost:1313/tags/university/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/weibull-distribution/</loc>
+    <loc>http://localhost:1313/tags/weibull-distribution/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/wei.series.md.c1.c2.c3/</loc>
+    <loc>http://localhost:1313/ghprojects/wei.series.md.c1.c2.c3/</loc>
     <lastmod>2023-07-23T12:12:30+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/wei.series.md.c1.c2.c3/</loc>
+    <loc>http://localhost:1313/projects/wei.series.md.c1.c2.c3/</loc>
     <lastmod>2023-07-23T12:12:30+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/reliability-estimation-in-series-systems/</loc>
+    <loc>http://localhost:1313/ghprojects/reliability-estimation-in-series-systems/</loc>
     <lastmod>2023-07-13T09:25:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/reliability-estimation-in-series-systems/</loc>
+    <loc>http://localhost:1313/projects/reliability-estimation-in-series-systems/</loc>
     <lastmod>2023-07-13T09:25:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/trapdoor-boolean-model/</loc>
+    <loc>http://localhost:1313/posts/trapdoor-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/bernoulli/</loc>
+    <loc>http://localhost:1313/categories/bernoulli/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/bernoulli-model/</loc>
+    <loc>http://localhost:1313/categories/bernoulli-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/bloom-filter/</loc>
+    <loc>http://localhost:1313/categories/bloom-filter/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/boolean/</loc>
+    <loc>http://localhost:1313/categories/boolean/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/cognitive-science/</loc>
+    <loc>http://localhost:1313/tags/cognitive-science/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/compression/</loc>
+    <loc>http://localhost:1313/categories/compression/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/cryptography/</loc>
+    <loc>http://localhost:1313/categories/cryptography/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/llm/</loc>
+    <loc>http://localhost:1313/tags/llm/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/philosophy/</loc>
+    <loc>http://localhost:1313/categories/philosophy/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/regularization/</loc>
+    <loc>http://localhost:1313/tags/regularization/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/uses-and-limits-of-abstractions/</loc>
+    <loc>http://localhost:1313/posts/uses-and-limits-of-abstractions/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/working-memory-as-an-inductive-bias/</loc>
+    <loc>http://localhost:1313/posts/working-memory-as-an-inductive-bias/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/dfr_dist/</loc>
+    <loc>http://localhost:1313/ghprojects/dfr_dist/</loc>
     <lastmod>2023-06-16T09:56:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/dfr_dist/</loc>
+    <loc>http://localhost:1313/projects/dfr_dist/</loc>
     <lastmod>2023-06-16T09:56:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/likelihood.model.series.md/</loc>
+    <loc>http://localhost:1313/ghprojects/likelihood.model.series.md/</loc>
     <lastmod>2023-06-12T19:18:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/likelihood.model.series.md/</loc>
+    <loc>http://localhost:1313/projects/likelihood.model.series.md/</loc>
     <lastmod>2023-06-12T19:18:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/chatgpt-pysearch/</loc>
+    <loc>http://localhost:1313/ghprojects/chatgpt-pysearch/</loc>
     <lastmod>2023-06-11T08:03:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/chatgpt-pysearch/</loc>
+    <loc>http://localhost:1313/projects/chatgpt-pysearch/</loc>
     <lastmod>2023-06-11T08:03:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/likelihood.model/</loc>
+    <loc>http://localhost:1313/ghprojects/likelihood.model/</loc>
     <lastmod>2023-06-03T05:48:59+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/likelihood.model/</loc>
+    <loc>http://localhost:1313/projects/likelihood.model/</loc>
     <lastmod>2023-06-03T05:48:59+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/numerical.mle/</loc>
+    <loc>http://localhost:1313/ghprojects/numerical.mle/</loc>
     <lastmod>2023-05-06T22:02:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/numerical.mle/</loc>
+    <loc>http://localhost:1313/projects/numerical.mle/</loc>
     <lastmod>2023-05-06T22:02:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/locus/</loc>
+    <loc>http://localhost:1313/ghprojects/locus/</loc>
     <lastmod>2023-04-19T15:40:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/locus/</loc>
+    <loc>http://localhost:1313/projects/locus/</loc>
     <lastmod>2023-04-19T15:40:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/problem-sets/</loc>
+    <loc>http://localhost:1313/posts/problem-sets/</loc>
     <lastmod>2023-03-31T07:48:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/made-chatgpt-to-my-saved-conversations/</loc>
+    <loc>http://localhost:1313/posts/made-chatgpt-to-my-saved-conversations/</loc>
     <lastmod>2023-03-31T07:17:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/problem_sets/</loc>
+    <loc>http://localhost:1313/ghprojects/problem_sets/</loc>
     <lastmod>2023-03-30T07:33:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/problem_sets/</loc>
+    <loc>http://localhost:1313/projects/problem_sets/</loc>
     <lastmod>2023-03-30T07:33:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/data-science/</loc>
+    <loc>http://localhost:1313/categories/data-science/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/likelihood-models/</loc>
+    <loc>http://localhost:1313/categories/likelihood-models/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/research/reliability-estimation-in-series-systems-model-sel/</loc>
+    <loc>http://localhost:1313/research/reliability-estimation-in-series-systems-model-sel/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/femtograd/</loc>
+    <loc>http://localhost:1313/ghprojects/femtograd/</loc>
     <lastmod>2023-03-17T14:32:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/femtograd/</loc>
+    <loc>http://localhost:1313/projects/femtograd/</loc>
     <lastmod>2023-03-17T14:32:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/queelius.github.io/</loc>
+    <loc>http://localhost:1313/ghprojects/queelius.github.io/</loc>
     <lastmod>2022-08-28T11:12:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/queelius.github.io/</loc>
+    <loc>http://localhost:1313/projects/queelius.github.io/</loc>
     <lastmod>2022-08-28T11:12:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/algebraic.dist/</loc>
+    <loc>http://localhost:1313/ghprojects/algebraic.dist/</loc>
     <lastmod>2022-05-26T19:17:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/algebraic.dist/</loc>
+    <loc>http://localhost:1313/projects/algebraic.dist/</loc>
     <lastmod>2022-05-26T19:17:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/amdhals-law/</loc>
+    <loc>http://localhost:1313/tags/amdhals-law/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/computer-science/</loc>
+    <loc>http://localhost:1313/categories/computer-science/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/parallel-processing/</loc>
+    <loc>http://localhost:1313/categories/parallel-processing/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/parallel-programming/</loc>
+    <loc>http://localhost:1313/tags/parallel-programming/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/2022-05-13-acs/</loc>
+    <loc>http://localhost:1313/posts/2022-05-13-acs/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/md.tools/</loc>
+    <loc>http://localhost:1313/ghprojects/md.tools/</loc>
     <lastmod>2022-01-29T20:41:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/md.tools/</loc>
+    <loc>http://localhost:1313/projects/md.tools/</loc>
     <lastmod>2022-01-29T20:41:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/algebraic.mle/</loc>
+    <loc>http://localhost:1313/ghprojects/algebraic.mle/</loc>
     <lastmod>2022-01-27T09:12:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/algebraic.mle/</loc>
+    <loc>http://localhost:1313/projects/algebraic.mle/</loc>
     <lastmod>2022-01-27T09:12:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/md-series-systems-relaxed-candidate-set-models/</loc>
+    <loc>http://localhost:1313/ghprojects/md-series-systems-relaxed-candidate-set-models/</loc>
     <lastmod>2021-12-06T09:36:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/md-series-systems-relaxed-candidate-set-models/</loc>
+    <loc>http://localhost:1313/projects/md-series-systems-relaxed-candidate-set-models/</loc>
     <lastmod>2021-12-06T09:36:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/computation/</loc>
+    <loc>http://localhost:1313/tags/computation/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/stat575-problem-set-2/</loc>
+    <loc>http://localhost:1313/probsets/stat575/stat575-problem-set-2/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/computer-science/</loc>
+    <loc>http://localhost:1313/tags/computer-science/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/data-mining/</loc>
+    <loc>http://localhost:1313/tags/data-mining/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/em-algorithm/</loc>
+    <loc>http://localhost:1313/tags/em-algorithm/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/em-algorithm/</loc>
+    <loc>http://localhost:1313/categories/em-algorithm/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/monte-carlo-simulation/</loc>
+    <loc>http://localhost:1313/tags/monte-carlo-simulation/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/multiprocessor-synchronization/</loc>
+    <loc>http://localhost:1313/tags/multiprocessor-synchronization/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/2012-03-05-tournament-lock/tournament_lock/</loc>
+    <loc>http://localhost:1313/posts/2012-03-05-tournament-lock/tournament_lock/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/mutex/</loc>
+    <loc>http://localhost:1313/tags/mutex/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/categories/r/</loc>
+    <loc>http://localhost:1313/categories/r/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/posts/2012-02-04-sax/cs584_sax_review/</loc>
+    <loc>http://localhost:1313/posts/2012-02-04-sax/cs584_sax_review/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/problem_set_4/</loc>
+    <loc>http://localhost:1313/probsets/stat575/problem_set_4/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/statistical-inference/</loc>
+    <loc>http://localhost:1313/tags/statistical-inference/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/symbolic/</loc>
+    <loc>http://localhost:1313/tags/symbolic/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/time-series/</loc>
+    <loc>http://localhost:1313/tags/time-series/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/rstatlab/</loc>
+    <loc>http://localhost:1313/ghprojects/rstatlab/</loc>
     <lastmod>2021-08-30T23:25:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/rstatlab/</loc>
+    <loc>http://localhost:1313/projects/rstatlab/</loc>
     <lastmod>2021-08-30T23:25:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/computational-statistics/</loc>
+    <loc>http://localhost:1313/tags/computational-statistics/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/course/</loc>
+    <loc>http://localhost:1313/tags/course/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/coursework/</loc>
+    <loc>http://localhost:1313/tags/coursework/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/data-science/</loc>
+    <loc>http://localhost:1313/tags/data-science/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/inference/</loc>
+    <loc>http://localhost:1313/tags/inference/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/numerical-methods/</loc>
+    <loc>http://localhost:1313/tags/numerical-methods/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/</loc>
+    <loc>http://localhost:1313/probsets/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat482/problem_set_8/</loc>
+    <loc>http://localhost:1313/probsets/stat482/problem_set_8/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/regression-analysis/</loc>
+    <loc>http://localhost:1313/tags/regression-analysis/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/simulation/</loc>
+    <loc>http://localhost:1313/tags/simulation/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat482/</loc>
+    <loc>http://localhost:1313/probsets/stat482/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/</loc>
+    <loc>http://localhost:1313/probsets/stat575/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/statistical-computing/</loc>
+    <loc>http://localhost:1313/tags/statistical-computing/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/prob.4.2.comp.stats/</loc>
+    <loc>http://localhost:1313/ghprojects/prob.4.2.comp.stats/</loc>
     <lastmod>2021-07-25T08:49:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/prob.4.2.comp.stats/</loc>
+    <loc>http://localhost:1313/projects/prob.4.2.comp.stats/</loc>
     <lastmod>2021-07-25T08:49:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/stat575-exam1/</loc>
+    <loc>http://localhost:1313/probsets/stat575/stat575-exam1/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/stat575-exam2/</loc>
+    <loc>http://localhost:1313/probsets/stat575/stat575-exam2/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/problem_set_3/</loc>
+    <loc>http://localhost:1313/probsets/stat575/problem_set_3/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/probsets/stat575/problem_set_1/</loc>
+    <loc>http://localhost:1313/probsets/stat575/problem_set_1/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/known_plaintext_attack_time_series_analysis/</loc>
+    <loc>http://localhost:1313/ghprojects/known_plaintext_attack_time_series_analysis/</loc>
     <lastmod>2021-04-30T03:43:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/known_plaintext_attack_time_series_analysis/</loc>
+    <loc>http://localhost:1313/projects/known_plaintext_attack_time_series_analysis/</loc>
     <lastmod>2021-04-30T03:43:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/queelius/</loc>
+    <loc>http://localhost:1313/ghprojects/queelius/</loc>
     <lastmod>2021-02-14T21:17:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/queelius/</loc>
+    <loc>http://localhost:1313/projects/queelius/</loc>
     <lastmod>2021-02-14T21:17:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/homomorphic_computational_extensions/</loc>
+    <loc>http://localhost:1313/ghprojects/homomorphic_computational_extensions/</loc>
     <lastmod>2020-12-18T00:13:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/homomorphic_computational_extensions/</loc>
+    <loc>http://localhost:1313/projects/homomorphic_computational_extensions/</loc>
     <lastmod>2020-12-18T00:13:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/algebraic_cipher_types/</loc>
+    <loc>http://localhost:1313/ghprojects/algebraic_cipher_types/</loc>
     <lastmod>2019-12-21T17:56:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/algebraic_cipher_types/</loc>
+    <loc>http://localhost:1313/projects/algebraic_cipher_types/</loc>
     <lastmod>2019-12-21T17:56:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/encrypted_search_probabilistic_estimator_conf/</loc>
+    <loc>http://localhost:1313/ghprojects/encrypted_search_probabilistic_estimator_conf/</loc>
     <lastmod>2019-01-15T18:39:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/encrypted_search_probabilistic_estimator_conf/</loc>
+    <loc>http://localhost:1313/projects/encrypted_search_probabilistic_estimator_conf/</loc>
     <lastmod>2019-01-15T18:39:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/cipher_maps/</loc>
+    <loc>http://localhost:1313/ghprojects/cipher_maps/</loc>
     <lastmod>2019-01-14T16:34:53+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/cipher_maps/</loc>
+    <loc>http://localhost:1313/projects/cipher_maps/</loc>
     <lastmod>2019-01-14T16:34:53+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/rd_ph_filter/</loc>
+    <loc>http://localhost:1313/ghprojects/rd_ph_filter/</loc>
     <lastmod>2019-01-14T12:52:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/rd_ph_filter/</loc>
+    <loc>http://localhost:1313/projects/rd_ph_filter/</loc>
     <lastmod>2019-01-14T12:52:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/cipher_trapdoor_sets/</loc>
+    <loc>http://localhost:1313/ghprojects/cipher_trapdoor_sets/</loc>
     <lastmod>2019-01-14T12:49:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/cipher_trapdoor_sets/</loc>
+    <loc>http://localhost:1313/projects/cipher_trapdoor_sets/</loc>
     <lastmod>2019-01-14T12:49:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/ghprojects/bernoulli_data_type/</loc>
+    <loc>http://localhost:1313/ghprojects/bernoulli_data_type/</loc>
     <lastmod>2019-01-14T09:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/projects/bernoulli_data_type/</loc>
+    <loc>http://localhost:1313/projects/bernoulli_data_type/</loc>
     <lastmod>2019-01-14T09:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/confidentiality/</loc>
+    <loc>http://localhost:1313/tags/confidentiality/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/encrypted-search/</loc>
+    <loc>http://localhost:1313/tags/encrypted-search/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/publications/mab/</loc>
+    <loc>http://localhost:1313/publications/mab/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/frequency-attack/</loc>
+    <loc>http://localhost:1313/tags/frequency-attack/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/moving-average/</loc>
+    <loc>http://localhost:1313/tags/moving-average/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/security/</loc>
+    <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/publications/cs-thesis/</loc>
+    <loc>http://localhost:1313/publications/cs-thesis/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/secure-index/</loc>
+    <loc>http://localhost:1313/tags/secure-index/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/tags/thesis/</loc>
+    <loc>http://localhost:1313/tags/thesis/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/essays/</loc>
+    <loc>http://localhost:1313/essays/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://192.168.0.225:38061/social/</loc>
+    <loc>http://localhost:1313/social/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

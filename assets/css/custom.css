@@ -1,4 +1,3 @@
-
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -6,12 +5,66 @@
     margin: 1rem 0;
   }
   
-  .social-icon {
-    font-size: 1.5rem;
-    color: #333;
-    transition: color 0.2s;
-  }
+.social-icon {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s;
+}
   
-  .social-icon:hover {
-    color: #666;
-  }
+.social-icon:hover {
+  color: #666;
+}
+
+.social-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.social-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social-category {
+  margin-bottom: 3rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(1,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+}
+
+.social-card-inner {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-card h3 {
+  margin: 1rem 0;
+  color: #333;
+}
+
+.social-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multiprocessor Synchronization on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/multiprocessor-synchronization/</link>
+    <link>http://localhost:1313/tags/multiprocessor-synchronization/</link>
     <description>Recent content in Multiprocessor Synchronization on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Oct 2021 08:18:32 -0500</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/multiprocessor-synchronization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/multiprocessor-synchronization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiprocessor synchronization: tournament-Peterson lock</title>
-      <link>http://192.168.0.225:38061/posts/2012-03-05-tournament-lock/tournament_lock/</link>
+      <link>http://localhost:1313/posts/2012-03-05-tournament-lock/tournament_lock/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/posts/2012-03-05-tournament-lock/tournament_lock/</guid>
+      <guid>http://localhost:1313/posts/2012-03-05-tournament-lock/tournament_lock/</guid>
       <description>&lt;p&gt;Multiprocessor synchronization is a notoriously tricky subject matter.&#xA;Unlike with a single thread of execution, in a shared-resource system, where&#xA;resources are shared among multiple independent processors, we must think very&#xA;hard about how the critical sections where such shared resources are accessed.&lt;/p&gt;&#xA;&lt;p&gt;Definition: Peterson&amp;rsquo;s algorithm is a concurrent programming algorithm for mutual&#xA;exclusion that allows two or more processes to share a single-use resource without&#xA;conflict, using only shared memory for communication.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>STAT 482 - Regression Analysis - SIUe - Fall 2022 on metafunctor</title>
-    <link>http://192.168.0.225:38061/probsets/stat482/</link>
+    <link>http://localhost:1313/probsets/stat482/</link>
     <description>Recent content in STAT 482 - Regression Analysis - SIUe - Fall 2022 on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/probsets/stat482/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/probsets/stat482/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regression Analysis - SIUe - STAT 482 - Probem Set 8</title>
-      <link>http://192.168.0.225:38061/probsets/stat482/problem_set_8/</link>
+      <link>http://localhost:1313/probsets/stat482/problem_set_8/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/probsets/stat482/problem_set_8/</guid>
+      <guid>http://localhost:1313/probsets/stat482/problem_set_8/</guid>
       <description>This problem set covers multicollinearity in regression analysis and the marginal and partial effects of predictor variables, among other topics.</description>
     </item>
   </channel>

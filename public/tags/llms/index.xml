@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLMs on metafunctor</title>
-    <link>http://192.168.0.225:38061/tags/llms/</link>
+    <link>http://localhost:1313/tags/llms/</link>
     <description>Recent content in LLMs on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/llms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advancing Mathematical Reasoning in AI: Introducing Reverse-Process Synthetic Data Generation</title>
-      <link>http://192.168.0.225:38061/posts/rpsdg/</link>
+      <link>http://localhost:1313/posts/rpsdg/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/posts/rpsdg/</guid>
+      <guid>http://localhost:1313/posts/rpsdg/</guid>
       <description>&lt;p&gt;Check out the (early) project and source code on &lt;a href=&#34;https://github.com/queelius/RPSDG&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract:&lt;/h2&gt;&#xA;&lt;p&gt;This paper introduces a methodology for generating high-quality, diverse training data for Language Models (LMs) in complex problem-solving domains. Our approach, termed &amp;ldquo;Reverse-Process Synthetic Data Generation&amp;rdquo; (RPSDG), inverts traditionally difficult problems to create an abundance of training examples with known solutions,&#xA;e.g., symbolically taking the deriative of a function, $f \mapsto f&amp;rsquo;$, versus solving antiderivatives of $f&amp;rsquo;$. By automating the generation of problems of graduating difficulty, we create datasets that enable process-supervised training of LLMs. We demonstrate the efficacy of this method for training mathematical reasoning. Our results show significant improvements in LLMs&amp;rsquo; problem-solving capabilities, particularly in areas requiring multi-step reasoning and creative insights. This methodology not only enhances model performance but also provides a framework for generating explainable AI solutions, as the step-by-step problem-solving process is inherent in the training data.&lt;/p&gt;</description>
     </item>
   </channel>

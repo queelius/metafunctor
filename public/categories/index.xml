@@ -2,227 +2,227 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on metafunctor</title>
-    <link>http://192.168.0.225:38061/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.0.225:38061/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artificial Intelligence</title>
-      <link>http://192.168.0.225:38061/categories/artificial-intelligence/</link>
+      <link>http://localhost:1313/categories/artificial-intelligence/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/artificial-intelligence/</guid>
+      <guid>http://localhost:1313/categories/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>http://192.168.0.225:38061/categories/machine-learning/</link>
+      <link>http://localhost:1313/categories/machine-learning/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/machine-learning/</guid>
+      <guid>http://localhost:1313/categories/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>http://192.168.0.225:38061/categories/mathematics/</link>
+      <link>http://localhost:1313/categories/mathematics/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/mathematics/</guid>
+      <guid>http://localhost:1313/categories/mathematics/</guid>
       <description></description>
     </item>
     <item>
       <title>Inference</title>
-      <link>http://192.168.0.225:38061/categories/inference/</link>
+      <link>http://localhost:1313/categories/inference/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/inference/</guid>
+      <guid>http://localhost:1313/categories/inference/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistics</title>
-      <link>http://192.168.0.225:38061/categories/statistics/</link>
+      <link>http://localhost:1313/categories/statistics/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/statistics/</guid>
+      <guid>http://localhost:1313/categories/statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Stenography</title>
-      <link>http://192.168.0.225:38061/categories/stenography/</link>
+      <link>http://localhost:1313/categories/stenography/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/stenography/</guid>
+      <guid>http://localhost:1313/categories/stenography/</guid>
       <description></description>
     </item>
     <item>
       <title>Bootstrap</title>
-      <link>http://192.168.0.225:38061/categories/bootstrap/</link>
+      <link>http://localhost:1313/categories/bootstrap/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/bootstrap/</guid>
+      <guid>http://localhost:1313/categories/bootstrap/</guid>
       <description></description>
     </item>
     <item>
       <title>Censoring</title>
-      <link>http://192.168.0.225:38061/categories/censoring/</link>
+      <link>http://localhost:1313/categories/censoring/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/censoring/</guid>
+      <guid>http://localhost:1313/categories/censoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Likelihood-Model</title>
-      <link>http://192.168.0.225:38061/categories/likelihood-model/</link>
+      <link>http://localhost:1313/categories/likelihood-model/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/likelihood-model/</guid>
+      <guid>http://localhost:1313/categories/likelihood-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Masked-Failure-Data</title>
-      <link>http://192.168.0.225:38061/categories/masked-failure-data/</link>
+      <link>http://localhost:1313/categories/masked-failure-data/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/masked-failure-data/</guid>
+      <guid>http://localhost:1313/categories/masked-failure-data/</guid>
       <description></description>
     </item>
     <item>
       <title>Mle</title>
-      <link>http://192.168.0.225:38061/categories/mle/</link>
+      <link>http://localhost:1313/categories/mle/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/mle/</guid>
+      <guid>http://localhost:1313/categories/mle/</guid>
       <description></description>
     </item>
     <item>
       <title>Reliability-Analysis</title>
-      <link>http://192.168.0.225:38061/categories/reliability-analysis/</link>
+      <link>http://localhost:1313/categories/reliability-analysis/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/reliability-analysis/</guid>
+      <guid>http://localhost:1313/categories/reliability-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Series-Systems</title>
-      <link>http://192.168.0.225:38061/categories/series-systems/</link>
+      <link>http://localhost:1313/categories/series-systems/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/series-systems/</guid>
+      <guid>http://localhost:1313/categories/series-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Weibull</title>
-      <link>http://192.168.0.225:38061/categories/weibull/</link>
+      <link>http://localhost:1313/categories/weibull/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/weibull/</guid>
+      <guid>http://localhost:1313/categories/weibull/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli Map</title>
-      <link>http://192.168.0.225:38061/categories/bernoulli-map/</link>
+      <link>http://localhost:1313/categories/bernoulli-map/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/bernoulli-map/</guid>
+      <guid>http://localhost:1313/categories/bernoulli-map/</guid>
       <description></description>
     </item>
     <item>
       <title>Entropy Map</title>
-      <link>http://192.168.0.225:38061/categories/entropy-map/</link>
+      <link>http://localhost:1313/categories/entropy-map/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/entropy-map/</guid>
+      <guid>http://localhost:1313/categories/entropy-map/</guid>
       <description></description>
     </item>
     <item>
       <title>Probabilistic Data Structure</title>
-      <link>http://192.168.0.225:38061/categories/probabilistic-data-structure/</link>
+      <link>http://localhost:1313/categories/probabilistic-data-structure/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/probabilistic-data-structure/</guid>
+      <guid>http://localhost:1313/categories/probabilistic-data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>Rate-Distortion</title>
-      <link>http://192.168.0.225:38061/categories/rate-distortion/</link>
+      <link>http://localhost:1313/categories/rate-distortion/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/rate-distortion/</guid>
+      <guid>http://localhost:1313/categories/rate-distortion/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli</title>
-      <link>http://192.168.0.225:38061/categories/bernoulli/</link>
+      <link>http://localhost:1313/categories/bernoulli/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/bernoulli/</guid>
+      <guid>http://localhost:1313/categories/bernoulli/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli Model</title>
-      <link>http://192.168.0.225:38061/categories/bernoulli-model/</link>
+      <link>http://localhost:1313/categories/bernoulli-model/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/bernoulli-model/</guid>
+      <guid>http://localhost:1313/categories/bernoulli-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Bloom-Filter</title>
-      <link>http://192.168.0.225:38061/categories/bloom-filter/</link>
+      <link>http://localhost:1313/categories/bloom-filter/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/bloom-filter/</guid>
+      <guid>http://localhost:1313/categories/bloom-filter/</guid>
       <description></description>
     </item>
     <item>
       <title>Boolean</title>
-      <link>http://192.168.0.225:38061/categories/boolean/</link>
+      <link>http://localhost:1313/categories/boolean/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/boolean/</guid>
+      <guid>http://localhost:1313/categories/boolean/</guid>
       <description></description>
     </item>
     <item>
       <title>Compression</title>
-      <link>http://192.168.0.225:38061/categories/compression/</link>
+      <link>http://localhost:1313/categories/compression/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/compression/</guid>
+      <guid>http://localhost:1313/categories/compression/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>http://192.168.0.225:38061/categories/cryptography/</link>
+      <link>http://localhost:1313/categories/cryptography/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/cryptography/</guid>
+      <guid>http://localhost:1313/categories/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>http://192.168.0.225:38061/categories/philosophy/</link>
+      <link>http://localhost:1313/categories/philosophy/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/philosophy/</guid>
+      <guid>http://localhost:1313/categories/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Science</title>
-      <link>http://192.168.0.225:38061/categories/data-science/</link>
+      <link>http://localhost:1313/categories/data-science/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/data-science/</guid>
+      <guid>http://localhost:1313/categories/data-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Likelihood-Models</title>
-      <link>http://192.168.0.225:38061/categories/likelihood-models/</link>
+      <link>http://localhost:1313/categories/likelihood-models/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/likelihood-models/</guid>
+      <guid>http://localhost:1313/categories/likelihood-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Science</title>
-      <link>http://192.168.0.225:38061/categories/computer-science/</link>
+      <link>http://localhost:1313/categories/computer-science/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/computer-science/</guid>
+      <guid>http://localhost:1313/categories/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Parallel Processing</title>
-      <link>http://192.168.0.225:38061/categories/parallel-processing/</link>
+      <link>http://localhost:1313/categories/parallel-processing/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/parallel-processing/</guid>
+      <guid>http://localhost:1313/categories/parallel-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>EM Algorithm</title>
-      <link>http://192.168.0.225:38061/categories/em-algorithm/</link>
+      <link>http://localhost:1313/categories/em-algorithm/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/em-algorithm/</guid>
+      <guid>http://localhost:1313/categories/em-algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>http://192.168.0.225:38061/categories/r/</link>
+      <link>http://localhost:1313/categories/r/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://192.168.0.225:38061/categories/r/</guid>
+      <guid>http://localhost:1313/categories/r/</guid>
       <description></description>
     </item>
   </channel>
