@@ -30,6 +30,34 @@
       <description></description>
     </item>
     <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/categories/data-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/categories/programming/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/categories/python/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Development</title>
+      <link>http://localhost:1313/categories/software-development/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/software-development/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Inference</title>
       <link>http://localhost:1313/categories/inference/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
@@ -223,6 +251,69 @@
       <link>http://localhost:1313/categories/r/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Hardware</title>
+      <link>http://localhost:1313/categories/computer-hardware/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/computer-hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Networking</title>
+      <link>http://localhost:1313/categories/computer-networking/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/computer-networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DIY</title>
+      <link>http://localhost:1313/categories/diy/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/diy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encrypted Search</title>
+      <link>http://localhost:1313/categories/encrypted-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/encrypted-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Lab</title>
+      <link>http://localhost:1313/categories/home-lab/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/home-lab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oblivious Data Type</title>
+      <link>http://localhost:1313/categories/oblivious-data-type/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/oblivious-data-type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/categories/proxmox/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rank-Ordered Search</title>
+      <link>http://localhost:1313/categories/rank-ordered-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/rank-ordered-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Set-Theoretic Search</title>
+      <link>http://localhost:1313/categories/set-theoretic-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/set-theoretic-search/</guid>
       <description></description>
     </item>
   </channel>

@@ -149,6 +149,55 @@
       <description></description>
     </item>
     <item>
+      <title>Algorithms</title>
+      <link>http://localhost:1313/tags/algorithms/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FlatTree</title>
+      <link>http://localhost:1313/tags/flattree/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flattree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tree Structures</title>
+      <link>http://localhost:1313/tags/tree-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tree-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TreeNode</title>
+      <link>http://localhost:1313/tags/treenode/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/treenode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utilities</title>
+      <link>http://localhost:1313/tags/utilities/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/utilities/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Autoregressive Models</title>
       <link>http://localhost:1313/tags/autoregressive-models/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>

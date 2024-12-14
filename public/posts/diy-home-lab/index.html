@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>DIY Home Lab | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Why a Home Lab?
+In this day and age where cloud computing seems to be the de facto standard for most
+computing needs, the question arises - why go through the hassle of building and
+maintaining a home lab?
+Home Improvement Projects
+During the Covid lockdown, my wife found a new passion for home improvement projects and restoring old furniture, transforming a spare room into a beautiful home office. Her inspiration came from Francine Jay&rsquo;s book, &ldquo;The Joy of Less,&rdquo; which explores the beauty of minimalism and self-sufficiency. It gave her a creative outlet that made our home a
+more functional and plesant space witout breaking the piggy bank.
+I have a similar attitude towards computing and, in particular, home servers.">
+    <meta name="generator" content="Hugo 0.139.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "admin">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/diy-home-lab/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/diy-home-lab/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="DIY Home Lab">
+  <meta property="og:description" content="Why a Home Lab? In this day and age where cloud computing seems to be the de facto standard for most computing needs, the question arises - why go through the hassle of building and maintaining a home lab?
+Home Improvement Projects During the Covid lockdown, my wife found a new passion for home improvement projects and restoring old furniture, transforming a spare room into a beautiful home office. Her inspiration came from Francine Jay’s book, “The Joy of Less,” which explores the beauty of minimalism and self-sufficiency. It gave her a creative outlet that made our home a more functional and plesant space witout breaking the piggy bank. I have a similar attitude towards computing and, in particular, home servers.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-06-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-06-17T00:00:00+00:00">
+
+  <meta itemprop="name" content="DIY Home Lab">
+  <meta itemprop="description" content="Why a Home Lab? In this day and age where cloud computing seems to be the de facto standard for most computing needs, the question arises - why go through the hassle of building and maintaining a home lab?
+Home Improvement Projects During the Covid lockdown, my wife found a new passion for home improvement projects and restoring old furniture, transforming a spare room into a beautiful home office. Her inspiration came from Francine Jay’s book, “The Joy of Less,” which explores the beauty of minimalism and self-sufficiency. It gave her a creative outlet that made our home a more functional and plesant space witout breaking the piggy bank. I have a similar attitude towards computing and, in particular, home servers.">
+  <meta itemprop="datePublished" content="2021-06-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-06-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3631">
+  <meta itemprop="keywords" content="DIY,Computer-Hardware,Computer-Networking,Proxmox,Home-Lab">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DIY Home Lab">
+  <meta name="twitter:description" content="Why a Home Lab? In this day and age where cloud computing seems to be the de facto standard for most computing needs, the question arises - why go through the hassle of building and maintaining a home lab?
+Home Improvement Projects During the Covid lockdown, my wife found a new passion for home improvement projects and restoring old furniture, transforming a spare room into a beautiful home office. Her inspiration came from Francine Jay’s book, “The Joy of Less,” which explores the beauty of minimalism and self-sufficiency. It gave her a creative outlet that made our home a more functional and plesant space witout breaking the piggy bank. I have a similar attitude towards computing and, in particular, home servers.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        News
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">DIY Home Lab</h1>
+      
+      <p class="tracked">
+        By <strong>admin</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-06-17T00:00:00Z">June 17, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="why-a-home-lab">Why a Home Lab?</h2>
+<p>In this day and age where cloud computing seems to be the de facto standard for most
+computing needs, the question arises - why go through the hassle of building and
+maintaining a home lab?</p>
+<h3 id="home-improvement-projects">Home Improvement Projects</h3>
+<p>During the Covid lockdown, my wife found a new passion for home improvement projects and restoring old furniture, transforming a spare room into a beautiful home office. Her inspiration came from Francine Jay&rsquo;s book, &ldquo;The Joy of Less,&rdquo; which explores the beauty of minimalism and self-sufficiency. It gave her a creative outlet that made our home a
+more functional and plesant space witout breaking the piggy bank.
+I have a similar attitude towards computing and, in particular, home servers.</p>
+<h3 id="the-allure-of-cloud-computing">The Allure of Cloud Computing</h3>
+<p>Cloud computing seems to have become the solution to all computing needs. With services at
+your fingertips, and the ability to scale up or down as required, it’s easy to see
+why cloud computing is attractive. The cloud promises high availability, scalability,
+and the convenience of having your systems managed by professionals.</p>
+<h3 id="the-need-for-physical-servers">The Need for Physical Servers</h3>
+<p>While the convenience and capabilities of cloud computing can&rsquo;t be overlooked, it&rsquo;s
+important to remember that at the base level of reality, the cloud is made up of
+physical servers that are located somewhere in data centers across the world, running
+the applications and storing the data that we access on the cloud.</p>
+<p>This raises questions about data sovereignty, among other things, but strictly from
+an economic point of view, maintaining your own physical server is not as expensive
+as it may seem, especially if you know about, or have a desire to learn, computer
+hardware and the software that runs on it.</p>
+<h3 id="the-appeal-of-tinkering">The Appeal of Tinkering</h3>
+<p>Building and maintaining a home lab is not just about
+function. There&rsquo;s a satisfaction in rolling up our sleeves and building something with our own hands. Whether it&rsquo;s home improvement or tinkering with computers, the joy of DIY lies in the process as much as the product. A home lab gives us a playground where we
+can experiment, learn, and grow our skills.</p>
+<p>In the following sections, I will describe how I built a home lab server from
+spare parts. Whether you&rsquo;re a seasoned techie looking to delve
+deeper into the world of server configuration, or a novice just starting out, I hope
+my story will provide some insights and inspiration.</p>
+<h2 id="building-the-home-lab-a-collection-of-spare-parts">Building the Home Lab: A Collection of Spare Parts</h2>
+<p>There&rsquo;s a certain magic in giving old, forgotten hardware a new purpose, and my DIY home lab project was a testament to this. From salvaging spare parts to repurposing water-damaged components, the process was a fascinating adventure in its own right. Let&rsquo;s walk through how I went about it.</p>
+<h3 id="the-core-system">The Core System</h3>
+<p>At the heart of my home lab was a simple setup. The machine I used was assembled from spare parts, featuring a 4-core AMD 2.8 GHz processor and 16GB of memory.</p>
+<p>My old tower case was brought back to life to house these components, along with a PCI card that was added for extra SATA ports. The system was fairly modest but still packed enough punch for a home lab. This setup served as a reminder that you don&rsquo;t need the latest and most powerful hardware to create a functional server.</p>
+<h3 id="the-disk-setup">The Disk Setup</h3>
+<p>When it came to storage, I used what I had on hand. Every disk drive I found was installed into the server, provided it was not needed elsewhere. The collection was a mixed bag of different brands and sizes, all thrown together in a haphazard fashion. However, each disk found its place and function in the server, offering a practical use of resources.</p>
+<p>I had assembled quite a few disks, but I actually wanted proxmox, with its support of zfs, to manage them for me so that I could also spin up other VMs or containers and provision
+storage to them all directly within proxmox (without the need for a file server).</p>
+<p>So, I did most of my configuration on the Proxmox server. Here is what I did.</p>
+<h4 id="proxmox-zfs-configuration">Proxmox ZFS configuration</h4>
+<p>Proxmox has a nice web GUI, but most of its more advanced options are inaccessible
+through that interface. Also, if you&rsquo;re already familiar with the powerful
+command line interface, there is no need to try to learn their GUI interface to do
+the job, particularly since it will not be as powerful or as flexible as the command
+line.</p>
+<p>To create a ZFS pool, you can use the zpool command from the command line in Linux. Here is a basic example of creating a single-disk ZFS pool named store:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo zpool create store /dev/sdb
+</span></span></code></pre></div><p>In this command:</p>
+<p><code>sudo</code> is used to execute the command with root privileges, as changing the system&rsquo;s
+storage configuration generally requires this. <code>zpool create</code> is the command to create a
+new ZFS pool. <code>store</code> is the name of the new pool you are creating.
+<code>/dev/sdb</code> is the disk that you&rsquo;re using to create the pool. This should be replaced with
+the path to the disk or partition you want to use. You can use <code>lsblk</code> or <code>fdisk -l</code> to list
+the disks in your system.</p>
+<blockquote>
+<p>WARNING: This command will erase all data on <code>/dev/sdb</code>. Make sure to backup any important
+data before running this command.</p>
+</blockquote>
+<p>After running this command, the ZFS pool named <code>store</code> should be created and available for use.
+You can verify this by using the <code>zpool status</code> command, which will display the status of all
+ZFS pools on the system:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo zpool status
+</span></span></code></pre></div><p>So, I start with a zfspool I have called <code>store</code>. Here is my current configuration in &hellip;</p>
+<p>zfspool: store
+pool store
+content images,rootdir
+mountpoint /store
+nodes middleearth</p>
+<p>Adding more disks to a ZFS pool in Proxmox (or in any environment, really) can be done from the command line. Here&rsquo;s a general step-by-step guide:</p>
+<p>Identify the new disk: First, you need to identify the disk you want to add. You can do this with the lsblk or fdisk -l command, which lists all the block devices (disks) in your system.</p>
+<p>Add the disk to the pool: You can add a new disk to the pool with the zpool add command. For example, if your new disk is /dev/sdb, you can add it to the pool store like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo zpool add store /dev/sdb
+</span></span></code></pre></div><p>This command will add the disk <code>/dev/sdb</code> to the pool named <code>store</code>.</p>
+<p>Check the status of the pool: After adding the disk, you can check the status of the pool with
+<code>zpool status store</code> command. This will show you the current configuration of the pool, including
+the new disk you just added.</p>
+<blockquote>
+<p>Keep in mind that once a disk is added to a ZFS pool, it can&rsquo;t be easily removed. Be sure that
+you want to add the disk before doing so.</p>
+</blockquote>
+<p>Adding a disk like this will create a new vdev in the pool, and the data will be
+striped across the vdevs (the original disks and the new disk). This will increase storage capacity,
+but it won&rsquo;t increase redundancy. If any of the disks fails, data could be lost.</p>
+<p>If you want redundancy, one option is to use mirrors. For example, to create a mirrored pool with two disks, you could use this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo zpool create backup mirror /dev/sdb /dev/sdc
+</span></span></code></pre></div><p>This command would create a pool named <code>backup</code> that contains a mirror using <code>/dev/sdb</code> and <code>/dev/sdc</code>. This pool would have redundancy, so if one disk fails, the data would still be available.</p>
+<p>TODO: See my backup for how I do backups. It&rsquo;s certainly not a sensible approach! But, at least I do some backing up&hellip;right?</p>
+<p>In your LXC (assuming Linux container, but same principle for VMs) configuration file, say container <code>100</code>,
+which normally has the associated configuration file <code>/etc/pve/lxc/100.conf</code>, to use this <code>shared</code> zfs pool,
+add the following line:</p>
+<pre tabindex="0"><code>mp0: /store,mp=/shared
+</code></pre><p>Now you can use this as a block device.</p>
+<p>If you want to share it on Sambda, modify your Samba configuration. On my system, that is
+located at <code>/etc/sambda/smb.conf</code>. Here is what I added to it:</p>
+<pre tabindex="0"><code>[shared]
+    comment = Shared Local
+    path = /shared
+    guest ok = yes
+    browseable = yes
+    read only = no
+</code></pre><p>Tweaking the configuration is a never-ending rabbit hole. I try to keep mine as simple as possible, because
+it&rsquo;s just for me and my family. As long as I can prevent my nephew from <code>rm -rf /</code> we&rsquo;re good. Even if he does manage to do it, I hopefully have backups, and I&rsquo;d want to encourage him to pursue his newfound technical interest in computers.</p>
+<h3 id="repurposing-water-damaged-parts">Repurposing Water-Damaged Parts</h3>
+<p>Perhaps one of the most interesting aspects of this project was the opportunity to breathe life back into parts that seemed beyond repair. Notably, a water-damaged SSD and a memory stick were miraculously brought back to life after careful drying and treatment.</p>
+<p>As I pieced together these components, it became clear that building a home lab is less about having the perfect hardware and more about making the best use of what you have.</p>
+<h2 id="setting-up-the-proxmox-hypervisor">Setting up the Proxmox Hypervisor</h2>
+<p>With the hardware up and running, the next step was to install the hypervisor — the
+software layer that enables the creation and management of virtual machines and
+containers on the server. For this purpose, I chose Proxmox, a powerful, open-source
+virtualization platform.</p>
+<p>Proxmox is relatively easy to install and use, and its comprehensive web interface
+makes it an excellent choice for those starting their journey in virtualization.
+Furthermore, it supports both full virtualization for creating standalone virtual
+machines (VMs) and container-based virtualization, which offers a more lightweight,
+efficient option for running multiple instances on a single host.</p>
+<p>After downloading the Proxmox ISO image, I burned it onto a USB stick. The
+installation process was straightforward, guided by on-screen prompts. Once
+installed, I was able to access the Proxmox web interface through my local network,
+which provides a handy, graphical way to manage the server and its VMs and containers.</p>
+<p>The primary goal was to leverage the server&rsquo;s resources to run a variety of services,
+experimenting with different configurations and applications. In essence, the home
+lab became a sandbox for trying out new ideas, breaking things, and learning from
+those experiences.</p>
+<p>Next, we&rsquo;ll take a look at some of the services I deployed on the home lab,
+highlighting how the system accommodated each one and facilitated a multifunctional,
+experimental environment.</p>
+<h2 id="deploying-services-on-the-home-lab">Deploying Services on the Home Lab</h2>
+<p>One of the key reasons for setting up a home lab is the ability to run a variety of
+services, from file servers to VPN servers, depending on your needs and interests. In
+my case, the server was a playground where I could spin up services as and when
+required, all while learning about their inner workings. Here are some of the key
+services I deployed.</p>
+<h3 id="file-and-backup-server">File and Backup Server</h3>
+<p>I used the server to run a simple file server. It was essentially a pared-down Linux
+distribution running in a container for Samba, a protocol for sharing files over a
+network. I also had a few scripts and cron jobs to automatically sync a folder with
+my Google Drive and manage files, all configured over an SSH terminal. This setup
+made it easy to share and backup files across devices in my home network.</p>
+<p>This is a very down-and-dirty way of doing things. I eventually want to transition
+to a proper NAS, like TrueNAS, but this was a good way to get started and learn
+about the basics. Being proficient with a Linxu terminal is a valuable skill, and
+I&rsquo;m glad I got to practice it here.</p>
+<p>TODO: mention that I&rsquo;m using <code>rcloud</code>, encrypted mode, as a sub-folder in my Google
+drive. All contents on this sub-folder (directory) are encrypted so that I don&rsquo;t
+need to trust Google drive with my data.</p>
+<h3 id="pi-hole">Pi-hole</h3>
+<p>I also set up Pi-hole, a network-wide ad blocker. As a DNS sinkhole,
+Pi-hole prevents unwanted advertisements from loading on my network, which ostensibly
+makes browsing smoother and more pleasant across all devices. However, I&rsquo;m not sure
+it makes any difference. It&rsquo;s a relatively small service, though, and it does do
+other things, like cache DNS requests, so it probably doesn&rsquo;t hurt to keep it
+running, but I&rsquo;ll revisit this decision if I ever need to free up resources.</p>
+<h3 id="web-and-vpn-server">Web and VPN Server</h3>
+<p>In addition to the file and media servers, I utilized the home lab to run a Nginx web
+server, primarily used as a reverse proxy to expose other virtual machines and
+containers. This setup gave me the flexibility to access different services securely
+over the internet.</p>
+<p>The home lab also hosted a VPN server, providing an added layer of security when
+accessing my network remotely. A VPN, or Virtual Private Network, encrypts and routes
+internet traffic through the server, ensuring private, secure browsing.</p>
+<h3 id="on-demand-virtual-machines">On-demand Virtual Machines</h3>
+<p>The home lab also facilitated the creation of on-demand VMs for various purposes.
+For instance, I had a Docker server to run my Docker containers, a Windows XP VM for
+older software compatibility, and a Tails VM for secure, anonymous browsing.</p>
+<p>One particularly useful VM was an RStudio Server with LaTeX, which I used for writing
+blog posts, research papers, and data analysis from anywhere (it&rsquo;s hosted on the
+web). Each of these virtual machines was easily managed through the Proxmox interface,
+and I could spin them up or down as required.</p>
+<h3 id="guacamole">Guacamole</h3>
+<p>I use Guacomole to expose any VM I want to access remotely. It&rsquo;s a web-based
+remote desktop gateway that allows you to access machines on your private LAN from
+anywhere, including virtual machines (VM) and containers. It&rsquo;s a very powerful tool,
+and I use it all the time. I have a container running Guacamole, and I can securely
+expose any VM or container I want to access remotely. It&rsquo;s very convenient, and I
+use it all the time, say, to do some work on my RStudio server from a remote location.
+I also use it to access my Windows XP VM, which I use for older software compatibility.</p>
+<p>The strength of a home lab lies in this flexibility and the opportunities it provides
+for hands-on learning and experimentation. However, as we will see in the next
+section, there were also limitations and challenges that came with this setup.</p>
+<h2 id="the-drawbacks-and-challenges">The Drawbacks and Challenges</h2>
+<p>While setting up and running a home lab can be an enriching experience, it&rsquo;s not without its challenges. As with any DIY project, there were certain drawbacks and obstacles that I encountered along the way. Here are a few key ones.</p>
+<h3 id="disk-performance-and-design">Disk Performance and Design</h3>
+<p>One major issue was the performance and design of the disk setup. As I mentioned earlier, I installed disk drives into the server as I found them. This approach, while resourceful, wasn&rsquo;t the most efficient. Each disk was individually mounted, which meant there was no automatic redundancy, and the system lacked a comprehensive method to manage disk space efficiently.</p>
+<p>As a result, the file server performance was slower than desired. And when disk space ran out on one drive, new files had to be manually copied to a specific mount point, which was not ideal.</p>
+<h3 id="dependability-concerns">Dependability Concerns</h3>
+<p>Another challenge was the overall dependability of the server. When the pandemic hit and my family and I started working from home, the demand for stable and uninterrupted connectivity increased dramatically.</p>
+<p>During this period, I was running a virtualized pfSense, a powerful open-source firewall and routing solution, on the home lab. While it worked well in general, I wasn&rsquo;t confident enough to rely on my DIY server for such a critical task, especially given the stakes. So, I chose to move away from hosting this crucial service on the home lab.</p>
+<h3 id="limitations-in-computational-power">Limitations in Computational Power</h3>
+<p>While the server was generally underutilized, with CPU utilization rarely above 50%, there were limitations in terms of computational power for certain tasks. For example, when it came to running machine learning models or certain resource-intensive applications, the system&rsquo;s modest specs showed their limitations.</p>
+<p>In the end, these challenges served as learning opportunities, helping me understand the trade-offs involved in managing a home server and inspiring new directions for my tinkering — as we&rsquo;ll discuss in the next section.</p>
+<h2 id="dabbling-in-machine-learning-llm-inference">Dabbling in Machine Learning: LLM Inference</h2>
+<p>One of the exciting opportunities a home lab presents is the potential to experiment with cutting-edge technologies like machine learning. Although my server had limitations, I found ways to explore this fascinating field within my resources.</p>
+<p>One project that captured my interest was LLM inference using a quantized model. This approach allowed me to run machine learning models, albeit slowly, on even my modestly equipped server.</p>
+<h3 id="working-with-llm">Working with LLM</h3>
+<p>For this task, I used Llama, an LLM model that is suitable for low-powered CPUs due to its use of 4-bit quantization. This kind of model allows machine learning tasks to be run on less capable hardware by reducing the precision of the calculations involved.</p>
+<p>The model, in its unfiltered form, worked reasonably well given the constraints of my hardware. While the results weren&rsquo;t going to set any speed records, it was still a valuable experiment that demonstrated the potential of my home lab.</p>
+<h3 id="future-plans">Future Plans</h3>
+<p>This dabbling in machine learning has opened up new possibilities for my home lab. For instance, I&rsquo;ve been considering purchasing a used, budget-friendly GPU to expand my server&rsquo;s capabilities. This would allow me to train more classical machine learning tasks and incorporate these into the LLM model.</p>
+<p>In essence, the LLM can use the GPU-trained models as a tool, creating a more integrated, powerful system despite the hardware limitations.</p>
+<p>By stepping into the realm of machine learning, my home lab has transcended from a mere server setup to a mini research lab, underscoring the power and potential of DIY tinkering. As we&rsquo;ll see in the next section, this journey has been an invaluable learning experience.</p>
+<h2 id="simulation-runner">Simulation Runner</h2>
+<p>Recently, I&rsquo;ve acquired the need to run long-running simulations for a paper I&rsquo;ve been writing.
+It uses bootstrapping and is a simulation study, which sometimes takes days to run on my
+limited hardware.</p>
+<p>I&rsquo;ve been using a combination of R and Python to run these simulations. The way I do it right now:</p>
+<ol>
+<li>Start the container hosting the R/Python environment from Proxmox UI.</li>
+<li>SSH into the container.</li>
+<li>Clone the relevant GitHub repo.</li>
+<li>In the clone, make a special directory for
+the simulation run (to avoid interferring with other simulation runs on other machines), and
+do any customizations needed for that particular simulation.</li>
+<li>Start the simulation run, e.g., <code>Rscript bca-theta-vary.R</code>, which has R code for doing a particular type of simulation study. These simulation runs produce CSV files.</li>
+<li>Once the simulation run is complete, or sometimes during its run (in case of long-running simulations), I push the updates back to GitHub. Usually, the updates are isolated to the directory I made particularly for this simulation run.</li>
+<li>On my main analysis machine, I pull from GitHub to receive the updates.</li>
+<li>Perform the analysis.</li>
+</ol>
+<p>This is a reasonable setup, and it gives me the freedom to do whatever I need to do.
+However, I&rsquo;ve been thinking about automating this by making a simple web UI app where I upload the script (R, python), and it will place this as a task in a queue, to be run whenever it can.
+A simple interface to change the queue priority, and to see the status of the queue, would also be done, but nothing too heavy handed. Simplicity is key.</p>
+<p>When a simulation is being ran, various automatic statistics will be collected. I may even provide a simple API for communicating between the script and the web UI, e.g., a log file that the script can write to, and the web UI can read from.</p>
+<p>Intermediate resuls should be available immediately. The web ui will provide an interface to the directory that is put the script it, and the CSV file is in. There are a lot of ways to handle things like progress bars in the web ui, but again, that will require some API agreement between the scripts and the web app.</p>
+<h2 id="conclusion-the-home-lab-experience">Conclusion: The Home Lab Experience</h2>
+<p>Building and running a home lab was more than just a tinkering project. It was an adventure filled with learning, innovation, and an incredible sense of achievement. From assembling a server out of spare parts, setting up a hypervisor, running a variety of services, to dabbling with machine learning - every step was an exploration into the fascinating world of computing.</p>
+<p>Sure, there were challenges and limitations, from an imperfect disk setup to occasional worries about server dependability. But these obstacles were part and parcel of the journey. They presented opportunities to problem-solve, adapt, and learn from my mistakes.</p>
+<p>One of the biggest takeaways from this project was that you can do a lot with old hardware. Some parts of my server were even recovered from water damage, highlighting that much of what might seem like electronic waste can still be quite serviceable and useful.</p>
+<p>Moreover, the home lab opened up new avenues of learning, including the possibility of running machine learning tasks, even on dated hardware. This is a testament to the vast possibilities that DIY projects can offer, even with seemingly limited resources.</p>
+<p>Finally, the experience cemented my belief that there&rsquo;s immense value in creating something yourself. Building a home lab server isn&rsquo;t just about the final product. It&rsquo;s about the process, the learnings, the trials and errors, and the satisfaction of bringing an idea to life.</p>
+<p>In conclusion, whether you&rsquo;re a seasoned techie or just a curious tinkerer, setting up a home lab can be an enriching journey of exploration and learning. It&rsquo;s not just about achieving practical, utilitarian ends but also about indulging in the joy of creating, experimenting, and learning.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  metafunctor 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
