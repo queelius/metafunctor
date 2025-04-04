@@ -1,10 +1,14 @@
-baseURL = 'https://metafunctor.com/'
+# baseURL = 'https://metafunctor.com/'
+
+baseURL = 'https://queelius.github.io/metafunctor/'
+publishDir = 'docs'
+
 languageCode = 'en-us'
 title = 'metafunctor'
 theme = 'ananke'
 
-SectionPagesMenu = "main"
-googleAnalytics = ""
+SectionPagesMenu = 'main'
+googleAnalytics = ''
 enableRobotsTXT = true
 
 [markup]

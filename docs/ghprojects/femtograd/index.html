@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>femtograd | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Like micrograd, but worse.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/ghprojects/femtograd/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/ghprojects/femtograd/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="femtograd">
+  <meta property="og:description" content="Like micrograd, but worse.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ghprojects">
+    <meta property="article:published_time" content="2023-03-17T14:32:36+00:00">
+    <meta property="article:modified_time" content="2023-03-17T14:32:36+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="femtograd">
+  <meta itemprop="description" content="Like micrograd, but worse.">
+  <meta itemprop="datePublished" content="2023-03-17T14:32:36+00:00">
+  <meta itemprop="dateModified" content="2023-03-17T14:32:36+00:00">
+  <meta itemprop="wordCount" content="688">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="femtograd">
+  <meta name="twitter:description" content="Like micrograd, but worse.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">femtograd</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | March 17, 2023 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/femtograd" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="https://queelius.github.io/femtograd/" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub Pages
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=femtograd&url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2ffemtograd%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <h1 id="femtograd">femtograd</h1>
+<p>Like micrograd, but worse.
+<a href="https://github.com/queelius/femtograd">GitHub Link</a>
+<strong>Stars</strong>: 1 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0
+<strong>Languages Used</strong>: R
+<a href="https://queelius.github.io/femtograd/">GitHub Pages</a></p>
+<h2 id="readme">README</h2>
+<h1 id="femtograd-1">femtograd</h1>
+<ul>
+<li><a href="#exponential-distribution"
+id="toc-exponential-distribution">Exponential distribution</a></li>
+<li><a href="#automatic-differentiation-ad"
+id="toc-automatic-differentiation-ad">Automatic differentiation (AD)</a></li>
+</ul>
+<p>Here’s a quick demonstration of how to use the
+<a href="https://github.com/queelius/femtograd"><code>femtograd</code></a> R package.</p>
+<p>Load it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(femtograd)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; Attaching package: &#39;femtograd&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The following object is masked from &#39;package:utils&#39;:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;     data</span>
+</span></span></code></pre></div><h2 id="exponential-distribution">Exponential distribution</h2>
+<p>Let’s create a simple loglikelihood function for the exponential
+distribution paramterized by $\lambda$ (failure rate).</p>
+<p>We have</p>
+$$
+  f_{T_i}(t_i | \lambda) = \lambda \exp(-\lambda t_i).
+$$<p>So, the loglikelihood function is just</p>
+$$
+  \ell(\lambda) = n \log \lambda - \lambda \sum_{i=1}^n t_i.
+$$<p>Let’s generate $n=30$ observations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>true_rate <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">7.3</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rexp</span>(n,true_rate)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(data)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 0.102432677 0.009849689 0.037429092 0.093926112 0.033046038 0.181780460</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(mle.rate <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">abs</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#a6e22e">mean</span>(data)))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 6.245535</span>
+</span></span></code></pre></div><p>We see that the MLE $\hat\theta$ is 6.2455349.</p>
+<h1 id="automatic-differentiation-ad">Automatic differentiation (AD)</h1>
+<p>Finding the value (argmax) that maximizes the
+log-likelihood function is trivial to solve in this case, and it has a
+closed-form solution. However, to demonstrate the use of <code>femtograd</code>, we
+will construct a <code>loglike_exp</code> function generator that returns an object
+that can be automatically differentiated (AD) using backpropogation,
+which is an efficient way of applying the chain-rule to expressions
+(like $\exp{y a x^2}$ using a <em>computational graph</em> that represents
+the expression.</p>
+<p>These kind of computational graphs have the nice property that for any
+differentiable expression that we can model in software, its partial
+derivative with respect to some node in the graph can be efficiently and
+accurately computed without resorting to numerical finite difference
+methods or slow, potentially difficult to compose symbolic methods.</p>
+<p>There are many libraries that do this. This library itself is based on
+the excellent work by Karpathy who developed the Python library known as
+<a href="https://github.com/karpathy/micrograd"><code>micrograd</code></a>, which was
+developed for the explicit purpose of teaching the basic concept of AD
+and backpropagation for minimizing loss functions for neural networks.</p>
+<p>Let’s solve for the MLE iteratively as a demonstration of how to use
+<a href="https://github.com/queelius/femtograd"><code>femtograd</code></a>. First, we
+construct the log-likelihood generator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>loglike_exp <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(rate, data)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>(<span style="color:#a6e22e">log</span>(rate)<span style="color:#f92672">*</span><span style="color:#a6e22e">length</span>(data) <span style="color:#f92672">-</span> rate <span style="color:#f92672">*</span> <span style="color:#a6e22e">sum</span>(data))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Initially, we guess that $\hat\lambda$ is $1$, which is a terrible
+estimate.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>rate <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">val</span>(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>Gradient clipping is a technique to prevent taking too large of a step
+when gradients become too large (remember that gradients are a <em>local</em>
+feature, so we generally should not use it to take too big of a step)
+during optimization, which can cause instability or overshooting the
+optimal value. By limiting the step size, gradient clipping helps ensure
+that the optimization takes smaller, more stable steps.</p>
+<p>Here is the R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Takes a gradient `g` and an optional `max_norm` parameter, which defaults</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># to 1. It calculates the gradient&#39;s L2 norm (Euclidean norm) and scales the</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># gradient down if its norm exceeds the specified max_norm. This is used during</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the gradient ascent loop to help ensure stable optimization.</span>
+</span></span><span style="display:flex;"><span>grad_clip <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(g, max_norm <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>  norm <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">sum</span>(g <span style="color:#f92672">*</span> g))
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (norm <span style="color:#f92672">&gt;</span> max_norm) {
+</span></span><span style="display:flex;"><span>    g <span style="color:#f92672">&lt;-</span> (max_norm <span style="color:#f92672">/</span> norm) <span style="color:#f92672">*</span> g
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  g
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We find the MLE using a simple iteration (200 loops).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>loglik <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">loglike_exp</span>(rate, data)
+</span></span><span style="display:flex;"><span>lr <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.2</span> <span style="color:#75715e"># learning rate</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">zero_grad</span>(loglik)
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">backward</span>(loglik)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>(rate) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data</span>(rate) <span style="color:#f92672">+</span> lr <span style="color:#f92672">*</span> <span style="color:#a6e22e">grad_clip</span>(<span style="color:#a6e22e">grad</span>(rate))
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;iteration&#34;</span>, i, <span style="color:#e6db74">&#34;, rate =&#34;</span>, <span style="color:#a6e22e">data</span>(rate), <span style="color:#e6db74">&#34;, drate/dl =&#34;</span>, <span style="color:#a6e22e">grad</span>(rate), <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 50 , rate = 6.238781 , drate/dl = 0.006148105 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 100 , rate = 6.245533 , drate/dl = 1.447689e-06 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 150 , rate = 6.245535 , drate/dl = 3.418377e-10 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; iteration 200 , rate = 6.245535 , drate/dl = 8.082424e-14</span>
+</span></span></code></pre></div><p>Did the gradient ascent method converge to the MLE?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>(converged <span style="color:#f92672">&lt;-</span> (<span style="color:#a6e22e">abs</span>(mle.rate <span style="color:#f92672">-</span> <span style="color:#a6e22e">data</span>(rate)) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e-3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] TRUE</span>
+</span></span></code></pre></div><p>It’s worth pointing out that we did not update <code>loglik</code> in the gradient
+ascent loop, since we only needed the gradient (score) in this case. If,
+however, we had needed to know the log-likelihood for some reason, such
+as when using a line search method to avoid overshooting, we would need
+to update with <code>loglik &lt;- loglike_exp(rate, data)</code> each time through the
+loop.</p>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem;">Related</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <a href="https://queelius.github.io/metafunctor/projects/femtograd/">femtograd</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/queelius.github.io/">queelius.github.io</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/queelius.github.io/">queelius.github.io</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/algebraic.dist/">algebraic.dist</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/algebraic.dist/">algebraic.dist</a>
+            
+          </div>
+        </section>
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

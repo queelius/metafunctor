@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rate-Distortion on metafunctor</title>
+    <link>https://queelius.github.io/metafunctor/categories/rate-distortion/</link>
+    <description>Recent content in Rate-Distortion on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://queelius.github.io/metafunctor/categories/rate-distortion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entropy Maps</title>
+      <link>https://queelius.github.io/metafunctor/posts/entropy-map/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/posts/entropy-map/</guid>
+      <description>&lt;p&gt;The PDF version of this post is available on &lt;a href=&#34;https://github.com/queelius/bernoulli_data_type/tree/master/entropy-maps-paper/entropy-map.pdf&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The basic theory behind an entropy map is to map values in the domain to values in&#xA;the codomain by &lt;em&gt;hashing&lt;/em&gt; to a prefix-free code in the codomain. We do not store&#xA;anything related to the domain, since we are simply hashing them, and a prefix&#xA;of that hash will be used as a code for a value in the codomain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Boolean Algebra Over Trapdoors</title>
+      <link>https://queelius.github.io/metafunctor/posts/trapdoor-boolean-model/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/posts/trapdoor-boolean-model/</guid>
+      <description>&lt;p&gt;This project is available on &lt;a href=&#34;https://github.com/queelius/bernoulli_data_type/boolean-algebra-trapdor/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;boolean-algebra&#34;&gt;Boolean Algebra&lt;/h2&gt;&#xA;&lt;p&gt;A Boolean algebra is a mathematical structure that captures the properties of logical operations and sets. Formally, it is defined as a 6-tuple $(B, \land, \lor, \neg, 0, 1)$, where&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$B$ is a set of elements,&lt;/li&gt;&#xA;&lt;li&gt;$\land$ ($\rm{and}$) and $\lor$ $\rm{or}$ are binary operations on $B$,&lt;/li&gt;&#xA;&lt;li&gt;$\neg$ ($\rm{not}$) is a unary operation on $B$,&lt;/li&gt;&#xA;&lt;li&gt;$0$ and $1$ are elements of $B$, often referred to as the minimum and maximum elements, respectively.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These components must satisfy certain axioms, including closure of $B$ under the operations, commutativity, associativity, distributivity, and the existence of identity and complement elements [1].&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

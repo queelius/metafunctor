@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>algebraic.mle | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Algebraic maximum likelihood estimators">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/projects/algebraic.mle/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/projects/algebraic.mle/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="algebraic.mle">
+  <meta property="og:description" content="Algebraic maximum likelihood estimators">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2022-01-27T09:12:55+00:00">
+    <meta property="article:modified_time" content="2022-01-27T09:12:55+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="algebraic.mle">
+  <meta itemprop="description" content="Algebraic maximum likelihood estimators">
+  <meta itemprop="datePublished" content="2022-01-27T09:12:55+00:00">
+  <meta itemprop="dateModified" content="2022-01-27T09:12:55+00:00">
+  <meta itemprop="wordCount" content="1278">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="algebraic.mle">
+  <meta name="twitter:description" content="Algebraic maximum likelihood estimators">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">algebraic.mle</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | January 27, 2022 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/algebraic.mle" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="https://queelius.github.io/algebraic.mle/" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub Pages
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=algebraic.mle&url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2falgebraic.mle%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2falgebraic.mle%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2falgebraic.mle%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <p>Algebraic maximum likelihood estimators</p>
+<p><strong>Stars</strong>: 1 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages</strong>: R</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>queelius (120 commits)</li>
+</ul>
+<h2 id="readme">README</h2>
+<h1 id="r-package-algebraicmle">R package: <code>algebraic.mle</code></h1>
+<!-- badges: start -->
+<p><a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/license-GPL--3-blue.svg" alt="GPL-3
+License"></a></p>
+<!-- badges: end -->
+<p><code>algebraic.mle</code> is an R package that provides an algebra over Maximum
+Likelihood Estimators (MLEs). These estimators possess many desirable,
+well-defined statistical properties which the package helps you
+manipulate and utilize.</p>
+<h2 id="installation">Installation</h2>
+<p><code>algebraic.mle</code> can be installed from GitHub by using the devtools
+package in R:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#devtools::install_github(&#34;queelius/algebraic.mle&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#devtools::install_github(&#34;queelius/algebraic.dist&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(algebraic.dist)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; Registered S3 method overwritten by &#39;algebraic.dist&#39;:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;   method     from </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;   print.dist stats</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(algebraic.mle)
+</span></span></code></pre></div><h2 id="purpose">Purpose</h2>
+<p>The likelihood function is a fundamental concept in statistics and
+parametric models. The <code>algebraic.mle</code> package enables you to manipulate
+and utilize MLEs in a way that is consistent with the underlying
+statistical theory and according to a powerful, well-defined interface.</p>
+<h2 id="api-overview">API Overview</h2>
+<p>The main object in the <code>algebraic.mle</code> package is the <code>mle</code> object,
+which represents a fitted model. The package provides a number of
+generic methods designed for <code>mle</code> objects. A comprehensive list of
+functions is available in the <a href="https://queelius.github.io/algebraic.mle/reference/index.html">function
+reference</a>
+for <code>algebraic.mle</code>.</p>
+<h2 id="fitting-exponential-models">Fitting exponential models</h2>
+<p>Here is an example of fitting a conditional exponential model to some
+data using <code>algebraic.mle</code>. The true DGP is given by <code>Y | x ~ X(x) + W</code>
+where <code>X(x) ~ EXP(rate(x))</code>, <code>W ~ N(0, 1e-3)</code>, and
+<code>rate(x) = exp(b0 + b1 * x)</code>.</p>
+<p>In this analysis, we do not care how <code>x</code> is distributed, and we take it
+to be an observable exogenous variable. We are interested in the
+conditional distribution of <code>Y | x</code>.</p>
+<p>Let’s fit a conditional exponential model to some data from this DGP.
+While the true DGP is a bit more complicated, the most salient part is
+the exponential component, and the gaussian term may be thought of as
+added noise, say, from imprecise measurement. Of course, the true DGP is
+unknown in practice, so arriving at an conditional exponential model is
+a matter of judgement and domain knowledge.</p>
+<p>In this model, <code>Y | x ~ EXP(rate(x))</code> where <code>rate(x) = exp(b0 + b1*x)</code>.
+First, let’s define the DGP (data generating process):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>b0 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">-.1</span>
+</span></span><span style="display:flex;"><span>b1 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dgp <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n, x) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># rate is the expected value of X</span>
+</span></span><span style="display:flex;"><span>    rate <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">exp</span>(b0 <span style="color:#f92672">+</span> b1 <span style="color:#f92672">*</span> x)
+</span></span><span style="display:flex;"><span>    X <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rexp</span>(n, rate)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># W is the random error</span>
+</span></span><span style="display:flex;"><span>    W <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rnorm</span>(n, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1e-3</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Y | x is the observed value</span>
+</span></span><span style="display:flex;"><span>    Y <span style="color:#f92672">&lt;-</span> X <span style="color:#f92672">+</span> W
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>(Y)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let’s generate some date:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">75</span> <span style="color:#75715e"># number of observations</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">1231</span>) <span style="color:#75715e"># for reproducibility</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, n), y <span style="color:#f92672">=</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, n))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># We do not care how x is distributed, so we take it to be an observable</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># exogenous variable that impacts the conditional mean of Y.</span>
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">-10</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dgp</span>(n <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, x <span style="color:#f92672">=</span> x)
+</span></span><span style="display:flex;"><span>    df[i, ] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(x, y)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now, we define three functions, <code>resp</code>, <code>rate</code>, and <code>loglik</code>, which will
+be used to define the model.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>resp <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(df) df<span style="color:#f92672">$</span>y
+</span></span><span style="display:flex;"><span>rate <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(df, beta) <span style="color:#a6e22e">exp</span>(beta[1] <span style="color:#f92672">+</span> beta[2] <span style="color:#f92672">*</span> df<span style="color:#f92672">$</span>x)
+</span></span><span style="display:flex;"><span>loglik <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(df, resp, rate) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span>(beta) <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">dexp</span>(x <span style="color:#f92672">=</span> <span style="color:#a6e22e">resp</span>(df), rate <span style="color:#f92672">=</span> <span style="color:#a6e22e">rate</span>(df, beta), log <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let’s fit the model. We’ll use the <code>optim</code> function in <code>stats</code> to fit
+the model and then wrap it into an <code>mle</code> object using <code>mle_numerical</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># initial guess for the parameters</span>
+</span></span><span style="display:flex;"><span>par0 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>(par0) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;b0&#34;</span>, <span style="color:#e6db74">&#34;b1&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sol <span style="color:#f92672">&lt;-</span> algebraic.mle<span style="color:#f92672">::</span><span style="color:#a6e22e">mle_numerical</span>(<span style="color:#a6e22e">optim</span>(par <span style="color:#f92672">=</span> par0,
+</span></span><span style="display:flex;"><span>    fn <span style="color:#f92672">=</span> <span style="color:#a6e22e">loglik</span>(df, resp, rate),
+</span></span><span style="display:flex;"><span>    control <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(fnscale <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>),
+</span></span><span style="display:flex;"><span>    hessian <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(sol)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; Maximum likelihood estimator of type mle_numerical is normally distributed.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The estimates of the parameters are given by:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;         b0         b1 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; -0.2253626  0.4560893 </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The standard error is  0.1167634 0.02145606 .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The asymptotic 95% confidence interval of the parameters are given by:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;          2.5%       97.5%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; b0 -0.4542147 0.003489406</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; b1  0.4140362 0.498142415</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The MSE of the individual components in a multivariate estimator is:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;              [,1]         [,2]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1,] 0.0136336902 0.0003746527</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [2,] 0.0003746527 0.0004603623</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The log-likelihood is  -119.6977 .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The AIC is  243.3954 .</span>
+</span></span></code></pre></div><p>Let’s plot it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># plot the x-y points from the data frame</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(df<span style="color:#f92672">$</span>x,df<span style="color:#f92672">$</span>y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># now overlay a plot of the conditional mean</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">-10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">.1</span>)
+</span></span><span style="display:flex;"><span>b0.hat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">params</span>(sol)[1]
+</span></span><span style="display:flex;"><span>b1.hat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">params</span>(sol)[2]
+</span></span><span style="display:flex;"><span>y.hat <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#a6e22e">exp</span>(b0.hat <span style="color:#f92672">+</span> b1.hat<span style="color:#f92672">*</span>x)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#a6e22e">exp</span>(b0 <span style="color:#f92672">+</span> b1<span style="color:#f92672">*</span>x)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(x, y, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;green&#34;</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(x, y.hat, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span></code></pre></div><img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<h3 id="hypothesis-test-and-model-selection">Hypothesis test and model selection</h3>
+<p>Let’s test the hypothesis that <code>b0 = 0</code> using a likelihood ratio test.
+We can use the LRT because this null model is a special case (nested) of
+the full model. The null model is <code>Y | x ~ EXP(rate(x))</code> where
+<code>rate(x) = exp(b1*x)</code>, while the full model is <code>Y | x ~ EXP(rate(x))</code>
+where <code>rate(x) = exp(b0 + b1*x)</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># construct null model where b1 = 0</span>
+</span></span><span style="display:flex;"><span>rate_b0_zero <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(df, b1) <span style="color:#a6e22e">exp</span>(b1 <span style="color:#f92672">*</span> df<span style="color:#f92672">$</span>x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># initial guess for the parameters</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fit the model under the null hypothesis</span>
+</span></span><span style="display:flex;"><span>sol2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">mle_numerical</span>(<span style="color:#a6e22e">optim</span>(par <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    fn <span style="color:#f92672">=</span> <span style="color:#a6e22e">loglik</span>(df, resp, rate_b0_zero),
+</span></span><span style="display:flex;"><span>    control <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(fnscale <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>),
+</span></span><span style="display:flex;"><span>    hessian <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
+</span></span><span style="display:flex;"><span>    method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;BFGS&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(sol2)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; Maximum likelihood estimator of type mle_numerical is normally distributed.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The estimates of the parameters are given by:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 0.4617093</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The standard error is  0.01899941 .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The asymptotic 95% confidence interval of the parameters are given by:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;             2.5%     97.5%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; param1 0.4244712 0.4989475</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The MSE of the estimator is  0.0003609774 .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The log-likelihood is  -121.7164 .</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; The AIC is  245.4328 .</span>
+</span></span></code></pre></div><p>Let’s compute the likelihood ratio test statistic and p-value:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>(lrt.sol2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">-2</span> <span style="color:#f92672">*</span> (<span style="color:#a6e22e">loglik_val</span>(sol2) <span style="color:#f92672">-</span> <span style="color:#a6e22e">loglik_val</span>(sol)))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 4.037435</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pchisq</span>(lrt.sol2, df <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, lower.tail <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># compute the p-value</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 0.04450142</span>
+</span></span></code></pre></div><p>We see that the <code>p &lt; 0.05</code>, but just barely, so we say the data is not
+compatible with the null hypothesis <code>b0 = 0</code>.</p>
+<p>If we wanted to do model selection, we could use the AIC:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">aic</span>(sol)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 243.3954</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">aic</span>(sol2)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 245.4328</span>
+</span></span></code></pre></div><p>By the AIC measure, since the full model has an AIC less than the null
+model, we would choose the full model. We actually know the DGP and both
+models are reasonable approximations, but the full model is a closer
+approximation.</p>
+<p>“All models are wrong, but some are useful.” - George Box</p>
+<p>Eventually, if we have a sufficiently large sample, any model that is
+not the DGP can be discarded, but reality is so complex that we will
+never have a large enough sample and we will never be able to come up
+with a model that is exactly the DGP.</p>
+<p>Let’s do another test, <code>b1 = 0</code>, i.e., it’s an unconditional exponential
+model, or just a standard exponential distribution.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>rate_b1_zero <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(df, b0) <span style="color:#a6e22e">exp</span>(b0)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fit the model under the null hypothesis</span>
+</span></span><span style="display:flex;"><span>sol3 <span style="color:#f92672">&lt;-</span> algebraic.mle<span style="color:#f92672">::</span><span style="color:#a6e22e">mle_numerical</span>(<span style="color:#a6e22e">optim</span>(par <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    fn <span style="color:#f92672">=</span> <span style="color:#a6e22e">loglik</span>(df, resp, rate_b1_zero),
+</span></span><span style="display:flex;"><span>    control <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(fnscale <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>),
+</span></span><span style="display:flex;"><span>    hessian <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
+</span></span><span style="display:flex;"><span>    method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;BFGS&#34;</span>))
+</span></span><span style="display:flex;"><span>(lrt.sol3 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">-2</span> <span style="color:#f92672">*</span> (<span style="color:#a6e22e">loglik_val</span>(sol3) <span style="color:#f92672">-</span> <span style="color:#a6e22e">loglik_val</span>(sol)))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 285.0265</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pchisq</span>(lrt.sol3, df <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, lower.tail <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># compute the p-value</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; [1] 6.029289e-64</span>
+</span></span></code></pre></div><p>This has a <code>p</code>-value of essentially zero, so we reject the null
+hypothesis that <code>b1 = 0</code>.</p>
+<p>Let’s compare the confidence intervals for each of these models.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">confint</span>(sol))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;          2.5%       97.5%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; b0 -0.4542147 0.003489406</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; b1  0.4140362 0.498142415</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">confint</span>(sol2))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;             2.5%     97.5%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; param1 0.4244712 0.4989475</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">confint</span>(sol3))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;             2.5%     97.5%</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt; param1 -2.722463 -2.269829</span>
+</span></span></code></pre></div><p>We see that the 95% confidence interval for <code>b0</code> does not include zero,
+so we reject the null hypothesis that <code>b0 = 0</code>. The 95% confidence
+interval for <code>b1</code> does not include zero, so we reject the null
+hypothesis that <code>b1 = 0</code>.</p>
+<p>You can see tutorials for more examples of using the package in the
+<a href="https://queelius.github.io/algebraic.mle/articles/index.html">vignettes</a>.</p>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem;">Related</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/algebraic.mle/">algebraic.mle</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/md-series-systems-relaxed-candidate-set-models/">md-series-systems-relaxed-candidate-set-models</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/md-series-systems-relaxed-candidate-set-models/">md-series-systems-relaxed-candidate-set-models</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/rstatlab/">rstatlab</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/rstatlab/">rstatlab</a>
+            
+          </div>
+        </section>
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on metafunctor</title>
+    <link>https://queelius.github.io/metafunctor/categories/</link>
+    <description>Recent content in Categories on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://queelius.github.io/metafunctor/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>https://queelius.github.io/metafunctor/categories/artificial-intelligence/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>https://queelius.github.io/metafunctor/categories/machine-learning/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>https://queelius.github.io/metafunctor/categories/mathematics/</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inference</title>
+      <link>https://queelius.github.io/metafunctor/categories/inference/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistics</title>
+      <link>https://queelius.github.io/metafunctor/categories/statistics/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stenography</title>
+      <link>https://queelius.github.io/metafunctor/categories/stenography/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/stenography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bootstrap</title>
+      <link>https://queelius.github.io/metafunctor/categories/bootstrap/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/bootstrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Censoring</title>
+      <link>https://queelius.github.io/metafunctor/categories/censoring/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/censoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Likelihood-Model</title>
+      <link>https://queelius.github.io/metafunctor/categories/likelihood-model/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/likelihood-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Masked-Failure-Data</title>
+      <link>https://queelius.github.io/metafunctor/categories/masked-failure-data/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/masked-failure-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mle</title>
+      <link>https://queelius.github.io/metafunctor/categories/mle/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/mle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reliability-Analysis</title>
+      <link>https://queelius.github.io/metafunctor/categories/reliability-analysis/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/reliability-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Series-Systems</title>
+      <link>https://queelius.github.io/metafunctor/categories/series-systems/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/series-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weibull</title>
+      <link>https://queelius.github.io/metafunctor/categories/weibull/</link>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/weibull/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli Map</title>
+      <link>https://queelius.github.io/metafunctor/categories/bernoulli-map/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/bernoulli-map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entropy Map</title>
+      <link>https://queelius.github.io/metafunctor/categories/entropy-map/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/entropy-map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probabilistic Data Structure</title>
+      <link>https://queelius.github.io/metafunctor/categories/probabilistic-data-structure/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/probabilistic-data-structure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rate-Distortion</title>
+      <link>https://queelius.github.io/metafunctor/categories/rate-distortion/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/rate-distortion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli</title>
+      <link>https://queelius.github.io/metafunctor/categories/bernoulli/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/bernoulli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bernoulli Model</title>
+      <link>https://queelius.github.io/metafunctor/categories/bernoulli-model/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/bernoulli-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bloom-Filter</title>
+      <link>https://queelius.github.io/metafunctor/categories/bloom-filter/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/bloom-filter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Boolean</title>
+      <link>https://queelius.github.io/metafunctor/categories/boolean/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/boolean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compression</title>
+      <link>https://queelius.github.io/metafunctor/categories/compression/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/compression/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>https://queelius.github.io/metafunctor/categories/cryptography/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy</title>
+      <link>https://queelius.github.io/metafunctor/categories/philosophy/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Science</title>
+      <link>https://queelius.github.io/metafunctor/categories/data-science/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Likelihood-Models</title>
+      <link>https://queelius.github.io/metafunctor/categories/likelihood-models/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/likelihood-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Science</title>
+      <link>https://queelius.github.io/metafunctor/categories/computer-science/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/computer-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parallel Processing</title>
+      <link>https://queelius.github.io/metafunctor/categories/parallel-processing/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/parallel-processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EM Algorithm</title>
+      <link>https://queelius.github.io/metafunctor/categories/em-algorithm/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/em-algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>https://queelius.github.io/metafunctor/categories/r/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/categories/r/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

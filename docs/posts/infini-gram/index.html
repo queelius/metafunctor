@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Infini-gram: LLM-scale *-gram models | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Recently, I watched a presentation on Infini-grams, which utilize a suffix array to avoid precomputing $n$-grams and allow for arbitrary context lengths, up to a suffix that is found in the training data.
+This sparked my interest as I had worked on a similar project for a LLM talk I gave for SLUUG at https://www.stllinux.org (see my GitHub repo https://github.com/queelius/sluug-talk-llm and the video fo the talk at https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4) where in part of the talk I demonstrated arbitrary-size $n$-grams using a recursive dictionary to store synthetic training data prefix counts to implement a crude expression tree evaluator.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "admin">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/posts/infini-gram/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/posts/infini-gram/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Infini-gram: LLM-scale *-gram models">
+  <meta property="og:description" content="Recently, I watched a presentation on Infini-grams, which utilize a suffix array to avoid precomputing $n$-grams and allow for arbitrary context lengths, up to a suffix that is found in the training data.
+This sparked my interest as I had worked on a similar project for a LLM talk I gave for SLUUG at https://www.stllinux.org (see my GitHub repo https://github.com/queelius/sluug-talk-llm and the video fo the talk at https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4) where in part of the talk I demonstrated arbitrary-size $n$-grams using a recursive dictionary to store synthetic training data prefix counts to implement a crude expression tree evaluator.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-20T00:00:00+00:00">
+
+  <meta itemprop="name" content="Infini-gram: LLM-scale *-gram models">
+  <meta itemprop="description" content="Recently, I watched a presentation on Infini-grams, which utilize a suffix array to avoid precomputing $n$-grams and allow for arbitrary context lengths, up to a suffix that is found in the training data.
+This sparked my interest as I had worked on a similar project for a LLM talk I gave for SLUUG at https://www.stllinux.org (see my GitHub repo https://github.com/queelius/sluug-talk-llm and the video fo the talk at https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4) where in part of the talk I demonstrated arbitrary-size $n$-grams using a recursive dictionary to store synthetic training data prefix counts to implement a crude expression tree evaluator.">
+  <meta itemprop="datePublished" content="2024-05-20T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-05-20T00:00:00+00:00">
+  <meta itemprop="wordCount" content="180">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Infini-gram: LLM-scale *-gram models">
+  <meta name="twitter:description" content="Recently, I watched a presentation on Infini-grams, which utilize a suffix array to avoid precomputing $n$-grams and allow for arbitrary context lengths, up to a suffix that is found in the training data.
+This sparked my interest as I had worked on a similar project for a LLM talk I gave for SLUUG at https://www.stllinux.org (see my GitHub repo https://github.com/queelius/sluug-talk-llm and the video fo the talk at https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4) where in part of the talk I demonstrated arbitrary-size $n$-grams using a recursive dictionary to store synthetic training data prefix counts to implement a crude expression tree evaluator.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        News
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Infini-gram: LLM-scale *-gram models</h1>
+      
+      <p class="tracked"><strong>admin</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-05-20T00:00:00Z">May 20, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Recently, I watched a presentation on <a href="https://huggingface.co/spaces/liujch1998/infini-gram">Infini-grams</a>, which utilize a suffix array to avoid precomputing $n$-grams and allow for arbitrary context lengths, up to a suffix that is found in the training data.</p>
+<p>This sparked my interest as I had worked on a similar project for a LLM talk I gave for SLUUG at <a href="https://www.stllinux.org/">https://www.stllinux.org</a> (see my GitHub repo <a href="https://github.com/queelius/sluug-talk-llm">https://github.com/queelius/sluug-talk-llm</a> and the video fo the talk at <a href="https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4">https://www.sluug.org/resources/presentations/media/2024/STLLINUX/2024-02-22_STLLINUX_2560x1440.mp4</a>) where in part of the talk I demonstrated arbitrary-size $n$-grams using a recursive dictionary to store synthetic training data prefix counts to implement a crude expression tree evaluator.</p>
+<p>Since my data was sparse synthetic data (expression trees and their evaluations), I was able to use a relatively inefficient approach to compute very large $n$-grams. The infini-gram approach is more efficient and generalizes to any kind of data, so they definitely had a more practical solution.</p>
+<p>I started a project, <a href="ngram-proj">n-gram projections</a>, to work on concepts related to n-grams and how projections of the input onto the training data may be a way of thinking about OOD generalization and inductive biases. See &hellip;</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

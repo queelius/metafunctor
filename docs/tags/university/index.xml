@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>University on metafunctor</title>
+    <link>https://queelius.github.io/metafunctor/tags/university/</link>
+    <description>Recent content in University on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://queelius.github.io/metafunctor/tags/university/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://queelius.github.io/metafunctor/publications/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/publications/</guid>
+      <description>Here are some publications I&amp;rsquo;ve worked on. I&amp;rsquo;ll try to keep this updated as I work on new things.</description>
+    </item>
+    <item>
+      <title>Problem Sets</title>
+      <link>https://queelius.github.io/metafunctor/probsets/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/probsets/</guid>
+      <description>Problem sets and solutions for various courses.</description>
+    </item>
+  </channel>
+</rss>

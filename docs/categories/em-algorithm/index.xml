@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EM Algorithm on metafunctor</title>
+    <link>https://queelius.github.io/metafunctor/categories/em-algorithm/</link>
+    <description>Recent content in EM Algorithm on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://queelius.github.io/metafunctor/categories/em-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Statistics - SIUe - STAT 575 - Problem Set 2</title>
+      <link>https://queelius.github.io/metafunctor/probsets/stat575/stat575-problem-set-2/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/probsets/stat575/stat575-problem-set-2/</guid>
+      <description>This problem set covers the E-M algorithm for right-censored normal data with known variance.</description>
+    </item>
+  </channel>
+</rss>

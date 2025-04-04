@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Computational Statistics - SIUe - STAT 575 - Problem Set 1 | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This problem set contains solutions to problems involving Newton&rsquo;s method, the secant method, Poisson regression, and various sampling techniques.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell (lex@metafunctor.com)">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/probsets/stat575/problem_set_1/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/probsets/stat575/problem_set_1/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Computational Statistics - SIUe - STAT 575 - Problem Set 1">
+  <meta property="og:description" content="This problem set contains solutions to problems involving Newton’s method, the secant method, Poisson regression, and various sampling techniques.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="probsets">
+    <meta property="article:published_time" content="2021-07-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-07-01T00:00:00+00:00">
+
+  <meta itemprop="name" content="Computational Statistics - SIUe - STAT 575 - Problem Set 1">
+  <meta itemprop="description" content="This problem set contains solutions to problems involving Newton’s method, the secant method, Poisson regression, and various sampling techniques.">
+  <meta itemprop="datePublished" content="2021-07-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-07-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2116">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Computational Statistics - SIUe - STAT 575 - Problem Set 1">
+  <meta name="twitter:description" content="This problem set contains solutions to problems involving Newton’s method, the secant method, Poisson regression, and various sampling techniques.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        STAT 575 - Computational Statistics - SIUe - Summer 2021
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Computational Statistics - SIUe - STAT 575 - Problem Set 1</h1>
+      
+      <p class="tracked"><strong>Alex Towell (<a href="mailto:lex@metafunctor.com">lex@metafunctor.com</a>)</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-07-01T00:00:00Z">July 1, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="problem-1">Problem 1</h1>
+<p>Write your own code and find solution to the equation $x^3 + x - 4 = 0$ using
+Newton’s method and the secant method.
+Compare the number of iterations needed for different starting values for the
+two methods.</p>
+<h2 id="solution-newtons-method">Solution: Newton&rsquo;s method</h2>
+<p>If we have some function $f : \mathbb{R} \mapsto \mathbb{R}$ and we wish to
+find a root of $f$, i.e., an $x$ such that $f(x) = 0$, we may use Newton&rsquo;s method.</p>
+$$
+  L(f | x_0) \coloneqq \lambda x.f(x_0) + f'(x_0)(x-x_0).
+$$$$
+  L(f|x_0)(x) = 0,
+$$$$
+  f(x_0) + f'(x_0)(x-x_0) = 0.
+$$$$
+  x = x_0 - \frac{f(x_0)}{f'(x_0)}.
+$$<p>Hoping that $x$ results in a better approximation of the root of $f$ than
+$x_0$, we approximate $f$ with $L(f|x)$ and repeat the process.</p>
+$$
+  x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}.
+$$<p>
+We continue this process until we obtain some stopping condition, e.g.,
+$|x_{i+1} - x_i| &lt; \epsilon$.</p>
+$$
+  x_{i+1} = x_i - \frac{x_i^3+x_i-4}{3x_i^2+1}.
+$$<p>We implement a general procedure for Newton&rsquo;s method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>newton_method <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(f,dfdx,x0,eps,debug<span style="color:#f92672">=</span>T)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    x1 <span style="color:#f92672">&lt;-</span> x0 <span style="color:#f92672">-</span> <span style="color:#a6e22e">f</span>(x0) <span style="color:#f92672">/</span> <span style="color:#a6e22e">dfdx</span>(x0)
+</span></span><span style="display:flex;"><span>    n <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (debug) { <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;iteration=&#34;</span>,n,<span style="color:#e6db74">&#34; x=&#34;</span>,x1,<span style="color:#e6db74">&#34;\n&#34;</span>) }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">abs</span>(x1 <span style="color:#f92672">-</span> x0) <span style="color:#f92672">&lt;</span> eps) { <span style="color:#66d9ef">break</span> } <span style="color:#75715e"># stopping condition</span>
+</span></span><span style="display:flex;"><span>    x0 <span style="color:#f92672">&lt;-</span> x1
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(root<span style="color:#f92672">=</span>x0,iter<span style="color:#f92672">=</span>n,eps<span style="color:#f92672">=</span>eps)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We take an initial guess of $x_0 = 1$ and $\epsilon = 1 \times 10^{-6}$ and
+run the following R code to solve for a root of $f$ using Newton&rsquo;s method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>f <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { x^3 <span style="color:#f92672">+</span> x <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span> }
+</span></span><span style="display:flex;"><span>dfdx <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>x^2 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> }
+</span></span><span style="display:flex;"><span>eps <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1e-6</span>
+</span></span><span style="display:flex;"><span>x0 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">newton_method</span>(f,dfdx,x0,eps)
+</span></span></code></pre></div><pre tabindex="0"><code>## iteration= 1  x= 1.5 
+## iteration= 2  x= 1.387097 
+## iteration= 3  x= 1.378839 
+## iteration= 4  x= 1.378797 
+## iteration= 5  x= 1.378797
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(result)
+</span></span></code></pre></div><pre tabindex="0"><code>## $root
+## [1] 1.378797
+## 
+## $iter
+## [1] 5
+## 
+## $eps
+## [1] 1e-06
+</code></pre><p>We obtain $x \approx 1.3787967$ after $5$ iterations.</p>
+<h2 id="solution-secant-method">Solution: Secant method</h2>
+$$
+  \frac{f(x_{i+1}) - f(x_i)}{x_{i+1}-x_i},
+$$$$
+  x_{i+2} = x_{i+1} - f(x_{i+1})\frac{x_{i+1}-x_i}{f(x_{i+1}) - f(x_i)},
+$$<p>
+which requires two initial values $x_0$ and $x_1$.</p>
+<p>We define the secant method as a function given by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>secant_method <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(f,x0,x1,eps,debug<span style="color:#f92672">=</span>T)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    x2 <span style="color:#f92672">&lt;-</span> x1 <span style="color:#f92672">-</span> <span style="color:#a6e22e">f</span>(x1) <span style="color:#f92672">*</span> (x1 <span style="color:#f92672">-</span> x0) <span style="color:#f92672">/</span> (<span style="color:#a6e22e">f</span>(x1) <span style="color:#f92672">-</span> <span style="color:#a6e22e">f</span>(x0))
+</span></span><span style="display:flex;"><span>    n <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (debug) { <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;iteration=&#34;</span>,n,<span style="color:#e6db74">&#34; x=&#34;</span>,x2,<span style="color:#e6db74">&#34;\n&#34;</span>) }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">abs</span>(x2<span style="color:#f92672">-</span>x1) <span style="color:#f92672">&lt;</span> eps) { <span style="color:#66d9ef">break</span> } <span style="color:#75715e"># stopping condition</span>
+</span></span><span style="display:flex;"><span>    x0 <span style="color:#f92672">&lt;-</span> x1
+</span></span><span style="display:flex;"><span>    x1 <span style="color:#f92672">&lt;-</span> x2
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(root<span style="color:#f92672">=</span>x1,iter<span style="color:#f92672">=</span>n,eps<span style="color:#f92672">=</span>eps)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We let $x_0 = 0$, $x_1 = 1$, and keep everything else the same and run the
+secant method with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>x0 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>x1 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">secant_method</span>(f,x0,x1,eps)
+</span></span></code></pre></div><pre tabindex="0"><code>## iteration= 1  x= 2 
+## iteration= 2  x= 1.25 
+## iteration= 3  x= 1.337931 
+## iteration= 4  x= 1.382262 
+## iteration= 5  x= 1.378708 
+## iteration= 6  x= 1.378797 
+## iteration= 7  x= 1.378797
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(result)
+</span></span></code></pre></div><pre tabindex="0"><code>## $root
+## [1] 1.378797
+## 
+## $iter
+## [1] 7
+## 
+## $eps
+## [1] 1e-06
+</code></pre><p>We obtain $x \approx 1.3787965$ after $7$ iterations.
+Note that this is $2$ more iterations than Newton&rsquo;s method.</p>
+<h2 id="comparison-of-newtons-method-versus-secant-method">Comparison of Newton&rsquo;s method versus secant method</h2>
+<p>We perform $n=100000$ trials to get a better view of how the two methods,
+Newton and secant, compare over many different initial guesses.</p>
+<p>We generate the data with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">100000</span>
+</span></span><span style="display:flex;"><span>from <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>to <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>by <span style="color:#f92672">&lt;-</span> (to<span style="color:#f92672">-</span>from)<span style="color:#f92672">/</span>n
+</span></span><span style="display:flex;"><span>newt_sols <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>sec_sols <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (x0 <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">seq</span>(from<span style="color:#f92672">=</span>from, to<span style="color:#f92672">=</span>to, by<span style="color:#f92672">=</span>by))
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  newt_sols[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">newton_method</span>(f,dfdx,x0,eps,F)<span style="color:#f92672">$</span>iter
+</span></span><span style="display:flex;"><span>  sec_sols[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">secant_method</span>(f,x0,x0<span style="color:#ae81ff">+1</span>,eps,F)<span style="color:#f92672">$</span>iter
+</span></span><span style="display:flex;"><span>  i <span style="color:#f92672">&lt;-</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We summarize the results and report them with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;mean iterations\n&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;newton =&gt; &#34;</span>, <span style="color:#a6e22e">mean</span>(newt_sols), <span style="color:#e6db74">&#34;\n&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;secant =&gt; &#34;</span>, <span style="color:#a6e22e">mean</span>(sec_sols), <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>## mean iterations
+##  newton =&gt;  5.819542 
+##  secant =&gt;  7.231338
+</code></pre><p>We see that Newton&rsquo;s method, on average, requires
+$1.4117959$ fewer iterations before the stopping
+condition is satisfied.</p>
+<h1 id="problem-2">Problem 2</h1>
+<p>Poisson regression. The Ache hunting data set has $n = 47$ observations
+recording is the number of monkeys killed over a period of days with each hunter
+along with hunter’s age.
+It is of interest to estimate and quantify the monkey kill rate as a function of
+hunter’s age. Hunting prowess confers elevated status among the group, so a
+natural question is whether hunting ability improves with age,
+and at which age hunting ability is best.</p>
+$$
+  \mathit{monkeys}_i \sim \operatorname{Pois}\left(\exp(\log \mathit{days}_i  + \theta_1 + \theta_2 \mathit{age}_i + \theta_3 \mathit{age}_i^2)\right).
+$$<p>Feel free to use jacobian and hessian in the numDeriv R package. You may need a sets of crude
+starting values.
+I run a linear regression for the &ldquo;empirical log-rates&rdquo; and get starting values
+$(5.99, 0.167, 0.001)$.
+Feel free to use those. Compare your result with glm() function in R using</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">glm</span>(monkeys<span style="color:#f92672">~</span>age<span style="color:#f92672">+</span><span style="color:#a6e22e">I</span>(age^2), family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;poisson&#34;</span>, offset<span style="color:#f92672">=</span><span style="color:#a6e22e">log</span>(days), data<span style="color:#f92672">=</span>d)
+</span></span></code></pre></div><h2 id="solution">Solution</h2>
+<p>We are given the following data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.table</span>(<span style="color:#e6db74">&#34;ache.txt&#34;</span>, header<span style="color:#f92672">=</span>T)
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">length</span>(d<span style="color:#f92672">$</span>age)
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">cbind</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">1</span>,n), d<span style="color:#f92672">$</span>age, d<span style="color:#f92672">$</span>age^2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loglike <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(theta)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">dpois</span>(d<span style="color:#f92672">$</span>monkeys,<span style="color:#a6e22e">exp</span>(<span style="color:#a6e22e">log</span>(d<span style="color:#f92672">$</span>days)<span style="color:#f92672">+</span>X<span style="color:#f92672">%*%</span>theta),log<span style="color:#f92672">=</span>T))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># print the data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(d)
+</span></span></code></pre></div><pre tabindex="0"><code>##    hunter age monkeys days
+## 1       1  67       0    3
+## 2       2  66       0   89
+## 3       3  63      29  106
+## 4       4  60       2    4
+## 5       5  61       0   28
+## 6       6  59       2   73
+## 7       7  58       3    7
+## 8       8  57       0   13
+## 9       9  56       0    4
+## 10     10  56       3  104
+## 11     11  55      27  126
+## 12     12  54       0   63
+## 13     13  51       7   88
+## 14     14  50       0    7
+## 15     15  48       3    3
+## 16     16  49       0   56
+## 17     17  47       6   70
+## 18     18  42       1   18
+## 19     19  39       0    4
+## 20     20  40       7   83
+## 21     21  40       4   15
+## 22     22  39       1   19
+## 23     23  37       2   29
+## 24     24  35       2   48
+## 25     25  35       0   35
+## 26     26  33       0   10
+## 27     27  33      19   75
+## 28     28  32       9   63
+## 29     29  32       0   16
+## 30     30  31       0   13
+## 31     31  30       0   20
+## 32     32  30       2   26
+## 33     33  28       0    4
+## 34     34  27       0   13
+## 35     35  25       0   10
+## 36     36  22       0   16
+## 37     37  22       0   33
+## 38     38  21       0    7
+## 39     39  20       0   33
+## 40     40  18       0    8
+## 41     41  17       0    3
+## 42     42  17       0   13
+## 43     43  17       0    3
+## 44     44  56       0   62
+## 45     45  62       1    4
+## 46     46  59       1    4
+## 47     47  20       0   11
+</code></pre>$$
+X =
+  \begin{pmatrix}
+  1       & a_1 &     a_1^2\\
+  1       & a_2       & a_2^2\\
+  \vdots  & \vdots    & \vdots\\
+  1       & a_n       & a_n^2\\
+  \end{pmatrix},
+$$$$
+\vec{\theta} =
+  \begin{pmatrix}
+    \theta_1\\
+    \theta_2\\
+    \theta_3
+  \end{pmatrix},
+$$$$
+\vec{m} =
+  \begin{pmatrix}
+    m_1\\
+    m_2\\
+    \vdots\\
+    m_n
+  \end{pmatrix}.
+$$$$
+  M_i \sim \mathrm{POI}(\exp(\log d_i + X \vec{\theta})).
+$$<p>
+where $M_i$ is the random response variable for $i=1,\ldots,n$.</p>
+<p>We generalize the univariate Newton&rsquo;s method in Problem 1 to the multivariate
+case.
+We implement the multivariate Newton-Raphson method with numerical hessian and
+jacobian with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(numDeriv)
+</span></span><span style="display:flex;"><span>newton_raphson_method <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x0,f,eps)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>  x1 <span style="color:#f92672">&lt;-</span> x0
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">repeat</span>
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>      x1 <span style="color:#f92672">&lt;-</span> x0 <span style="color:#f92672">-</span> <span style="color:#a6e22e">solve</span>(<span style="color:#a6e22e">hessian</span>(f,x0))<span style="color:#f92672">%*%</span><span style="color:#a6e22e">t</span>(<span style="color:#a6e22e">jacobian</span>(f,x0))
+</span></span><span style="display:flex;"><span>      n <span style="color:#f92672">&lt;-</span> n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (n <span style="color:#f92672">%%</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) { <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;iteration=&#34;</span>,n,<span style="color:#e6db74">&#34; theta=&#34;</span>,x1,<span style="color:#e6db74">&#34;\n&#34;</span>) }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">abs</span>(x1 <span style="color:#f92672">-</span> x0)) <span style="color:#f92672">&lt;</span> eps)
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      x0 <span style="color:#f92672">&lt;-</span> x1
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">list</span>(root<span style="color:#f92672">=</span>x1,iter<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We use the multivariate Newton-Raphson method to find the MLE of $\theta$ in
+the poisson regression model:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>eps <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1e-6</span>
+</span></span><span style="display:flex;"><span>theta0 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">5.99</span>, <span style="color:#ae81ff">0.167</span>, <span style="color:#ae81ff">0.001</span>) <span style="color:#75715e"># starting values</span>
+</span></span><span style="display:flex;"><span>theta_mle <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">newton_raphson_method</span>(theta0,loglike,eps)<span style="color:#f92672">$</span>root
+</span></span></code></pre></div><pre tabindex="0"><code>## iteration= 7  theta= -1.011118 0.1670372 0.000999693 
+## iteration= 14  theta= -7.590761 0.153262 0.00111206 
+## iteration= 21  theta= 1.438483 -0.2696712 0.003827084 
+## iteration= 28  theta= -5.484246 0.1246477 -0.001203418
+</code></pre><p>The MLE of $\theta$ is given by:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>theta_mle
+</span></span></code></pre></div><pre tabindex="0"><code>##              [,1]
+## [1,] -5.484245903
+## [2,]  0.124647667
+## [3,] -0.001203418
+</code></pre><p>We compare the results with the builtin method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">glm</span>(monkeys<span style="color:#f92672">~</span>age<span style="color:#f92672">+</span><span style="color:#a6e22e">I</span>(age^2),family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;poisson&#34;</span>, offset<span style="color:#f92672">=</span><span style="color:#a6e22e">log</span>(days),data<span style="color:#f92672">=</span>d)<span style="color:#f92672">$</span>coefficients
+</span></span></code></pre></div><pre tabindex="0"><code>##  (Intercept)          age     I(age^2) 
+## -5.484245904  0.124647667 -0.001203418
+</code></pre><p>The hand-coded approach and the builtin approach obtain the same
+point estimate $\hat\theta = (-5.4842, 0.1246, -0.0012)&rsquo;$.</p>
+<h1 id="problem-3">Problem 3</h1>
+<p>Logistic and Cauchy distributions are well-suited to the inverse transform method.
+For each of the following, generate $10,000$ random variables using the inverse transform.
+Compare your program with the built-in R functions rlogis() and rcauchy(), respectively:</p>
+<h2 id="solution-part-a">Solution: part (a)</h2>
+$$
+  F(x) = \frac{1}{1+e^{-x}}
+$$$$
+\begin{align*}
+  u &= F(x)\\
+  u &= \frac{1}{1+e^{-x}}\\
+  x &= \log(u/(1-u)).
+\end{align*}
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>us <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(n)
+</span></span><span style="display:flex;"><span>d1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">density</span>(<span style="color:#a6e22e">log</span>(us<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>us)))
+</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">density</span>(<span style="color:#a6e22e">rlogis</span>(n))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(d1,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comparison of density plots&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(d2,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">legend</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;topright&#34;</span>,legend<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;inverse method&#34;</span>,<span style="color:#e6db74">&#34;built-in&#34;</span>),col<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;blue&#34;</span>,<span style="color:#e6db74">&#34;red&#34;</span>),
+</span></span><span style="display:flex;"><span>       pch<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;-&#34;</span>,<span style="color:#e6db74">&#34;-&#34;</span>))
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13"></p>
+<h2 id="solution-part-b">Solution: part (b)</h2>
+$$
+  F(x) = \frac{1}{2} + \frac{1}{\pi} \operatorname{arctan(x)}
+$$$$
+\begin{align*}
+  u &= F(x)\\
+  u &= \frac{1}{2} + \frac{1}{\pi} \operatorname{arctan(x)}\\
+  x &= \tan(\pi(u-1/2)).
+\end{align*}
+$$<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>us <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(n)
+</span></span><span style="display:flex;"><span>d1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tan</span>(<span style="color:#66d9ef">pi</span><span style="color:#f92672">*</span>(us<span style="color:#ae81ff">-0.5</span>))
+</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rcauchy</span>(n<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>d1 <span style="color:#f92672">&lt;-</span> d1[d1 <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">-20</span> <span style="color:#f92672">&amp;</span> d1 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>]
+</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> d2[d2 <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">-20</span> <span style="color:#f92672">&amp;</span> d2 <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>c1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rgb</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">255</span>, max <span style="color:#f92672">=</span> <span style="color:#ae81ff">255</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, names <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>)
+</span></span><span style="display:flex;"><span>c2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rgb</span>(<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>, max <span style="color:#f92672">=</span> <span style="color:#ae81ff">255</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, names <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mfrow<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(d1,col<span style="color:#f92672">=</span>c1,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inverse-transform method vs built-in&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(d2,col<span style="color:#f92672">=</span>c2,add<span style="color:#f92672">=</span>T,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">legend</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;topright&#34;</span>,legend<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;inv&#34;</span>,<span style="color:#e6db74">&#34;builtin&#34;</span>),col<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;blue&#34;</span>,<span style="color:#e6db74">&#34;red&#34;</span>),pch<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;-&#34;</span>,<span style="color:#e6db74">&#34;-&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">density</span>(d1), col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;density plot&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lines</span>(<span style="color:#a6e22e">density</span>(d2), col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">legend</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;topright&#34;</span>,legend<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;inv&#34;</span>,<span style="color:#e6db74">&#34;builtin&#34;</span>),col<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;blue&#34;</span>,<span style="color:#e6db74">&#34;red&#34;</span>),pch<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;-&#34;</span>,<span style="color:#e6db74">&#34;-&#34;</span>))
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-14-1.png" alt="plot of chunk unnamed-chunk-14"></p>
+<h1 id="problem-4">Problem 4</h1>
+<p>Generating $10,000$ random variables from $\operatorname{Geometric}(p)$
+distribution based off Bernoulli trials.</p>
+<h2 id="solution-1">Solution</h2>
+<p>A random variable $X \sim \operatorname{Geometric(p)}$ is given by the number of
+i.i.d. trials needed to have a success where success occurs with probability $p$.</p>
+<p>Thus, we may simulate this distribution with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># simulate n realizes of geometric(p)</span>
+</span></span><span style="display:flex;"><span>rgeo <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(n,p)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  outcomes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>n)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    trials <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (T)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      trials <span style="color:#f92672">&lt;-</span> trials <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">rbinom</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,p) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    outcomes[i] <span style="color:#f92672">&lt;-</span> trials
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  outcomes
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When we use this function to draw a sample of $n=10000$ geoemtrically distributed
+random variables with $p=0.2$, we obtain:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>p <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">.2</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>sample <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rgeo</span>(n,p)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;the mean should be approximate 1/p =&#34;</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>p, <span style="color:#e6db74">&#34; and we obtain a mean of &#34;</span>, <span style="color:#a6e22e">mean</span>(sample))
+</span></span></code></pre></div><pre tabindex="0"><code>## the mean should be approximate 1/p = 5  and we obtain a mean of  4.9587
+</code></pre><h1 id="problem-5">Problem 5</h1>
+$$
+f(x) = \frac{2}{\sqrt{2 \pi}} e^{-x^2/2} , x > 0.
+$$<p>For the candidate pdf, choose the exponential density with rate $1$. Verify that
+your method works via a plot of the true density, and a histogram of the
+generated values.</p>
+<h2 id="solution-2">Solution</h2>
+$$
+  \operatorname{dhalfnormal}(x) = \frac{2}{\sqrt{2 \pi}} e^{-x^2/2}, x > 0.
+$$<p>We model this density with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># density for standard half-normal</span>
+</span></span><span style="display:flex;"><span>dhalfnormal <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">sqrt</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#66d9ef">pi</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#f92672">-</span>x^2<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) }
+</span></span></code></pre></div>$$
+  c = \max \left\{ \frac{\operatorname{dhalfnormal}(x)}{\operatorname{dexp}(x|\lambda=1)} | x \in \mathbb{R} \right\},
+$$<p>
+which is found to be approximately $c = 1.315489247$.</p>
+<p>We implement the standard half-normal sampler, $\operatorname{rhalfnormal}$,
+using the acceptance-rejection sampling technique with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># accept-rejection sampling for standard half-normal</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># using exp(rate=1)</span>
+</span></span><span style="display:flex;"><span>rhalfnormal <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(N)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  c <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1.315489247</span>
+</span></span><span style="display:flex;"><span>  xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>N)
+</span></span><span style="display:flex;"><span>  k <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (T)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rexp</span>(n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">dhalfnormal</span>(x)<span style="color:#f92672">/</span>(c<span style="color:#f92672">*</span><span style="color:#a6e22e">dexp</span>(x)))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      xs[k] <span style="color:#f92672">&lt;-</span> x
+</span></span><span style="display:flex;"><span>      k <span style="color:#f92672">&lt;-</span> k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (k <span style="color:#f92672">==</span> N)
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  xs
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We simulate drawing $n=100000$ samples from the standard half-normal
+distribution and plotting a histogram of the sample with its density overload in
+red on top of it with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">100000</span>
+</span></span><span style="display:flex;"><span>sample <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rhalfnormal</span>(n)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(sample,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;standard half-normal&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">curve</span>(<span style="color:#a6e22e">dhalfnormal</span>(x),add<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>) 
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-19-1.png" alt="plot of chunk unnamed-chunk-19"></p>
+<p>We see that the histogram is compatible with being drawn from the overload
+density.</p>
+<h1 id="problem-6">Problem 6</h1>
+$$
+  f(x) \propto 3 e^{-0.5(x+2)^2} + 7 e^{-0.5(x-2)^2}
+$$<p>
+The normalizing constant is $25.066$. For your proposal $g(·)$, use a
+$N(0, 2^2)$ distribution. Verify that your method works via a plot of the true
+normalized density, and a histogram of the generated values.</p>
+<h2 id="solution-3">Solution</h2>
+$$
+  \operatorname{ker-bimodal}(x) = 3 e^{-0.5(x+2)^2} + 7 e^{-0.5(x-2)^2},
+$$$$
+  \operatorname{dbimodal}(x) = \frac{\operatorname{ker}(x)}{C}.
+$$<p>We model these two functions with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># density for biomodal density</span>
+</span></span><span style="display:flex;"><span>kerbimodal <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">-0.5</span><span style="color:#f92672">*</span>(x<span style="color:#ae81ff">+2</span>)^2) <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">*</span><span style="color:#a6e22e">exp</span>(<span style="color:#ae81ff">-0.5</span><span style="color:#f92672">*</span>(x<span style="color:#ae81ff">-2</span>)^2) }
+</span></span><span style="display:flex;"><span>kerbimodal.C <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">25.0663</span>
+</span></span><span style="display:flex;"><span>dbimodal <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(x) { <span style="color:#a6e22e">kerbimodal</span>(x) <span style="color:#f92672">/</span> kerbimodal.C }
+</span></span></code></pre></div>$$
+  c = \max \left\{ \frac{\operatorname{ker-bimodal}(x)}{g(x|\mu=0,\sigma^2=2^2)} | x \in \mathbb{R} \right\},
+$$<p>
+which is found to be approximately $c = 68.35212$.</p>
+<p>We implement the bimodal sampler, $\operatorname{rbimodal}$, using the
+acceptance-rejection sampling technique with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># accept-rejection sampling for bimodal distribution with density dbimodal</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># using normal(0,2^2).</span>
+</span></span><span style="display:flex;"><span>rbimodal <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">function</span>(N)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  c <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">68.35212</span>
+</span></span><span style="display:flex;"><span>  xs <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vector</span>(length<span style="color:#f92672">=</span>N)
+</span></span><span style="display:flex;"><span>  k <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (T)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rnorm</span>(n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,mean<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,sd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">runif</span>(n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">kerbimodal</span>(x)<span style="color:#f92672">/</span>(c<span style="color:#f92672">*</span><span style="color:#a6e22e">dnorm</span>(x,mean<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,sd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      xs[k] <span style="color:#f92672">&lt;-</span> x
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (k <span style="color:#f92672">==</span> N)
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      k <span style="color:#f92672">&lt;-</span> k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  xs
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We simulate drawing $n=100000$ samples from the bimodal distribution
+and plotting a histogram of the sample with its density overload in red on top
+of it with the following R code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">100000</span>
+</span></span><span style="display:flex;"><span>sample <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbimodal</span>(n)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(sample,freq<span style="color:#f92672">=</span>F,breaks<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>,main<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bimodal&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">curve</span>(<span style="color:#a6e22e">dbimodal</span>(x),add<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>,col<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>) 
+</span></span></code></pre></div><p><img src="figure/unnamed-chunk-22-1.png" alt="plot of chunk unnamed-chunk-22"></p>
+<p>We see that the histogram is compatible with being drawn from the overload
+density.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

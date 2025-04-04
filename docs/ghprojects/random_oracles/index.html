@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>random_oracles | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Cryptographic Hash Functions,, Random Oracles, and Lazy Computation">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/ghprojects/random_oracles/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/ghprojects/random_oracles/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="random_oracles">
+  <meta property="og:description" content="Cryptographic Hash Functions,, Random Oracles, and Lazy Computation">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ghprojects">
+    <meta property="article:published_time" content="2024-05-15T20:40:25+00:00">
+    <meta property="article:modified_time" content="2024-05-15T20:40:25+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="random_oracles">
+  <meta itemprop="description" content="Cryptographic Hash Functions,, Random Oracles, and Lazy Computation">
+  <meta itemprop="datePublished" content="2024-05-15T20:40:25+00:00">
+  <meta itemprop="dateModified" content="2024-05-15T20:40:25+00:00">
+  <meta itemprop="wordCount" content="1361">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="random_oracles">
+  <meta name="twitter:description" content="Cryptographic Hash Functions,, Random Oracles, and Lazy Computation">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">random_oracles</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | May 15, 2024 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/random_oracles" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=random_oracles&url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2frandom_oracles%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2frandom_oracles%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2frandom_oracles%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <h1 id="random_oracles">random_oracles</h1>
+<p>Cryptographic Hash Functions,, Random Oracles, and Lazy Computation
+<a href="https://github.com/queelius/random_oracles">GitHub Link</a>
+<strong>Stars</strong>: 0 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0
+<strong>Languages Used</strong>: Python</p>
+<h2 id="readme">README</h2>
+<h1 id="introduction-to-cryptographic-hash-functions-and-random-oracles">Introduction to Cryptographic Hash Functions and Random Oracles</h1>
+<p>In this module, we explore the fundamental concepts of hash functions, random oracles, and lazy computation. These concepts are pivotal in the fields of cryptography and theoretical computer science, offering a robust foundation for understanding secure communications and data integrity. Through a series of Python classes, we simulate behaviors and properties that, while often theoretical, provide deep insights into the practical applications of these abstract concepts.</p>
+<h2 id="cryptographic-hash-functions">Cryptographic Hash Functions</h2>
+<p>A <strong>cryptographic hash function</strong> is a mathematical algorithm that converts an arbitrary block of data into a fixed-size bit string, known as a <em>digest</em>. The ideal hash function has several important properties:</p>
+<ul>
+<li><strong>Deterministic:</strong> The same input always produces the same output.</li>
+<li><strong>Quick computation:</strong> The function generates the output quickly.</li>
+<li><strong>Pre-image resistance:</strong> Given a hash output, it should be computationally infeasible to reverse it to find the original input.</li>
+<li><strong>Avalanche effect:</strong> Small changes in the input drastically change the output.</li>
+<li><strong>Collision-resistant:</strong> It should be difficult to find two different inputs that produce the same output.</li>
+</ul>
+<p>Mathematically, a hash function can be represented as:</p>
+$$
+\text{hash} : \\{0,1\\}^* \rightarrow \\{0,1\\}^n
+$$<h3 id="collision-resistance">Collision Resistance</h3>
+<p>A well-designed cryptographic hash function with an output length of \( n \) bits has a collision probability of approximately \( \frac{1}{2^n} \). For a random oracle, given its infinite output space, the probability of collision is zero. When truncated to \( n \) bits, the random oracle behaves similarly to a cryptographic hash function in terms of collision resistance.</p>
+<p>The following Python class represents the general structure of a digest object, encapsulating these properties:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Digest</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, digest):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_digest <span style="color:#f92672">=</span> bytes<span style="color:#f92672">.</span>fromhex(digest) <span style="color:#66d9ef">if</span> isinstance(digest, str) <span style="color:#66d9ef">else</span> digest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">digest</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_digest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hexdigest</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>digest()<span style="color:#f92672">.</span>hex()
+</span></span></code></pre></div><h2 id="random-oracles">Random Oracles</h2>
+<p>The <strong>random oracle model</strong> is an abstract machine used to study the security of cryptographic protocols. It assumes the existence of a random oracle that provides truly random responses to every unique query. In practice, random oracles are simulated using hash functions, albeit imperfectly.</p>
+<p>Mathematically, a random oracle can be represented as:</p>
+$$
+\text{oracle} : \\{0,1\\}^* \rightarrow \\{0,1\\}^\infty
+$$<p>A <code>RandomOracleDigest</code> is conceptualized in our Python framework to mimic this behavior:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OracleDigest</span>(Digest):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, input, entropy<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(input)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> entropy <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            entropy <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> : hashlib<span style="color:#f92672">.</span>sha256(os<span style="color:#f92672">.</span>urandom(<span style="color:#ae81ff">32</span>))<span style="color:#f92672">.</span>digest()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entropy <span style="color:#f92672">=</span> entropy
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __getitem__(self, index):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> index <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cache:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>cache[index] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>entropy()[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>cache[index]
+</span></span></code></pre></div><h2 id="lazy-computation-and-infinite-digests">Lazy Computation and Infinite Digests</h2>
+<p><strong>Lazy computation</strong> refers to the programming strategy of delaying the calculation of a value until it is needed. This concept is particularly useful in dealing with theoretically infinite outputs on finite machines. One can even define an algebra over the data structure, such as <code>truncate</code> and, <code>apply</code>, and so on. However, note that operations like <code>concat</code> are restricted to left-hand-side being finite and right-hand-side being potentially infinite. Essentially, any operation that does not require acccess or modification with respect to the right-hand-side is allowed.</p>
+<p>In our framework, <code>LazyDigest</code> generates infinite outputs based on a seed value and a hash function, allowing the digest to be computed on demand:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LazyDigest</span>(Digest):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, seed, hash_fn<span style="color:#f92672">=</span>hashlib<span style="color:#f92672">.</span>sha256):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(seed)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hash_fn <span style="color:#f92672">=</span> hash_fn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __getitem__(self, index):
+</span></span><span style="display:flex;"><span>        h <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>hash_fn()
+</span></span><span style="display:flex;"><span>        h<span style="color:#f92672">.</span>update(self<span style="color:#f92672">.</span>digest())
+</span></span><span style="display:flex;"><span>        h<span style="color:#f92672">.</span>update(str(index)<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> h<span style="color:#f92672">.</span>digest()[<span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><p>Through this exploration, we aim to demystify these complex ideas and illustrate their practical implications using Python, providing an interactive and engaging learning experience.</p>
+<h2 id="detailed-class-explanations">Detailed Class Explanations</h2>
+<h3 id="digest-class">Digest Class</h3>
+<p>The <code>Digest</code> class serves as the foundational component in our framework, abstracting the functionality of a cryptographic hash function&rsquo;s output. This class encapsulates the digest operations, providing a unified interface regardless of the hash function used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Digest</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, digest):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Initialize with the given digest.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_digest <span style="color:#f92672">=</span> bytes<span style="color:#f92672">.</span>fromhex(digest) <span style="color:#66d9ef">if</span> isinstance(digest, str) <span style="color:#66d9ef">else</span> digest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">digest</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Get the digest as a bytes object.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_digest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hexdigest</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Get the digest as a hex string.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>digest()<span style="color:#f92672">.</span>hex()
+</span></span></code></pre></div><ul>
+<li><strong>Initialization:</strong> The constructor accepts a digest, which can be either a hexadecimal string or a bytes object.</li>
+<li><strong>Digest Retrieval:</strong> The <code>digest</code> method returns the raw bytes of the digest.</li>
+<li><strong>Hexadecimal Representation:</strong> The <code>hexdigest</code> method provides a hexadecimal string representation of the digest.</li>
+</ul>
+<h3 id="oracledigest-class">OracleDigest Class</h3>
+<p>The <code>OracleDigest</code> class extends <code>Digest</code> to simulate a random oracle, a theoretical construct in cryptography that provides a random response for each unique query but remains consistent for repeated queries.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OracleDigest</span>(Digest):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, input, entropy<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(input)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> entropy <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            entropy <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span>: hashlib<span style="color:#f92672">.</span>sha256(os<span style="color:#f92672">.</span>urandom(<span style="color:#ae81ff">32</span>))<span style="color:#f92672">.</span>digest()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>entropy <span style="color:#f92672">=</span> entropy
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __getitem__(self, index):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> index <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cache:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>cache[index] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>entropy()[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>cache[index]
+</span></span></code></pre></div><ul>
+<li><strong>Initialization:</strong> Accepts an <code>input</code> as the seed for the random oracle. The <code>entropy</code> parameter specifies a randomness source, defaulting to a SHA-256 hash of random data from <code>os.urandom</code>.</li>
+<li><strong>Lazy Loading:</strong> The <code>__getitem__</code> method implements lazy loading, generating random bytes when first requested and caching them for consistent future access.</li>
+</ul>
+<h3 id="lazydigest-class">LazyDigest Class</h3>
+<p>The <code>LazyDigest</code> class embodies the principle of lazy computation to simulate an infinite digest based on a given seed and hash function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LazyDigest</span>(Digest):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, seed, hash_fn<span style="color:#f92672">=</span>hashlib<span style="color:#f92672">.</span>sha256):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(seed)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hash_fn <span style="color:#f92672">=</span> hash_fn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __getitem__(self, index):
+</span></span><span style="display:flex;"><span>        h <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>hash_fn()
+</span></span><span style="display:flex;"><span>        h<span style="color:#f92672">.</span>update(self<span style="color:#f92672">.</span>digest())
+</span></span><span style="display:flex;"><span>        h<span style="color:#f92672">.</span>update(str(index)<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> h<span style="color:#f92672">.</span>digest()[<span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><ul>
+<li><strong>Seed and Hash Function:</strong> Initializes with a <code>seed</code> and a <code>hash_fn</code>.</li>
+<li><strong>Lazy Byte Generation:</strong> The <code>__getitem__</code> method generates each byte only when accessed, using the seed and index.</li>
+</ul>
+<h3 id="lazyhexdigest-class">LazyHexDigest Class</h3>
+<p>The <code>LazyHexDigest</code> class extends <code>LazyDigest</code> by providing hexadecimal representations of the lazily computed bytes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LazyHexDigest</span>(LazyDigest):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __getitem__(self, index):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> super()<span style="color:#f92672">.</span>__getitem__(index)<span style="color:#f92672">.</span>hex()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hexdigest</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self
+</span></span></code></pre></div><ul>
+<li><strong>Hexadecimal Output:</strong> Converts each byte into its hexadecimal representation for easier visualization and analysis.</li>
+</ul>
+<h3 id="oracle-class">Oracle Class</h3>
+<p>The <code>Oracle</code> class simulates a random oracle by caching the outputs for given inputs, ensuring consistent results for repeated queries.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Oracle</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>cache <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __call__(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> x <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cache:
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>cache[x] <span style="color:#f92672">=</span> OracleDigest(x)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>cache[x]
+</span></span></code></pre></div><ul>
+<li><strong>Caching Mechanism:</strong> Uses a dictionary to cache results, mimicking the random oracle&rsquo;s property of consistent outputs for identical inputs.</li>
+<li><strong>Integration with <code>OracleDigest</code>:</strong> Uses the <code>OracleDigest</code> class to generate new digests.</li>
+</ul>
+<h3 id="cryptohash-class">CryptoHash Class</h3>
+<p>The <code>CryptoHash</code> class serves as a wrapper for any cryptographic hash function, facilitating the easy generation of digests from arbitrary data inputs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CryptoHash</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, hash_fn<span style="color:#f92672">=</span>hashlib<span style="color:#f92672">.</span>sha256):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>hash_fn <span style="color:#f92672">=</span> hash_fn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __call__(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Digest(self<span style="color:#f92672">.</span>hash_fn(x)<span style="color:#f92672">.</span>digest())
+</span></span></code></pre></div><ul>
+<li><strong>Flexibility in Hash Function Selection:</strong> Allows the use of any hash function supported by Python&rsquo;s <code>hashlib</code>.</li>
+<li><strong>Simple Interface:</strong> Abstracts complex cryptographic functions for easier usage.</li>
+</ul>
+<h3 id="oraclehash-class">OracleHash Class</h3>
+<p>The <code>OracleHash</code> class approximates a random oracle by generating lazy, infinite digests using a cryptographic hash function seeded by the input.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OracleHash</span>(CryptoHash):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __call__(self, x):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> LazyDigest(self<span style="color:#f92672">.</span>hash_fn(x)<span style="color:#f92672">.</span>digest(), self<span style="color:#f92672">.</span>hash_fn)
+</span></span></code></pre></div><ul>
+<li><strong>Extension of <code>CryptoHash</code>:</strong> Inherits the simplicity and flexibility of <code>CryptoHash</code>.</li>
+<li><strong>Integration with <code>LazyDigest</code>:</strong> Uses <code>LazyDigest</code> to create digests that can theoretically extend indefinitely.</li>
+</ul>
+<h2 id="discussion-on-approximation-and-finite-machines">Discussion on Approximation and Finite Machines</h2>
+<p>It&rsquo;s important to note that while these implementations provide valuable insights, they are approximations constrained by the limitations of finite machines:</p>
+<ol>
+<li><strong>Random Oracle Approximation:</strong> The <code>OracleDigest</code> and <code>Oracle</code> classes use finite caching mechanisms, which means they cannot perfectly emulate a random oracle due to memory constraints. Additionally, each instantiation of a random oracle can diverge due to different entropy sources, illustrating the inherent randomness and</li>
+</ol>
+<p>the practical challenges of achieving idealized behavior.</p>
+<ol start="2">
+<li><strong>Lazy Computation:</strong> The <code>LazyDigest</code> class demonstrates how infinite sequences can be generated on demand. However, it does not possess the true properties of a random oracle, as it relies on deterministic cryptographic hash functions and finite computation.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>To use these classes, you can create instances and call them with your desired inputs. Here is an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> digest <span style="color:#f92672">import</span> Digest, OracleDigest, LazyDigest
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> oracle <span style="color:#f92672">import</span> Oracle, CryptoHash, OracleHash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of Digest</span>
+</span></span><span style="display:flex;"><span>digest <span style="color:#f92672">=</span> Digest(hashlib<span style="color:#f92672">.</span>sha256(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example input&#34;</span>)<span style="color:#f92672">.</span>digest())
+</span></span><span style="display:flex;"><span>print(digest<span style="color:#f92672">.</span>hexdigest())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of OracleDigest</span>
+</span></span><span style="display:flex;"><span>oracle_digest <span style="color:#f92672">=</span> OracleDigest(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example input&#34;</span>)
+</span></span><span style="display:flex;"><span>print(oracle_digest[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of LazyDigest</span>
+</span></span><span style="display:flex;"><span>lazy_digest <span style="color:#f92672">=</span> LazyDigest(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example seed&#34;</span>)
+</span></span><span style="display:flex;"><span>print(lazy_digest[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of Oracle</span>
+</span></span><span style="display:flex;"><span>oracle <span style="color:#f92672">=</span> Oracle()
+</span></span><span style="display:flex;"><span>print(oracle(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example input&#34;</span>)[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of CryptoHash</span>
+</span></span><span style="display:flex;"><span>crypto_hash <span style="color:#f92672">=</span> CryptoHash()
+</span></span><span style="display:flex;"><span>print(crypto_hash(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example input&#34;</span>)<span style="color:#f92672">.</span>hexdigest())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example usage of OracleHash</span>
+</span></span><span style="display:flex;"><span>oracle_hash <span style="color:#f92672">=</span> OracleHash()
+</span></span><span style="display:flex;"><span>print(oracle_hash(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;example input&#34;</span>)[<span style="color:#ae81ff">0</span>])
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>This project provides a clear and concise introduction to the concepts of hash functions, random oracles, and lazy computation. The provided Python classes and functions illustrate these concepts and can be used for further experimentation and learning.</p>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem;">Related</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <a href="https://queelius.github.io/metafunctor/projects/random_oracles/">random_oracles</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/ollama_data_tools/">ollama_data_tools</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/ollama_data_tools/">ollama_data_tools</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/algotree/">AlgoTree</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/algotree/">AlgoTree</a>
+            
+          </div>
+        </section>
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Approximations of Solomonoff Induction | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "admin">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/research/solomonoff/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/research/solomonoff/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Approximations of Solomonoff Induction">
+  <meta property="og:description" content="I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="research">
+    <meta property="article:published_time" content="2024-02-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-02-19T00:00:00+00:00">
+    <meta property="article:tag" content="Large Language Models">
+    <meta property="article:tag" content="Solomonoff Induction">
+    <meta property="article:tag" content="Synthetic Data">
+    <meta property="article:tag" content="Algorthmic Data">
+    <meta property="article:tag" content="N-Gram Models">
+    <meta property="article:tag" content="Markov Models">
+
+  <meta itemprop="name" content="Approximations of Solomonoff Induction">
+  <meta itemprop="description" content="I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.">
+  <meta itemprop="datePublished" content="2024-02-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-02-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="22">
+  <meta itemprop="keywords" content="Large Language Models,Solomonoff Induction,Synthetic Data,Algorthmic Data,N-Gram Models,Markov Models,Foundation Models,Statistics">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Approximations of Solomonoff Induction">
+  <meta name="twitter:description" content="I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Research
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Approximations of Solomonoff Induction</h1>
+      
+      <p class="tracked"><strong>admin</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-02-19T00:00:00Z">February 19, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>The GitHub for this can be found <a href="https://github.com/queelius/solomonoff_induction">here</a>.</p>
+<p>Shoot me an email at <a href="mailto:lex@metafunctor.com">lex@metafunctor.com</a> if you&rsquo;re interested in collaborating on any projects.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/large-language-models/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Large Language Models</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/solomonoff-induction/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Solomonoff Induction</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/synthetic-data/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Synthetic Data</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/algorthmic-data/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Algorthmic Data</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/n-gram-models/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">N-Gram Models</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/markov-models/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Markov Models</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/foundation-models/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Foundation Models</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/statistics/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Statistics</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/metafunctor/research/llm-search/">Various LLM Research Projects</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/posts/llm-fine-tuning-es-dsl/">Fine-Tuning Tiny LLMs for ElasticSearch DSL</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/posts/masters-stats-siue-proj/">Master&#39;s project: Reliability Estimation in Series Systems</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/research/reliability-estimation-in-series-systems-model-sel/">Model Selection in Weibull Series Systems</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/probsets/stat575/stat575-problem-set-2/">Computational Statistics - SIUe - STAT 575 - Problem Set 2</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/posts/2012-02-04-sax/cs584_sax_review/">Review: A Symbolic Representation of Time Series, with Implications for Streaming Algorithms</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/probsets/stat575/problem_set_4/">SIUe - Computational Statistics (STAT 575) - Problem Set 4</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/metafunctor/probsets/stat482/problem_set_8/">Regression Analysis - SIUe - STAT 482 - Probem Set 8</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

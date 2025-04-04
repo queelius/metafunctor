@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>xtoolkit | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Stars: 0 | Forks: 0 | Open Issues: 0
+Languages: Python, Jupyter Notebook, Makefile
+Contributors
+
+queelius (2 commits)
+
+README
+Expression Toolkit: xtoolkit
+Note: Broke some of the logic, will fix soon.
+Overview
+This project is a Python package that provides tools for expression rewriting,
+including pattern matching, rule-based transformations (which may sometimes
+be considered simplifications, but it depends on the rules), and evaluation of
+expressions.
+The package includes:
+
+An expression rewriting engine in xtoolkit/rewriter.py, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules.
+A set of predefined mathematical rules in xtoolkit/rules/ for basic algebra, calculus, trigonometry, etc.
+Jupyter notebooks in notebooks/ that demonstrate and test the functionality of the package.
+
+Installation
+To install the package locally, navigate to the root directory and run:">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/projects/xtoolkit/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/projects/xtoolkit/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="xtoolkit">
+  <meta property="og:description" content="Stars: 0 | Forks: 0 | Open Issues: 0
+Languages: Python, Jupyter Notebook, Makefile
+Contributors queelius (2 commits) README Expression Toolkit: xtoolkit Note: Broke some of the logic, will fix soon.
+Overview This project is a Python package that provides tools for expression rewriting, including pattern matching, rule-based transformations (which may sometimes be considered simplifications, but it depends on the rules), and evaluation of expressions.
+The package includes:
+An expression rewriting engine in xtoolkit/rewriter.py, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules. A set of predefined mathematical rules in xtoolkit/rules/ for basic algebra, calculus, trigonometry, etc. Jupyter notebooks in notebooks/ that demonstrate and test the functionality of the package. Installation To install the package locally, navigate to the root directory and run:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-11-27T18:01:55+00:00">
+    <meta property="article:modified_time" content="2024-11-27T18:01:55+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="xtoolkit">
+  <meta itemprop="description" content="Stars: 0 | Forks: 0 | Open Issues: 0
+Languages: Python, Jupyter Notebook, Makefile
+Contributors queelius (2 commits) README Expression Toolkit: xtoolkit Note: Broke some of the logic, will fix soon.
+Overview This project is a Python package that provides tools for expression rewriting, including pattern matching, rule-based transformations (which may sometimes be considered simplifications, but it depends on the rules), and evaluation of expressions.
+The package includes:
+An expression rewriting engine in xtoolkit/rewriter.py, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules. A set of predefined mathematical rules in xtoolkit/rules/ for basic algebra, calculus, trigonometry, etc. Jupyter notebooks in notebooks/ that demonstrate and test the functionality of the package. Installation To install the package locally, navigate to the root directory and run:">
+  <meta itemprop="datePublished" content="2024-11-27T18:01:55+00:00">
+  <meta itemprop="dateModified" content="2024-11-27T18:01:55+00:00">
+  <meta itemprop="wordCount" content="969">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="xtoolkit">
+  <meta name="twitter:description" content="Stars: 0 | Forks: 0 | Open Issues: 0
+Languages: Python, Jupyter Notebook, Makefile
+Contributors queelius (2 commits) README Expression Toolkit: xtoolkit Note: Broke some of the logic, will fix soon.
+Overview This project is a Python package that provides tools for expression rewriting, including pattern matching, rule-based transformations (which may sometimes be considered simplifications, but it depends on the rules), and evaluation of expressions.
+The package includes:
+An expression rewriting engine in xtoolkit/rewriter.py, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules. A set of predefined mathematical rules in xtoolkit/rules/ for basic algebra, calculus, trigonometry, etc. Jupyter notebooks in notebooks/ that demonstrate and test the functionality of the package. Installation To install the package locally, navigate to the root directory and run:">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">xtoolkit</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | November 27, 2024 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/xtoolkit" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=xtoolkit&url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2fxtoolkit%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2fxtoolkit%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fprojects%2fxtoolkit%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <p><strong>Stars</strong>: 0 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0</p>
+<p><strong>Languages</strong>: Python, Jupyter Notebook, Makefile</p>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>queelius (2 commits)</li>
+</ul>
+<h2 id="readme">README</h2>
+<h1 id="expression-toolkit-xtoolkit">Expression Toolkit: <code>xtoolkit</code></h1>
+<p>Note: Broke some of the logic, will fix soon.</p>
+<h2 id="overview">Overview</h2>
+<p>This project is a Python package that provides tools for expression rewriting,
+including pattern matching, rule-based transformations (which may sometimes
+be considered simplifications, but it depends on the rules), and evaluation of
+expressions.</p>
+<p>The package includes:</p>
+<ul>
+<li>An expression rewriting engine in <code>xtoolkit/rewriter.py</code>, which provides functions for matching patterns, instantiating expressions, evaluating forms, and simplifying expressions using transformation rules.</li>
+<li>A set of predefined mathematical rules in <code>xtoolkit/rules/</code> for basic algebra, calculus, trigonometry, etc.</li>
+<li>Jupyter notebooks in <code>notebooks/</code> that demonstrate and test the functionality of the package.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>To install the package locally, navigate to the root directory and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip install -e .
+</span></span></code></pre></div><h2 id="usage">Usage</h2>
+<p>Here are some examples of how to use the package.</p>
+<h3 id="simplifier">Simplifier</h3>
+<p>You can use the <code>simplifier</code> function from <code>xtoolkit/rewriter.py</code> to simplify mathematical expressions based on a set of transformation rules.</p>
+<h4 id="example-simplifying-derivatives">Example: Simplifying Derivatives</h4>
+<p>Consider the rule for the derivative of a constant, $d/dx c = 0$ where $c$ is
+a constant with respect to $x$. This rule can be represented as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[<span style="color:#e6db74">&#39;dd&#39;</span>, [<span style="color:#e6db74">&#39;?c&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>], [<span style="color:#e6db74">&#39;?v&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>]], <span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><p>Using this rule, we can simplify the derivative of a constant expression:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> exprtoolkit.rewriter <span style="color:#f92672">import</span> simplifier
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the rule</span>
+</span></span><span style="display:flex;"><span>rules <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [[<span style="color:#e6db74">&#39;dd&#39;</span>, [<span style="color:#e6db74">&#39;?c&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>], [<span style="color:#e6db74">&#39;?v&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>]], <span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the simplifier function</span>
+</span></span><span style="display:flex;"><span>simplify <span style="color:#f92672">=</span> simplifier(rules)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Simplify the expression</span>
+</span></span><span style="display:flex;"><span>expr <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;dd&#39;</span>, <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;x&#39;</span>]
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> simplify(expr)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>expr<span style="color:#e6db74">}</span><span style="color:#e6db74"> =&gt;, </span><span style="color:#e6db74">{</span>result<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output: [&#39;dd&#39;, 3, &#39;x&#39;] =&gt; 0</span>
+</span></span></code></pre></div><p>Note that <code>['dd, ['?c', 'a'], ['?v', 'x']]</code> is a pattern that matches the
+derivative of a constant <code>a</code> with respect to variable <code>x</code>,</p>
+$$
+dc/dv = 0
+$$<p>where <code>?c</code> and <code>?v</code> respectively match constants and variables.
+Additionally, <code>?</code> matfches any expression. Thus, <code>[?c, 'a']</code> matches arbitrary
+constants, which we name <code>a</code>, <code>[?v, 'x']</code> matches arbitrary variables, which we
+name <code>x</code>, and <code>[? , 'e']</code> matches any expression that we name <code>e</code>.</p>
+<p>This is the AST representation of the rule. The rule itself is a list with two
+elements: the pattern and the skeleton replacement. The pattern is a list with the first
+element being the operator and the rest being the operands. The skeleton is
+a template for the replacement expression. More details later.</p>
+<p>A rule can also be a JSON object, which allows for attaching metadata
+to the rule. Here is the same rule as a JSON object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pattern&#34;</span>: [<span style="color:#e6db74">&#34;dd&#34;</span>, [<span style="color:#e6db74">&#34;?c&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>], [<span style="color:#e6db74">&#34;?v&#34;</span>, <span style="color:#e6db74">&#34;x&#34;</span>]],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;replacement&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;derivative_of_constant&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;The derivative of a constant is zero.&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Furthermore, we provide a DSL for writing rules in a more human-readable format.
+Here are three rules in the DSL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># d(c)/dx = 0 # dc/dx = 0
+</span></span><span style="display:flex;"><span>(dd (?c a) (?v x)) = 0 # da/dx = 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># d(x)/dx = 1 # dx/dx = 1
+</span></span><span style="display:flex;"><span>(dd (?v x) (?v x)) = 1 # dx/dx = 1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># d(f*g)/dx = f&#39;g + fg&#39;
+</span></span><span style="display:flex;"><span>(dd (*
+</span></span><span style="display:flex;"><span>    ((? f) (? g)) (?v x))
+</span></span><span style="display:flex;"><span>    =
+</span></span><span style="display:flex;"><span>(+ 
+</span></span><span style="display:flex;"><span>    (* (dd (: f) (: x)) (: g))
+</span></span><span style="display:flex;"><span>    (* (: f) (dd (: g) (: x))
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>The LHS of <code>=</code> represents the pattern annd the RHS represents the replacement.
+<code>?c a</code>, <code>?v x</code>, and <code>? f</code> respectively map to <code>['?c', 'a']</code> and <code>['?v', 'x']</code>.
+In the last rule, we see replacement expressions that use <code>: f</code> and <code>: x</code> to
+refer to the matched expressions in the pattern. We substitute into the
+skeleton the matched expressions in the pattern,  e.g., if we have an expression
+<code>(* x (+ y x))</code>, then <code>? f</code> would match <code>x</code> and <code>? g</code> would match <code>(+ y x)</code>.
+In the skeleton, <code>: f</code> would be replaced by <code>x</code> and <code>: g</code> would be replaced by
+<code>(+ y x)</code>. The <em>instantiated</em> skeleton is thus <code>(+ (* (dd x x) (+ y x)) (* x (dd (+ y x) x)))</code>.</p>
+<p>The DSL is more concise and easier to read than the AST representation, and it
+is converted to the AST representation before being used by the simplifier.
+You may want to use the AST (even the JSON version) if you need to
+programmatically generate or manipulate rules. The AST is also easier to
+serialize and deserialize for storage or transmission.</p>
+<h3 id="evaluator">Evaluator</h3>
+<p>The <code>evaluate</code> function can evaluate expressions given a dictionary of values and operations.
+This is typically not used standalone, but as part of a larger system that uses the rewriter engine.
+However, it can be useful for simple evaluations.</p>
+<h4 id="example-evaluating-expressions">Example: Evaluating Expressions</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> xtoolkit <span style="color:#f92672">import</span> evaluate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the dictionary</span>
+</span></span><span style="display:flex;"><span>dict1 <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;+&#39;</span>, <span style="color:#66d9ef">lambda</span> x, y: x <span style="color:#f92672">+</span> y],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;x&#39;</span>, <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;y&#39;</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Evaluate the expression</span>
+</span></span><span style="display:flex;"><span>form1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;+&#39;</span>, <span style="color:#e6db74">&#39;x&#39;</span>, <span style="color:#e6db74">&#39;y&#39;</span>]
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> evaluate(form1, dict1)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;evaluate(</span><span style="color:#e6db74">{</span>form1<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>dict1<span style="color:#e6db74">}</span><span style="color:#e6db74">) =&gt; </span><span style="color:#e6db74">{</span>result<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output: evaluate([&#39;+&#39;, &#39;x&#39;, &#39;y&#39;], [[&#39;+&#39;, &lt;function &lt;lambda&gt;...&gt;], [&#39;x&#39;, 3], [&#39;y&#39;, 4]]) =&gt; 7</span>
+</span></span></code></pre></div><h2 id="ast-representation">AST Representation</h2>
+<p>The Abstract Syntax Tree (AST) in this project represents expressions as nested lists. Here are some examples:</p>
+<ul>
+<li><code>['+', 'x', 3]</code> represents the expression \( x + 3 \).</li>
+<li><code>['*', ['+', 'x', 0], 1]</code> represents \( (x + 0) \times 1 \).</li>
+<li><code>['dd', 'x', 'x']</code> represents the derivative \( \frac{d}{dx} x \).</li>
+</ul>
+<h2 id="modules">Modules</h2>
+<h3 id="rewriterpy"><code>rewriter.py</code></h3>
+<p>This module contains the core functions:</p>
+<ul>
+<li><code>match(pat, exp, dict)</code></li>
+</ul>
+<p>: Matches a pattern <code>pat</code> against an expression <code>exp</code> using a dictionary <code>dict</code>.</p>
+<ul>
+<li><code>instantiate(skeleton, dict)</code></li>
+</ul>
+<p>: Instantiates a <code>skeleton</code> expression using the dictionary <code>dict</code>.</p>
+<ul>
+<li><code>evaluate(form, dict)</code></li>
+</ul>
+<p>: Evaluates an expression <code>form</code> using the dictionary <code>dict</code>.</p>
+<ul>
+<li><code>simplifier(the_rules)</code></li>
+</ul>
+<p>: Returns a function to simplify expressions using <code>the_rules</code></p>
+<h3 id="xtoolkitrules"><code>xtoolkit/rules/</code></h3>
+<p>This directory contains predefined rules for various mathematical operations:</p>
+<ul>
+<li><code>basic-algebra.py</code> have rules for basic algebraic operations.</li>
+<li><code>deriv-rules.py</code> have rules for symbolically taking derivatives.</li>
+<li><code>trig-rules.py</code> have rules for trigonometric functions.</li>
+<li>etc.</li>
+</ul>
+<h2 id="testing">Testing</h2>
+<p>The <code>notebooks</code> directory contains Jupyter notebooks that demonstrate and test
+the functionality:</p>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License.</p>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem;">Related</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/xtoolkit/">xtoolkit</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/resume/">resume</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/resume/">resume</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/fuzzy-logic-search/">fuzzy-logic-search</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/fuzzy-logic-search/">fuzzy-logic-search</a>
+            
+          </div>
+        </section>
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

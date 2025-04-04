@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>cipher_maps | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="cipher_maps
+GitHub Link
+Stars: 0 | Forks: 0 | Open Issues: 0
+Languages Used: TeX
+README
+Universal function Bernoulli approximators
+Oblivious maps
+A set is an unordered collection of distinct elements, typically from
+some implicitly understood universe. A countable set is a finite set
+or a countably infinite set. A finite set has a finite number of
+elements, such as
+,
+and a countably infinite set can be put in one-to-one correspondence
+with the set of natural numbers,
+.
+The cardinality of a set
+,
+denoted by
+,
+is a measure on the number of elements in the set, e.g.,
+.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "Alex Towell">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/ghprojects/cipher_maps/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/ghprojects/cipher_maps/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="cipher_maps">
+  <meta property="og:description" content="cipher_maps GitHub Link Stars: 0 | Forks: 0 | Open Issues: 0 Languages Used: TeX
+README Universal function Bernoulli approximators Oblivious maps A set is an unordered collection of distinct elements, typically from some implicitly understood universe. A countable set is a finite set or a countably infinite set. A finite set has a finite number of elements, such as , and a countably infinite set can be put in one-to-one correspondence with the set of natural numbers, . The cardinality of a set , denoted by , is a measure on the number of elements in the set, e.g., .">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ghprojects">
+    <meta property="article:published_time" content="2019-01-14T16:34:53+00:00">
+    <meta property="article:modified_time" content="2019-01-14T16:34:53+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Project">
+
+  <meta itemprop="name" content="cipher_maps">
+  <meta itemprop="description" content="cipher_maps GitHub Link Stars: 0 | Forks: 0 | Open Issues: 0 Languages Used: TeX
+README Universal function Bernoulli approximators Oblivious maps A set is an unordered collection of distinct elements, typically from some implicitly understood universe. A countable set is a finite set or a countably infinite set. A finite set has a finite number of elements, such as , and a countably infinite set can be put in one-to-one correspondence with the set of natural numbers, . The cardinality of a set , denoted by , is a measure on the number of elements in the set, e.g., .">
+  <meta itemprop="datePublished" content="2019-01-14T16:34:53+00:00">
+  <meta itemprop="dateModified" content="2019-01-14T16:34:53+00:00">
+  <meta itemprop="wordCount" content="579">
+  <meta itemprop="keywords" content="GitHub,Project">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="cipher_maps">
+  <meta name="twitter:description" content="cipher_maps GitHub Link Stars: 0 | Forks: 0 | Open Issues: 0 Languages Used: TeX
+README Universal function Bernoulli approximators Oblivious maps A set is an unordered collection of distinct elements, typically from some implicitly understood universe. A countable set is a finite set or a countably infinite set. A finite set has a finite number of elements, such as , and a countably infinite set can be put in one-to-one correspondence with the set of natural numbers, . The cardinality of a set , denoted by , is a measure on the number of elements in the set, e.g., .">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/posts/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+<section class="project-section" style="padding: 2rem; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+      
+      
+      <div>
+        
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; color: #333;">cipher_maps</h1>
+          <p style="color: #555; font-size: 1.1rem; margin-bottom: 0.5rem;">
+             | January 14, 2019 | <a href="mailto:" style="color: #007acc;"></a>
+          </p>
+
+          
+          <div style="overflow: hidden;">
+            
+            <p style="font-size: 1.25rem; color: #666;"></p>
+          </div>
+        </header>
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <a href="https://github.com/queelius/cipher_maps" target="_blank" style="padding: 0.75rem 1.5rem; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            
+            <a href="https://twitter.com/intent/tweet?text=cipher_maps&url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2fcipher_maps%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1DA1F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2fcipher_maps%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #0077B5; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fqueelius.github.io%2fmetafunctor%2fghprojects%2fcipher_maps%2f" target="_blank" style="padding: 0.75rem .75rem; background-color: #1877F2; color: white; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </section>
+        
+
+        
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 600; color: #007acc;">Project Description</h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+            <h1 id="cipher_maps">cipher_maps</h1>
+<p><a href="https://github.com/queelius/cipher_maps">GitHub Link</a>
+<strong>Stars</strong>: 0 | <strong>Forks</strong>: 0 | <strong>Open Issues</strong>: 0
+<strong>Languages Used</strong>: TeX</p>
+<h2 id="readme">README</h2>
+<h1 id="universal-function-bernoulli-approximators">Universal function Bernoulli approximators</h1>
+<h1 id="oblivious-maps">Oblivious maps</h1>
+<p>A set is an unordered collection of distinct elements, typically from
+some implicitly understood universe. A countable set is a <em>finite set</em>
+or a <em>countably infinite set</em>. A <em>finite set</em> has a finite number of
+elements, such as
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5C%7B%201%2C%203%2C%205%20%5C%7D" alt="\{ 1, 3, 5 \}" title="{ 1, 3, 5 }">,
+and a <em>countably infinite set</em> can be put in one-to-one correspondence
+with the set of natural numbers,
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5C%7B1%2C2%2C3%2C4%2C5%2C%5Cldots%5C%7D" alt="\{1,2,3,4,5,\ldots\}" title="{1,2,3,4,5,\ldots}">.
+The cardinality of a set
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Cmathbb%7BA%7D" alt="\mathbb{A}" title="\mathbb{A}">,
+denoted by
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%7C%5Cmathbb%7BA%7D%7C" alt="|\mathbb{A}|" title="|\mathbb{A}|">,
+is a measure on the number of elements in the set, e.g.,
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%7C%5C%7Ba%2Cb%5C%7D%7C%3D2" alt="|\{a,b\}|=2" title="|{a,b}|=2">.</p>
+<p>A map represents a <em>many</em>-to-<em>one</em> relationship. A map that associates
+elements in
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Cmathbb%7BX%7D" alt="\mathbb{X}" title="\mathbb{X}">
+to elements in
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Cmathbb%7BY%7D" alt="\mathbb{Y}" title="\mathbb{Y}">
+has a type denoted by
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Cmathbb%7BX%7D%5Cmapsto%5Cmathbb%7BY%7D" alt="\mathbb{X}\mapsto\mathbb{Y}" title="\mathbb{X}\mapsto\mathbb{Y}">.
+For a map of type
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;X%20%5Cmapsto%20Y" alt="X \mapsto Y" title="X \mapsto Y">,
+we denote
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;X" alt="X" title="X">
+the <em>input</em> and
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;Y" alt="Y" title="Y">
+the output. Typically, it is relatively easy to find which output is
+associated with a given input, but the inverse operation, determining
+which inputs are associated with a given output is computationally
+harder. Of course, this is not necessarily the case, and mathematically
+the map is just a one-to-many relation over
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;X%20%5Ctimes%20Y" alt="X \times Y" title="X \times Y">.</p>
+<p>For instance, Table depicts a function over a finite domain of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;n" alt="n" title="n">
+elements, where each input
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;x%20%5Cin%20X" alt="x \in X" title="x \in X">
+is associated with a single output
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;y%20%5Cin%20Y" alt="y \in Y" title="y \in Y">,
+i.e.,
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;y%20%3D%20f%28x%29" alt="y = f(x)" title="y = f(x)">.</p>
+<p>The input does not need to be a simple set like natural numbers, but
+rather can be any type of set, such as a set of pairs as given in .</p>
+<p>Since we are interested in constructing maps in computer memory, we must
+have some way to represent them. One technique may be given by the
+following table.</p>
+<p>The oblivious map is given by the following definition.
+\begin{definition} The <em>oblivious Bernoulli map</em> is a specialization of
+the Bernoulli map. We denote an oblivious map of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f" alt="f" title="f">
+by
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A%20%3D%20%28f%2C%5Cmathcal%7BC%7D%29" alt="f^* = (f,\mathcal{C})" title="f^* = (f,\mathcal{C})">
+where
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Cmathcal%7BC%7D" alt="\mathcal{C}" title="\mathcal{C}">
+is the subset of the computational basis of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f" alt="f" title="f">
+which
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A" alt="f^*" title="f^*">
+provides. An oblivious Bernoulli map satisifes the following conditions:</p>
+<ul>
+<li>
+<p>The function
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A%20%3A%20X%20%5Cmapsto%20Y" alt="f^* : X \mapsto Y" title="f^* : X \mapsto Y">
+is a Bernoulli map of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f" alt="f" title="f">.</p>
+</li>
+<li>
+<p>If an element of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;x%20%5Cin%20X" alt="x \in X" title="x \in X">
+is not in the domain of definition,
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%28x%29" alt="f(x)" title="f(x)">
+is a random oracle over
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;Y" alt="Y" title="Y"></p>
+</li>
+<li>
+<p>A particular mapping
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;y%20%3D%20f%5E%2A%28x%29" alt="y = f^*(x)" title="y = f^*(x)">
+may only be learned by applying
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A" alt="f^*" title="f^*">
+to
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;x" alt="x" title="x">.</p>
+</li>
+</ul>
+<p>In an <em>oblivious map</em>, a mapping (row in the table) is only learned upon
+request.</p>
+<p>Observe that
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A" alt="f^*" title="f^*">
+is an oblivious value. Typically, we are also interested in functions in
+which the domain and codomain also represent oblivious values, i.e.,</p>
+<p><img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A%20%3A%20X%5E%2A%20%5Cmapsto%20Y%5E%2A" alt="f^* : X^* \mapsto Y^*" title="f^* : X^* \mapsto Y^*"></p>
+<p>where
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;X%5E%2A%20%3D%20%28X%2C%5Cmathcal%7BC%7D_1%29" alt="X^* = (X,\mathcal{C}_1)" title="X^* = (X,\mathcal{C}_1)">,
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;Y%5E%2A%20%3D%20%28Y%2C%5Cmathcal%7BC%7D_2%29" alt="Y^* = (Y,\mathcal{C}_2)" title="Y^* = (Y,\mathcal{C}_2)">,
+and
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%5E%2A%20%3D%20%28f%2C%5Cmathcal%7BC%7D_3%29" alt="f^* = (f,\mathcal{C}_3)" title="f^* = (f,\mathcal{C}_3)">.</p>
+<p>It may be the case that
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;X%5E%2A" alt="X^*" title="X^*">
+is a set of oblivious integers that, say, only supports testing equality
+and addition. Of course, once we have addition, we may also implement
+multiplication, powers, and many other operations.</p>
+<p>By , the space complexity of the Bernoulli map with an error rate
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Coperatorname%7Berror%5C_rate%7D%28%5Chat%7Bf%7D%2C%20x%29" alt="\operatorname{error\_rate}(\hat{f}, x)" title="\operatorname{error_rate}(\hat{f}, x)">
+is given by the following theorem.</p>
+<h2 id="abstract-data-type">Abstract data type</h2>
+<p>A <em>type</em> is a set and the elements of the set are called the <em>values</em> of
+the type. An <em>abstract data type</em> is a type and a set of operations on
+values of the type. For example, the <em>integer</em> abstract data type is the
+set of all integers and a set of standard operations (computational
+basis) such as addition, subtraction, and multiplication.</p>
+<p>A <em>data structure</em> is a particular way of organizing data and may
+implement one or more abstract data types. An <em>immutable</em> data structure
+has static state; once constructed, its state does not change until it
+is destroyed. Let
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Chat%7Bf%7D%20%3A%20X%20%5Cmapsto%20Y" alt="\hat{f} : X \mapsto Y" title="\hat{f} : X \mapsto Y">
+model the concept of a Bernoulli approximation of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;f%20%3A%20X%20%5Cmapsto%20Y" alt="f : X \mapsto Y" title="f : X \mapsto Y">.
+Then,</p>
+<ul>
+<li>
+<p><img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Chat%7Bf%7D%28x%29" alt="\hat{f}(x)" title="\hat{f}(x)"></p>
+<p>Returns a value in
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;Y" alt="Y" title="Y">.</p>
+</li>
+<li>
+<p><img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Coperatorname%7Berror%5C_rate%28%5Chat%7Bf%7D%2Cx%29" alt="\operatorname{error\_rate(\hat{f},x)" title="\operatorname{error_rate(\hat{f},x)">.</p>
+<p>Returns the <em>error rate</em> of
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5Chat%7Bf%7D" alt="\hat{f}" title="\hat{f}">
+applied to
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;x" alt="x" title="x">,
+i.e.,</p>
+<p><img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;%5CPr%5C%7B%5Chat%7Bf%7D%28x%29%20%3D%20f%28x%29%7D%20%3D%20%5Coperatorname%7Berror%5C_rate%28%5Chat%7Bf%7D%2Cx%29" alt="\Pr\{\hat{f}(x) = f(x)} = \operatorname{error\_rate(\hat{f},x)" title="\Pr{\hat{f}(x) = f(x)} = \operatorname{error_rate(\hat{f},x)"></p>
+<p>for every
+<img src="https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&amp;space;%5Cbg_white&amp;space;x%20%5Cin%20%5Coperatorname%7Bdom%7D%28f%29" alt="x \in \operatorname{dom}(f)" title="x \in \operatorname{dom}(f)">.</p>
+</li>
+</ul>
+
+          </p>
+        </section>
+      </div>
+
+    
+    
+
+
+      
+      <aside>
+        
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem;">Related</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <a href="https://queelius.github.io/metafunctor/projects/cipher_maps/">cipher_maps</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/rd_ph_filter/">rd_ph_filter</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/rd_ph_filter/">rd_ph_filter</a>
+            
+            <a href="https://queelius.github.io/metafunctor/projects/cipher_trapdoor_sets/">cipher_trapdoor_sets</a>
+            
+            <a href="https://queelius.github.io/metafunctor/ghprojects/cipher_trapdoor_sets/">cipher_trapdoor_sets</a>
+            
+          </div>
+        </section>
+        
+
+        
+        
+        <section style="margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem">Tags</h2>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            
+            <a href="/tags/github" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              GitHub
+            </a>
+            
+            <a href="/tags/project" style="display: inline-block; padding: 0.5rem 1rem; background-color: #f0f0f0; border-radius: 20px; font-size: 1rem; text-decoration: none; color: #007acc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              project
+            </a>
+            
+          </div>
+        </section>
+        
+      </aside>
+
+    </div>
+  </div>
+
+</section>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

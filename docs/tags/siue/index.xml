@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siue on metafunctor</title>
+    <link>https://queelius.github.io/metafunctor/tags/siue/</link>
+    <description>Recent content in Siue on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://queelius.github.io/metafunctor/tags/siue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://queelius.github.io/metafunctor/publications/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/publications/</guid>
+      <description>Here are some publications I&amp;rsquo;ve worked on. I&amp;rsquo;ll try to keep this updated as I work on new things.</description>
+    </item>
+    <item>
+      <title>Model Selection in Weibull Series Systems</title>
+      <link>https://queelius.github.io/metafunctor/research/reliability-estimation-in-series-systems-model-sel/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/research/reliability-estimation-in-series-systems-model-sel/</guid>
+      <description>In my paper, Reliability Estimation in Series Systems, I discarded a lot of research that may be interesting to pursue further. This one is about using homogeneous shape parameters for the Weibull series system, which can greatly simplify the analysis and reduce the number of parameters to estimate. It&amp;rsquo;s also quite reasonable for most well-designed systems.</description>
+    </item>
+    <item>
+      <title>Problem Sets</title>
+      <link>https://queelius.github.io/metafunctor/probsets/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/probsets/</guid>
+      <description>Problem sets and solutions for various courses.</description>
+    </item>
+    <item>
+      <title>STAT 482 - Regression Analysis - SIUe - Fall 2022</title>
+      <link>https://queelius.github.io/metafunctor/probsets/stat482/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/probsets/stat482/</guid>
+      <description>Problem sets and solutions for STAT 482 - Regression Analysis at SIUe.</description>
+    </item>
+    <item>
+      <title>STAT 575 - Computational Statistics - SIUe - Summer 2021</title>
+      <link>https://queelius.github.io/metafunctor/probsets/stat575/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/probsets/stat575/</guid>
+      <description>Problem sets and solutions for STAT 575 - Computational Statistics at SIUe.</description>
+    </item>
+    <item>
+      <title>Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents</title>
+      <link>https://queelius.github.io/metafunctor/publications/cs-thesis/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      <guid>https://queelius.github.io/metafunctor/publications/cs-thesis/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
