@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Working memory as an inductive bias | metafunctor</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This blog post is from a chat I had with a ChatGPT,
+which can be found here
+and here.
+
+I&rsquo;m not sure if this is a good blog post, but I&rsquo;m posting it anyway. It&rsquo;s remarkable
+how quickly you can slap stuff like this together, and I&rsquo;m not sure this is
+saying anything valuable, particularly since it only required a bit of prompting
+from me.
+
+
+Working memory as an inductive bias
+Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the &ldquo;magic number seven&rdquo;, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.">
+    <meta name="generator" content="Hugo 0.145.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "admin">
+    
+
+    
+<link rel="stylesheet" href="/metafunctor/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+
+    
+
+
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    }
+  };
+</script>
+        
+    
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/">
+    
+
+    <meta property="og:url" content="https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/">
+  <meta property="og:site_name" content="metafunctor">
+  <meta property="og:title" content="Working memory as an inductive bias">
+  <meta property="og:description" content="This blog post is from a chat I had with a ChatGPT, which can be found here and here.
+I’m not sure if this is a good blog post, but I’m posting it anyway. It’s remarkable how quickly you can slap stuff like this together, and I’m not sure this is saying anything valuable, particularly since it only required a bit of prompting from me.
+Working memory as an inductive bias Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the “magic number seven”, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-06-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-17T00:00:00+00:00">
+    <meta property="article:tag" content="Cognitive Science">
+    <meta property="article:tag" content="Machine Learning">
+    <meta property="article:tag" content="LLM">
+    <meta property="article:tag" content="Regularization">
+    <meta property="og:image" content="https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/featured.png">
+
+  <meta itemprop="name" content="Working memory as an inductive bias">
+  <meta itemprop="description" content="This blog post is from a chat I had with a ChatGPT, which can be found here and here.
+I’m not sure if this is a good blog post, but I’m posting it anyway. It’s remarkable how quickly you can slap stuff like this together, and I’m not sure this is saying anything valuable, particularly since it only required a bit of prompting from me.
+Working memory as an inductive bias Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the “magic number seven”, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.">
+  <meta itemprop="datePublished" content="2023-06-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-06-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="692">
+  <meta itemprop="image" content="https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/featured.png">
+  <meta itemprop="keywords" content="Cognitive Science,Machine Learning,LLM,Regularization">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/featured.png">
+  <meta name="twitter:title" content="Working memory as an inductive bias">
+  <meta name="twitter:description" content="This blog post is from a chat I had with a ChatGPT, which can be found here and here.
+I’m not sure if this is a good blog post, but I’m posting it anyway. It’s remarkable how quickly you can slap stuff like this together, and I’m not sure this is saying anything valuable, particularly since it only required a bit of prompting from me.
+Working memory as an inductive bias Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the “magic number seven”, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('/metafunctor/post/working-memory-as-an-inductive-bias/featured.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/metafunctor/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        metafunctor
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/social/" title="Social page">
+              Social
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/ghprojects/" title="GitHub Projects page">
+              GitHub Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/post/" title="News page">
+              News
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/probsets/" title="Problem Sets page">
+              Problem Sets
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/publications/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/research/" title="Research page">
+              Research
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/metafunctor/search/" title="Search page">
+              Search
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Working memory as an inductive bias</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        News
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Working memory as an inductive bias</h1>
+      
+      <p class="tracked"><strong>admin</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-06-17T00:00:00Z">June 17, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>This blog post is from a chat I had with a ChatGPT,
+which can be found <a href="https://chat.openai.com/share/f298898b-9787-48f4-8959-c8cd04eb98b4">here</a>
+and <a href="https://chat.openai.com/share/0d33ab33-0664-4b25-b1c2-22864b28db48">here</a>.</p>
+<blockquote>
+<p>I&rsquo;m not sure if this is a good blog post, but I&rsquo;m posting it anyway. It&rsquo;s remarkable
+how quickly you can slap stuff like this together, and I&rsquo;m not sure this is
+saying anything valuable, particularly since it only required a bit of prompting
+from me.</p></blockquote>
+<hr>
+<img src="./featured.png" style="width: 200px; float: left; margin: 10px;">
+<h2 id="working-memory-as-an-inductive-bias">Working memory as an inductive bias</h2>
+<p>Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the &ldquo;magic number seven&rdquo;, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.</p>
+<p>Consider a situation where we&rsquo;re dealing with multiple variables $(x_1, x_2, x_3, x_4)$. Our brain might struggle to simultaneously process the joint distribution of these variables due to the limitation of our working memory. However, if we create an abstraction where $X$ represents $(x_1, x_2)$ and $Y$ represents $(x_3, x_4)$, we simplify the cognitive task to handling the joint distribution of just two variables $(X,Y)$, which is a more manageable task.</p>
+<p>But here’s the rub: In condensing reality to fit our cognitive capacities, we risk losing vital information. For instance, a critical relationship (that may only be critical in a certain context) between $x_2$ and $x_4$ might be discarded in our new model. This often leads to the situation where &ldquo;the whole is greater than the sum of the parts.&rdquo; In other words, the full, nuanced understanding of the system may be irreducible, with important aspects of its behaviour emerging only when all variables are considered together. Such emergent phenomena represent a key challenge in working with abstractions.</p>
+<h2 id="working-memory-and-inductive-bias">Working Memory and Inductive Bias</h2>
+<p>Our small working memory influences our reasoning abilities and shapes our understanding of the world around us, in effect serving as an inductive bias. It&rsquo;s like a filter, shaping the patterns we detect and the generalizations we form based on the information we encounter.</p>
+<p>This constraint, however, might not be entirely detrimental. It could even be an advantage, given the regularities in our reality. Think of it as a form of regularization in machine learning, where constraints prevent the model from overfitting the training data, thereby improving generalization to unseen instances. If we had much larger working memories, we might be prone to overfitting to our past observations, impairing our ability to adapt and survive in new situations, particularly those on the &rsquo;long tail of the distribution&rsquo;. Our survival, after all, depends on avoiding catastrophic mistakes, even after decades of mostly beneficial decisions.</p>
+<p>This perspective aligns with principles like Occam&rsquo;s razor and Solomonoff&rsquo;s theory of inductive inference, which favor simpler theories or models that sufficiently explain observed phenomena. The complexity of the model, and thus its capacity, is regulated to avoid overfitting and ensure better generalization.</p>
+<h3 id="the-limits-of-our-understanding">The Limits of Our Understanding</h3>
+<p>The inductive bias imposed by our limited working memory might be advantageous in the human niche, but it&rsquo;s essential to consider its potential shortcomings. Could there be aspects of reality that remain inaccessible to us due to our cognitive constraints?</p>
+<p>Take, for instance, the phenomenon of consciousness. Understanding how self-awareness arises in a system may require accounting for the joint distribution of an astronomical number of variables. If this complexity is irreducible, our cognitive apparatus, bound by its inductive bias, may simply be inadequate for fully comprehending consciousness.</p>
+<p>Indeed, it&rsquo;s conceivable that vast swaths of reality might be fundamentally off-limits to human cognition, forever obscured by the constraints of our cognitive architecture. The complexity of these phenomena may defy simplification, making them impervious to our attempts at understanding through abstractions.</p>
+<p>As we strive to push the boundaries of understanding, we should remain mindful of the limits imposed by our cognitive capacities and the constraints of our abstractions.</p>
+<h2 id="the-unconscious-mind-and-llms">The Unconscious Mind and LLMs</h2>
+<p>In my next blog post, I&rsquo;ll explore unconscious cognition, which makes up most of our mental activity (system 1 vs system 2 thinking), and the recent progress in machine learning, partciularly transformers and the LLM revolution.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/cognitive-science/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Cognitive Science</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/machine-learning/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Machine Learning</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/llm/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">LLM</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/metafunctor/tags/regularization/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Regularization</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "metafunctor-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://queelius.github.io/metafunctor/" >
+    &copy;  metafunctor 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

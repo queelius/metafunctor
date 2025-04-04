@@ -10,16 +10,16 @@
     <atom:link href="https://queelius.github.io/metafunctor/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advancing Mathematical Reasoning in AI: Introducing Reverse-Process Synthetic Data Generation</title>
-      <link>https://queelius.github.io/metafunctor/posts/rpsdg/</link>
+      <link>https://queelius.github.io/metafunctor/post/rpsdg/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/posts/rpsdg/</guid>
+      <guid>https://queelius.github.io/metafunctor/post/rpsdg/</guid>
       <description>&lt;p&gt;Check out the (early) project and source code on &lt;a href=&#34;https://github.com/queelius/RPSDG&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract:&lt;/h2&gt;&#xA;&lt;p&gt;This paper introduces a methodology for generating high-quality, diverse training data for Language Models (LMs) in complex problem-solving domains. Our approach, termed &amp;ldquo;Reverse-Process Synthetic Data Generation&amp;rdquo; (RPSDG), inverts traditionally difficult problems to create an abundance of training examples with known solutions,&#xA;e.g., symbolically taking the deriative of a function, $f \mapsto f&amp;rsquo;$, versus solving antiderivatives of $f&amp;rsquo;$. By automating the generation of problems of graduating difficulty, we create datasets that enable process-supervised training of LLMs. We demonstrate the efficacy of this method for training mathematical reasoning. Our results show significant improvements in LLMs&amp;rsquo; problem-solving capabilities, particularly in areas requiring multi-step reasoning and creative insights. This methodology not only enhances model performance but also provides a framework for generating explainable AI solutions, as the step-by-step problem-solving process is inherent in the training data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working memory as an inductive bias</title>
-      <link>https://queelius.github.io/metafunctor/posts/working-memory-as-an-inductive-bias/</link>
+      <link>https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/posts/working-memory-as-an-inductive-bias/</guid>
+      <guid>https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/</guid>
       <description>&lt;p&gt;This blog post is from a chat I had with a ChatGPT,&#xA;which can be found &lt;a href=&#34;https://chat.openai.com/share/f298898b-9787-48f4-8959-c8cd04eb98b4&#34;&gt;here&lt;/a&gt;&#xA;and &lt;a href=&#34;https://chat.openai.com/share/0d33ab33-0664-4b25-b1c2-22864b28db48&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I&amp;rsquo;m not sure if this is a good blog post, but I&amp;rsquo;m posting it anyway. It&amp;rsquo;s remarkable&#xA;how quickly you can slap stuff like this together, and I&amp;rsquo;m not sure this is&#xA;saying anything valuable, particularly since it only required a bit of prompting&#xA;from me.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;img src=&#34;./featured.png&#34; style=&#34;width: 200px; float: left; margin: 10px;&#34;&gt;&#xA;&lt;h2 id=&#34;working-memory-as-an-inductive-bias&#34;&gt;Working memory as an inductive bias&lt;/h2&gt;&#xA;&lt;p&gt;Human cognitive abilities, while remarkable, are bounded. Our working memory can effectively hold and process only a limited amount of information at once. Cognitive psychology often references the &amp;ldquo;magic number seven&amp;rdquo;, suggesting that most adults can hold between five and nine items in their working memory. This constraint necessitates the use of abstractions in order to understand complex systems.&lt;/p&gt;</description>
     </item>
   </channel>

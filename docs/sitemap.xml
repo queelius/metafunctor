@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://queelius.github.io/metafunctor/posts/rpsdg/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/rpsdg/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/gave-a-presentation-for-sluug-about-llms/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/gave-a-presentation-for-sluug-about-llms/</loc>
     <lastmod>2024-02-23T07:28:58-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/masters-stats-siue-proj/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/masters-stats-siue-proj/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/llm-fine-tuning-es-dsl/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/llm-fine-tuning-es-dsl/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/bernoulli-boolean-model/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -257,7 +257,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/infini-gram/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/infini-gram/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -492,7 +492,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/entropy-map/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/entropy-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -612,7 +612,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -732,7 +732,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/trapdoor-boolean-model/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/trapdoor-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -787,12 +787,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/uses-and-limits-of-abstractions/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/uses-and-limits-of-abstractions/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/working-memory-as-an-inductive-bias/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -857,12 +857,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/problem-sets/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/problem-sets/</loc>
     <lastmod>2023-03-31T07:48:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/made-chatgpt-to-my-saved-conversations/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/made-chatgpt-to-my-saved-conversations/</loc>
     <lastmod>2023-03-31T07:17:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -942,7 +942,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/2022-05-13-acs/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/2022-05-13-acs/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1017,7 +1017,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/2012-03-05-tournament-lock/tournament_lock/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/2012-03-05-tournament-lock/tournament_lock/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1032,7 +1032,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/2012-02-04-sax/cs584_sax_review/</loc>
+    <loc>https://queelius.github.io/metafunctor/post/2012-02-04-sax/cs584_sax_review/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

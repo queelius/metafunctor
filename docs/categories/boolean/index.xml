@@ -10,9 +10,9 @@
     <atom:link href="https://queelius.github.io/metafunctor/categories/boolean/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Bernoulli Model: A Probabilistic Framework for Data Structures and Types</title>
-      <link>https://queelius.github.io/metafunctor/posts/bernoulli-boolean-model/</link>
+      <link>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/posts/bernoulli-boolean-model/</guid>
+      <guid>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</guid>
       <description>This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model&amp;rsquo;s utility in optimizing space and accuracy in data representation.</description>
     </item>
   </channel>
