@@ -71,14 +71,6 @@
         "tags": null,
         "section": "ghprojects"
       },{
-        "title": "metafunctor",
-        "link": "https://queelius.github.io/metafunctor/",
-        "date": "2024-11-27 18:01:55 +0000 UTC",
-        "content": "",
-        "summary": "",
-        "tags": null,
-        "section": ""
-      },{
         "title": "open-source",
         "link": "https://queelius.github.io/metafunctor/tags/open-source/",
         "date": "2024-11-27 18:01:55 +0000 UTC",
@@ -118,6 +110,14 @@
         "summary": "",
         "tags": null,
         "section": "tags"
+      },{
+        "title": "redirecting...",
+        "link": "https://queelius.github.io/metafunctor/",
+        "date": "2024-11-27 18:01:55 +0000 UTC",
+        "content": " Redirecting to posts...\n",
+        "summary": "\u003cmeta http-equiv=\"refresh\" content=\"0; url=/posts/\"\u003e\n\u003cp\u003eRedirecting to \u003ca href=\"/posts/\"\u003eposts\u003c/a\u003e...\u003c/p\u003e",
+        "tags": null,
+        "section": ""
       },{
         "title": "software-development",
         "link": "https://queelius.github.io/metafunctor/tags/software-development/",
@@ -358,14 +358,6 @@
         "summary": "",
         "tags": null,
         "section": "tags"
-      },{
-        "title": "news",
-        "link": "https://queelius.github.io/metafunctor/posts/",
-        "date": "2024-06-25 00:00:00 +0000 UTC",
-        "content": "",
-        "summary": "",
-        "tags": null,
-        "section": "posts"
       },{
         "title": "reasoning",
         "link": "https://queelius.github.io/metafunctor/tags/reasoning/",
@@ -958,6 +950,62 @@
         "summary": "\u003cp\u003eDisjoint Interval Set (DIS)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eStars\u003c/strong\u003e: 0 | \u003cstrong\u003eForks\u003c/strong\u003e: 0 | \u003cstrong\u003eOpen Issues\u003c/strong\u003e: 0\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eLanguages\u003c/strong\u003e: C++\u003c/p\u003e\n\u003ch2 id=\"contributors\"\u003eContributors\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003equeelius (2 commits)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"readme\"\u003eREADME\u003c/h2\u003e\n\u003ch1 id=\"disjoint-interval-set\"\u003eDisjoint Interval Set\u003c/h1\u003e\n\u003cp\u003eThe Disjoint Interval Set (DIS) equipped with a few operations\nsatisfies the concept of a Boolean algebra over sets of disjoint\nintervals equipped with all the standard set-theoretic operations,\nlike intersection (*), union (+), and complement (~).\u003c/p\u003e\n\u003ch2 id=\"concept-boolean-algebra\"\u003eConcept: Boolean Algebra\u003c/h2\u003e\n\u003cp\u003eA Boolean algebra provides a powerful conceptual and mathematical framework.\nIt is a set of elements equipped with a few operations that satisfy\na few axioms. The operations are usually called union (+), intersection (*),\nand complement (~). The axioms are usually called the Boolean laws.\u003c/p\u003e",
         "tags": ["GitHub","project"],
         "section": "projects"
+      },{
+        "title": "community",
+        "link": "https://queelius.github.io/metafunctor/categories/community/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "categories"
+      },{
+        "title": "community",
+        "link": "https://queelius.github.io/metafunctor/tags/community/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "tags"
+      },{
+        "title": "news",
+        "link": "https://queelius.github.io/metafunctor/categories/news/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "categories"
+      },{
+        "title": "news",
+        "link": "https://queelius.github.io/metafunctor/posts/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "Stay updated with the latest news and updates from the community. Explore articles, announcements, and more.",
+        "tags": ["news","updates","community"],
+        "section": "posts"
+      },{
+        "title": "news",
+        "link": "https://queelius.github.io/metafunctor/tags/news/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "tags"
+      },{
+        "title": "updates",
+        "link": "https://queelius.github.io/metafunctor/categories/updates/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "categories"
+      },{
+        "title": "updates",
+        "link": "https://queelius.github.io/metafunctor/tags/updates/",
+        "date": "2023-10-01 00:00:00 +0000 UTC",
+        "content": "",
+        "summary": "",
+        "tags": null,
+        "section": "tags"
       },{
         "title": "bootstrap",
         "link": "https://queelius.github.io/metafunctor/tags/bootstrap/",

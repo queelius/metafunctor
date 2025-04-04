@@ -47,11 +47,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/</loc>
-    <lastmod>2024-11-27T18:01:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://queelius.github.io/metafunctor/tags/open-source/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -73,6 +68,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://queelius.github.io/metafunctor/tags/projects/</loc>
+    <lastmod>2024-11-27T18:01:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -223,11 +223,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://queelius.github.io/metafunctor/tags/mathematics/</loc>
-    <lastmod>2024-06-25T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://queelius.github.io/metafunctor/posts/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -599,6 +594,41 @@
   </url><url>
     <loc>https://queelius.github.io/metafunctor/projects/disjoint_interval_set/</loc>
     <lastmod>2023-10-06T06:58:55+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/categories/community/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/tags/community/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/categories/news/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/posts/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/tags/news/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/categories/updates/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://queelius.github.io/metafunctor/tags/updates/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
