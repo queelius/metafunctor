@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markov Models on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/tags/markov-models/</link>
+    <link>http://localhost:1313/metafunctor/tags/markov-models/</link>
     <description>Recent content in Markov Models on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/tags/markov-models/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/tags/markov-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Approximations of Solomonoff Induction</title>
-      <link>https://queelius.github.io/metafunctor/research/solomonoff/</link>
+      <link>http://localhost:1313/metafunctor/research/solomonoff/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/research/solomonoff/</guid>
+      <guid>http://localhost:1313/metafunctor/research/solomonoff/</guid>
       <description>I experiment with simple predictive / generative models to approximate Solomonoff induction for a relatiely simple synthetic data-generating process.</description>
     </item>
   </channel>

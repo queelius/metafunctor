@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bootstrap on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/tags/bootstrap/</link>
+    <link>http://localhost:1313/metafunctor/tags/bootstrap/</link>
     <description>Recent content in Bootstrap on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reliability Estimation in Series Systems</title>
-      <link>https://queelius.github.io/metafunctor/publications/math-proj/</link>
+      <link>http://localhost:1313/metafunctor/publications/math-proj/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/publications/math-proj/</guid>
+      <guid>http://localhost:1313/metafunctor/publications/math-proj/</guid>
       <description></description>
     </item>
     <item>
       <title>Estimating How Confidential Encrypted Searches Are Using Moving Average Bootstrap Method</title>
-      <link>https://queelius.github.io/metafunctor/publications/mab/</link>
+      <link>http://localhost:1313/metafunctor/publications/mab/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/publications/mab/</guid>
+      <guid>http://localhost:1313/metafunctor/publications/mab/</guid>
       <description></description>
     </item>
   </channel>

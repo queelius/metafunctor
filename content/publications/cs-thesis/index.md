@@ -12,8 +12,6 @@ date: "2015-05-01T00:00:00Z"
 links:
 - name: ProQuest
   url: https://www.proquest.com/docview/1733690805/DACA46AB482C4266PQ/1
-- name: GitHub
-  url: https://www.github.com/queelius/encrypted_search
 - name: PDF
   url: '/uploads/alex_towell_cs_thesis_proquest.pdf'
 tags:
@@ -23,4 +21,10 @@ tags:
 - Confidentiality
 - Thesis
 - SIUe
+- Southern Illinois University Edwardsville
+- Query obfuscation
+- False positives
+- Secure index poisoning
+- Adversarial access
+- Query histories
 ---

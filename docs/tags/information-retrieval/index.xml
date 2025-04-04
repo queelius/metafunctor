@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Information Retrieval on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/tags/information-retrieval/</link>
+    <link>http://localhost:1313/metafunctor/tags/information-retrieval/</link>
     <description>Recent content in Information Retrieval on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fine-Tuning Tiny LLMs for ElasticSearch DSL</title>
-      <link>https://queelius.github.io/metafunctor/post/llm-fine-tuning-es-dsl/</link>
+      <link>http://localhost:1313/metafunctor/post/llm-fine-tuning-es-dsl/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/post/llm-fine-tuning-es-dsl/</guid>
+      <guid>http://localhost:1313/metafunctor/post/llm-fine-tuning-es-dsl/</guid>
       <description>I am creating a tiny LLM for ElasticSearch DSL as a proof of concept.</description>
     </item>
     <item>
       <title>Encrypted Search - Enabling Standard Information Retrieval Techniques for Several New Secure Index Types While Preserving Confidentiality Against an Adversary With Access to Query Histories and Secure Index Contents</title>
-      <link>https://queelius.github.io/metafunctor/publications/cs-thesis/</link>
+      <link>http://localhost:1313/metafunctor/publications/cs-thesis/</link>
       <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/publications/cs-thesis/</guid>
+      <guid>http://localhost:1313/metafunctor/publications/cs-thesis/</guid>
       <description></description>
     </item>
   </channel>

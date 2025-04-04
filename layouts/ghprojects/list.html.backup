@@ -1,0 +1,53 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+
+<section style="padding: 1rem 1.5rem;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+        <!-- Breadcrumb navigation -->
+        <nav style="font-size: 0.875rem; color: #666666; margin-bottom: 1.5rem;">
+            <a href="{{ " /" | relLangURL }}"
+                style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;"
+                onmouseover="this.style.borderColor='#007acc';"
+                onmouseout="this.style.borderColor='transparent';">Home</a> /
+
+            {{ $sections := .Sections }}
+
+            {{ if .Parent }}
+            <a href="{{ .Parent.Permalink }}"
+                style="color: #007acc; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;"
+                onmouseover="this.style.borderColor='#007acc';" onmouseout="this.style.borderColor='transparent';">{{
+                .Parent.Title }}</a> /
+            {{ end }}
+        </nav>
+
+        <!-- Grid layout for projects -->
+        <div style="display: list; grid-template-columns: repeat(2, 1fr); gap: 2.0rem;">
+            <!-- Loop over each project in the projects folder -->
+            {{ range .Pages }}
+            <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; transition: box-shadow 0.2s ease;">
+
+                <!-- Project title, spanning full width -->
+                <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 0.75rem;">
+                    <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+                        {{ .Title }}
+                    </a>
+                </h2>
+
+                <!-- Display the featured image on the left with float -->
+                {{ with .Resources.GetMatch "featured.png" }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+                    style="width: 150px; height: auto; object-fit: cover; margin-right: 1rem; margin-bottom: 1rem; float: left; border-radius: 8px;">
+                {{ end }}
+
+                <!-- Project summary or description, flowing around the image -->
+                <p style="color: #555; line-height: 1.5;">
+                    {{ .Summary }}
+                </p>
+
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

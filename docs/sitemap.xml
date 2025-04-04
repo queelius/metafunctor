@@ -2,1314 +2,1429 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://queelius.github.io/metafunctor/post/rpsdg/</loc>
+    <loc>http://localhost:1313/metafunctor/post/rpsdg/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/gave-a-presentation-for-sluug-about-llms/</loc>
+    <loc>http://localhost:1313/metafunctor/post/gave-a-presentation-for-sluug-about-llms/</loc>
     <lastmod>2024-02-23T07:28:58-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/masters-stats-siue-proj/</loc>
+    <loc>http://localhost:1313/metafunctor/post/masters-stats-siue-proj/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/llm-fine-tuning-es-dsl/</loc>
+    <loc>http://localhost:1313/metafunctor/post/llm-fine-tuning-es-dsl/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</loc>
+    <loc>http://localhost:1313/metafunctor/post/bernoulli-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/code/</loc>
+    <loc>http://localhost:1313/metafunctor/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/free-software/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/code/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/github/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/free-software/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/github/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/open-source/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/programming/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/open-source/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/project/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/programming/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/project/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/projects/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/projects/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/software-development/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/software-development/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/software-engineering/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/software-engineering/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/xtoolkit/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/xtoolkit/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/xtoolkit/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/xtoolkit/</loc>
     <lastmod>2024-11-27T18:01:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/resume/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/resume/</loc>
     <lastmod>2024-11-17T21:04:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/resume/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/resume/</loc>
     <lastmod>2024-11-17T21:04:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/fuzzy-logic-search/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/fuzzy-logic-search/</loc>
     <lastmod>2024-11-04T09:55:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/fuzzy-logic-search/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/fuzzy-logic-search/</loc>
     <lastmod>2024-11-04T09:55:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/space-sandbox-sim/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/space-sandbox-sim/</loc>
     <lastmod>2024-10-12T07:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/space-sandbox-sim/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/space-sandbox-sim/</loc>
     <lastmod>2024-10-12T07:23:23+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/ga-llm/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/ga-llm/</loc>
     <lastmod>2024-08-26T12:12:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/ga-llm/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/ga-llm/</loc>
     <lastmod>2024-08-26T12:12:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/rpsdg/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/rpsdg/</loc>
     <lastmod>2024-07-25T16:24:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/rpsdg/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/rpsdg/</loc>
     <lastmod>2024-07-25T16:24:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/digistar/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/digistar/</loc>
     <lastmod>2024-07-20T05:38:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/digistar/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/digistar/</loc>
     <lastmod>2024-07-20T05:38:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/ai-training/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/ai-training/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/algebra/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/algebra/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/artificial-intelligence/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/artificial-intelligence/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/calculus/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/calculus/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/data-generation/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/data-generation/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/explainable-ai/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/explainable-ai/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/llms/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/llms/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/machine-learning/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/machine-learning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/machine-learning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/mathematics/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/mathematics/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/mathematics/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/mathematics/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/reasoning/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/reasoning/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/synthetic-data/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/synthetic-data/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/ngram-projections/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/ngram-projections/</loc>
     <lastmod>2024-06-21T11:50:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/ngram-projections/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/ngram-projections/</loc>
     <lastmod>2024-06-21T11:50:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/treeprog/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/algorithms/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/post/algotree-post/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/data-structures/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/data-structures/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/flattree/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/programming/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/python/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/python/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/software-development/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/tree-structures/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/treenode/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/tags/utilities/</loc>
+    <lastmod>2024-06-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/ghprojects/treeprog/</loc>
     <lastmod>2024-06-16T03:18:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/treeprog/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/treeprog/</loc>
     <lastmod>2024-06-16T03:18:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/infini-gram/</loc>
+    <loc>http://localhost:1313/metafunctor/post/infini-gram/</loc>
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/random_oracles/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/random_oracles/</loc>
     <lastmod>2024-05-15T20:40:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/random_oracles/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/random_oracles/</loc>
     <lastmod>2024-05-15T20:40:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/ollama_data_tools/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/ollama_data_tools/</loc>
     <lastmod>2024-05-13T15:13:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/ollama_data_tools/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/ollama_data_tools/</loc>
     <lastmod>2024-05-13T15:13:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/algotree/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/algotree/</loc>
     <lastmod>2024-04-30T17:34:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/algotree/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/algotree/</loc>
     <lastmod>2024-04-30T17:34:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/autoregressive-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/autoregressive-models/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/inference/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/inference/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/instrumental-goals/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/instrumental-goals/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/research/llm-research/</loc>
+    <loc>http://localhost:1313/metafunctor/research/llm-research/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/large-language-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/large-language-models/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/latent-codes/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/latent-codes/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/latent-space/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/latent-space/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/reinforcement-learning/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/reinforcement-learning/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/research/</loc>
+    <loc>http://localhost:1313/metafunctor/research/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/statistics/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/statistics/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/stenography/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/stenography/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/hypothesize/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/hypothesize/</loc>
     <lastmod>2024-02-19T11:02:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/hypothesize/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/hypothesize/</loc>
     <lastmod>2024-02-19T11:02:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/algorthmic-data/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/algorthmic-data/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/research/solomonoff/</loc>
+    <loc>http://localhost:1313/metafunctor/research/solomonoff/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/bootstrap/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/bootstrap/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/censoring/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/censoring/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/data-generating-process/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/data-generating-process/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/domain-specific-language/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/domain-specific-language/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/elastic-search/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/elastic-search/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/fine-tuning/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/fine-tuning/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/foundation-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/foundation-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/information-retrieval/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/information-retrieval/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/json/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/json/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/likelihood-contributions-model/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/likelihood-contributions-model/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/likelihood-model/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/likelihood-model/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/likelihood-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/likelihood-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/markov-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/markov-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/masked-failure-data/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/masked-failure-data/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/mle/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/mle/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/n-gram-models/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/n-gram-models/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/r/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/r/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/reliability-analysis/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/reliability-analysis/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/series-systems/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/series-systems/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/solomonoff-induction/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/solomonoff-induction/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/statistics/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/statistics/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/research/llm-search/</loc>
+    <loc>http://localhost:1313/metafunctor/research/llm-search/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/weibull/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/weibull/</loc>
     <lastmod>2024-02-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/bernoulli-map/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/bernoulli-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/entropy-map/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/entropy-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/entropy-map/</loc>
+    <loc>http://localhost:1313/metafunctor/post/entropy-map/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/probabilistic-data-structure/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/probabilistic-data-structure/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/rate-distortion/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/rate-distortion/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/solomonoff_induction/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/solomonoff_induction/</loc>
     <lastmod>2024-02-15T19:28:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/solomonoff_induction/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/solomonoff_induction/</loc>
     <lastmod>2024-02-15T19:28:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/sluug-talk-llm/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/sluug-talk-llm/</loc>
     <lastmod>2024-02-09T09:45:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/sluug-talk-llm/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/sluug-talk-llm/</loc>
     <lastmod>2024-02-09T09:45:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/elasticsearch-lm/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/elasticsearch-lm/</loc>
     <lastmod>2024-02-03T17:11:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/elasticsearch-lm/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/elasticsearch-lm/</loc>
     <lastmod>2024-02-03T17:11:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/video-playlist-manager/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/video-playlist-manager/</loc>
     <lastmod>2024-01-30T13:16:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/video-playlist-manager/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/video-playlist-manager/</loc>
     <lastmod>2024-01-30T13:16:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/taskd/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/taskd/</loc>
     <lastmod>2024-01-27T16:35:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/taskd/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/taskd/</loc>
     <lastmod>2024-01-27T16:35:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/papers/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/papers/</loc>
     <lastmod>2023-12-16T15:45:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/papers/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/papers/</loc>
     <lastmod>2023-12-16T15:45:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/tournamentpetersonlock/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/tournamentpetersonlock/</loc>
     <lastmod>2023-12-07T20:57:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/tournamentpetersonlock/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/tournamentpetersonlock/</loc>
     <lastmod>2023-12-07T20:57:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/reliability-estimation-in-series-systems-model-selection/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/reliability-estimation-in-series-systems-model-selection/</loc>
     <lastmod>2023-11-10T04:16:05+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/reliability-estimation-in-series-systems-model-selection/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/reliability-estimation-in-series-systems-model-selection/</loc>
     <lastmod>2023-11-10T04:16:05+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/disjoint_interval_set/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/disjoint_interval_set/</loc>
     <lastmod>2023-10-06T06:58:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/disjoint_interval_set/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/disjoint_interval_set/</loc>
     <lastmod>2023-10-06T06:58:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/community/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/community/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/community/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/community/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/news/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/news/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/</loc>
+    <loc>http://localhost:1313/metafunctor/post/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/news/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/news/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/updates/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/updates/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/updates/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/updates/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/bootstrap/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/bootstrap/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/likelihood-model/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/likelihood-model/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/masked-failure-data/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/masked-failure-data/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/maximum-likelihood-estimation/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/maximum-likelihood-estimation/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/mle/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/mle/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/publications/</loc>
+    <loc>http://localhost:1313/metafunctor/publications/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/publications/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/publications/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/reliability/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/reliability/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/publications/math-proj/</loc>
+    <loc>http://localhost:1313/metafunctor/publications/math-proj/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/research/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/research/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/right-censoring/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/right-censoring/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/series-systems/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/series-systems/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/siue/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/siue/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/survival-analysis/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/survival-analysis/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/university/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/university/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/weibull-distribution/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/weibull-distribution/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/wei.series.md.c1.c2.c3/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/wei.series.md.c1.c2.c3/</loc>
     <lastmod>2023-07-23T12:12:30+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/wei.series.md.c1.c2.c3/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/wei.series.md.c1.c2.c3/</loc>
     <lastmod>2023-07-23T12:12:30+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/reliability-estimation-in-series-systems/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/reliability-estimation-in-series-systems/</loc>
     <lastmod>2023-07-13T09:25:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/reliability-estimation-in-series-systems/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/reliability-estimation-in-series-systems/</loc>
     <lastmod>2023-07-13T09:25:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/trapdoor-boolean-model/</loc>
+    <loc>http://localhost:1313/metafunctor/post/trapdoor-boolean-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/bernoulli/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/bernoulli/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/bernoulli-model/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/bernoulli-model/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/bloom-filter/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/bloom-filter/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/boolean/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/boolean/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/cognitive-science/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/cognitive-science/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/compression/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/compression/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/cryptography/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/cryptography/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/llm/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/llm/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/philosophy/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/philosophy/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/regularization/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/regularization/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/uses-and-limits-of-abstractions/</loc>
+    <loc>http://localhost:1313/metafunctor/post/uses-and-limits-of-abstractions/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/working-memory-as-an-inductive-bias/</loc>
+    <loc>http://localhost:1313/metafunctor/post/working-memory-as-an-inductive-bias/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/dfr_dist/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/dfr_dist/</loc>
     <lastmod>2023-06-16T09:56:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/dfr_dist/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/dfr_dist/</loc>
     <lastmod>2023-06-16T09:56:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/likelihood.model.series.md/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/likelihood.model.series.md/</loc>
     <lastmod>2023-06-12T19:18:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/likelihood.model.series.md/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/likelihood.model.series.md/</loc>
     <lastmod>2023-06-12T19:18:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/chatgpt-pysearch/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/chatgpt-pysearch/</loc>
     <lastmod>2023-06-11T08:03:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/chatgpt-pysearch/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/chatgpt-pysearch/</loc>
     <lastmod>2023-06-11T08:03:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/likelihood.model/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/likelihood.model/</loc>
     <lastmod>2023-06-03T05:48:59+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/likelihood.model/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/likelihood.model/</loc>
     <lastmod>2023-06-03T05:48:59+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/numerical.mle/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/numerical.mle/</loc>
     <lastmod>2023-05-06T22:02:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/numerical.mle/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/numerical.mle/</loc>
     <lastmod>2023-05-06T22:02:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/locus/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/locus/</loc>
     <lastmod>2023-04-19T15:40:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/locus/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/locus/</loc>
     <lastmod>2023-04-19T15:40:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/problem-sets/</loc>
+    <loc>http://localhost:1313/metafunctor/post/problem-sets/</loc>
     <lastmod>2023-03-31T07:48:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/made-chatgpt-to-my-saved-conversations/</loc>
+    <loc>http://localhost:1313/metafunctor/post/made-chatgpt-to-my-saved-conversations/</loc>
     <lastmod>2023-03-31T07:17:54-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/problem_sets/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/problem_sets/</loc>
     <lastmod>2023-03-30T07:33:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/problem_sets/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/problem_sets/</loc>
     <lastmod>2023-03-30T07:33:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/data-science/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/data-science/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/likelihood-models/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/likelihood-models/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/research/reliability-estimation-in-series-systems-model-sel/</loc>
+    <loc>http://localhost:1313/metafunctor/research/reliability-estimation-in-series-systems-model-sel/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/femtograd/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/femtograd/</loc>
     <lastmod>2023-03-17T14:32:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/femtograd/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/femtograd/</loc>
     <lastmod>2023-03-17T14:32:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/queelius.github.io/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/queelius.github.io/</loc>
     <lastmod>2022-08-28T11:12:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/queelius.github.io/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/queelius.github.io/</loc>
     <lastmod>2022-08-28T11:12:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/algebraic.dist/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/algebraic.dist/</loc>
     <lastmod>2022-05-26T19:17:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/algebraic.dist/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/algebraic.dist/</loc>
     <lastmod>2022-05-26T19:17:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/amdhals-law/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/amdhals-law/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/computer-science/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/computer-science/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/parallel-processing/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/parallel-processing/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/parallel-programming/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/parallel-programming/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/2022-05-13-acs/</loc>
+    <loc>http://localhost:1313/metafunctor/post/2022-05-13-acs/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/md.tools/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/md.tools/</loc>
     <lastmod>2022-01-29T20:41:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/md.tools/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/md.tools/</loc>
     <lastmod>2022-01-29T20:41:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/algebraic.mle/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/algebraic.mle/</loc>
     <lastmod>2022-01-27T09:12:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/algebraic.mle/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/algebraic.mle/</loc>
     <lastmod>2022-01-27T09:12:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/md-series-systems-relaxed-candidate-set-models/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/md-series-systems-relaxed-candidate-set-models/</loc>
     <lastmod>2021-12-06T09:36:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/md-series-systems-relaxed-candidate-set-models/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/md-series-systems-relaxed-candidate-set-models/</loc>
     <lastmod>2021-12-06T09:36:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/computation/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/computation/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/stat575-problem-set-2/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/stat575-problem-set-2/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/computer-science/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/computer-science/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/data-mining/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/data-mining/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/em-algorithm/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/em-algorithm/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/em-algorithm/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/em-algorithm/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/monte-carlo-simulation/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/monte-carlo-simulation/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/multiprocessor-synchronization/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/multiprocessor-synchronization/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/2012-03-05-tournament-lock/tournament_lock/</loc>
+    <loc>http://localhost:1313/metafunctor/post/2012-03-05-tournament-lock/tournament_lock/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/mutex/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/mutex/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/categories/r/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/r/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/post/2012-02-04-sax/cs584_sax_review/</loc>
+    <loc>http://localhost:1313/metafunctor/post/2012-02-04-sax/cs584_sax_review/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_4/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/problem_set_4/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/statistical-inference/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/statistical-inference/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/symbolic/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/symbolic/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/time-series/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/time-series/</loc>
     <lastmod>2021-10-30T08:18:32-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/rstatlab/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/rstatlab/</loc>
     <lastmod>2021-08-30T23:25:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/rstatlab/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/rstatlab/</loc>
     <lastmod>2021-08-30T23:25:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/computational-statistics/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/computational-statistics/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/course/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/course/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/coursework/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/coursework/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/data-science/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/data-science/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/inference/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/inference/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/numerical-methods/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/numerical-methods/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat482/problem_set_8/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat482/problem_set_8/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/regression-analysis/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/regression-analysis/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/simulation/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/simulation/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat482/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat482/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/statistical-computing/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/statistical-computing/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/prob.4.2.comp.stats/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/prob.4.2.comp.stats/</loc>
     <lastmod>2021-07-25T08:49:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/prob.4.2.comp.stats/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/prob.4.2.comp.stats/</loc>
     <lastmod>2021-07-25T08:49:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam1/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam1/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam2/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam2/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_3/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/problem_set_3/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_1/</loc>
+    <loc>http://localhost:1313/metafunctor/probsets/stat575/problem_set_1/</loc>
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/known_plaintext_attack_time_series_analysis/</loc>
+    <loc>http://localhost:1313/metafunctor/categories/computer-hardware/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/computer-networking/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/diy/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/post/diy-home-lab/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/encrypted-search/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/home-lab/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/oblivious-data-type/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/proxmox/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/post/rank-ordered-encrypted-search/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/rank-ordered-search/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/categories/set-theoretic-search/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/metafunctor/ghprojects/known_plaintext_attack_time_series_analysis/</loc>
     <lastmod>2021-04-30T03:43:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/known_plaintext_attack_time_series_analysis/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/known_plaintext_attack_time_series_analysis/</loc>
     <lastmod>2021-04-30T03:43:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/queelius/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/queelius/</loc>
     <lastmod>2021-02-14T21:17:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/queelius/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/queelius/</loc>
     <lastmod>2021-02-14T21:17:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/homomorphic_computational_extensions/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/homomorphic_computational_extensions/</loc>
     <lastmod>2020-12-18T00:13:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/homomorphic_computational_extensions/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/homomorphic_computational_extensions/</loc>
     <lastmod>2020-12-18T00:13:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/algebraic_cipher_types/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/algebraic_cipher_types/</loc>
     <lastmod>2019-12-21T17:56:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/algebraic_cipher_types/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/algebraic_cipher_types/</loc>
     <lastmod>2019-12-21T17:56:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/encrypted_search_probabilistic_estimator_conf/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/encrypted_search_probabilistic_estimator_conf/</loc>
     <lastmod>2019-01-15T18:39:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/encrypted_search_probabilistic_estimator_conf/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/encrypted_search_probabilistic_estimator_conf/</loc>
     <lastmod>2019-01-15T18:39:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/cipher_maps/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/cipher_maps/</loc>
     <lastmod>2019-01-14T16:34:53+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/cipher_maps/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/cipher_maps/</loc>
     <lastmod>2019-01-14T16:34:53+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/rd_ph_filter/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/rd_ph_filter/</loc>
     <lastmod>2019-01-14T12:52:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/rd_ph_filter/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/rd_ph_filter/</loc>
     <lastmod>2019-01-14T12:52:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/cipher_trapdoor_sets/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/cipher_trapdoor_sets/</loc>
     <lastmod>2019-01-14T12:49:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/cipher_trapdoor_sets/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/cipher_trapdoor_sets/</loc>
     <lastmod>2019-01-14T12:49:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/ghprojects/bernoulli_data_type/</loc>
+    <loc>http://localhost:1313/metafunctor/ghprojects/bernoulli_data_type/</loc>
     <lastmod>2019-01-14T09:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/projects/bernoulli_data_type/</loc>
+    <loc>http://localhost:1313/metafunctor/projects/bernoulli_data_type/</loc>
     <lastmod>2019-01-14T09:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/confidentiality/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/confidentiality/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/encrypted-search/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/encrypted-search/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/publications/mab/</loc>
+    <loc>http://localhost:1313/metafunctor/publications/mab/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/frequency-attack/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/frequency-attack/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/moving-average/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/moving-average/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/security/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/security/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/publications/cs-thesis/</loc>
+    <loc>http://localhost:1313/metafunctor/publications/cs-thesis/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/secure-index/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/secure-index/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/tags/thesis/</loc>
+    <loc>http://localhost:1313/metafunctor/tags/thesis/</loc>
     <lastmod>2015-05-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/about/</loc>
+    <loc>http://localhost:1313/metafunctor/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/essays/</loc>
+    <loc>http://localhost:1313/metafunctor/essays/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/search/</loc>
+    <loc>http://localhost:1313/metafunctor/search/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://queelius.github.io/metafunctor/social/</loc>
+    <loc>http://localhost:1313/metafunctor/social/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

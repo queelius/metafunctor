@@ -1,0 +1,17 @@
+<header id="site-header" style="padding: 0.5rem 1rem; background: #fff; border-bottom: 1px solid #eaeaea;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+      <h1 style="font-size: 1.2rem; margin: 0;">{{ .Site.Title }}</h1>
+      <nav>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
+          {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL | relURL }}" style="text-decoration: none; color: #007acc; font-size: 0.9rem;">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entropy Map on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/categories/entropy-map/</link>
+    <link>http://localhost:1313/metafunctor/categories/entropy-map/</link>
     <description>Recent content in Entropy Map on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/categories/entropy-map/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/categories/entropy-map/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entropy Maps</title>
-      <link>https://queelius.github.io/metafunctor/post/entropy-map/</link>
+      <link>http://localhost:1313/metafunctor/post/entropy-map/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/post/entropy-map/</guid>
+      <guid>http://localhost:1313/metafunctor/post/entropy-map/</guid>
       <description>&lt;p&gt;The PDF version of this post is available on &lt;a href=&#34;https://github.com/queelius/bernoulli_data_type/tree/master/entropy-maps-paper/entropy-map.pdf&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The basic theory behind an entropy map is to map values in the domain to values in&#xA;the codomain by &lt;em&gt;hashing&lt;/em&gt; to a prefix-free code in the codomain. We do not store&#xA;anything related to the domain, since we are simply hashing them, and a prefix&#xA;of that hash will be used as a code for a value in the codomain.&lt;/p&gt;</description>
     </item>
   </channel>

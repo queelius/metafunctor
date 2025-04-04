@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boolean on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/categories/boolean/</link>
+    <link>http://localhost:1313/metafunctor/categories/boolean/</link>
     <description>Recent content in Boolean on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/categories/boolean/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/categories/boolean/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Bernoulli Model: A Probabilistic Framework for Data Structures and Types</title>
-      <link>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</link>
+      <link>http://localhost:1313/metafunctor/post/bernoulli-boolean-model/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/post/bernoulli-boolean-model/</guid>
+      <guid>http://localhost:1313/metafunctor/post/bernoulli-boolean-model/</guid>
       <description>This blog post introduces the Bernoulli Model, a framework for understanding probabilistic data structures and incorporating uncertainty into data types, particularly Boolean values. It highlights the model&amp;rsquo;s utility in optimizing space and accuracy in data representation.</description>
     </item>
   </channel>

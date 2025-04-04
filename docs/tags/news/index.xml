@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/tags/news/</link>
+    <link>http://localhost:1313/metafunctor/tags/news/</link>
     <description>Recent content in News on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/tags/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
-      <link>https://queelius.github.io/metafunctor/post/</link>
+      <link>http://localhost:1313/metafunctor/post/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/post/</guid>
-      <description>Stay updated with the latest news and updates from the community. Explore articles, announcements, and more.</description>
+      <guid>http://localhost:1313/metafunctor/post/</guid>
+      <description>Stay updated with the latest news and updates.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set-Theoretic Search on metafunctor</title>
+    <link>http://localhost:1313/metafunctor/categories/set-theoretic-search/</link>
+    <description>Recent content in Set-Theoretic Search on metafunctor</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/metafunctor/categories/set-theoretic-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rank-orderd Encrypted Search</title>
+      <link>http://localhost:1313/metafunctor/post/rank-ordered-encrypted-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/post/rank-ordered-encrypted-search/</guid>
+      <description>&lt;h1 id=&#34;rank-ordered-encrypted-search&#34;&gt;Rank-ordered Encrypted Search&lt;/h1&gt;&#xA;&lt;p&gt;Consider a map from a set of keys to a set of values, where the keys are the search keys&#xA;or relations between search keys, and the values are the information about the search keys which may be used to compute rank-ordering, such as frequency or proximity information.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Encrypted search&lt;/strong&gt; enables untrusted systems to obliviously search documents on behalf of authorized users, where the search query, the confidential documents being searched over, and the search results are oblivious values.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

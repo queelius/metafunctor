@@ -2,248 +2,339 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/categories/</link>
+    <link>http://localhost:1313/metafunctor/categories/</link>
     <description>Recent content in Categories on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artificial Intelligence</title>
-      <link>https://queelius.github.io/metafunctor/categories/artificial-intelligence/</link>
+      <link>http://localhost:1313/metafunctor/categories/artificial-intelligence/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/artificial-intelligence/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>https://queelius.github.io/metafunctor/categories/machine-learning/</link>
+      <link>http://localhost:1313/metafunctor/categories/machine-learning/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/machine-learning/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>https://queelius.github.io/metafunctor/categories/mathematics/</link>
+      <link>http://localhost:1313/metafunctor/categories/mathematics/</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/mathematics/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/metafunctor/categories/data-structures/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/metafunctor/categories/programming/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/metafunctor/categories/python/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Development</title>
+      <link>http://localhost:1313/metafunctor/categories/software-development/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/software-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Inference</title>
-      <link>https://queelius.github.io/metafunctor/categories/inference/</link>
+      <link>http://localhost:1313/metafunctor/categories/inference/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/inference/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/inference/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistics</title>
-      <link>https://queelius.github.io/metafunctor/categories/statistics/</link>
+      <link>http://localhost:1313/metafunctor/categories/statistics/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/statistics/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/statistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Stenography</title>
-      <link>https://queelius.github.io/metafunctor/categories/stenography/</link>
+      <link>http://localhost:1313/metafunctor/categories/stenography/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/stenography/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/stenography/</guid>
       <description></description>
     </item>
     <item>
       <title>Bootstrap</title>
-      <link>https://queelius.github.io/metafunctor/categories/bootstrap/</link>
+      <link>http://localhost:1313/metafunctor/categories/bootstrap/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/bootstrap/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/bootstrap/</guid>
       <description></description>
     </item>
     <item>
       <title>Censoring</title>
-      <link>https://queelius.github.io/metafunctor/categories/censoring/</link>
+      <link>http://localhost:1313/metafunctor/categories/censoring/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/censoring/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/censoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Likelihood-Model</title>
-      <link>https://queelius.github.io/metafunctor/categories/likelihood-model/</link>
+      <link>http://localhost:1313/metafunctor/categories/likelihood-model/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/likelihood-model/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/likelihood-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Masked-Failure-Data</title>
-      <link>https://queelius.github.io/metafunctor/categories/masked-failure-data/</link>
+      <link>http://localhost:1313/metafunctor/categories/masked-failure-data/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/masked-failure-data/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/masked-failure-data/</guid>
       <description></description>
     </item>
     <item>
       <title>Mle</title>
-      <link>https://queelius.github.io/metafunctor/categories/mle/</link>
+      <link>http://localhost:1313/metafunctor/categories/mle/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/mle/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/mle/</guid>
       <description></description>
     </item>
     <item>
       <title>Reliability-Analysis</title>
-      <link>https://queelius.github.io/metafunctor/categories/reliability-analysis/</link>
+      <link>http://localhost:1313/metafunctor/categories/reliability-analysis/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/reliability-analysis/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/reliability-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Series-Systems</title>
-      <link>https://queelius.github.io/metafunctor/categories/series-systems/</link>
+      <link>http://localhost:1313/metafunctor/categories/series-systems/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/series-systems/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/series-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Weibull</title>
-      <link>https://queelius.github.io/metafunctor/categories/weibull/</link>
+      <link>http://localhost:1313/metafunctor/categories/weibull/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/weibull/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/weibull/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli Map</title>
-      <link>https://queelius.github.io/metafunctor/categories/bernoulli-map/</link>
+      <link>http://localhost:1313/metafunctor/categories/bernoulli-map/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/bernoulli-map/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/bernoulli-map/</guid>
       <description></description>
     </item>
     <item>
       <title>Entropy Map</title>
-      <link>https://queelius.github.io/metafunctor/categories/entropy-map/</link>
+      <link>http://localhost:1313/metafunctor/categories/entropy-map/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/entropy-map/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/entropy-map/</guid>
       <description></description>
     </item>
     <item>
       <title>Probabilistic Data Structure</title>
-      <link>https://queelius.github.io/metafunctor/categories/probabilistic-data-structure/</link>
+      <link>http://localhost:1313/metafunctor/categories/probabilistic-data-structure/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/probabilistic-data-structure/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/probabilistic-data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>Rate-Distortion</title>
-      <link>https://queelius.github.io/metafunctor/categories/rate-distortion/</link>
+      <link>http://localhost:1313/metafunctor/categories/rate-distortion/</link>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/rate-distortion/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/rate-distortion/</guid>
       <description></description>
     </item>
     <item>
       <title>Community</title>
-      <link>https://queelius.github.io/metafunctor/categories/community/</link>
+      <link>http://localhost:1313/metafunctor/categories/community/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/community/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/community/</guid>
       <description></description>
     </item>
     <item>
       <title>News</title>
-      <link>https://queelius.github.io/metafunctor/categories/news/</link>
+      <link>http://localhost:1313/metafunctor/categories/news/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/news/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Updates</title>
-      <link>https://queelius.github.io/metafunctor/categories/updates/</link>
+      <link>http://localhost:1313/metafunctor/categories/updates/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/updates/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/updates/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli</title>
-      <link>https://queelius.github.io/metafunctor/categories/bernoulli/</link>
+      <link>http://localhost:1313/metafunctor/categories/bernoulli/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/bernoulli/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/bernoulli/</guid>
       <description></description>
     </item>
     <item>
       <title>Bernoulli Model</title>
-      <link>https://queelius.github.io/metafunctor/categories/bernoulli-model/</link>
+      <link>http://localhost:1313/metafunctor/categories/bernoulli-model/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/bernoulli-model/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/bernoulli-model/</guid>
       <description></description>
     </item>
     <item>
       <title>Bloom-Filter</title>
-      <link>https://queelius.github.io/metafunctor/categories/bloom-filter/</link>
+      <link>http://localhost:1313/metafunctor/categories/bloom-filter/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/bloom-filter/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/bloom-filter/</guid>
       <description></description>
     </item>
     <item>
       <title>Boolean</title>
-      <link>https://queelius.github.io/metafunctor/categories/boolean/</link>
+      <link>http://localhost:1313/metafunctor/categories/boolean/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/boolean/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/boolean/</guid>
       <description></description>
     </item>
     <item>
       <title>Compression</title>
-      <link>https://queelius.github.io/metafunctor/categories/compression/</link>
+      <link>http://localhost:1313/metafunctor/categories/compression/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/compression/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/compression/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>https://queelius.github.io/metafunctor/categories/cryptography/</link>
+      <link>http://localhost:1313/metafunctor/categories/cryptography/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/cryptography/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>https://queelius.github.io/metafunctor/categories/philosophy/</link>
+      <link>http://localhost:1313/metafunctor/categories/philosophy/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/philosophy/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Science</title>
-      <link>https://queelius.github.io/metafunctor/categories/data-science/</link>
+      <link>http://localhost:1313/metafunctor/categories/data-science/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/data-science/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/data-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Likelihood-Models</title>
-      <link>https://queelius.github.io/metafunctor/categories/likelihood-models/</link>
+      <link>http://localhost:1313/metafunctor/categories/likelihood-models/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/likelihood-models/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/likelihood-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Science</title>
-      <link>https://queelius.github.io/metafunctor/categories/computer-science/</link>
+      <link>http://localhost:1313/metafunctor/categories/computer-science/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/computer-science/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Parallel Processing</title>
-      <link>https://queelius.github.io/metafunctor/categories/parallel-processing/</link>
+      <link>http://localhost:1313/metafunctor/categories/parallel-processing/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/parallel-processing/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/parallel-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>EM Algorithm</title>
-      <link>https://queelius.github.io/metafunctor/categories/em-algorithm/</link>
+      <link>http://localhost:1313/metafunctor/categories/em-algorithm/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/em-algorithm/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/em-algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>https://queelius.github.io/metafunctor/categories/r/</link>
+      <link>http://localhost:1313/metafunctor/categories/r/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/categories/r/</guid>
+      <guid>http://localhost:1313/metafunctor/categories/r/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Hardware</title>
+      <link>http://localhost:1313/metafunctor/categories/computer-hardware/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/computer-hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer-Networking</title>
+      <link>http://localhost:1313/metafunctor/categories/computer-networking/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/computer-networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DIY</title>
+      <link>http://localhost:1313/metafunctor/categories/diy/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/diy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encrypted Search</title>
+      <link>http://localhost:1313/metafunctor/categories/encrypted-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/encrypted-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Lab</title>
+      <link>http://localhost:1313/metafunctor/categories/home-lab/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/home-lab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oblivious Data Type</title>
+      <link>http://localhost:1313/metafunctor/categories/oblivious-data-type/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/oblivious-data-type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/metafunctor/categories/proxmox/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rank-Ordered Search</title>
+      <link>http://localhost:1313/metafunctor/categories/rank-ordered-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/rank-ordered-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Set-Theoretic Search</title>
+      <link>http://localhost:1313/metafunctor/categories/set-theoretic-search/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/metafunctor/categories/set-theoretic-search/</guid>
       <description></description>
     </item>
   </channel>

@@ -13,10 +13,8 @@ links:
   url: https://queelius.github.io/reliability-estimation-in-series-systems
 - name: PDF
   url: '/uploads/alex-towell-math-proj-masters.pdf'
-- name: Slide Deck
-  url: '/uploads/alex-towell-math-proj-masters-slides.pdf'
-- name: Audio Presentation
-  url: '/uploads/alex-towell-math-proj-masters-audio.mp3'
+- name: DOI
+  url: https://doi.org/10.5281/zenodo.15151227
 date: "2023-09-30"
 tags:
 - Reliability
@@ -31,6 +29,11 @@ tags:
 - Maximum Likelihood Estimation
 publishDate: "2023-08-01T00:00:00Z"
 url_code: 'https://github.com/queelius/reliability-estimation-in-series-systems'
+advisors:
+- Marcus Agustin
+advisor_email:
+- magustin@siue.edu
+
 ---
 
 

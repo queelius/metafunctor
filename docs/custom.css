@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Containers */
+.container,
+.social-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header & Hero (Site-wide Minimalist Banner) */
+header#site-header {
+  padding: 0.5rem 1rem !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #eaeaea !important;
+}
+
+.hero {
+  min-height: 150px !important;
+  padding: 1rem !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Social Page Styles */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #666;
+}
+
+.social-page {
+  padding: 2rem;
+}
+
+.social-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social-category {
+  margin-bottom: 3rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+}
+
+.social-card-inner {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-card h3 {
+  margin: 1rem 0;
+  color: #333;
+}
+
+.social-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Project/List Page Styles */
+.project-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-card .project-content {
+  padding: 1rem;
+}
+
+/* Responsive Grid for Projects (if applicable) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}

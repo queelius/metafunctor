@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>STAT 575 - Computational Statistics - SIUe - Summer 2021 on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/probsets/stat575/</link>
+    <link>http://localhost:1313/metafunctor/probsets/stat575/</link>
     <description>Recent content in STAT 575 - Computational Statistics - SIUe - Summer 2021 on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/probsets/stat575/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/probsets/stat575/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computational Statistics - SIUe - STAT 575 - Problem Set 2</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/stat575-problem-set-2/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/stat575-problem-set-2/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/stat575-problem-set-2/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/stat575-problem-set-2/</guid>
       <description>This problem set covers the E-M algorithm for right-censored normal data with known variance.</description>
     </item>
     <item>
       <title>SIUe - Computational Statistics (STAT 575) - Problem Set 4</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_4/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/problem_set_4/</link>
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_4/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/problem_set_4/</guid>
       <description>This problem set covers sampling from a Gamma distribution using Metropolis-Hastings and acceptance-rejection methods.</description>
     </item>
     <item>
       <title>Computational Statistics - SIUe - STAT 575 - Exam 1</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam1/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam1/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam1/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam1/</guid>
       <description>This exam covers accept-reject algorithms, the EM algorithm, and the MLE of a truncated normal distribution.</description>
     </item>
     <item>
       <title>Computational Statistics - SIUe - STAT 575 - Exam 1</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam2/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam2/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/stat575-exam2/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/stat575-exam2/</guid>
       <description>This exam covers numerical integration, Monte Carlo simulation, acceptance-rejection sampling, importance sampling, and the Metropolis-Hastings algorithm.</description>
     </item>
     <item>
       <title>Computational Statistics - SIUe - STAT 575 - Problem Set 3</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_3/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/problem_set_3/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_3/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/problem_set_3/</guid>
       <description>This problem set covers numerical integration, Riemann sums, Gauss-Hermite quadrature, Monte Carlo simulation, and Gaussian mixture models.</description>
     </item>
     <item>
       <title>Computational Statistics - SIUe - STAT 575 - Problem Set 1</title>
-      <link>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_1/</link>
+      <link>http://localhost:1313/metafunctor/probsets/stat575/problem_set_1/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/probsets/stat575/problem_set_1/</guid>
+      <guid>http://localhost:1313/metafunctor/probsets/stat575/problem_set_1/</guid>
       <description>This problem set contains solutions to problems involving Newton&amp;rsquo;s method, the secant method, Poisson regression, and various sampling techniques.</description>
     </item>
   </channel>

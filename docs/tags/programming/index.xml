@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on metafunctor</title>
-    <link>https://queelius.github.io/metafunctor/tags/programming/</link>
+    <link>http://localhost:1313/metafunctor/tags/programming/</link>
     <description>Recent content in Programming on metafunctor</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Nov 2024 18:01:55 +0000</lastBuildDate>
-    <atom:link href="https://queelius.github.io/metafunctor/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/metafunctor/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>https://queelius.github.io/metafunctor/projects/</link>
+      <link>http://localhost:1313/metafunctor/projects/</link>
       <pubDate>Wed, 27 Nov 2024 18:01:55 +0000</pubDate>
-      <guid>https://queelius.github.io/metafunctor/projects/</guid>
+      <guid>http://localhost:1313/metafunctor/projects/</guid>
       <description></description>
     </item>
   </channel>

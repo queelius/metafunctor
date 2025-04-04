@@ -11,6 +11,8 @@ SectionPagesMenu = 'main'
 googleAnalytics = ''
 enableRobotsTXT = true
 
+
+
 [markup]
   [markup.goldmark]
   [markup.goldmark.renderer]
@@ -44,6 +46,9 @@ enableRobotsTXT = true
   math = true
   author = "Alex Towell"
   email = "lex@metafunctor.com"
+
+  custom_css = ["css/custom.css"]
+
 
   [params.social]
     [[params.social.links]]
@@ -94,9 +99,10 @@ enableRobotsTXT = true
 
     [menu]
 
-    
+
   [[menu.main]]
     identifier = "social"
     name = "Social"
     url = "/social/"
     weight = 100
+
